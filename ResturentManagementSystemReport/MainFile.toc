@@ -50,15 +50,15 @@
 \contentsline {subsubsection}{\numberline {5.4.4}Update Personal Information}{142}{subsubsection.5.4.4}
 \contentsline {subsubsection}{\numberline {5.4.5}Database Connection}{152}{subsubsection.5.4.5}
 \contentsline {subsubsection}{\numberline {5.4.6}Sign UP}{153}{subsubsection.5.4.6}
-\contentsline {subsection}{\numberline {5.5}Code Documentation}{162}{subsection.5.5}
-\contentsline {subsection}{\numberline {5.6}Version Control}{162}{subsection.5.6}
-\contentsline {subsection}{\numberline {5.7}Chapter Summary}{162}{subsection.5.7}
-\contentsline {section}{\numberline {6}Chapter Sixth}{163}{section.6}
-\contentsline {subsection}{\numberline {6.1}Chapter Overview}{163}{subsection.6.1}
-\contentsline {subsection}{\numberline {6.2}Project Overview}{163}{subsection.6.2}
-\contentsline {subsection}{\numberline {6.3}Further Development}{163}{subsection.6.3}
-\contentsline {subsubsection}{\numberline {6.3.1}Graphical User Interface (GUI)}{163}{subsubsection.6.3.1}
-\contentsline {subsubsection}{\numberline {6.3.2}Table Management}{163}{subsubsection.6.3.2}
-\contentsline {subsection}{\numberline {6.4}Reflection}{163}{subsection.6.4}
-\contentsline {subsection}{\numberline {6.5}Skills Attained}{164}{subsection.6.5}
-\contentsline {subsection}{\numberline {6.6}Chapter Summary}{164}{subsection.6.6}
+\contentsline {subsection}{\numberline {5.5}Code Documentation}{163}{subsection.5.5}
+\contentsline {subsection}{\numberline {5.6}Version Control}{164}{subsection.5.6}
+\contentsline {subsection}{\numberline {5.7}Chapter Summary}{164}{subsection.5.7}
+\contentsline {section}{\numberline {6}Chapter Sixth}{165}{section.6}
+\contentsline {subsection}{\numberline {6.1}Chapter Overview}{165}{subsection.6.1}
+\contentsline {subsection}{\numberline {6.2}Project Overview}{165}{subsection.6.2}
+\contentsline {subsection}{\numberline {6.3}Further Development}{165}{subsection.6.3}
+\contentsline {subsubsection}{\numberline {6.3.1}Graphical User Interface (GUI)}{165}{subsubsection.6.3.1}
+\contentsline {subsubsection}{\numberline {6.3.2}Table Management}{166}{subsubsection.6.3.2}
+\contentsline {subsection}{\numberline {6.4}Reflection}{166}{subsection.6.4}
+\contentsline {subsection}{\numberline {6.5}Skills Attained}{167}{subsection.6.5}
+\contentsline {subsection}{\numberline {6.6}Chapter Summary}{167}{subsection.6.6}
