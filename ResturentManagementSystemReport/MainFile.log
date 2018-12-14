@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.12.2)  14 DEC 2018 22:51
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.12.2)  14 DEC 2018 23:02
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -935,14 +935,12 @@ File: UTF8.chr 2015/04/18 4.8.4
                    \relax 
 l.134 \end{titlepage}
                       [1]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 143.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 145.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    Font shape `OMS/cmr/bx/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/b/n' tried instead on input line 143.
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 145.
 
@@ -1030,7 +1028,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 245--246
 
 [3]
 </home/basedul/Documents/Report-writing-using-latex/ResturentManagementSystemRe
-port/uml_case.PNG, id=291, 803.0pt x 709.65125pt>
+port/uml_case.PNG, id=290, 803.0pt x 709.65125pt>
 File: /home/basedul/Documents/Report-writing-using-latex/ResturentManagementSys
 temReport/uml_case.PNG Graphic file (type png)
 <use /home/basedul/Documents/Report-writing-using-latex/ResturentManagementSyst
@@ -1040,7 +1038,7 @@ turentManagementSystemReport/uml_case.PNG  used on input line 303.
 (pdftex.def)             Requested size: 204.43759pt x 180.67499pt.
  [4]
 </home/basedul/Documents/Report-writing-using-latex/ResturentManagementSystemRe
-port/boehms.png, id=296, 360.34625pt x 266.9975pt>
+port/boehms.png, id=295, 360.34625pt x 266.9975pt>
 File: /home/basedul/Documents/Report-writing-using-latex/ResturentManagementSys
 temReport/boehms.png Graphic file (type png)
 <use /home/basedul/Documents/Report-writing-using-latex/ResturentManagementSyst
@@ -1099,7 +1097,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 390--392
  []
 
 </home/basedul/Documents/Report-writing-using-latex/ResturentManagementSystemRe
-port/usecase.png, id=325, 563.10374pt x 671.50874pt>
+port/usecase.png, id=324, 563.10374pt x 671.50874pt>
 File: /home/basedul/Documents/Report-writing-using-latex/ResturentManagementSys
 temReport/usecase.png Graphic file (type png)
 <use /home/basedul/Documents/Report-writing-using-latex/ResturentManagementSyst
@@ -1133,7 +1131,7 @@ has been already used, duplicate ignored
 l.455 \newpage
               ]
 </home/basedul/Documents/Report-writing-using-latex/ResturentManagementSystemRe
-port/comdia.png, id=343, 348.30125pt x 270.00874pt>
+port/comdia.png, id=342, 348.30125pt x 270.00874pt>
 File: /home/basedul/Documents/Report-writing-using-latex/ResturentManagementSys
 temReport/comdia.png Graphic file (type png)
 <use /home/basedul/Documents/Report-writing-using-latex/ResturentManagementSyst
@@ -1155,7 +1153,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 487--491
  []
 
 </home/basedul/Documents/Report-writing-using-latex/ResturentManagementSystemRe
-port/compari.png, id=350, 376.40625pt x 254.9525pt>
+port/compari.png, id=349, 376.40625pt x 254.9525pt>
 File: /home/basedul/Documents/Report-writing-using-latex/ResturentManagementSys
 temReport/compari.png Graphic file (type png)
 <use /home/basedul/Documents/Report-writing-using-latex/ResturentManagementSyst
@@ -1188,26 +1186,25 @@ Package rerunfilecheck Info: File `MainFile.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 6462.
  ) 
 Here is how much of TeX's memory you used:
- 9869 strings out of 492982
- 135580 string characters out of 6134896
+ 9866 strings out of 492982
+ 135543 string characters out of 6134896
  356404 words of memory out of 5000000
- 13148 multiletter control sequences out of 15000+600000
- 12719 words of font info for 47 fonts, out of 8000000 for 9000
+ 13146 multiletter control sequences out of 15000+600000
+ 12464 words of font info for 46 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  30i,12n,40p,768b,1000s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbsy10.pfb></u
-sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/sha
-re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/te
-xlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/t
-exmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-di
-st/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fon
-ts/type1/public/amsfonts/cm/cmu10.pfb></usr/share/texmf/fonts/type1/arphic/gbsn
-u/gbsnu5c.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu8d.pfb></usr/shar
-e/texmf/fonts/type1/arphic/gbsnu/gbsnu96.pfb>
-Output written on MainFile.pdf (24 pages, 338628 bytes).
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></us
+r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/sha
+re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texl
+ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmu10.pfb></usr/share/texmf/fonts/type1/arphic
+/gbsnu/gbsnu5c.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu8d.pfb></usr
+/share/texmf/fonts/type1/arphic/gbsnu/gbsnu96.pfb>
+Output written on MainFile.pdf (24 pages, 330272 bytes).
 PDF statistics:
- 443 PDF objects out of 1000 (max. 8388607)
- 389 compressed objects within 4 object streams
+ 439 PDF objects out of 1000 (max. 8388607)
+ 386 compressed objects within 4 object streams
  84 named destinations out of 1000 (max. 500000)
  379 words of extra memory for PDF output out of 10000 (max. 10000000)
 
