@@ -33,32 +33,10 @@
 \contentsline {subsubsection}{\numberline {4.4.2}Extensible Markup Language (XML)}{12}{subsubsection.4.4.2}
 \contentsline {subsubsection}{\numberline {4.4.3}Storage Method Chosen}{12}{subsubsection.4.4.3}
 \contentsline {subsubsection}{\numberline {4.4.4}Normalisation}{13}{subsubsection.4.4.4}
-\contentsline {subsubsection}{\numberline {4.4.5}Entity Relationship Diagram}{14}{subsubsection.4.4.5}
-\contentsline {subsection}{\numberline {4.5}Graphical User Interface}{16}{subsection.4.5}
-\contentsline {subsubsection}{\numberline {4.5.1}Admin Gui}{17}{subsubsection.4.5.1}
-\contentsline {subsubsection}{\numberline {4.5.2}Client Gui}{17}{subsubsection.4.5.2}
-\contentsline {subsection}{\numberline {4.6}Flow Charts}{18}{subsection.4.6}
-\contentsline {subsection}{\numberline {4.7}Chapter Summary}{19}{subsection.4.7}
-\contentsline {section}{\numberline {5}Chapter Five}{20}{section.5}
-\contentsline {subsection}{\numberline {5.1}Chapter Overview}{20}{subsection.5.1}
-\contentsline {subsection}{\numberline {5.2}Implementing Extreme Programming (XP)}{20}{subsection.5.2}
-\contentsline {subsection}{\numberline {5.3}Data Storage and Retrieval}{20}{subsection.5.3}
-\contentsline {subsection}{\numberline {5.4}GUI Implementation}{20}{subsection.5.4}
-\contentsline {subsubsection}{\numberline {5.4.1}Home Screen}{21}{subsubsection.5.4.1}
-\contentsline {subsubsection}{\numberline {5.4.2}Sign In}{119}{subsubsection.5.4.2}
-\contentsline {subsubsection}{\numberline {5.4.3}Sign UP}{127}{subsubsection.5.4.3}
-\contentsline {subsubsection}{\numberline {5.4.4}Update Personal Information}{142}{subsubsection.5.4.4}
-\contentsline {subsubsection}{\numberline {5.4.5}Database Connection}{152}{subsubsection.5.4.5}
-\contentsline {subsubsection}{\numberline {5.4.6}Sign UP}{153}{subsubsection.5.4.6}
-\contentsline {subsection}{\numberline {5.5}Code Documentation}{163}{subsection.5.5}
-\contentsline {subsection}{\numberline {5.6}Version Control}{164}{subsection.5.6}
-\contentsline {subsection}{\numberline {5.7}Chapter Summary}{164}{subsection.5.7}
-\contentsline {section}{\numberline {6}Chapter Sixth}{165}{section.6}
-\contentsline {subsection}{\numberline {6.1}Chapter Overview}{165}{subsection.6.1}
-\contentsline {subsection}{\numberline {6.2}Project Overview}{165}{subsection.6.2}
-\contentsline {subsection}{\numberline {6.3}Further Development}{165}{subsection.6.3}
-\contentsline {subsubsection}{\numberline {6.3.1}Graphical User Interface (GUI)}{165}{subsubsection.6.3.1}
-\contentsline {subsubsection}{\numberline {6.3.2}Table Management}{166}{subsubsection.6.3.2}
-\contentsline {subsection}{\numberline {6.4}Reflection}{166}{subsection.6.4}
-\contentsline {subsection}{\numberline {6.5}Skills Attained}{167}{subsection.6.5}
-\contentsline {subsection}{\numberline {6.6}Chapter Summary}{167}{subsection.6.6}
+\contentsline {subsection}{\numberline {4.5}Chapter Summary}{14}{subsection.4.5}
+\contentsline {section}{\numberline {5}Chapter Five}{15}{section.5}
+\contentsline {subsection}{\numberline {5.1}Chapter Overview}{15}{subsection.5.1}
+\contentsline {subsection}{\numberline {5.2}Chapter Summary}{15}{subsection.5.2}
+\contentsline {section}{\numberline {6}Chapter Sixth}{16}{section.6}
+\contentsline {subsection}{\numberline {6.1}Chapter Overview}{16}{subsection.6.1}
+\contentsline {subsection}{\numberline {6.2}Chapter Summary}{16}{subsection.6.2}

@@ -2,10 +2,18 @@
 \usepackage[pdftex]{graphicx} %for embedding images
 \usepackage{url} %for proper url entries
 \usepackage[bookmarks, colorlinks=false, pdfborder={0 0 0}, pdftitle={<pdf title here>}, pdfauthor={<author's name here>}, pdfsubject={<subject here>}, pdfkeywords={<keywords here>}]{hyperref} 
-
+\usepackage{amsmath,amsthm,amssymb,amsfonts}
 \usepackage{lipsum}
 \usepackage[margin=1in,includefoot]{geometry}
 \usepackage{float}
+\usepackage{amssymb}
+\newcommand{\checkbox}{$\square$}
+\newcommand\fillin[1][3cm]{\makebox[#1]{\dotfill}}
+
+\usepackage{CJKutf8}
+\newcommand{\zh}[1]{\begin{CJK}{UTF8}{gbsn}#1\end{CJK}}
+
+\usepackage{verbatim}
 
 % Code segment
 \usepackage{listings}
@@ -14,6 +22,11 @@
 \definecolor{dkgreen}{rgb}{0,0.6,0}
 \definecolor{gray}{rgb}{0.5,0.5,0.5}
 \definecolor{mauve}{rgb}{0.58,0,0.82}
+
+\usepackage{array}
+
+\newcolumntype{M}[1]{>{\centering\arraybackslash}m{#1}}
+\newcolumntype{N}{@{}m{0pt}@{}}
 
 \lstset{frame=tb,
   language=Java,
@@ -39,35 +52,124 @@
 	\begin{titlepage}
 	\begin{center}
 	\centering
-	\includegraphics[width=0.15\textwidth]{/home/basedul/Documents/Report-writing-using-latex/ResturentManagementSystemReport/titlepic.png}\par\vspace{1cm}
-	{\scshape\LARGE Shenyang Aerospace University \par}
-	\vspace{1cm}
-	{\scshape\Large Final year project\par}
-	\vspace{1.5cm}
+	\noindent\begin{minipage}{0.3\textwidth}% adapt widths of minipages to your needs
+\includegraphics[width=\linewidth]{/home/basedul/Documents/Report-writing-using-latex/ResturentManagementSystemReport/titlepic.png}
+\end{minipage}
+\hfill
+\begin{minipage}{0.6\textwidth}
+%\raggedleft
+{\bfseries \Huge 
+Graduation Thesis
+
+}
+
+\end{minipage}
+
+\par\vspace{3cm}
 	{\huge\bfseries Asian Restaurant Management System\par}
 	\vspace{2cm}
-	{\Large\itshape Hossain Syed Abir\par}
-	\vfill
+	
+	\begin{table}[ht]
+	\center
+	\begin{tabular}{|M{5cm}|M{9cm}|N}
+	\hline
+	\huge \textbf{Name} & \textbf{HOSSAIN SYED ABIR(\zh{阿贝尔})} &\\[25pt]
+	\hline
+	\huge\textbf{Major} & \textbf{Computer Science and Technology}&\\[25pt]
+	\hline
+	\huge\textbf{Supervisor} & \textbf{Prof. Liang Zhao}&\\[25pt]
+	\hline
+	\end{tabular}
+	\end{table}	
+	
+	
+	\vspace{2.5cm}
+	{\scshape\huge Shenyang Aerospace University \par}
+	\vspace{1.5cm}
+	\begin{comment}\vspace{1cm}
+	{\scshape\Large Final year project\par}
+	\vspace{1.5cm}\end{comment}
+	
+	%{\Large\itshape Hossain Syed Abir\par}
+	\begin{comment}\vfill
 	Supervised by\par
-	Dr.~Mark \textsc{Liang Zhao}
+	Prof. \textsc{Liang Zhao}
 
 	\vfill
+	\end{comment}
 
 % Bottom of the page
 	{\large \today\par}
 \end{center}
 \end{titlepage}
+
+\begin{titlepage}
+	\center {\huge\bfseries Asian Restaurant Management System\par}
+	\vspace{2cm}
+	
+	\begin{table}[ht]
+	\center
+	\begin{tabular}{|M{5cm}|M{9cm}|N}
+	\hline
+	\huge {College} &  {Computer} &\\[25pt]
+	\hline
+	\huge{Major} & {Computer Science and Technology}&\\[25pt]
+	\hline
+	\huge{Class} & {140103}&\\[25pt]
+	\hline
+	\huge{Stuent No.} & {14031274}&\\[25pt]
+	\hline
+	\huge{Name} & {text}&\\[25pt]
+	\hline
+	\huge{Supervisor} & {HOSSAIN SYED ABIR(\zh{阿贝尔})}&\\[25pt]
+	\hline
+	\end{tabular}
+	\end{table}	
+	
+	
+	\vspace{3.5cm}
+	{\scshape\large Shenyang Aerospace University \par}
+	\vspace{1cm}
+	{\large \today\par}
+\end{titlepage}	
+\begin{titlepage}
+\begin{center}
+	%\centering
+	{\huge\bfseries{Declaration}}\\ 
+\end{center}
+\vspace{3.5cm}
+To the best of my knowledge and belief, I certify that this thesis does not:
+%\vspace{0.5cm}
+\subsubsection*{•}
+\begin{itemize}
+	\item Incorporate any material previously submitted for a degree or diploma in any institution of higher education without acknowledgement.
+	\item Contain any material previously published or written by other person except where due reference is made in the text.
+	\item Contain any defamatory material.
+\end{itemize}
+I also grant permission to Shenyang Aerospace University to make duplicate copies of my thesis as required.	\\
+\linebreak
+\linebreak
+\linebreak
+\linebreak
+\linebreak
+
+Signature\fillin[4cm]
+\linebreak
+\linebreak
+\linebreak
+
+Date\fillin[5cm]  
+
+\end{titlepage}
+
 	
 	\section*{ABSTRACT}
 	This report documents the process of designing, developing and testing a software system to be used in a
 restaurant; usually given the name restaurant management system. The restaurant management system
-is there to help communication between all teams within a restaurant by minimising the probability
-of human errors. This report was written by Carl Abernethy as part of his 3rd year project and was
-published on May 5, 2010.\\
-	\section*{ACKNOWLEDGEMENTS}
-	I would like to thank my project supervisor, Prof. Liang Zhao, for providing an awful amount of
-guidance and input throughout the writing of this report. In addition, I’d like to thank my family for
-the support throughout my final year at university, and for checking over my report.\\
+is there to help communication between all teams within a restaurant by minimizing the probability
+of human errors.\\We propose to build a software project that can efficiently handle and manage various activities of a restaurant and all these activities will be happening under the supervision of the administrator. The businesses in restaurants are now growing constantly. At the same time, the need for managing its operations and tasks arises. The best way to optimize these activities is growing the business online as well. Today’s generation encourages high-tech services especially over the Internet. Hence the project is developed proficiently to help restaurant owners automate their business operations. This project serves the best way of maintaining customer’s information and caters their needs.\\
+
+	
 
 	\pagenumbering{roman} %numbering before main content starts
 	
@@ -81,21 +183,23 @@ the support throughout my final year at university, and for checking over my rep
 	
 	
 	\section{INTODUCTION}
-	The concept of restaurant table order management system, since it is java application, I will keep everything as simple as possible. The project consists in an java application that can be used by employees in a restaurant to handle the clients, their orders and can help them easily find free tables or place orders. This application, created mainly for proof of proper user-java interaction. The restaurant menu is organized by categories (appetizers, soups,fig salads, entrees, sides and dricks) of menu items. Each menu item has a chef, preparation instructions and associated in gredients. The ingredeints are identified by their ingredient id and the quality of the ingredient needed to prepare a particular recipe, the unit of measure and a name.
-	\\
-	"Restaurant Management System(RMS)" is java application to restaurant management. This system wake to provide service facility to retaurant and also to the customer. The services that are provided is food ordering and home delivery by the customer through the system, customer information management and waiter information management, menu information management and report. Main objective build the system, ordering, and home delivery management will become easier and systematic to replace traditional system.
+	The concept of restaurant table order management system, since it is java application, I will keep everything as simple as possible. The project consists in an java application that can be used by employees in a restaurant to handle the clients, their orders and can help them easily find free tables or place orders. This application, created mainly for proof of proper user-java interaction. The restaurant menu is organized by categories (appetizers, soups,fig salads, entrees, sides and drinks) of menu items. Each menu item has a chef, preparation instructions and associated ingredients. The ingredients are identified by their ingredient id and the quality of the ingredient needed to prepare a particular recipe, the unit of measure and a name.
+        \\
+        "Restaurant Management System(RMS)" is java application to restaurant management. This system wake to provide service facility to rastaurant and also to the customer. The services that are provided is food ordering and home delivery by the customer through the system, customer information management and waiter information management, menu information management and report. Main objective build the system, ordering, and home delivery management will become easier and systematic to replace traditional system.
+
 	
 	\subsection{EXISTING SYSTEM}
 	\begin{itemize}
-		\item Restaurant services such as making porcessing orders, and delivering meals generally require waiters to input customer information and then transmit the orders to kitchen for mela preparation. When the customer pays the bill, the amoutn due is calculated by the cashier. Although this procedure is simple, it may significantly increase the workload of waiters and even cause errors in meal ordering or in prioritizing customers, especially when the number o fcustomers suddenly increases during busy hours, which can seriusly degrade the overall service quality.
-		\item A very commonly implemented system, currently being used by numerous restaurants and chains all over the world, is the electronic point-sale terminal system.
-		\item Here the waiters generally take the order from the customer and head onto a terminal, where they can feed the order into a computer . The order can the be trasmitted to to the kitchen automatically via the terminal through the a network, or it may event be delivered manuallly by the server to the kitchen.
-	\end{itemize}
+                \item Restaurant services such as making processing orders, and delivering meals generally require waiters to input customer information and then transmit the orders to kitchen for meal preparation. When the customer pays the bill, the amount due is calculated by the cashier. Although this procedure is simple, it may significantly increase the workload of waiters and even cause errors in meal ordering or in prioritizing customers, especially when the number of customers suddenly increases during busy hours, which can seriously degrade the overall service quality.
+                \item A very commonly implemented system, currently being used by numerous restaurants and chains all over the world, is the electronic point-sale terminal system.
+                \item Here the waiters generally take the order from the customer and head onto a terminal, where they can feed the order into a computer . The order can the be trasnmitted to to the kitchen automatically via the terminal through the a network, or it may event be delivered manually by the server to the kitchen.
+        \end{itemize}
+
 	\subsubsection{DISADVANTAGES OF EXISTING SYSTEM}
 	\begin{itemize}
-		\item Although a huge improvement over the pen and paper still prevalent over world, this does not have much value addition for the customer and mostly only benegits the establilshment and the administration of the establishment.
-		\item It may significantly increase the workload of waiters and even cause errors in meal ordering or in prioritizing customers, especially when the number of customers suddenly increases during busy hours, which can seriously dgrade the overall service quality.
-	\end{itemize}
+                \item Although a huge improvement over the pen and paper still prevalent over world, this does not have much value addition for the customer and mostly only benefits the establishment and the administration of the establishment.
+                \item It may significantly increase the workload of waiters and even cause errors in meal ordering or in prioritizing customers, especially when the number of customers suddenly increases during busy hours, which can seriously grade the overall service quality.
+        \end{itemize}
 	
 	
 	\subsection{PROPOSED SYSTEM}
@@ -123,18 +227,19 @@ the support throughout my final year at university, and for checking over my rep
 		\subsubsection{MODULES DESCRIPTION}
 		\begin{itemize}
 			\item {\bfseries Customer} \\
-			This project module consists in and java application tha can be used by employees in a restaurant to handle the cliens, their orders and can help them easily find free tables or place orders. This applicatio, created mainly for proof of proper user interacton.
-			\item {\bfseries Administrator} \\
-			Administrator is the person who will manage the entire system. This type of user will also do maintenance and control the application ot this system. Administrator thakes a responsibility to a new customer, new menu into database, and etc.
-			\item {\bfseries Customer Ordering} \\
-			Customer ordering and reservation module provides a from that needs to be fullfilling in term or ordering food.
-			\item {\bfseries Menu Module } \\
-			Menu module is food that restaurant prepared for customer. This module, customer can view the menu and make decision for order.
-			\item {\bfseries Generate Report Module} \\
-			System provides an option for generate a report. The contents of the report as following: \\
-			1. The report of customer ordering. \\
-			2. Customers information \\
-			3. Comment or satisfiction score insert into feedback form.	
+                        This project module consists in and java application they can be used by employees in a restaurant to handle the clients, their orders and can help them easily find free tables or place orders. This application, created mainly for proof of proper user interacton.
+                        \item {\bfseries Administrator} \\
+                        Administrator is the person who will manage the entire system. This type of user will also do maintenance and control the application ot this system. Administrator takes a responsibility to a new customer, new menu into database, and etc.
+                        \item {\bfseries Customer Ordering} \\
+                        Customer ordering and reservation module provides a from that needs to be full filling in term or ordering food.
+                        \item {\bfseries Menu Module } \\
+                        Menu module is food that restaurant prepared for customer. This module, customer can view the menu and make decision for order.
+                        \item {\bfseries Generate Report Module} \\
+                        System provides an option for generate a report. The contents of the report as following: \\
+                        1. The report of customer ordering. \\
+                        2. Customers information \\
+                        3. Comment or satisfaction score insert into feedback form.     
+
 		\end{itemize}
 		\subsection{Summary of Chapeters}
 		The rest of this report consists of the following chapters: \\
@@ -436,6 +541,7 @@ the key must be determined only by the key.
 Finally for the database to be in the desired Boyce-Codd normal form, all tables must abide by the
 first, second and third normal forms and must not have any determinants that are not candidate keys
 for the table.
+\begin{comment}
 \subsubsection{Entity Relationship Diagram}
 	\label{sec:entity}
 An entity relationship (ER) diagram is a modelling language used to represent a type of semantic
@@ -522,9 +628,10 @@ flow of an order.
 		\caption{Flow chart to show the flow of events of an order..}
 		\label{fig:flowchart} 
 \end{figure}
+\end{comment}
+
 \subsection{Chapter Summary}
-	This chapter has displayed many graphical representations of the design of the system. The imple-
-mentation of the system is documented in the next chapter.
+	This chapter has displayed many graphical representations of the design of the system. The implementation of the system is documented in the next chapter.
 \newpage
 \section{Chapter Five}
 {\bfseries \Large Implementation}
@@ -533,6 +640,7 @@ mentation of the system is documented in the next chapter.
 pseudocode and diagrams for clear explanations. The implementation stage of any project can be the
 most enjoyable part and with a well structured plan and appropriate development methodology can be
 a trouble free stage.
+	\begin{comment}
 	\subsection{Implementing Extreme Programming (XP)}
 	As discussed in section \ref{dev:agile}, this project used an agile methodology called Extreme Programming (XP).
 This type of methodology utilises an iterative process involving customer communication and feedback.
@@ -6165,7 +6273,7 @@ public class Appetizers extends javax.swing.JFrame {
 }
 
 	\end{lstlisting}
-	\bfseries \Large Database Query
+	{\bfseries \Large Database Query}
 	\begin{lstlisting}[
            language=SQL,
            showspaces=false,
@@ -6283,7 +6391,9 @@ JavaDoc could then be used to provide assistance to any future developer.
 	Due to the type of development methodology used for this project, incremental backups of the system
 were required. Version control systems (also known as Revision control) such as Mercurial manage
 the changes to documents storing each backup in its own revision with the ability to restore back to a
-particular version in the event of debugging.	
+particular version in the event of debugging.
+	
+	\end{comment}	
 
 	\subsection{Chapter Summary}
 	This chapter has discussed the interesting aspects from the implementation stage. The next chapter
@@ -6295,6 +6405,7 @@ documents the results by demonstrating the working system.
 	\subsection{Chapter Overview}
 		This chapters draws the project report to a close and reflects on the design decisions made throughout.
 It also discusses possible future development ideas.
+\begin{comment}
 	\subsection{Project Overview}
 	The system achieved all of its proposed priority 1 and priority 2 functional requirements and even some
 priority 3 outlined in Section \ref{sec:prioty}.
@@ -6333,12 +6444,18 @@ have been developed include:
 		\item Relational database schema design and trigger coding.
 		\item Advanced coding using Java threads.
 	\end{itemize}
+\end{comment}
 \subsection{Chapter Summary}	
 This chapter has concluded the project report and provided an insight into possible future development.
 	
 
 \newpage
 \bibliographystyle{IEEEtran}
+\section*{ACKNOWLEDGEMENTS}
+	I would like to thank my project supervisor, Prof. Liang Zhao, for providing an awful amount of
+guidance and input throughout the writing of this report. In addition, I’d like to thank my family for
+the support throughout my final year at university, and for checking over my report.\\
+\newpage
 \bibliography{/home/basedul/Documents/Report-writing-using-latex/ResturentManagementSystemReport/req.bib}
 
 

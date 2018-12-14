@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.12.2)  10 DEC 2018 20:56
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.12.2)  14 DEC 2018 22:51
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -161,52 +161,540 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 \Hy@SectionHShift=\skip43
 )
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2017/09/02 v2.17a AMS math features
+\@mathmargin=\skip44
+
+For additional information on amsmath, use the `?' option.
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01 AMS text
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks15
+\ex@=\dimen109
+))
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen110
+)
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2016/03/08 v2.02 operator names
+)
+\inf@bad=\count97
+LaTeX Info: Redefining \frac on input line 213.
+\uproot@=\count98
+\leftroot@=\count99
+LaTeX Info: Redefining \overline on input line 375.
+\classnum@=\count100
+\DOTSCASE@=\count101
+LaTeX Info: Redefining \ldots on input line 472.
+LaTeX Info: Redefining \dots on input line 475.
+LaTeX Info: Redefining \cdots on input line 596.
+\Mathstrutbox@=\box26
+\strutbox@=\box27
+\big@size=\dimen111
+LaTeX Font Info:    Redeclaring font encoding OML on input line 712.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
+\macc@depth=\count102
+\c@MaxMatrixCols=\count103
+\dotsspace@=\muskip11
+\c@parentequation=\count104
+\dspbrk@lvl=\count105
+\tag@help=\toks16
+\row@=\count106
+\column@=\count107
+\maxfields@=\count108
+\andhelp@=\toks17
+\eqnshift@=\dimen112
+\alignsep@=\dimen113
+\tagshift@=\dimen114
+\tagwidth@=\dimen115
+\totwidth@=\dimen116
+\lineht@=\dimen117
+\@envbody=\toks18
+\multlinegap=\skip45
+\multlinetaggap=\skip46
+\mathdisplay@stack=\toks19
+LaTeX Info: Redefining \[ on input line 2817.
+LaTeX Info: Redefining \] on input line 2818.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/amscls/amsthm.sty
+Package: amsthm 2017/10/31 v2.20.4
+\thm@style=\toks20
+\thm@bodyfont=\toks21
+\thm@headfont=\toks22
+\thm@notefont=\toks23
+\thm@headpunct=\toks24
+\thm@preskip=\skip47
+\thm@postskip=\skip48
+\thm@headsep=\skip49
+\dth@everypar=\toks25
+)
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+))
 (/usr/share/texlive/texmf-dist/tex/latex/lipsum/lipsum.sty
 Package: lipsum 2014/07/27 v1.3 150 paragraphs of Lorem Ipsum dummy text
-\c@lips@count=\count97
+\c@lips@count=\count109
 )
 (/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
 Package: geometry 2010/09/12 v5.6 Page Geometry
-\Gm@cnth=\count98
-\Gm@cntv=\count99
-\c@Gm@tempcnt=\count100
-\Gm@bindingoffset=\dimen109
-\Gm@wd@mp=\dimen110
-\Gm@odd@mp=\dimen111
-\Gm@even@mp=\dimen112
-\Gm@layoutwidth=\dimen113
-\Gm@layoutheight=\dimen114
-\Gm@layouthoffset=\dimen115
-\Gm@layoutvoffset=\dimen116
-\Gm@dimlist=\toks15
+\Gm@cnth=\count110
+\Gm@cntv=\count111
+\c@Gm@tempcnt=\count112
+\Gm@bindingoffset=\dimen118
+\Gm@wd@mp=\dimen119
+\Gm@odd@mp=\dimen120
+\Gm@even@mp=\dimen121
+\Gm@layoutwidth=\dimen122
+\Gm@layoutheight=\dimen123
+\Gm@layouthoffset=\dimen124
+\Gm@layoutvoffset=\dimen125
+\Gm@dimlist=\toks26
 )
 (/usr/share/texlive/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count101
-\float@exts=\toks16
-\float@box=\box26
-\@float@everytoks=\toks17
-\@floatcapt=\box27
+\c@float@type=\count113
+\float@exts=\toks27
+\float@box=\box28
+\@float@everytoks=\toks28
+\@floatcapt=\box29
+)
+(/usr/share/texmf/tex/latex/CJK/CJKutf8.sty
+Package: CJKutf8 2015/04/18 4.8.4
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
+Package: inputenc 2015/03/17 v1.2c Input encoding file
+\inpenc@prehook=\toks29
+\inpenc@posthook=\toks30
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/utf8.def
+File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
+Now handling font encoding OML ...
+... no UTF-8 mapping file for font encoding OML
+Now handling font encoding T1 ...
+... processing UTF-8 mapping file for font encoding T1
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/t1enc.dfu
+File: t1enc.dfu 2017/01/28 v1.1t UTF-8 support for inputenc
+   defining Unicode char U+00A0 (decimal 160)
+   defining Unicode char U+00A1 (decimal 161)
+   defining Unicode char U+00A3 (decimal 163)
+   defining Unicode char U+00AB (decimal 171)
+   defining Unicode char U+00AD (decimal 173)
+   defining Unicode char U+00BB (decimal 187)
+   defining Unicode char U+00BF (decimal 191)
+   defining Unicode char U+00C0 (decimal 192)
+   defining Unicode char U+00C1 (decimal 193)
+   defining Unicode char U+00C2 (decimal 194)
+   defining Unicode char U+00C3 (decimal 195)
+   defining Unicode char U+00C4 (decimal 196)
+   defining Unicode char U+00C5 (decimal 197)
+   defining Unicode char U+00C6 (decimal 198)
+   defining Unicode char U+00C7 (decimal 199)
+   defining Unicode char U+00C8 (decimal 200)
+   defining Unicode char U+00C9 (decimal 201)
+   defining Unicode char U+00CA (decimal 202)
+   defining Unicode char U+00CB (decimal 203)
+   defining Unicode char U+00CC (decimal 204)
+   defining Unicode char U+00CD (decimal 205)
+   defining Unicode char U+00CE (decimal 206)
+   defining Unicode char U+00CF (decimal 207)
+   defining Unicode char U+00D0 (decimal 208)
+   defining Unicode char U+00D1 (decimal 209)
+   defining Unicode char U+00D2 (decimal 210)
+   defining Unicode char U+00D3 (decimal 211)
+   defining Unicode char U+00D4 (decimal 212)
+   defining Unicode char U+00D5 (decimal 213)
+   defining Unicode char U+00D6 (decimal 214)
+   defining Unicode char U+00D8 (decimal 216)
+   defining Unicode char U+00D9 (decimal 217)
+   defining Unicode char U+00DA (decimal 218)
+   defining Unicode char U+00DB (decimal 219)
+   defining Unicode char U+00DC (decimal 220)
+   defining Unicode char U+00DD (decimal 221)
+   defining Unicode char U+00DE (decimal 222)
+   defining Unicode char U+00DF (decimal 223)
+   defining Unicode char U+00E0 (decimal 224)
+   defining Unicode char U+00E1 (decimal 225)
+   defining Unicode char U+00E2 (decimal 226)
+   defining Unicode char U+00E3 (decimal 227)
+   defining Unicode char U+00E4 (decimal 228)
+   defining Unicode char U+00E5 (decimal 229)
+   defining Unicode char U+00E6 (decimal 230)
+   defining Unicode char U+00E7 (decimal 231)
+   defining Unicode char U+00E8 (decimal 232)
+   defining Unicode char U+00E9 (decimal 233)
+   defining Unicode char U+00EA (decimal 234)
+   defining Unicode char U+00EB (decimal 235)
+   defining Unicode char U+00EC (decimal 236)
+   defining Unicode char U+00ED (decimal 237)
+   defining Unicode char U+00EE (decimal 238)
+   defining Unicode char U+00EF (decimal 239)
+   defining Unicode char U+00F0 (decimal 240)
+   defining Unicode char U+00F1 (decimal 241)
+   defining Unicode char U+00F2 (decimal 242)
+   defining Unicode char U+00F3 (decimal 243)
+   defining Unicode char U+00F4 (decimal 244)
+   defining Unicode char U+00F5 (decimal 245)
+   defining Unicode char U+00F6 (decimal 246)
+   defining Unicode char U+00F8 (decimal 248)
+   defining Unicode char U+00F9 (decimal 249)
+   defining Unicode char U+00FA (decimal 250)
+   defining Unicode char U+00FB (decimal 251)
+   defining Unicode char U+00FC (decimal 252)
+   defining Unicode char U+00FD (decimal 253)
+   defining Unicode char U+00FE (decimal 254)
+   defining Unicode char U+00FF (decimal 255)
+   defining Unicode char U+0100 (decimal 256)
+   defining Unicode char U+0101 (decimal 257)
+   defining Unicode char U+0102 (decimal 258)
+   defining Unicode char U+0103 (decimal 259)
+   defining Unicode char U+0104 (decimal 260)
+   defining Unicode char U+0105 (decimal 261)
+   defining Unicode char U+0106 (decimal 262)
+   defining Unicode char U+0107 (decimal 263)
+   defining Unicode char U+0108 (decimal 264)
+   defining Unicode char U+0109 (decimal 265)
+   defining Unicode char U+010A (decimal 266)
+   defining Unicode char U+010B (decimal 267)
+   defining Unicode char U+010C (decimal 268)
+   defining Unicode char U+010D (decimal 269)
+   defining Unicode char U+010E (decimal 270)
+   defining Unicode char U+010F (decimal 271)
+   defining Unicode char U+0110 (decimal 272)
+   defining Unicode char U+0111 (decimal 273)
+   defining Unicode char U+0112 (decimal 274)
+   defining Unicode char U+0113 (decimal 275)
+   defining Unicode char U+0114 (decimal 276)
+   defining Unicode char U+0115 (decimal 277)
+   defining Unicode char U+0116 (decimal 278)
+   defining Unicode char U+0117 (decimal 279)
+   defining Unicode char U+0118 (decimal 280)
+   defining Unicode char U+0119 (decimal 281)
+   defining Unicode char U+011A (decimal 282)
+   defining Unicode char U+011B (decimal 283)
+   defining Unicode char U+011C (decimal 284)
+   defining Unicode char U+011D (decimal 285)
+   defining Unicode char U+011E (decimal 286)
+   defining Unicode char U+011F (decimal 287)
+   defining Unicode char U+0120 (decimal 288)
+   defining Unicode char U+0121 (decimal 289)
+   defining Unicode char U+0122 (decimal 290)
+   defining Unicode char U+0123 (decimal 291)
+   defining Unicode char U+0124 (decimal 292)
+   defining Unicode char U+0125 (decimal 293)
+   defining Unicode char U+0128 (decimal 296)
+   defining Unicode char U+0129 (decimal 297)
+   defining Unicode char U+012A (decimal 298)
+   defining Unicode char U+012B (decimal 299)
+   defining Unicode char U+012C (decimal 300)
+   defining Unicode char U+012D (decimal 301)
+   defining Unicode char U+012E (decimal 302)
+   defining Unicode char U+012F (decimal 303)
+   defining Unicode char U+0130 (decimal 304)
+   defining Unicode char U+0131 (decimal 305)
+   defining Unicode char U+0132 (decimal 306)
+   defining Unicode char U+0133 (decimal 307)
+   defining Unicode char U+0134 (decimal 308)
+   defining Unicode char U+0135 (decimal 309)
+   defining Unicode char U+0136 (decimal 310)
+   defining Unicode char U+0137 (decimal 311)
+   defining Unicode char U+0139 (decimal 313)
+   defining Unicode char U+013A (decimal 314)
+   defining Unicode char U+013B (decimal 315)
+   defining Unicode char U+013C (decimal 316)
+   defining Unicode char U+013D (decimal 317)
+   defining Unicode char U+013E (decimal 318)
+   defining Unicode char U+0141 (decimal 321)
+   defining Unicode char U+0142 (decimal 322)
+   defining Unicode char U+0143 (decimal 323)
+   defining Unicode char U+0144 (decimal 324)
+   defining Unicode char U+0145 (decimal 325)
+   defining Unicode char U+0146 (decimal 326)
+   defining Unicode char U+0147 (decimal 327)
+   defining Unicode char U+0148 (decimal 328)
+   defining Unicode char U+014A (decimal 330)
+   defining Unicode char U+014B (decimal 331)
+   defining Unicode char U+014C (decimal 332)
+   defining Unicode char U+014D (decimal 333)
+   defining Unicode char U+014E (decimal 334)
+   defining Unicode char U+014F (decimal 335)
+   defining Unicode char U+0150 (decimal 336)
+   defining Unicode char U+0151 (decimal 337)
+   defining Unicode char U+0152 (decimal 338)
+   defining Unicode char U+0153 (decimal 339)
+   defining Unicode char U+0154 (decimal 340)
+   defining Unicode char U+0155 (decimal 341)
+   defining Unicode char U+0156 (decimal 342)
+   defining Unicode char U+0157 (decimal 343)
+   defining Unicode char U+0158 (decimal 344)
+   defining Unicode char U+0159 (decimal 345)
+   defining Unicode char U+015A (decimal 346)
+   defining Unicode char U+015B (decimal 347)
+   defining Unicode char U+015C (decimal 348)
+   defining Unicode char U+015D (decimal 349)
+   defining Unicode char U+015E (decimal 350)
+   defining Unicode char U+015F (decimal 351)
+   defining Unicode char U+0160 (decimal 352)
+   defining Unicode char U+0161 (decimal 353)
+   defining Unicode char U+0162 (decimal 354)
+   defining Unicode char U+0163 (decimal 355)
+   defining Unicode char U+0164 (decimal 356)
+   defining Unicode char U+0165 (decimal 357)
+   defining Unicode char U+0168 (decimal 360)
+   defining Unicode char U+0169 (decimal 361)
+   defining Unicode char U+016A (decimal 362)
+   defining Unicode char U+016B (decimal 363)
+   defining Unicode char U+016C (decimal 364)
+   defining Unicode char U+016D (decimal 365)
+   defining Unicode char U+016E (decimal 366)
+   defining Unicode char U+016F (decimal 367)
+   defining Unicode char U+0170 (decimal 368)
+   defining Unicode char U+0171 (decimal 369)
+   defining Unicode char U+0172 (decimal 370)
+   defining Unicode char U+0173 (decimal 371)
+   defining Unicode char U+0174 (decimal 372)
+   defining Unicode char U+0175 (decimal 373)
+   defining Unicode char U+0176 (decimal 374)
+   defining Unicode char U+0177 (decimal 375)
+   defining Unicode char U+0178 (decimal 376)
+   defining Unicode char U+0179 (decimal 377)
+   defining Unicode char U+017A (decimal 378)
+   defining Unicode char U+017B (decimal 379)
+   defining Unicode char U+017C (decimal 380)
+   defining Unicode char U+017D (decimal 381)
+   defining Unicode char U+017E (decimal 382)
+   defining Unicode char U+01CD (decimal 461)
+   defining Unicode char U+01CE (decimal 462)
+   defining Unicode char U+01CF (decimal 463)
+   defining Unicode char U+01D0 (decimal 464)
+   defining Unicode char U+01D1 (decimal 465)
+   defining Unicode char U+01D2 (decimal 466)
+   defining Unicode char U+01D3 (decimal 467)
+   defining Unicode char U+01D4 (decimal 468)
+   defining Unicode char U+01E2 (decimal 482)
+   defining Unicode char U+01E3 (decimal 483)
+   defining Unicode char U+01E6 (decimal 486)
+   defining Unicode char U+01E7 (decimal 487)
+   defining Unicode char U+01E8 (decimal 488)
+   defining Unicode char U+01E9 (decimal 489)
+   defining Unicode char U+01EA (decimal 490)
+   defining Unicode char U+01EB (decimal 491)
+   defining Unicode char U+01F0 (decimal 496)
+   defining Unicode char U+01F4 (decimal 500)
+   defining Unicode char U+01F5 (decimal 501)
+   defining Unicode char U+0218 (decimal 536)
+   defining Unicode char U+0219 (decimal 537)
+   defining Unicode char U+021A (decimal 538)
+   defining Unicode char U+021B (decimal 539)
+   defining Unicode char U+0232 (decimal 562)
+   defining Unicode char U+0233 (decimal 563)
+   defining Unicode char U+1E02 (decimal 7682)
+   defining Unicode char U+1E03 (decimal 7683)
+   defining Unicode char U+200C (decimal 8204)
+   defining Unicode char U+2010 (decimal 8208)
+   defining Unicode char U+2011 (decimal 8209)
+   defining Unicode char U+2012 (decimal 8210)
+   defining Unicode char U+2013 (decimal 8211)
+   defining Unicode char U+2014 (decimal 8212)
+   defining Unicode char U+2015 (decimal 8213)
+   defining Unicode char U+2018 (decimal 8216)
+   defining Unicode char U+2019 (decimal 8217)
+   defining Unicode char U+201A (decimal 8218)
+   defining Unicode char U+201C (decimal 8220)
+   defining Unicode char U+201D (decimal 8221)
+   defining Unicode char U+201E (decimal 8222)
+   defining Unicode char U+2030 (decimal 8240)
+   defining Unicode char U+2031 (decimal 8241)
+   defining Unicode char U+2039 (decimal 8249)
+   defining Unicode char U+203A (decimal 8250)
+   defining Unicode char U+2423 (decimal 9251)
+   defining Unicode char U+1E20 (decimal 7712)
+   defining Unicode char U+1E21 (decimal 7713)
+)
+Now handling font encoding OT1 ...
+... processing UTF-8 mapping file for font encoding OT1
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/ot1enc.dfu
+File: ot1enc.dfu 2017/01/28 v1.1t UTF-8 support for inputenc
+   defining Unicode char U+00A0 (decimal 160)
+   defining Unicode char U+00A1 (decimal 161)
+   defining Unicode char U+00A3 (decimal 163)
+   defining Unicode char U+00AD (decimal 173)
+   defining Unicode char U+00B8 (decimal 184)
+   defining Unicode char U+00BF (decimal 191)
+   defining Unicode char U+00C5 (decimal 197)
+   defining Unicode char U+00C6 (decimal 198)
+   defining Unicode char U+00D8 (decimal 216)
+   defining Unicode char U+00DF (decimal 223)
+   defining Unicode char U+00E6 (decimal 230)
+   defining Unicode char U+00EC (decimal 236)
+   defining Unicode char U+00ED (decimal 237)
+   defining Unicode char U+00EE (decimal 238)
+   defining Unicode char U+00EF (decimal 239)
+   defining Unicode char U+00F8 (decimal 248)
+   defining Unicode char U+0131 (decimal 305)
+   defining Unicode char U+0141 (decimal 321)
+   defining Unicode char U+0142 (decimal 322)
+   defining Unicode char U+0152 (decimal 338)
+   defining Unicode char U+0153 (decimal 339)
+   defining Unicode char U+0174 (decimal 372)
+   defining Unicode char U+0175 (decimal 373)
+   defining Unicode char U+0176 (decimal 374)
+   defining Unicode char U+0177 (decimal 375)
+   defining Unicode char U+0218 (decimal 536)
+   defining Unicode char U+0219 (decimal 537)
+   defining Unicode char U+021A (decimal 538)
+   defining Unicode char U+021B (decimal 539)
+   defining Unicode char U+2013 (decimal 8211)
+   defining Unicode char U+2014 (decimal 8212)
+   defining Unicode char U+2018 (decimal 8216)
+   defining Unicode char U+2019 (decimal 8217)
+   defining Unicode char U+201C (decimal 8220)
+   defining Unicode char U+201D (decimal 8221)
+)
+Now handling font encoding OMS ...
+... processing UTF-8 mapping file for font encoding OMS
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/omsenc.dfu
+File: omsenc.dfu 2017/01/28 v1.1t UTF-8 support for inputenc
+   defining Unicode char U+00A7 (decimal 167)
+   defining Unicode char U+00B6 (decimal 182)
+   defining Unicode char U+00B7 (decimal 183)
+   defining Unicode char U+2020 (decimal 8224)
+   defining Unicode char U+2021 (decimal 8225)
+   defining Unicode char U+2022 (decimal 8226)
+)
+Now handling font encoding OMX ...
+... no UTF-8 mapping file for font encoding OMX
+Now handling font encoding U ...
+... no UTF-8 mapping file for font encoding U
+Now handling font encoding PD1 ...
+... no UTF-8 mapping file for font encoding PD1
+   defining Unicode char U+00A9 (decimal 169)
+   defining Unicode char U+00AA (decimal 170)
+   defining Unicode char U+00AE (decimal 174)
+   defining Unicode char U+00BA (decimal 186)
+   defining Unicode char U+02C6 (decimal 710)
+   defining Unicode char U+02DC (decimal 732)
+   defining Unicode char U+200C (decimal 8204)
+   defining Unicode char U+2026 (decimal 8230)
+   defining Unicode char U+2122 (decimal 8482)
+   defining Unicode char U+2423 (decimal 9251)
+))
+(/usr/share/texmf/tex/latex/CJK/CJK.sty
+Package: CJK 2015/04/18 4.8.4
+
+(/usr/share/texmf/tex/latex/CJK/mule/MULEenc.sty
+Package: MULEenc 2015/04/18 4.8.4
+)
+(/usr/share/texmf/tex/latex/CJK/CJK.enc
+File: CJK.enc 2015/04/18 4.8.4
+Now handling font encoding C00 ...
+... no UTF-8 mapping file for font encoding C00
+Now handling font encoding C05 ...
+... no UTF-8 mapping file for font encoding C05
+Now handling font encoding C09 ...
+... no UTF-8 mapping file for font encoding C09
+Now handling font encoding C10 ...
+... no UTF-8 mapping file for font encoding C10
+Now handling font encoding C20 ...
+... no UTF-8 mapping file for font encoding C20
+Now handling font encoding C19 ...
+... no UTF-8 mapping file for font encoding C19
+Now handling font encoding C40 ...
+... no UTF-8 mapping file for font encoding C40
+Now handling font encoding C42 ...
+... no UTF-8 mapping file for font encoding C42
+Now handling font encoding C43 ...
+... no UTF-8 mapping file for font encoding C43
+Now handling font encoding C50 ...
+... no UTF-8 mapping file for font encoding C50
+Now handling font encoding C52 ...
+... no UTF-8 mapping file for font encoding C52
+Now handling font encoding C49 ...
+... no UTF-8 mapping file for font encoding C49
+Now handling font encoding C60 ...
+... no UTF-8 mapping file for font encoding C60
+Now handling font encoding C61 ...
+... no UTF-8 mapping file for font encoding C61
+Now handling font encoding C63 ...
+... no UTF-8 mapping file for font encoding C63
+Now handling font encoding C64 ...
+... no UTF-8 mapping file for font encoding C64
+Now handling font encoding C65 ...
+... no UTF-8 mapping file for font encoding C65
+Now handling font encoding C70 ...
+... no UTF-8 mapping file for font encoding C70
+Now handling font encoding C31 ...
+... no UTF-8 mapping file for font encoding C31
+Now handling font encoding C32 ...
+... no UTF-8 mapping file for font encoding C32
+Now handling font encoding C33 ...
+... no UTF-8 mapping file for font encoding C33
+Now handling font encoding C34 ...
+... no UTF-8 mapping file for font encoding C34
+Now handling font encoding C35 ...
+... no UTF-8 mapping file for font encoding C35
+Now handling font encoding C36 ...
+... no UTF-8 mapping file for font encoding C36
+Now handling font encoding C37 ...
+... no UTF-8 mapping file for font encoding C37
+Now handling font encoding C80 ...
+... no UTF-8 mapping file for font encoding C80
+Now handling font encoding C81 ...
+... no UTF-8 mapping file for font encoding C81
+Now handling font encoding C01 ...
+... no UTF-8 mapping file for font encoding C01
+Now handling font encoding C11 ...
+... no UTF-8 mapping file for font encoding C11
+Now handling font encoding C21 ...
+... no UTF-8 mapping file for font encoding C21
+Now handling font encoding C41 ...
+... no UTF-8 mapping file for font encoding C41
+Now handling font encoding C62 ...
+... no UTF-8 mapping file for font encoding C62
+)
+LaTeX Info: Redefining \selectfont on input line 755.
+\CJK@indent=\box30
+)
+(/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2017/04/05 v2.0i Standard LaTeX package
+))
+(/usr/share/texlive/texmf-dist/tex/latex/tools/verbatim.sty
+Package: verbatim 2014/10/28 v1.5q LaTeX2e package for verbatim enhancements
+\every@verbatim=\toks31
+\verbatim@line=\toks32
+\verbatim@in@stream=\read1
 )
 (/usr/share/texlive/texmf-dist/tex/latex/listings/listings.sty
-\lst@mode=\count102
-\lst@gtempboxa=\box28
-\lst@token=\toks18
-\lst@length=\count103
-\lst@currlwidth=\dimen117
-\lst@column=\count104
-\lst@pos=\count105
-\lst@lostspace=\dimen118
-\lst@width=\dimen119
-\lst@newlines=\count106
-\lst@lineno=\count107
-\lst@maxwidth=\dimen120
+\lst@mode=\count114
+\lst@gtempboxa=\box31
+\lst@token=\toks33
+\lst@length=\count115
+\lst@currlwidth=\dimen126
+\lst@column=\count116
+\lst@pos=\count117
+\lst@lostspace=\dimen127
+\lst@width=\dimen128
+\lst@newlines=\count118
+\lst@lineno=\count119
+\lst@maxwidth=\dimen129
 
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
-\c@lstnumber=\count108
-\lst@skipnumbers=\count109
-\lst@framebox=\box29
+\c@lstnumber=\count120
+\lst@skipnumbers=\count121
+\lst@framebox=\box32
 )
 (/usr/share/texlive/texmf-dist/tex/latex/listings/listings.cfg
 File: listings.cfg 2015/06/04 1.6 listings configuration
@@ -221,38 +709,110 @@ File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package color Info: Driver file: pdftex.def on input line 147.
 )
+(/usr/share/texlive/texmf-dist/tex/latex/tools/array.sty
+Package: array 2016/10/06 v2.4d Tabular extension package (FMi)
+\col@sep=\dimen130
+\extrarowheight=\dimen131
+\NC@list=\toks34
+\extratabsurround=\skip50
+\backup@length=\skip51
+)
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2015/06/04 1.6 listings language file
 ) (./MainFile.aux)
 \openout1 = `MainFile.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for C00/song/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for C05/song/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for C09/song/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for C10/song/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for C20/song/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for C19/song/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for C40/song/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for C42/song/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for C43/song/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for C50/song/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for C52/song/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for C49/song/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for C60/mj/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for C61/mj/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for C63/mj/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for C64/mj/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for C65/mj/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for C70/song/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for C31/song/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for C32/song/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for C33/song/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for C34/song/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for C35/song/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for C36/song/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for C37/song/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for C80/song/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for C81/song/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for C01/song/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for C11/song/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for C21/song/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for C41/song/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for C62/song/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
  (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count110
-\scratchdimen=\dimen121
-\scratchbox=\box30
-\nofMPsegments=\count111
-\nofMParguments=\count112
-\everyMPshowfont=\toks19
-\MPscratchCnt=\count113
-\MPscratchDim=\dimen122
-\MPnumerator=\count114
-\makeMPintoPDFobject=\count115
-\everyMPtoPDFconversion=\toks20
+\scratchcounter=\count122
+\scratchdimen=\dimen132
+\scratchbox=\box33
+\nofMPsegments=\count123
+\nofMParguments=\count124
+\everyMPshowfont=\toks35
+\MPscratchCnt=\count125
+\MPscratchDim=\dimen133
+\MPnumerator=\count126
+\makeMPintoPDFobject=\count127
+\everyMPtoPDFconversion=\toks36
 ) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
@@ -270,8 +830,8 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-\AtBeginShipoutBox=\box31
-Package hyperref Info: Link coloring OFF on input line 35.
+\AtBeginShipoutBox=\box34
+Package hyperref Info: Link coloring OFF on input line 48.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
@@ -279,11 +839,11 @@ Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count116
+\c@section@level=\count128
 )
-LaTeX Info: Redefining \ref on input line 35.
-LaTeX Info: Redefining \pageref on input line 35.
-LaTeX Info: Redefining \nameref on input line 35.
+LaTeX Info: Redefining \ref on input line 48.
+LaTeX Info: Redefining \pageref on input line 48.
+LaTeX Info: Redefining \nameref on input line 48.
 
 (./MainFile.out) (./MainFile.out)
 \@outlinefile=\write3
@@ -324,40 +884,128 @@ LaTeX Info: Redefining \nameref on input line 35.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-\c@lstlisting=\count117
+\c@lstlisting=\count129
 </home/basedul/Documents/Report-writing-using-latex/ResturentManagementSystemRe
-port/titlepic.png, id=261, 200.75pt x 197.73875pt>
+port/titlepic.png, id=172, 200.75pt x 197.73875pt>
 File: /home/basedul/Documents/Report-writing-using-latex/ResturentManagementSys
 temReport/titlepic.png Graphic file (type png)
 <use /home/basedul/Documents/Report-writing-using-latex/ResturentManagementSyst
 emReport/titlepic.png>
 Package pdftex.def Info: /home/basedul/Documents/Report-writing-using-latex/Res
-turentManagementSystemReport/titlepic.png  used on input line 42.
-(pdftex.def)             Requested size: 67.94241pt x 66.92554pt.
-[1
+turentManagementSystemReport/titlepic.png  used on input line 56.
+(pdftex.def)             Requested size: 135.89174pt x 133.86314pt.
+LaTeX Font Info:    Try loading font information for U+msa on input line 57.
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 57.
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+(/usr/share/texmf/tex/latex/CJK/UTF8/UTF8.bdg
+File: UTF8.bdg 2015/04/18 4.8.4
+)
+(/usr/share/texmf/tex/latex/CJK/UTF8/UTF8.enc
+File: UTF8.enc 2015/04/18 4.8.4
+)
+(/usr/share/texmf/tex/latex/CJK/UTF8/UTF8.chr
+File: UTF8.chr 2015/04/18 4.8.4
+)
+LaTeX Font Info:    Try loading font information for C70+gbsn on input line 76.
+
+
+(/usr/share/texmf/tex/latex/CJK/UTF8/c70gbsn.fd
+File: c70gbsn.fd 2008/10/03 4.8.1
+)
+(/usr/share/texmf/tex/latex/CJK/UTF8/c70gbsn.fdx
+File: c70gbsn.fdx 2012/05/07 4.8.3
+) [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} </home/basedul/Documents/Re
 port-writing-using-latex/ResturentManagementSystemReport/titlepic.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 62--67
+(/usr/share/texmf/tex/latex/CJK/UTF8/UTF8.enc
+File: UTF8.enc 2015/04/18 4.8.4
+)
+(/usr/share/texmf/tex/latex/CJK/UTF8/UTF8.chr
+File: UTF8.chr 2015/04/18 4.8.4
+)pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
+ been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.134 \end{titlepage}
+                      [1]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 143.
+
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/bx/n' in size <12> not available
+(Font)              Font shape `OMS/cmsy/b/n' tried instead on input line 143.
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 145.
+
+Underfull \hbox (badness 10000) in paragraph at lines 149--155
 
  []
 
-Missing character: There is no â in font cmr12!
-Missing character: There is no € in font cmr12!
-Missing character: There is no ™ in font cmr12!
 
-Underfull \hbox (badness 10000) in paragraph at lines 68--71
+Underfull \hbox (badness 10000) in paragraph at lines 149--155
 
  []
 
-(./MainFile.toc
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 2.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 2.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 2.
- [1])
+
+Underfull \hbox (badness 10000) in paragraph at lines 149--155
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 149--155
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 149--155
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 149--155
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 156--160
+[]\OT1/cmr/m/n/12 Signature[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 156--160
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 156--160
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 156--160
+
+ []
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.163 \end{titlepage}
+                      [1]
+Underfull \hbox (badness 10000) in paragraph at lines 167--171
+
+ []
+
+(./MainFile.toc [1])
 \tf@toc=\write4
 \openout4 = `MainFile.toc'.
 
@@ -369,86 +1017,48 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 \tf@lot=\write6
 \openout6 = `MainFile.lot'.
 
- [3]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 90.
-
-(/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
-File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
-)
-LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 90.
-pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
-been already used, duplicate ignored
+ [3]pdfTeX warning (ext4): destination with the same identifier (name{page.1}) 
+has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.104 		\item t
+l.208 		\item t
                his system is based on the very popular model-View-Controller...
 [1] [2]
-Underfull \hbox (badness 10000) in paragraph at lines 140--141
+Underfull \hbox (badness 10000) in paragraph at lines 245--246
 
  []
 
 [3]
-Missing character: There is no â in font cmr12!
-Missing character: There is no € in font cmr12!
-Missing character: There is no ™ in font cmr12!
-Missing character: There is no â in font cmr12!
-Missing character: There is no € in font cmr12!
-Missing character: There is no ˜ in font cmr12!
-Missing character: There is no â in font cmr12!
-Missing character: There is no € in font cmr12!
-Missing character: There is no ™ in font cmr12!
-Missing character: There is no â in font cmr12!
-Missing character: There is no € in font cmr12!
-Missing character: There is no ™ in font cmr12!
-Missing character: There is no â in font cmr12!
-Missing character: There is no € in font cmr12!
-Missing character: There is no ™ in font cmr12!
 </home/basedul/Documents/Report-writing-using-latex/ResturentManagementSystemRe
-port/uml_case.PNG, id=409, 803.0pt x 709.65125pt>
+port/uml_case.PNG, id=291, 803.0pt x 709.65125pt>
 File: /home/basedul/Documents/Report-writing-using-latex/ResturentManagementSys
 temReport/uml_case.PNG Graphic file (type png)
 <use /home/basedul/Documents/Report-writing-using-latex/ResturentManagementSyst
 emReport/uml_case.PNG>
 Package pdftex.def Info: /home/basedul/Documents/Report-writing-using-latex/Res
-turentManagementSystemReport/uml_case.PNG  used on input line 198.
+turentManagementSystemReport/uml_case.PNG  used on input line 303.
 (pdftex.def)             Requested size: 204.43759pt x 180.67499pt.
-Missing character: There is no â in font cmr12!
-Missing character: There is no € in font cmr12!
-Missing character: There is no ™ in font cmr12!
  [4]
 </home/basedul/Documents/Report-writing-using-latex/ResturentManagementSystemRe
-port/boehms.png, id=414, 360.34625pt x 266.9975pt>
+port/boehms.png, id=296, 360.34625pt x 266.9975pt>
 File: /home/basedul/Documents/Report-writing-using-latex/ResturentManagementSys
 temReport/boehms.png Graphic file (type png)
 <use /home/basedul/Documents/Report-writing-using-latex/ResturentManagementSyst
 emReport/boehms.png>
 Package pdftex.def Info: /home/basedul/Documents/Report-writing-using-latex/Res
-turentManagementSystemReport/boehms.png  used on input line 219.
+turentManagementSystemReport/boehms.png  used on input line 324.
 (pdftex.def)             Requested size: 487.73308pt x 361.34999pt.
 
-Overfull \hbox (34.76518pt too wide) in paragraph at lines 219--220
+Overfull \hbox (34.76518pt too wide) in paragraph at lines 324--325
  [][] 
  []
 
-Missing character: There is no â in font cmr12!
-Missing character: There is no € in font cmr12!
-Missing character: There is no ™ in font cmr12!
-Missing character: There is no â in font cmr12!
-Missing character: There is no € in font cmr12!
-Missing character: There is no ™ in font cmr12!
-Missing character: There is no Â in font cmr12!
-Missing character: There is no £ in font cmr12!
-Missing character: There is no Â in font cmr12!
-Missing character: There is no £ in font cmr12!
-Missing character: There is no Â in font cmr12!
-Missing character: There is no £ in font cmr12!
 [5pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) 
 has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.228 \newpage
+l.333 \newpage
                </home/basedul/Documents/Report-writing-using-latex/ResturentMan
 agementSystemReport/uml_case.PNG (PNG copy)>] [6pdfTeX warning (ext4): destinat
 ion with the same identifier (name{figure.2}) has been already used, duplicate 
@@ -456,2104 +1066,148 @@ ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.228 \newpage
+l.333 \newpage
                </home/basedul/Documents/Report-writing-using-latex/ResturentMan
-agementSystemReport/boehms.png>]
-Missing character: There is no â in font cmr12!
-Missing character: There is no € in font cmr12!
-Missing character: There is no ™ in font cmr12!
-Missing character: There is no â in font cmr12!
-Missing character: There is no € in font cmr12!
-Missing character: There is no ˜ in font cmr12!
-Missing character: There is no â in font cmr12!
-Missing character: There is no € in font cmr12!
-Missing character: There is no ™ in font cmr12!
- [7]
-Underfull \hbox (badness 10000) in paragraph at lines 262--263
-
- []
-
-Missing character: There is no â in font cmr12!
-Missing character: There is no € in font cmr12!
-Missing character: There is no ™ in font cmr12!
-
-Underfull \hbox (badness 10000) in paragraph at lines 267--278
+agementSystemReport/boehms.png>] [7]
+Underfull \hbox (badness 10000) in paragraph at lines 367--368
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 279--280
+Underfull \hbox (badness 10000) in paragraph at lines 372--383
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 281--282
+Underfull \hbox (badness 10000) in paragraph at lines 384--385
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 283--284
+Underfull \hbox (badness 10000) in paragraph at lines 386--387
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 285--287
+Underfull \hbox (badness 10000) in paragraph at lines 388--389
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 390--392
 
  []
 
 </home/basedul/Documents/Report-writing-using-latex/ResturentManagementSystemRe
-port/usecase.png, id=440, 563.10374pt x 671.50874pt>
+port/usecase.png, id=325, 563.10374pt x 671.50874pt>
 File: /home/basedul/Documents/Report-writing-using-latex/ResturentManagementSys
 temReport/usecase.png Graphic file (type png)
 <use /home/basedul/Documents/Report-writing-using-latex/ResturentManagementSyst
 emReport/usecase.png>
 Package pdftex.def Info: /home/basedul/Documents/Report-writing-using-latex/Res
-turentManagementSystemReport/usecase.png  used on input line 315.
+turentManagementSystemReport/usecase.png  used on input line 420.
 (pdftex.def)             Requested size: 424.22566pt x 505.89pt.
 [8pdfTeX warning (ext4): destination with the same identifier (name{table.1}) h
 as been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.318 	\end{figure}
+l.423 	\end{figure}
                    ] [9pdfTeX warning (ext4): destination with the same identif
 ier (name{figure.3}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.322 
+l.427 
        </home/basedul/Documents/Report-writing-using-latex/ResturentManagementS
 ystemReport/usecase.png>]
-Overfull \hbox (5.92673pt too wide) in paragraph at lines 332--341
+Overfull \hbox (5.92673pt too wide) in paragraph at lines 437--446
  [][] 
  []
 
-Missing character: There is no â in font cmr12!
-Missing character: There is no € in font cmr12!
-Missing character: There is no ˜ in font cmr12!
-Missing character: There is no â in font cmr12!
-Missing character: There is no € in font cmr12!
-Missing character: There is no ™ in font cmr12!
 [10pdfTeX warning (ext4): destination with the same identifier (name{table.2}) 
 has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.350 \newpage
+l.455 \newpage
               ]
 </home/basedul/Documents/Report-writing-using-latex/ResturentManagementSystemRe
-port/comdia.png, id=460, 348.30125pt x 270.00874pt>
+port/comdia.png, id=343, 348.30125pt x 270.00874pt>
 File: /home/basedul/Documents/Report-writing-using-latex/ResturentManagementSys
 temReport/comdia.png Graphic file (type png)
 <use /home/basedul/Documents/Report-writing-using-latex/ResturentManagementSyst
 emReport/comdia.png>
 Package pdftex.def Info: /home/basedul/Documents/Report-writing-using-latex/Res
-turentManagementSystemReport/comdia.png  used on input line 370.
+turentManagementSystemReport/comdia.png  used on input line 475.
 (pdftex.def)             Requested size: 279.68304pt x 216.81pt.
  [11pdfTeX warning (ext4): destination with the same identifier (name{figure.4}
 ) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.380 \subsubsection
+l.485 \subsubsection
                     {Relational Database Management System (RDBMS)} </home/base
 dul/Documents/Report-writing-using-latex/ResturentManagementSystemReport/comdia
 .png>]
-Missing character: There is no â in font cmr12!
-Missing character: There is no € in font cmr12!
-Missing character: There is no ™ in font cmr12!
-
-Underfull \hbox (badness 10000) in paragraph at lines 382--386
+Underfull \hbox (badness 10000) in paragraph at lines 487--491
 
  []
 
-Missing character: There is no â in font cmr12!
-Missing character: There is no € in font cmr12!
-Missing character: There is no ™ in font cmr12!
 </home/basedul/Documents/Report-writing-using-latex/ResturentManagementSystemRe
-port/compari.png, id=467, 376.40625pt x 254.9525pt>
+port/compari.png, id=350, 376.40625pt x 254.9525pt>
 File: /home/basedul/Documents/Report-writing-using-latex/ResturentManagementSys
 temReport/compari.png Graphic file (type png)
 <use /home/basedul/Documents/Report-writing-using-latex/ResturentManagementSyst
 emReport/compari.png>
 Package pdftex.def Info: /home/basedul/Documents/Report-writing-using-latex/Res
-turentManagementSystemReport/compari.png  used on input line 415.
+turentManagementSystemReport/compari.png  used on input line 520.
 (pdftex.def)             Requested size: 426.81018pt x 289.07999pt.
 [12] [13pdfTeX warning (ext4): destination with the same identifier (name{figur
 e.5}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.439 \subsubsection
-                    {Entity Relationship Diagram} </home/basedul/Documents/Repo
-rt-writing-using-latex/ResturentManagementSystemReport/compari.png>]
-</home/basedul/Documents/Report-writing-using-latex/ResturentManagementSystemRe
-port/entityone.png, id=482, 506.89375pt x 569.12625pt>
-File: /home/basedul/Documents/Report-writing-using-latex/ResturentManagementSys
-temReport/entityone.png Graphic file (type png)
-<use /home/basedul/Documents/Report-writing-using-latex/ResturentManagementSyst
-emReport/entityone.png>
-Package pdftex.def Info: /home/basedul/Documents/Report-writing-using-latex/Res
-turentManagementSystemReport/entityone.png  used on input line 467.
-(pdftex.def)             Requested size: 418.40907pt x 469.75499pt.
-</home/basedul/Documents/Report-writing-using-latex/ResturentManagementSystemRe
-port/entitytwo.png, id=483, 505.89pt x 625.33624pt>
-File: /home/basedul/Documents/Report-writing-using-latex/ResturentManagementSys
-temReport/entitytwo.png Graphic file (type png)
-<use /home/basedul/Documents/Report-writing-using-latex/ResturentManagementSyst
-emReport/entitytwo.png>
-Package pdftex.def Info: /home/basedul/Documents/Report-writing-using-latex/Res
-turentManagementSystemReport/entitytwo.png  used on input line 473.
-(pdftex.def)             Requested size: 380.03409pt x 469.75499pt.
- [14]
-[15pdfTeX warning (ext4): destination with the same identifier (name{figure.6})
- has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.477 
-       </home/basedul/Documents/Report-writing-using-latex/ResturentManagementS
-ystemReport/entityone.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 488--491
-
- []
-
-[16pdfTeX warning (ext4): destination with the same identifier (name{figure.7})
- has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.491 \begin{itemize}
-                      </home/basedul/Documents/Report-writing-using-latex/Restu
-rentManagementSystemReport/entitytwo.png>]
-</home/basedul/Documents/Report-writing-using-latex/ResturentManagementSystemRe
-port/orderGui.png, id=499, 1304.875pt x 567.11874pt>
-File: /home/basedul/Documents/Report-writing-using-latex/ResturentManagementSys
-temReport/orderGui.png Graphic file (type png)
-<use /home/basedul/Documents/Report-writing-using-latex/ResturentManagementSyst
-emReport/orderGui.png>
-Package pdftex.def Info: /home/basedul/Documents/Report-writing-using-latex/Res
-turentManagementSystemReport/orderGui.png  used on input line 500.
-(pdftex.def)             Requested size: 498.84427pt x 216.81pt.
-
-Overfull \hbox (45.87637pt too wide) in paragraph at lines 500--501
- [][] 
- []
-
-</home/basedul/Documents/Report-writing-using-latex/ResturentManagementSystemRe
-port/clientGui.png, id=501, 1298.8525pt x 565.11125pt>
-File: /home/basedul/Documents/Report-writing-using-latex/ResturentManagementSys
-temReport/clientGui.png Graphic file (type png)
-<use /home/basedul/Documents/Report-writing-using-latex/ResturentManagementSyst
-emReport/clientGui.png>
-Package pdftex.def Info: /home/basedul/Documents/Report-writing-using-latex/Res
-turentManagementSystemReport/clientGui.png  used on input line 510.
-(pdftex.def)             Requested size: 498.30579pt x 216.81pt.
-
-Overfull \hbox (45.33789pt too wide) in paragraph at lines 510--511
- [][] 
- []
-
-[17pdfTeX warning (ext4): destination with the same identifier (name{figure.8})
- has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.514 
-       </home/basedul/Documents/Report-writing-using-latex/ResturentManagementS
-ystemReport/orderGui.png>]
-</home/basedul/Documents/Report-writing-using-latex/ResturentManagementSystemRe
-port/flowchart.png, id=508, 294.09875pt x 630.355pt>
-File: /home/basedul/Documents/Report-writing-using-latex/ResturentManagementSys
-temReport/flowchart.png Graphic file (type png)
-<use /home/basedul/Documents/Report-writing-using-latex/ResturentManagementSyst
-emReport/flowchart.png>
-Package pdftex.def Info: /home/basedul/Documents/Report-writing-using-latex/Res
-turentManagementSystemReport/flowchart.png  used on input line 521.
-(pdftex.def)             Requested size: 219.1689pt x 469.75499pt.
- [18pdfTeX warning (ext4): destination with the same identifier (name{figure.9}
-) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.525 \subsection
+l.633 \subsection
                  {Chapter Summary} </home/basedul/Documents/Report-writing-usin
-g-latex/ResturentManagementSystemReport/clientGui.png>] [19pdfTeX warning (ext4
-): destination with the same identifier (name{figure.10}) has been already used
-, duplicate ignored
+g-latex/ResturentManagementSystemReport/compari.png>] [14] [15] [16]
+Underfull \hbox (badness 10000) in paragraph at lines 6455--6458
 
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.528 \newpage
-               </home/basedul/Documents/Report-writing-using-latex/ResturentMan
-agementSystemReport/flowchart.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 542--545
-
- []
-
-Missing character: There is no â in font cmr12!
-Missing character: There is no € in font cmr12!
-Missing character: There is no ™ in font cmr12!
-Missing character: There is no Â in font cmr12!
-Missing character: There is no £ in font cmr12!
-Missing character: There is no Â in font cmr12!
-Missing character: There is no £ in font cmr12!
-Missing character: There is no â in font cmr12!
-Missing character: There is no € in font cmr12!
-Missing character: There is no ™ in font cmr12!
-[20]
-File: /home/basedul/Documents/Report-writing-using-latex/ResturentManagementSys
-temReport/clientGui.png Graphic file (type png)
-<use /home/basedul/Documents/Report-writing-using-latex/ResturentManagementSyst
-emReport/clientGui.png>
-Package pdftex.def Info: /home/basedul/Documents/Report-writing-using-latex/Res
-turentManagementSystemReport/clientGui.png  used on input line 576.
-(pdftex.def)             Requested size: 498.30579pt x 216.81pt.
-
-Overfull \hbox (45.33789pt too wide) in paragraph at lines 576--577
- [][] 
- []
-
-[21pdfTeX warning (ext4): destination with the same identifier (name{figure.11}
-) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.597 import 
-             FoodAddOnDatabase.VegeTofu;] [22] [23] [24] [25] [26]
-Overfull \hbox (2.32788pt too wide) in paragraph at lines 842--843
-[][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (8.07657pt too wide) in paragraph at lines 843--844
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
-][][] 
- []
-
-[27]
-Overfull \hbox (30.37546pt too wide) in paragraph at lines 873--874
-[][][][][][][][][][][]  
- []
-
-
-Overfull \hbox (44.86758pt too wide) in paragraph at lines 882--883
-[][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-[28] [29] [30] [31] [32] [33] [34] [35]
-Overfull \hbox (46.01776pt too wide) in paragraph at lines 1257--1258
-[][][][][][][][][][][][][][][][][][]  
- []
-
-
-Overfull \hbox (124.19977pt too wide) in paragraph at lines 1260--1261
-[][][][][][][][][][][][][][][][][][][][][]  
- []
-
-[36]
-Overfull \hbox (46.01776pt too wide) in paragraph at lines 1283--1284
-[][][][][][][][][][][][][][][][][][]  
- []
-
-
-Overfull \hbox (124.19977pt too wide) in paragraph at lines 1286--1287
-[][][][][][][][][][][][][][][][][][][][][]  
- []
-
-
-Overfull \hbox (124.19977pt too wide) in paragraph at lines 1292--1293
-[][][][][][][][][][][][][][][][][][][][][]  
- []
-
-
-Overfull \hbox (124.19977pt too wide) in paragraph at lines 1298--1299
-[][][][][][][][][][][][][][][][][][][][][]  
- []
-
-
-Overfull \hbox (124.19977pt too wide) in paragraph at lines 1302--1303
-[][][][][][][][][][][][][][][][][][][][][]  
- []
-
-[37]
-Overfull \hbox (124.19977pt too wide) in paragraph at lines 1306--1307
-[][][][][][][][][][][][][][][][][][][][][]  
- []
-
-[38]
-Overfull \hbox (51.76645pt too wide) in paragraph at lines 1347--1348
-[][][][][][][][][][][][][][][][][][]  
- []
-
-
-Overfull \hbox (20.72339pt too wide) in paragraph at lines 1351--1352
-[][][][][][][][][][][][][][][][][]  
- []
-
-
-Overfull \hbox (26.47208pt too wide) in paragraph at lines 1353--1354
-[][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (51.76645pt too wide) in paragraph at lines 1358--1359
-[][][][][][][][][][][][][][][][][][]  
- []
-
-
-Overfull \hbox (135.69714pt too wide) in paragraph at lines 1361--1362
-[][][][][][][][][][][][][][][][][][][][][]  
- []
-
-[39]
-Overfull \hbox (51.76645pt too wide) in paragraph at lines 1396--1397
-[][][][][][][][][][][][][][][][][][]  
- []
-
-
-Overfull \hbox (32.22076pt too wide) in paragraph at lines 1400--1401
-[][][][][][][][][][][][][][][][][]  
- []
-
-
-Overfull \hbox (51.76645pt too wide) in paragraph at lines 1407--1408
-[][][][][][][][][][][][][][][][][][]  
- []
-
-
-Overfull \hbox (135.69714pt too wide) in paragraph at lines 1410--1411
-[][][][][][][][][][][][][][][][][][][][][]  
- []
-
-[40]
-Overfull \hbox (226.5267pt too wide) in paragraph at lines 1464--1466
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-[41]
-Overfull \hbox (51.76645pt too wide) in paragraph at lines 1487--1488
-[][][][][][][][][][][][][][][][][][]  
- []
-
-
-Overfull \hbox (51.76645pt too wide) in paragraph at lines 1499--1500
-[][][][][][][][][][][][][][][][][][]  
- []
-
-
-Overfull \hbox (135.69714pt too wide) in paragraph at lines 1501--1502
-[][][][][][][][][][][][][][][][][][][][][]  
- []
-
-
-Overfull \hbox (20.72339pt too wide) in paragraph at lines 1504--1505
-[][][][][][][][][][][][][][][][][]  
- []
-
-[42]
-Overfull \hbox (51.76645pt too wide) in paragraph at lines 1512--1513
-[][][][][][][][][][][][][][][][][][]  
- []
-
-
-Overfull \hbox (129.94846pt too wide) in paragraph at lines 1516--1517
-[][][][][][][][][][][][][][][][][][][][][]  
- []
-
-
-Overfull \hbox (62.11365pt too wide) in paragraph at lines 1519--1520
-[][][][][][][][][][][][][][][][][]  
- []
-
-
-Overfull \hbox (62.11365pt too wide) in paragraph at lines 1521--1522
-[][][][][][][][][][][][][][][][][]  
- []
-
-
-Overfull \hbox (171.33871pt too wide) in paragraph at lines 1524--1525
-[][][][][][][][][][][][][][][][][][][][][]  
- []
-
-
-Overfull \hbox (103.5039pt too wide) in paragraph at lines 1527--1528
-[][][][][][][][][][][][][][][][][]  
- []
-
-
-Overfull \hbox (20.72339pt too wide) in paragraph at lines 1535--1536
-[][][][][][][][][][][][][][][][][]  
- []
-
-
-Overfull \hbox (51.76645pt too wide) in paragraph at lines 1540--1541
-[][][][][][][][][][][][][][][][][][]  
- []
-
-
-Overfull \hbox (135.69714pt too wide) in paragraph at lines 1542--1543
-[][][][][][][][][][][][][][][][][][][][][]  
- []
-
-[43]
-Overfull \hbox (150.64359pt too wide) in paragraph at lines 1544--1545
-[][][][][][][][][][][][][][][][][][][][][]  
- []
-
-
-Overfull \hbox (177.0874pt too wide) in paragraph at lines 1546--1547
-[][][][][][][][][][][][][][][][][][][][][]  
- []
-
-
-Overfull \hbox (212.72897pt too wide) in paragraph at lines 1553--1554
-[][][][][][][][][][][][][][][][][][][][][]  
- []
-
-
-Overfull \hbox (9.22528pt too wide) in paragraph at lines 1554--1555
-[][][][][][][][][][][]  
- []
-
-
-Overfull \hbox (218.47766pt too wide) in paragraph at lines 1559--1560
-[][][][][][][][][][][][][][][][][][][][][]  
- []
-
-
-Overfull \hbox (212.72897pt too wide) in paragraph at lines 1562--1563
-[][][][][][][][][][][][][][][][][][][][][]  
- []
-
-
-Overfull \hbox (9.22528pt too wide) in paragraph at lines 1563--1564
-[][][][][][][][][][][]  
- []
-
-
-Overfull \hbox (9.22528pt too wide) in paragraph at lines 1566--1567
-[][][][][][][][][][][]  
- []
-
-
-Overfull \hbox (144.89417pt too wide) in paragraph at lines 1567--1568
-[][][][][][][][][][][][][][][][][]  
- []
-
-
-Overfull \hbox (3.93091pt too wide) in paragraph at lines 1568--1569
-[][][][][][][][][][] 
- []
-
-
-Overfull \hbox (32.67435pt too wide) in paragraph at lines 1568--1569
-[][][][][][][][][][][][][][][]  
- []
-
-[44]
-Overfull \hbox (226.5267pt too wide) in paragraph at lines 1620--1622
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-[45]
-Overfull \hbox (51.76645pt too wide) in paragraph at lines 1643--1644
-[][][][][][][][][][][][][][][][][][]  
- []
-
-
-Overfull \hbox (51.76645pt too wide) in paragraph at lines 1655--1656
-[][][][][][][][][][][][][][][][][][]  
- []
-
-
-Overfull \hbox (135.69714pt too wide) in paragraph at lines 1657--1658
-[][][][][][][][][][][][][][][][][][][][][]  
- []
-
-[46]
-Overfull \hbox (20.72339pt too wide) in paragraph at lines 1660--1661
-[][][][][][][][][][][][][][][][][]  
- []
-
-
-Overfull \hbox (51.76645pt too wide) in paragraph at lines 1668--1669
-[][][][][][][][][][][][][][][][][][]  
- []
-
-
-Overfull \hbox (129.94846pt too wide) in paragraph at lines 1672--1673
-[][][][][][][][][][][][][][][][][][][][][]  
- []
-
-
-Overfull \hbox (129.94846pt too wide) in paragraph at lines 1677--1678
-[][][][][][][][][][][][][][][][][][][][][]  
- []
-
-
-Overfull \hbox (20.72339pt too wide) in paragraph at lines 1687--1688
-[][][][][][][][][][][][][][][][][]  
- []
-
-[47]
-Overfull \hbox (51.76645pt too wide) in paragraph at lines 1691--1692
-[][][][][][][][][][][][][][][][][][]  
- []
-
-
-Overfull \hbox (129.94846pt too wide) in paragraph at lines 1703--1704
-[][][][][][][][][][][][][][][][][][][][][]  
- []
-
-
-Overfull \hbox (129.94846pt too wide) in paragraph at lines 1707--1708
-[][][][][][][][][][][][][][][][][][][][][]  
- []
-
-[48]
-Overfull \hbox (226.5267pt too wide) in paragraph at lines 1771--1773
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-[49]
-Overfull \hbox (51.76645pt too wide) in paragraph at lines 1794--1795
-[][][][][][][][][][][][][][][][][][]  
- []
-
-
-Overfull \hbox (51.76645pt too wide) in paragraph at lines 1806--1807
-[][][][][][][][][][][][][][][][][][]  
- []
-
-
-Overfull \hbox (135.69714pt too wide) in paragraph at lines 1808--1809
-[][][][][][][][][][][][][][][][][][][][][]  
- []
-
-[50]
-Overfull \hbox (20.72339pt too wide) in paragraph at lines 1811--1812
-[][][][][][][][][][][][][][][][][]  
- []
-
-
-Overfull \hbox (51.76645pt too wide) in paragraph at lines 1819--1820
-[][][][][][][][][][][][][][][][][][]  
- []
-
-
-Overfull \hbox (129.94846pt too wide) in paragraph at lines 1823--1824
-[][][][][][][][][][][][][][][][][][][][][]  
- []
-
-
-Overfull \hbox (129.94846pt too wide) in paragraph at lines 1828--1829
-[][][][][][][][][][][][][][][][][][][][][]  
- []
-
-
-Overfull \hbox (32.22076pt too wide) in paragraph at lines 1838--1839
-[][][][][][][][][][][][][][][][][]  
- []
-
-[51]
-Overfull \hbox (51.76645pt too wide) in paragraph at lines 1842--1843
-[][][][][][][][][][][][][][][][][][]  
- []
-
-
-Overfull \hbox (129.94846pt too wide) in paragraph at lines 1853--1854
-[][][][][][][][][][][][][][][][][][][][][]  
- []
-
-
-Overfull \hbox (129.94846pt too wide) in paragraph at lines 1857--1858
-[][][][][][][][][][][][][][][][][][][][][]  
- []
-
-
-Overfull \hbox (115.00201pt too wide) in paragraph at lines 1862--1863
-[][][][][][][][][][][][][][][][][][][][][]  
- []
-
-[52]
-Overfull \hbox (226.5267pt too wide) in paragraph at lines 1915--1917
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-[53]
-Overfull \hbox (51.76645pt too wide) in paragraph at lines 1938--1939
-[][][][][][][][][][][][][][][][][][]  
- []
-
-
-Overfull \hbox (51.76645pt too wide) in paragraph at lines 1950--1951
-[][][][][][][][][][][][][][][][][][]  
- []
-
-
-Overfull \hbox (135.69714pt too wide) in paragraph at lines 1952--1953
-[][][][][][][][][][][][][][][][][][][][][]  
- []
-
-
-Overfull \hbox (20.72339pt too wide) in paragraph at lines 1955--1956
-[][][][][][][][][][][][][][][][][]  
- []
-
-[54]
-Overfull \hbox (51.76645pt too wide) in paragraph at lines 1963--1964
-[][][][][][][][][][][][][][][][][][]  
- []
-
-
-Overfull \hbox (129.94846pt too wide) in paragraph at lines 1967--1968
-[][][][][][][][][][][][][][][][][][][][][]  
- []
-
-
-Overfull \hbox (129.94846pt too wide) in paragraph at lines 1972--1973
-[][][][][][][][][][][][][][][][][][][][][]  
- []
-
-
-Overfull \hbox (26.47208pt too wide) in paragraph at lines 1982--1983
-[][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (51.76645pt too wide) in paragraph at lines 1987--1988
-[][][][][][][][][][][][][][][][][][]  
- []
-
-[55]
-Overfull \hbox (129.94846pt too wide) in paragraph at lines 1998--1999
-[][][][][][][][][][][][][][][][][][][][][]  
- []
-
-
-Overfull \hbox (129.94846pt too wide) in paragraph at lines 2002--2003
-[][][][][][][][][][][][][][][][][][][][][]  
- []
-
-
-Overfull \hbox (115.00201pt too wide) in paragraph at lines 2007--2008
-[][][][][][][][][][][][][][][][][][][][][]  
- []
-
-[56]
-Overfull \hbox (226.5267pt too wide) in paragraph at lines 2060--2062
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-[57]
-Overfull \hbox (51.76645pt too wide) in paragraph at lines 2083--2084
-[][][][][][][][][][][][][][][][][][]  
- []
-
-
-Overfull \hbox (51.76645pt too wide) in paragraph at lines 2095--2096
-[][][][][][][][][][][][][][][][][][]  
- []
-
-
-Overfull \hbox (135.69714pt too wide) in paragraph at lines 2097--2098
-[][][][][][][][][][][][][][][][][][][][][]  
- []
-
-
-Overfull \hbox (20.72339pt too wide) in paragraph at lines 2100--2101
-[][][][][][][][][][][][][][][][][]  
- []
-
-
-Overfull \hbox (51.76645pt too wide) in paragraph at lines 2108--2109
-[][][][][][][][][][][][][][][][][][]  
- []
-
-[58]
-Overfull \hbox (129.94846pt too wide) in paragraph at lines 2112--2113
-[][][][][][][][][][][][][][][][][][][][][]  
- []
-
-
-Overfull \hbox (129.94846pt too wide) in paragraph at lines 2117--2118
-[][][][][][][][][][][][][][][][][][][][][]  
- []
-
-
-Overfull \hbox (20.72339pt too wide) in paragraph at lines 2127--2128
-[][][][][][][][][][][][][][][][][]  
- []
-
-
-Overfull \hbox (51.76645pt too wide) in paragraph at lines 2131--2132
-[][][][][][][][][][][][][][][][][][]  
- []
-
-[59]
-Overfull \hbox (129.94846pt too wide) in paragraph at lines 2142--2143
-[][][][][][][][][][][][][][][][][][][][][]  
- []
-
-
-Overfull \hbox (129.94846pt too wide) in paragraph at lines 2146--2147
-[][][][][][][][][][][][][][][][][][][][][]  
- []
-
-
-Overfull \hbox (115.00201pt too wide) in paragraph at lines 2151--2152
-[][][][][][][][][][][][][][][][][][][][][]  
- []
-
-[60]
-Overfull \hbox (226.5267pt too wide) in paragraph at lines 2204--2206
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-[61]
-Overfull \hbox (51.76645pt too wide) in paragraph at lines 2227--2228
-[][][][][][][][][][][][][][][][][][]  
- []
-
-
-Overfull \hbox (51.76645pt too wide) in paragraph at lines 2239--2240
-[][][][][][][][][][][][][][][][][][]  
- []
-
-
-Overfull \hbox (135.69714pt too wide) in paragraph at lines 2241--2242
-[][][][][][][][][][][][][][][][][][][][][]  
- []
-
-
-Overfull \hbox (20.72339pt too wide) in paragraph at lines 2244--2245
-[][][][][][][][][][][][][][][][][]  
- []
-
-
-Overfull \hbox (51.76645pt too wide) in paragraph at lines 2252--2253
-[][][][][][][][][][][][][][][][][][]  
- []
-
-
-Overfull \hbox (129.94846pt too wide) in paragraph at lines 2256--2257
-[][][][][][][][][][][][][][][][][][][][][]  
- []
-
-[62]
-Overfull \hbox (129.94846pt too wide) in paragraph at lines 2261--2262
-[][][][][][][][][][][][][][][][][][][][][]  
- []
-
-
-Overfull \hbox (26.47208pt too wide) in paragraph at lines 2271--2272
-[][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (51.76645pt too wide) in paragraph at lines 2276--2277
-[][][][][][][][][][][][][][][][][][]  
- []
-
-
-Overfull \hbox (129.94846pt too wide) in paragraph at lines 2287--2288
-[][][][][][][][][][][][][][][][][][][][][]  
- []
-
-[63]
-Overfull \hbox (129.94846pt too wide) in paragraph at lines 2291--2292
-[][][][][][][][][][][][][][][][][][][][][]  
- []
-
-
-Overfull \hbox (115.00201pt too wide) in paragraph at lines 2296--2297
-[][][][][][][][][][][][][][][][][][][][][]  
- []
-
-[64]
-Overfull \hbox (226.5267pt too wide) in paragraph at lines 2349--2351
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (51.76645pt too wide) in paragraph at lines 2372--2373
-[][][][][][][][][][][][][][][][][][]  
- []
-
-[65]
-Overfull \hbox (51.76645pt too wide) in paragraph at lines 2384--2385
-[][][][][][][][][][][][][][][][][][]  
- []
-
-
-Overfull \hbox (135.69714pt too wide) in paragraph at lines 2386--2387
-[][][][][][][][][][][][][][][][][][][][][]  
- []
-
-
-Overfull \hbox (20.72339pt too wide) in paragraph at lines 2389--2390
-[][][][][][][][][][][][][][][][][]  
- []
-
-
-Overfull \hbox (51.76645pt too wide) in paragraph at lines 2397--2398
-[][][][][][][][][][][][][][][][][][]  
- []
-
-
-Overfull \hbox (129.94846pt too wide) in paragraph at lines 2401--2402
-[][][][][][][][][][][][][][][][][][][][][]  
- []
-
-
-Overfull \hbox (129.94846pt too wide) in paragraph at lines 2406--2407
-[][][][][][][][][][][][][][][][][][][][][]  
- []
-
-[66]
-Overfull \hbox (26.47208pt too wide) in paragraph at lines 2416--2417
-[][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (51.76645pt too wide) in paragraph at lines 2421--2422
-[][][][][][][][][][][][][][][][][][]  
- []
-
-
-Overfull \hbox (129.94846pt too wide) in paragraph at lines 2433--2434
-[][][][][][][][][][][][][][][][][][][][][]  
- []
-
-
-Overfull \hbox (129.94846pt too wide) in paragraph at lines 2437--2438
-[][][][][][][][][][][][][][][][][][][][][]  
- []
-
-[67] [68]
-Overfull \hbox (226.5267pt too wide) in paragraph at lines 2496--2498
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (51.76645pt too wide) in paragraph at lines 2519--2520
-[][][][][][][][][][][][][][][][][][]  
- []
-
-[69]
-Overfull \hbox (51.76645pt too wide) in paragraph at lines 2531--2532
-[][][][][][][][][][][][][][][][][][]  
- []
-
-
-Overfull \hbox (135.69714pt too wide) in paragraph at lines 2533--2534
-[][][][][][][][][][][][][][][][][][][][][]  
- []
-
-
-Overfull \hbox (20.72339pt too wide) in paragraph at lines 2536--2537
-[][][][][][][][][][][][][][][][][]  
- []
-
-
-Overfull \hbox (51.76645pt too wide) in paragraph at lines 2544--2545
-[][][][][][][][][][][][][][][][][][]  
- []
-
-
-Overfull \hbox (129.94846pt too wide) in paragraph at lines 2548--2549
-[][][][][][][][][][][][][][][][][][][][][]  
- []
-
-
-Overfull \hbox (129.94846pt too wide) in paragraph at lines 2553--2554
-[][][][][][][][][][][][][][][][][][][][][]  
- []
-
-[70]
-Overfull \hbox (20.72339pt too wide) in paragraph at lines 2563--2564
-[][][][][][][][][][][][][][][][][]  
- []
-
-
-Overfull \hbox (51.76645pt too wide) in paragraph at lines 2567--2568
-[][][][][][][][][][][][][][][][][][]  
- []
-
-
-Overfull \hbox (129.94846pt too wide) in paragraph at lines 2578--2579
-[][][][][][][][][][][][][][][][][][][][][]  
- []
-
-
-Overfull \hbox (129.94846pt too wide) in paragraph at lines 2582--2583
-[][][][][][][][][][][][][][][][][][][][][]  
- []
-
-
-Overfull \hbox (115.00201pt too wide) in paragraph at lines 2587--2588
-[][][][][][][][][][][][][][][][][][][][][]  
- []
-
-[71] [72]
-Overfull \hbox (226.5267pt too wide) in paragraph at lines 2640--2642
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (51.76645pt too wide) in paragraph at lines 2663--2664
-[][][][][][][][][][][][][][][][][][]  
- []
-
-[73]
-Overfull \hbox (51.76645pt too wide) in paragraph at lines 2675--2676
-[][][][][][][][][][][][][][][][][][]  
- []
-
-
-Overfull \hbox (135.69714pt too wide) in paragraph at lines 2677--2678
-[][][][][][][][][][][][][][][][][][][][][]  
- []
-
-
-Overfull \hbox (20.72339pt too wide) in paragraph at lines 2680--2681
-[][][][][][][][][][][][][][][][][]  
- []
-
-
-Overfull \hbox (51.76645pt too wide) in paragraph at lines 2688--2689
-[][][][][][][][][][][][][][][][][][]  
- []
-
-
-Overfull \hbox (129.94846pt too wide) in paragraph at lines 2692--2693
-[][][][][][][][][][][][][][][][][][][][][]  
- []
-
-
-Overfull \hbox (129.94846pt too wide) in paragraph at lines 2697--2698
-[][][][][][][][][][][][][][][][][][][][][]  
- []
-
-[74]
-Overfull \hbox (32.22076pt too wide) in paragraph at lines 2707--2708
-[][][][][][][][][][][][][][][][][]  
- []
-
-
-Overfull \hbox (51.76645pt too wide) in paragraph at lines 2712--2713
-[][][][][][][][][][][][][][][][][][]  
- []
-
-
-Overfull \hbox (135.69714pt too wide) in paragraph at lines 2714--2715
-[][][][][][][][][][][][][][][][][][][][][]  
- []
-
-
-Overfull \hbox (150.64359pt too wide) in paragraph at lines 2716--2717
-[][][][][][][][][][][][][][][][][][][][][]  
- []
-
-
-Overfull \hbox (192.03384pt too wide) in paragraph at lines 2728--2729
-[][][][][][][][][][][][][][][][][][][][][]  
- []
-
-
-Overfull \hbox (192.03384pt too wide) in paragraph at lines 2732--2733
-[][][][][][][][][][][][][][][][][][][][][]  
- []
-
-[75]
-Overfull \hbox (46.01776pt too wide) in paragraph at lines 2764--2765
-[][][][][][][][][][][][][][][][][][]  
- []
-
-
-Overfull \hbox (129.94846pt too wide) in paragraph at lines 2767--2768
-[][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-[76]
-Overfull \hbox (165.59003pt too wide) in paragraph at lines 2781--2782
-[][][][][][][][][][][][][][][][][][][][][]  
- []
-
-
-Overfull \hbox (165.59003pt too wide) in paragraph at lines 2784--2785
-[][][][][][][][][][][][][][][][][][][][][]  
- []
-
-
-Overfull \hbox (46.01776pt too wide) in paragraph at lines 2793--2794
-[][][][][][][][][][][][][][][][][][]  
- []
-
-
-Overfull \hbox (124.19977pt too wide) in paragraph at lines 2795--2796
-[][][][][][][][][][][][][][][][][][][][][]  
- []
-
-
-Overfull \hbox (124.19977pt too wide) in paragraph at lines 2801--2802
-[][][][][][][][][][][][][][][][][][][][][]  
- []
-
-
-Overfull \hbox (129.94846pt too wide) in paragraph at lines 2805--2806
-[][][][][][][][][][][][][][][][][][][][][]  
- []
-
-
-Overfull \hbox (124.19977pt too wide) in paragraph at lines 2809--2810
-[][][][][][][][][][][][][][][][][][][][][]  
- []
-
-
-Overfull \hbox (124.19977pt too wide) in paragraph at lines 2813--2814
-[][][][][][][][][][][][][][][][][][][][][]  
- []
-
-[77]
-Overfull \hbox (46.01776pt too wide) in paragraph at lines 2842--2843
-[][][][][][][][][][][][][][][][][][]  
- []
-
-
-Overfull \hbox (124.19977pt too wide) in paragraph at lines 2844--2845
-[][][][][][][][][][][][][][][][][][][][][]  
- []
-
-
-Overfull \hbox (46.01776pt too wide) in paragraph at lines 2852--2853
-[][][][][][][][][][][][][][][][][][]  
- []
-
-[78]
-Overfull \hbox (20.72339pt too wide) in paragraph at lines 2857--2858
-[][][][][][][][][][][][][][][][][]  
- []
-
-
-Overfull \hbox (20.72339pt too wide) in paragraph at lines 2859--2860
-[][][][][][][][][][][][][][][][][]  
- []
-
-
-Overfull \hbox (46.01776pt too wide) in paragraph at lines 2871--2872
-[][][][][][][][][][][][][][][][][][]  
- []
-
-
-Overfull \hbox (20.72339pt too wide) in paragraph at lines 2875--2876
-[][][][][][][][][][][][][][][][][]  
- []
-
-
-Overfull \hbox (46.01776pt too wide) in paragraph at lines 2880--2881
-[][][][][][][][][][][][][][][][][][]  
- []
-
-
-Overfull \hbox (129.94846pt too wide) in paragraph at lines 2883--2884
-[][][][][][][][][][][][][][][][][][][][][]  
- []
-
-[79]
-Overfull \hbox (324.2544pt too wide) in paragraph at lines 2918--2920
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-[80]
-Overfull \hbox (51.76645pt too wide) in paragraph at lines 2968--2969
-[][][][][][][][][][][][][][][][][][]  
- []
-
-
-Overfull \hbox (109.25333pt too wide) in paragraph at lines 2975--2976
-[][][][][][][][][][][][][][][][][][][][][]  
- []
-
-[81]
-Overfull \hbox (51.76645pt too wide) in paragraph at lines 2982--2983
-[][][][][][][][][][][][][][][][][][]  
- []
-
-
-Overfull \hbox (135.69714pt too wide) in paragraph at lines 2985--2986
-[][][][][][][][][][][][][][][][][][][][][]  
- []
-
-
-Overfull \hbox (109.25333pt too wide) in paragraph at lines 2989--2990
-[][][][][][][][][][][][][][][][][][][][][]  
- []
-
-
-Overfull \hbox (318.5057pt too wide) in paragraph at lines 2996--2998
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (485.21765pt too wide) in paragraph at lines 3012--3014
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-[82] [83]
-Overfull \hbox (51.76645pt too wide) in paragraph at lines 3089--3090
-[][][][][][][][][][][][][][][][][][]  
- []
-
-
-Overfull \hbox (129.94846pt too wide) in paragraph at lines 3092--3093
-[][][][][][][][][][][][][][][][][][][][][]  
- []
-
-
-Overfull \hbox (73.61102pt too wide) in paragraph at lines 3095--3096
-[][][][][][][][][][][][][][][][][]  
- []
-
-
-Overfull \hbox (73.61102pt too wide) in paragraph at lines 3097--3098
-[][][][][][][][][][][][][][][][][]  
- []
-
-
-Overfull \hbox (73.61102pt too wide) in paragraph at lines 3099--3100
-[][][][][][][][][][][][][][][][][]  
- []
-
-
-Overfull \hbox (73.61102pt too wide) in paragraph at lines 3101--3102
-[][][][][][][][][][][][][][][][][]  
- []
-
-[84]
-Overfull \hbox (73.61102pt too wide) in paragraph at lines 3105--3106
-[][][][][][][][][][][][][][][][][]  
- []
-
-
-Overfull \hbox (73.61102pt too wide) in paragraph at lines 3107--3108
-[][][][][][][][][][][][][][][][][]  
- []
-
-
-Overfull \hbox (51.76645pt too wide) in paragraph at lines 3113--3114
-[][][][][][][][][][][][][][][][][][]  
- []
-
-
-Overfull \hbox (135.69714pt too wide) in paragraph at lines 3116--3117
-[][][][][][][][][][][][][][][][][][][][][]  
- []
-
-
-Overfull \hbox (135.69714pt too wide) in paragraph at lines 3123--3124
-[][][][][][][][][][][][][][][][][][][][][]  
- []
-
-[85]
-Overfull \hbox (46.01776pt too wide) in paragraph at lines 3149--3150
-[][][][][][][][][][][][][][][][][][]  
- []
-
-
-Overfull \hbox (124.19977pt too wide) in paragraph at lines 3152--3153
-[][][][][][][][][][][][][][][][][][][][][]  
- []
-
-
-Overfull \hbox (124.19977pt too wide) in paragraph at lines 3155--3156
-[][][][][][][][][][][][][][][][][][][][][]  
- []
-
-
-Overfull \hbox (67.86234pt too wide) in paragraph at lines 3157--3158
-[][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (67.86234pt too wide) in paragraph at lines 3161--3162
-[][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (165.59003pt too wide) in paragraph at lines 3162--3163
-[][][][][][][][][][][][][][][][][][][][][]  
- []
-
-
-Overfull \hbox (2.32715pt too wide) in paragraph at lines 3163--3164
-[][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (2.32715pt too wide) in paragraph at lines 3166--3167
-[][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (46.01776pt too wide) in paragraph at lines 3171--3172
-[][][][][][][][][][][][][][][][][][]  
- []
-
-
-Overfull \hbox (129.94846pt too wide) in paragraph at lines 3173--3174
-[][][][][][][][][][][][][][][][][][][][][]  
- []
-
-
-Overfull \hbox (62.11365pt too wide) in paragraph at lines 3177--3178
-[][][][][][][][][][][][][][][][][]  
- []
-
-[86]
-Overfull \hbox (46.01776pt too wide) in paragraph at lines 3193--3194
-[][][][][][][][][][][][][][][][][][]  
- []
-
-
-Overfull \hbox (46.01776pt too wide) in paragraph at lines 3200--3201
-[][][][][][][][][][][][][][][][][][]  
- []
-
-
-Overfull \hbox (5.77695pt too wide) in paragraph at lines 3210--3211
-[][][][][][][][][][][][][][][][][][]  
- []
-
-
-Overfull \hbox (83.95895pt too wide) in paragraph at lines 3213--3214
-[][][][][][][][][][][][][][][][][][][][][]  
- []
-
-[87]
-Overfull \hbox (5.77695pt too wide) in paragraph at lines 3222--3223
-[][][][][][][][][][][][][][][][][][]  
- []
-
-
-Overfull \hbox (32.22076pt too wide) in paragraph at lines 3226--3227
-[][][][][][][][][][][][][][][][][]  
- []
-
-[88] [89] [90] [91] [92] [93] [94] [95] [96] [97] [98] [99] [100] [101]
-[102] [103] [104] [105] [106] [107] [108] [109] [110]
-Overfull \hbox (2.32788pt too wide) in paragraph at lines 4240--4241
-[][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (8.07657pt too wide) in paragraph at lines 4241--4242
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
-][][] 
- []
-
-[111]
-Overfull \hbox (11.52563pt too wide) in paragraph at lines 4287--4288
-[][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (27.50166pt too wide) in paragraph at lines 4298--4299
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
-][][][][][][][][][][][][][][][][][][][]  
- []
-
-[112]
-Overfull \hbox (189.73495pt too wide) in paragraph at lines 4308--4309
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (189.73495pt too wide) in paragraph at lines 4310--4311
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (189.73495pt too wide) in paragraph at lines 4312--4313
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (189.73495pt too wide) in paragraph at lines 4314--4315
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-[113] [114] [115] [116] [117] [118]
-</home/basedul/Documents/Report-writing-using-latex/ResturentManagementSystemRe
-port/signin.png, id=5000, 373.395pt x 309.155pt>
-File: /home/basedul/Documents/Report-writing-using-latex/ResturentManagementSys
-temReport/signin.png Graphic file (type png)
-<use /home/basedul/Documents/Report-writing-using-latex/ResturentManagementSyst
-emReport/signin.png>
-Package pdftex.def Info: /home/basedul/Documents/Report-writing-using-latex/Res
-turentManagementSystemReport/signin.png  used on input line 4604.
-(pdftex.def)             Requested size: 436.47156pt x 361.34999pt.
- [119pdfTeX warning (ext4): destination with the same identifier (name{figure.1
-2}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.4623 import 
-              java.sql.SQLException; </home/basedul/Documents/Report-writing-us
-ing-latex/ResturentManagementSystemReport/signin.png>]
-Overfull \hbox (20.02826pt too wide) in paragraph at lines 4656--4657
-[][][][][][][][][][][]  
- []
-
-
-Overfull \hbox (23.02301pt too wide) in paragraph at lines 4661--4662
-[][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-[120]
-Overfull \hbox (30.37546pt too wide) in paragraph at lines 4681--4682
-[][][][][][][][][][][]  
- []
-
-
-Overfull \hbox (36.81927pt too wide) in paragraph at lines 4693--4694
-[][][][][][][][][][][][][]  
- []
-
-
-Overfull \hbox (39.1189pt too wide) in paragraph at lines 4701--4702
-[][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-[121]
-Overfull \hbox (238.02408pt too wide) in paragraph at lines 4739--4741
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-[122]
-Overfull \hbox (46.01776pt too wide) in paragraph at lines 4784--4785
-[][][][][][][][][][][][][][][][][][]  
- []
-
-
-Overfull \hbox (135.69714pt too wide) in paragraph at lines 4786--4787
-[][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (171.33871pt too wide) in paragraph at lines 4789--4790
-[][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (171.33871pt too wide) in paragraph at lines 4793--4794
-[][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-[123]
-Overfull \hbox (165.59003pt too wide) in paragraph at lines 4798--4799
-[][][][][][][][][][][][][][][][][][][][][]  
- []
-
-
-Overfull \hbox (109.2526pt too wide) in paragraph at lines 4801--4802
-[][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (46.01776pt too wide) in paragraph at lines 4811--4812
-[][][][][][][][][][][][][][][][][][]  
- []
-
-
-Overfull \hbox (129.94846pt too wide) in paragraph at lines 4814--4815
-[][][][][][][][][][][][][][][][][][][][][]  
- []
-
-
-Overfull \hbox (124.19977pt too wide) in paragraph at lines 4817--4818
-[][][][][][][][][][][][][][][][][][][][][]  
- []
-
-
-Overfull \hbox (129.94846pt too wide) in paragraph at lines 4825--4826
-[][][][][][][][][][][][][][][][][][][][][]  
- []
-
-
-Overfull \hbox (129.94846pt too wide) in paragraph at lines 4829--4830
-[][][][][][][][][][][][][][][][][][][][][]  
- []
-
-[124]
-Overfull \hbox (5.77695pt too wide) in paragraph at lines 4838--4839
-[][][][][][][][][][][][][][][][][][]  
- []
-
-
-Overfull \hbox (5.77695pt too wide) in paragraph at lines 4845--4846
-[][][][][][][][][][][][][][][][][][]  
- []
-
-[125]
-Overfull \hbox (27.50166pt too wide) in paragraph at lines 4881--4882
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
-][][][][][][][][][][][][][][][][][][][]  
- []
-
-
-Overfull \hbox (183.98627pt too wide) in paragraph at lines 4891--4892
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (183.98627pt too wide) in paragraph at lines 4893--4894
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (183.98627pt too wide) in paragraph at lines 4895--4896
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (183.98627pt too wide) in paragraph at lines 4897--4898
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-[126]
-</home/basedul/Documents/Report-writing-using-latex/ResturentManagementSystemRe
-port/signup.png, id=5337, 375.4025pt x 511.9125pt>
-File: /home/basedul/Documents/Report-writing-using-latex/ResturentManagementSys
-temReport/signup.png Graphic file (type png)
-<use /home/basedul/Documents/Report-writing-using-latex/ResturentManagementSyst
-emReport/signup.png>
-Package pdftex.def Info: /home/basedul/Documents/Report-writing-using-latex/Res
-turentManagementSystemReport/signup.png  used on input line 4927.
-(pdftex.def)             Requested size: 264.99103pt x 361.34999pt.
- [127pdfTeX warning (ext4): destination with the same identifier (name{figure.1
-3}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.4932 		/*
-            </home/basedul/Documents/Report-writing-using-latex/ResturentManage
-mentSystemReport/signup.png>] [128]
-Overfull \hbox (25.32263pt too wide) in paragraph at lines 5020--5021
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][]  
- []
-
-[129]
-Overfull \hbox (46.01776pt too wide) in paragraph at lines 5033--5034
-[][][][][][][][][][][][][][][][][][]  
- []
-
-
-Overfull \hbox (20.72339pt too wide) in paragraph at lines 5037--5038
-[][][][][][][][][][][][][][][][][]  
- []
-
-
-Overfull \hbox (46.01776pt too wide) in paragraph at lines 5042--5043
-[][][][][][][][][][][][][][][][][][]  
- []
-
-
-Overfull \hbox (129.94846pt too wide) in paragraph at lines 5045--5046
-[][][][][][][][][][][][][][][][][][][][][]  
- []
-
-[130]
-Overfull \hbox (46.01776pt too wide) in paragraph at lines 5061--5062
-[][][][][][][][][][][][][][][][][][]  
- []
-
-
-Overfull \hbox (20.72339pt too wide) in paragraph at lines 5065--5066
-[][][][][][][][][][][][][][][][][]  
- []
-
-
-Overfull \hbox (46.01776pt too wide) in paragraph at lines 5070--5071
-[][][][][][][][][][][][][][][][][][]  
- []
-
-
-Overfull \hbox (129.94846pt too wide) in paragraph at lines 5073--5074
-[][][][][][][][][][][][][][][][][][][][][]  
- []
-
-
-Overfull \hbox (46.01776pt too wide) in paragraph at lines 5093--5094
-[][][][][][][][][][][][][][][][][][]  
- []
-
-[131]
-Overfull \hbox (20.72339pt too wide) in paragraph at lines 5097--5098
-[][][][][][][][][][][][][][][][][]  
- []
-
-
-Overfull \hbox (46.01776pt too wide) in paragraph at lines 5102--5103
-[][][][][][][][][][][][][][][][][][]  
- []
-
-
-Overfull \hbox (129.94846pt too wide) in paragraph at lines 5105--5106
-[][][][][][][][][][][][][][][][][][][][][]  
- []
-
-
-Overfull \hbox (46.01776pt too wide) in paragraph at lines 5121--5122
-[][][][][][][][][][][][][][][][][][]  
- []
-
-
-Overfull \hbox (20.72339pt too wide) in paragraph at lines 5125--5126
-[][][][][][][][][][][][][][][][][]  
- []
-
-
-Overfull \hbox (46.01776pt too wide) in paragraph at lines 5130--5131
-[][][][][][][][][][][][][][][][][][]  
- []
-
-[132]
-Overfull \hbox (124.19977pt too wide) in paragraph at lines 5133--5134
-[][][][][][][][][][][][][][][][][][][][][]  
- []
-
-
-Overfull \hbox (46.01776pt too wide) in paragraph at lines 5147--5148
-[][][][][][][][][][][][][][][][][][]  
- []
-
-
-Overfull \hbox (20.72339pt too wide) in paragraph at lines 5151--5152
-[][][][][][][][][][][][][][][][][]  
- []
-
-
-Overfull \hbox (46.01776pt too wide) in paragraph at lines 5156--5157
-[][][][][][][][][][][][][][][][][][]  
- []
-
-
-Overfull \hbox (129.94846pt too wide) in paragraph at lines 5159--5160
-[][][][][][][][][][][][][][][][][][][][][]  
- []
-
-[133]
-Overfull \hbox (46.01776pt too wide) in paragraph at lines 5175--5176
-[][][][][][][][][][][][][][][][][][]  
- []
-
-
-Overfull \hbox (26.47208pt too wide) in paragraph at lines 5179--5180
-[][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (46.01776pt too wide) in paragraph at lines 5184--5185
-[][][][][][][][][][][][][][][][][][]  
- []
-
-
-Overfull \hbox (129.94846pt too wide) in paragraph at lines 5187--5188
-[][][][][][][][][][][][][][][][][][][][][]  
- []
-
-[134]
-Overfull \hbox (46.01776pt too wide) in paragraph at lines 5226--5227
-[][][][][][][][][][][][][][][][][][]  
- []
-
-
-Overfull \hbox (124.19977pt too wide) in paragraph at lines 5229--5230
-[][][][][][][][][][][][][][][][][][][][][]  
- []
-
-
-Overfull \hbox (171.33871pt too wide) in paragraph at lines 5232--5233
-[][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-[135]
-Overfull \hbox (171.33871pt too wide) in paragraph at lines 5241--5242
-[][][][][][][][][][][][][][][][][][][][][]  
- []
-
-
-Overfull \hbox (19.57321pt too wide) in paragraph at lines 5242--5243
-[][][][][][][][][]  
- []
-
-
-Overfull \hbox (165.59003pt too wide) in paragraph at lines 5244--5245
-[][][][][][][][][][][][][][][][][][][][][]  
- []
-
-
-Overfull \hbox (109.2526pt too wide) in paragraph at lines 5246--5247
-[][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (46.01776pt too wide) in paragraph at lines 5254--5255
-[][][][][][][][][][][][][][][][][][]  
- []
-
-
-Overfull \hbox (20.72339pt too wide) in paragraph at lines 5258--5259
-[][][][][][][][][][][][][][][][][]  
- []
-
-
-Overfull \hbox (32.22076pt too wide) in paragraph at lines 5260--5261
-[][][][][][][][][][][][][][][][][]  
- []
-
-
-Overfull \hbox (20.72339pt too wide) in paragraph at lines 5262--5263
-[][][][][][][][][][][][][][][][][]  
- []
-
-[136]
-Overfull \hbox (26.47208pt too wide) in paragraph at lines 5264--5265
-[][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (20.72339pt too wide) in paragraph at lines 5266--5267
-[][][][][][][][][][][][][][][][][]  
- []
-
-
-Overfull \hbox (20.72339pt too wide) in paragraph at lines 5268--5269
-[][][][][][][][][][][][][][][][][]  
- []
-
-
-Overfull \hbox (129.94846pt too wide) in paragraph at lines 5269--5270
-[][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (129.94846pt too wide) in paragraph at lines 5272--5273
-[][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (62.11365pt too wide) in paragraph at lines 5277--5278
-[][][][][][][][][][][][][][][][][]  
- []
-
-
-Overfull \hbox (4.62677pt too wide) in paragraph at lines 5278--5279
-[][][][][][][][][][] 
- []
-
-
-Overfull \hbox (5.77695pt too wide) in paragraph at lines 5285--5286
-[][][][][][][][][][][][][][][][][][]  
- []
-
-
-Overfull \hbox (5.77695pt too wide) in paragraph at lines 5292--5293
-[][][][][][][][][][][][][][][][][][]  
- []
-
-[137]
-Overfull \hbox (18.87881pt too wide) in paragraph at lines 5301--5302
-[][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (7.38144pt too wide) in paragraph at lines 5305--5307
-[][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (14.97397pt too wide) in paragraph at lines 5329--5330
-[][][][][][][][][]  
- []
-
-[138]
-Overfull \hbox (113.15598pt too wide) in paragraph at lines 5336--5338
-[][][][][][][][][][][]  
- []
-
-
-Overfull \hbox (102.35373pt too wide) in paragraph at lines 5352--5353
-[][][][][][][][][][][][][]  
- []
-
-
-Overfull \hbox (121.89941pt too wide) in paragraph at lines 5357--5358
-[][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-[139]
-Overfull \hbox (13.13013pt too wide) in paragraph at lines 5390--5391
-[][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (76.36569pt too wide) in paragraph at lines 5398--5399
-[][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (27.50166pt too wide) in paragraph at lines 5413--5414
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
-][][][][][][][][][][][][][][][][][][][]  
- []
-
-[140]
-Overfull \hbox (183.98627pt too wide) in paragraph at lines 5423--5424
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (183.98627pt too wide) in paragraph at lines 5425--5426
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (183.98627pt too wide) in paragraph at lines 5427--5428
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (183.98627pt too wide) in paragraph at lines 5429--5430
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-[141]
-</home/basedul/Documents/Report-writing-using-latex/ResturentManagementSystemRe
-port/personalinfo.png, id=5948, 559.08875pt x 480.79625pt>
-File: /home/basedul/Documents/Report-writing-using-latex/ResturentManagementSys
-temReport/personalinfo.png Graphic file (type png)
-<use /home/basedul/Documents/Report-writing-using-latex/ResturentManagementSyst
-emReport/personalinfo.png>
-Package pdftex.def Info: /home/basedul/Documents/Report-writing-using-latex/Res
-turentManagementSystemReport/personalinfo.png  used on input line 5473.
-(pdftex.def)             Requested size: 420.20274pt x 361.34999pt.
- [142pdfTeX warning (ext4): destination with the same identifier (name{figure.1
-4}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.5481  * 
-          and open the template in the editor. </home/basedul/Documents/Report-
-writing-using-latex/ResturentManagementSystemReport/personalinfo.png>] [143]
-[144] [145]
-Overfull \hbox (46.01776pt too wide) in paragraph at lines 5639--5640
-[][][][][][][][][][][][][][][][][][]  
- []
-
-
-Overfull \hbox (124.19977pt too wide) in paragraph at lines 5642--5643
-[][][][][][][][][][][][][][][][][][][][][]  
- []
-
-
-Overfull \hbox (165.59003pt too wide) in paragraph at lines 5644--5645
-[][][][][][][][][][][][][][][][][][][][][]  
- []
-
-
-Overfull \hbox (206.98029pt too wide) in paragraph at lines 5648--5649
-[][][][][][][][][][][][][][][][][][][][][]  
- []
-
-
-Overfull \hbox (3.4766pt too wide) in paragraph at lines 5649--5650
-[][][][][][][][][][][]  
- []
-
-
-Overfull \hbox (43.7174pt too wide) in paragraph at lines 5652--5653
-[][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (254.11923pt too wide) in paragraph at lines 5653--5654
-[][][][][][][][][][][][][][][][][][][][][]  
- []
-
-
-Overfull \hbox (212.72897pt too wide) in paragraph at lines 5657--5658
-[][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-[146]
-Overfull \hbox (46.01776pt too wide) in paragraph at lines 5676--5677
-[][][][][][][][][][][][][][][][][][]  
- []
-
-
-Overfull \hbox (129.94846pt too wide) in paragraph at lines 5683--5684
-[][][][][][][][][][][][][][][][][][][][][]  
- []
-
-
-Overfull \hbox (124.19977pt too wide) in paragraph at lines 5687--5688
-[][][][][][][][][][][][][][][][][][][][][]  
- []
-
-[147]
-Overfull \hbox (129.94846pt too wide) in paragraph at lines 5693--5694
-[][][][][][][][][][][][][][][][][][][][][]  
- []
-
-
-Overfull \hbox (129.94846pt too wide) in paragraph at lines 5697--5698
-[][][][][][][][][][][][][][][][][][][][][]  
- []
-
-
-Overfull \hbox (26.47208pt too wide) in paragraph at lines 5700--5701
-[][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (5.77695pt too wide) in paragraph at lines 5708--5709
-[][][][][][][][][][][][][][][][][][]  
- []
-
-
-Overfull \hbox (5.77695pt too wide) in paragraph at lines 5715--5716
-[][][][][][][][][][][][][][][][][][]  
- []
-
-[148] [149] [150]
-Overfull \hbox (23.02301pt too wide) in paragraph at lines 5818--5819
-[][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (27.50166pt too wide) in paragraph at lines 5829--5830
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
-][][][][][][][][][][][][][][][][][][][]  
- []
-
-
-Overfull \hbox (264.4679pt too wide) in paragraph at lines 5839--5840
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (264.4679pt too wide) in paragraph at lines 5841--5842
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (264.4679pt too wide) in paragraph at lines 5843--5844
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (264.4679pt too wide) in paragraph at lines 5845--5846
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-[151] [152]
-Overfull \hbox (17.27432pt too wide) in paragraph at lines 5900--5901
-[][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-</home/basedul/Documents/Report-writing-using-latex/ResturentManagementSystemRe
-port/add.png, id=6428, 533.995pt x 454.69875pt>
-File: /home/basedul/Documents/Report-writing-using-latex/ResturentManagementSys
-temReport/add.png Graphic file (type png)
-<use /home/basedul/Documents/Report-writing-using-latex/ResturentManagementSyst
-emReport/add.png>
-Package pdftex.def Info: /home/basedul/Documents/Report-writing-using-latex/Res
-turentManagementSystemReport/add.png  used on input line 5912.
-(pdftex.def)             Requested size: 424.36919pt x 361.34999pt.
-[153pdfTeX warning (ext4): destination with the same identifier (name{figure.15
-}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.5921  */
-           </home/basedul/Documents/Report-writing-using-latex/ResturentManagem
-entSystemReport/add.png>] [154]
-Overfull \hbox (5.77695pt too wide) in paragraph at lines 5998--5999
-[][][][][][][][][][][][][][][][][][]  
- []
-
-
-Overfull \hbox (95.45633pt too wide) in paragraph at lines 6000--6001
-[][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (125.34921pt too wide) in paragraph at lines 6003--6004
-[][][][][][][][][][][][][][][][][][][][][]  
- []
-
-
-Overfull \hbox (131.0979pt too wide) in paragraph at lines 6008--6009
-[][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-[155]
-Overfull \hbox (67.86234pt too wide) in paragraph at lines 6016--6017
-[][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (5.77695pt too wide) in paragraph at lines 6022--6023
-[][][][][][][][][][][][][][][][][][]  
- []
-
-
-Overfull \hbox (89.70764pt too wide) in paragraph at lines 6027--6028
-[][][][][][][][][][][][][][][][][][][][][]  
- []
-
-
-Overfull \hbox (83.95895pt too wide) in paragraph at lines 6031--6032
-[][][][][][][][][][][][][][][][][][][][][]  
- []
-
-
-Overfull \hbox (83.95895pt too wide) in paragraph at lines 6035--6036
-[][][][][][][][][][][][][][][][][][][][][]  
- []
-
-
-Overfull \hbox (83.95895pt too wide) in paragraph at lines 6038--6039
-[][][][][][][][][][][][][][][][][][][][][]  
- []
-
-[156]
-Overfull \hbox (51.07059pt too wide) in paragraph at lines 6075--6077
-[][][][][][][][][][][]  
- []
-
-
-Overfull \hbox (34.51965pt too wide) in paragraph at lines 6086--6087
-[][][][][][][][][][][][][]  
- []
-
-[157]
-Overfull \hbox (59.81403pt too wide) in paragraph at lines 6091--6092
-[][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (27.50166pt too wide) in paragraph at lines 6123--6124
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
-][][][][][][][][][][][][][][][][][][][]  
- []
-
-[158]
-Overfull \hbox (178.23758pt too wide) in paragraph at lines 6133--6134
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (178.23758pt too wide) in paragraph at lines 6135--6136
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (178.23758pt too wide) in paragraph at lines 6137--6138
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (178.23758pt too wide) in paragraph at lines 6139--6140
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-(/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
-File: lstlang1.sty 2015/06/04 1.6 listings language file
-)
-LaTeX Font Info:    Font shape `OT1/cmtt/bx/n' in size <17.28> not available
-(Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 6176.
-
- [159] [160]
-[161] [162]
-Overfull \hbox (3.96994pt too wide) in paragraph at lines 6278--6281
-\OT1/cmr/bx/n/17.28 men-ta-tion, a JavaDoc tool was used to gen-er-ate HTML
- []
-
-
-Overfull \hbox (1.15968pt too wide) in paragraph at lines 6278--6281
-\OT1/cmr/bx/n/17.28 API doc-u-men-ta-tion of the project. The JavaDoc could
- []
-
-[163]
-Overfull \hbox (2.68597pt too wide) in paragraph at lines 6289--6291
-\OT1/cmr/bx/n/17.28 This chap-ter has dis-cussed the in-ter-est-ing as-pects fr
-om
- []
-
-[164] [165]
-Overfull \hbox (8.13179pt too wide) in paragraph at lines 6326--6331
-\OT1/cmr/bx/n/17.28 quired good time keep-ing and man-age-ment of the work-
- []
-
-[166]
-LaTeX Font Info:    Font shape `OMS/cmr/bx/n' in size <17.28> not available
-(Font)              Font shape `OMS/cmsy/b/n' tried instead on input line 6332.
-
-
-Overfull \hbox (1.65062pt too wide) in paragraph at lines 6333--6334
-[]\OT1/cmr/bx/n/17.28 Relational database schema de-sign and trig-ger cod-
- []
-
-[167] (./MainFile.bbl
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <17.28> on input line 28.
-
-Underfull \hbox (badness 1014) in paragraph at lines 50--53
-\OT1/cmr/bx/n/17.28 on 2 April, 2010. [On-line]. Avail-
- []
-
-
-Underfull \hbox (badness 1629) in paragraph at lines 50--53
-\OT1/cmr/bx/n/17.28 able: []$http : / / www . businessdictionary . com /
  []
 
-)
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 6345.
- [168]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 6345.
+[17] (./MainFile.bbl)
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 6462.
+ [18]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 6462.
  (./MainFile.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 6345.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 6345.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 6462.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 6462.
 
 Package rerunfilecheck Info: File `MainFile.out' has not changed.
-(rerunfilecheck)             Checksum: 5A8DBD0FE7FFFD9EBF5D6A01A1772CB1;4398.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 6345.
+(rerunfilecheck)             Checksum: A53B2087A8A542481E36C101283004B1;2805.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 6462.
  ) 
 Here is how much of TeX's memory you used:
- 14214 strings out of 492982
- 224584 string characters out of 6134896
- 375750 words of memory out of 5000000
- 11797 multiletter control sequences out of 15000+600000
- 11257 words of font info for 40 fonts, out of 8000000 for 9000
+ 9869 strings out of 492982
+ 135580 string characters out of 6134896
+ 356404 words of memory out of 5000000
+ 13148 multiletter control sequences out of 15000+600000
+ 12719 words of font info for 47 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 28i,9n,42p,769b,1935s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 30i,12n,40p,768b,1000s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbsy10.pfb></u
 sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/sha
 re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/te
 xlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/t
-exmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/font
-s/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type
-1/public/amsfonts/cm/cmtt10.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
-ic/amsfonts/cm/cmtt12.pfb>
-Output written on MainFile.pdf (172 pages, 948340 bytes).
+exmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fon
+ts/type1/public/amsfonts/cm/cmu10.pfb></usr/share/texmf/fonts/type1/arphic/gbsn
+u/gbsnu5c.pfb></usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu8d.pfb></usr/shar
+e/texmf/fonts/type1/arphic/gbsnu/gbsnu96.pfb>
+Output written on MainFile.pdf (24 pages, 338628 bytes).
 PDF statistics:
- 8103 PDF objects out of 8907 (max. 8388607)
- 7812 compressed objects within 79 object streams
- 5904 named destinations out of 6186 (max. 500000)
- 588 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 443 PDF objects out of 1000 (max. 8388607)
+ 389 compressed objects within 4 object streams
+ 84 named destinations out of 1000 (max. 500000)
+ 379 words of extra memory for PDF output out of 10000 (max. 10000000)
 
