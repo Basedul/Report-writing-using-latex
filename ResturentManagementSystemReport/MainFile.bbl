@@ -21,37 +21,22 @@
 \providecommand{\BIBdecl}{\relax}
 \BIBdecl
 
-\bibitem{RefWorks:1}
-\BIBentryALTinterwordspacing
-C.~Murphy, ``Improving application quality using test-driven development
-  (tdd),'' 2009. [Online]. Available:
-  \url{http://www.methodsandtools.com/archive/archive.php?id=20}
-\BIBentrySTDinterwordspacing
-
-\bibitem{Ref:6}
-\BIBentryALTinterwordspacing
-H.~db, ``Database comparison,'' Accessed on 13 September, 2009. [Online].
-  Available: \url{http://hsqldb.org/images/ imola_retrieve.jpg}
-\BIBentrySTDinterwordspacing
-
-\bibitem{Ref:2}
-G.~Elliot, ``Iglobal business information technology: an integrated systems
-  approach,'' 2004.
-
-\bibitem{Ref:3}
-\BIBentryALTinterwordspacing
-A.~Manifesto, ``Principles behind agile manifesto,'' Accessed on 20 September,
-  2009. [Online]. Available: \url{http:
-  //www.agilemanifesto.org/principles.html}
-\BIBentrySTDinterwordspacing
-
-\bibitem{Ref:4}
-\BIBentryALTinterwordspacing
-B.~Dictionary, ``Stakeholder,'' Accessed on 2 April, 2010. [Online]. Available:
-  \url{http://www.businessdictionary. com/definition/stakeholder.html}
-\BIBentrySTDinterwordspacing
-
 \bibitem{Ref:5}
-I.~Alexander, ``Computing and control engineering,'' April 2003.
+\BIBentryALTinterwordspacing
+MySQL. [Online]. Available:
+  \url{https://www.siteground.com/tutorials/php-mysql/mysql}
+\BIBentrySTDinterwordspacing
+
+\bibitem{Ref:7}
+\BIBentryALTinterwordspacing
+``Java (programming language).'' [Online]. Available:
+  \url{https://en.wikipedia.org/wiki/Java_(programming_language)}
+\BIBentrySTDinterwordspacing
+
+\bibitem{Ref:8}
+\BIBentryALTinterwordspacing
+``What is apache? an in-depth overview of apache web server.'' [Online].
+  Available: \url{https://www.hostinger.com/tutorials/what-is-apache#gref}
+\BIBentrySTDinterwordspacing
 
 \end{thebibliography}

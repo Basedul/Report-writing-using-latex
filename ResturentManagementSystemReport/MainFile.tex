@@ -9,15 +9,39 @@
 \usepackage{amssymb}
 \newcommand{\checkbox}{$\square$}
 \newcommand\fillin[1][3cm]{\makebox[#1]{\dotfill}}
+%for refferennce numbering
+\usepackage[nottoc,notlot,notlof]{tocbibind}
+
 
 \usepackage{CJKutf8}
 \newcommand{\zh}[1]{\begin{CJK}{UTF8}{gbsn}#1\end{CJK}}
 
+%left allignment
+\usepackage{ragged2e}
+
+%font size
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\pdfmapline{= rjvnr8t Verdana " winfontsT1Encoding ReEncodeFont " <[winfonts256.enc <verdana.ttf}
+\usepackage{newtxtext,newtxmath}
+
 \usepackage{verbatim}
 
+%tab
+\newcommand\tab[1][1cm]{\hspace*{#1}}
 % Code segment
 \usepackage{listings}
 \usepackage{color}
+
+%Header footer
+\usepackage{geometry,fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}% Clear header/footer
+\chead{%
+  Shenyang Aerospace University Graduation Design(Thesis)
+}
+\cfoot{\thepage}
+\setlength{\headheight}{24pt}
 
 \definecolor{dkgreen}{rgb}{0,0.6,0}
 \definecolor{gray}{rgb}{0.5,0.5,0.5}
@@ -27,6 +51,13 @@
 
 \newcolumntype{M}[1]{>{\centering\arraybackslash}m{#1}}
 \newcolumntype{N}{@{}m{0pt}@{}}
+
+%Title Chapter
+\usepackage{blindtext}
+\usepackage{sectsty}
+\sectionfont{\centering}
+
+
 
 \lstset{frame=tb,
   language=Java,
@@ -48,7 +79,7 @@
 \begin{document}
 	%\renewcommand\bibname{References} 		%Renames "Bibliography" to 				"References"
 	%\input{./Title.tex}
-	
+	%height=4in
 	\begin{titlepage}
 	\begin{center}
 	\centering
@@ -58,34 +89,61 @@
 \hfill
 \begin{minipage}{0.6\textwidth}
 %\raggedleft
-{\bfseries \Huge 
-Graduation Thesis
-
+{\fontsize{24}{10}\fontfamily{ptm}\selectfont Graduation Thesis
 }
 
 \end{minipage}
 
-\par\vspace{3cm}
-	{\huge\bfseries Asian Restaurant Management System\par}
-	\vspace{2cm}
+\par\vspace{0cm}
+	{\fontsize{22}{10}\fontfamily{ptm}\selectfont \begin{center}
+	\textbf{Asian Restaurant Management System}
+	\end{center}}
+	{\fontsize{20}{10}\fontfamily{ptm}\selectfont \begin{center}
+	\zh{亚洲餐厅管理应用}
+	\end{center}}
+	\vspace{1cm}
 	
 	\begin{table}[ht]
 	\center
-	\begin{tabular}{|M{5cm}|M{9cm}|N}
-	\hline
-	\huge \textbf{Name} & \textbf{HOSSAIN SYED ABIR(\zh{阿贝尔})} &\\[25pt]
-	\hline
-	\huge\textbf{Major} & \textbf{Computer Science and Technology}&\\[25pt]
-	\hline
-	\huge\textbf{Supervisor} & \textbf{Prof. Liang Zhao}&\\[25pt]
-	\hline
+	\begin{tabular}{M{4cm}M{8cm}N}
+	
+	{\fontsize{16}{10}\fontfamily{ptm}\selectfont \begin{flushleft}
+	Major
+	\end{flushleft}} & {\fontsize{16}{10}\fontfamily{ptm}\selectfont \begin{flushleft}
+	Computer Science and Technology
+	\end{flushleft}}&\\[0.1pt]
+	
+	{\fontsize{16}{10}\fontfamily{ptm}\selectfont \begin{flushleft}
+	Class
+	\end{flushleft}} & {\fontsize{16}{10}\fontfamily{ptm}\selectfont \begin{flushleft}
+	140104
+	\end{flushleft}}&\\[0.1pt]
+	
+	{\fontsize{16}{10}\fontfamily{ptm}\selectfont \begin{flushleft}
+	Stuent No.
+	\end{flushleft}} & {\fontsize{16}{10}\fontfamily{ptm}\selectfont \begin{flushleft}
+	14031274
+	\end{flushleft}}&\\[0.1pt]
+	
+	\fontsize{16}{10}\fontfamily{ptm}\selectfont{\begin{flushleft}
+	Name
+	\end{flushleft}} & \fontsize{16}{10}\fontfamily{ptm}\selectfont{\begin{flushleft}
+	Hossain Syed Abir(\zh{阿贝尔})
+	\end{flushleft}}&\\[0.1pt]
+	
+	\fontsize{16}{10}\fontfamily{ptm}\selectfont{\begin{flushleft}
+	Supervisor
+	\end{flushleft}} & \fontsize{16}{10}\fontfamily{ptm}\selectfont{\begin{flushleft}
+	Prof. Liang Zhao
+	\end{flushleft}}&\\[0.1pt]
+	
 	\end{tabular}
 	\end{table}	
 	
 	
-	\vspace{2.5cm}
-	{\scshape\huge Shenyang Aerospace University \par}
-	\vspace{1.5cm}
+	\vspace{1cm}
+	{\fontsize{18}{10}\fontfamily{ptm}\selectfont Shenyang Aerospace University \par}
+	\vspace{0.5cm}
 	\begin{comment}\vspace{1cm}
 	{\scshape\Large Final year project\par}
 	\vspace{1.5cm}\end{comment}
@@ -99,375 +157,715 @@ Graduation Thesis
 	\end{comment}
 
 % Bottom of the page
-	{\large \today\par}
+	{\fontsize{16}{1}\fontfamily{ptm}\selectfont \today\par}
 \end{center}
 \end{titlepage}
 
 \begin{titlepage}
-	\center {\huge\bfseries Asian Restaurant Management System\par}
-	\vspace{2cm}
+	{\fontsize{22}{10}\fontfamily{ptm}\selectfont \begin{center}
+	\textbf{Asian Restaurant Management System}
+	\end{center}}
+	{\fontsize{20}{10}\fontfamily{ptm}\selectfont \begin{center}
+	\zh{亚洲餐厅管理应用}
+	\end{center}}
+	\vspace{6cm}
 	
 	\begin{table}[ht]
 	\center
-	\begin{tabular}{|M{5cm}|M{9cm}|N}
-	\hline
-	\huge {College} &  {Computer} &\\[25pt]
-	\hline
-	\huge{Major} & {Computer Science and Technology}&\\[25pt]
-	\hline
-	\huge{Class} & {140103}&\\[25pt]
-	\hline
-	\huge{Stuent No.} & {14031274}&\\[25pt]
-	\hline
-	\huge{Name} & {text}&\\[25pt]
-	\hline
-	\huge{Supervisor} & {HOSSAIN SYED ABIR(\zh{阿贝尔})}&\\[25pt]
-	\hline
+	\begin{tabular}{M{4cm}M{8cm}N}
+	
+	{\fontsize{16}{10}\fontfamily{ptm}\selectfont \begin{flushleft}
+	Major
+	\end{flushleft}} & {\fontsize{16}{10}\fontfamily{ptm}\selectfont \begin{flushleft}
+	Computer Science and Technology
+	\end{flushleft}}&\\[0.1pt]
+	
+	{\fontsize{16}{10}\fontfamily{ptm}\selectfont \begin{flushleft}
+	Class
+	\end{flushleft}} & {\fontsize{16}{10}\fontfamily{ptm}\selectfont \begin{flushleft}
+	140104
+	\end{flushleft}}&\\[0.1pt]
+	
+	{\fontsize{16}{10}\fontfamily{ptm}\selectfont \begin{flushleft}
+	Stuent No.
+	\end{flushleft}} & {\fontsize{16}{10}\fontfamily{ptm}\selectfont \begin{flushleft}
+	14031274
+	\end{flushleft}}&\\[0.1pt]
+	
+	\fontsize{16}{10}\fontfamily{ptm}\selectfont{\begin{flushleft}
+	Name
+	\end{flushleft}} & \fontsize{16}{10}\fontfamily{ptm}\selectfont{\begin{flushleft}
+	Hossain Syed Abir(\zh{阿贝尔})
+	\end{flushleft}}&\\[0.1pt]
+	
+	\fontsize{16}{10}\fontfamily{ptm}\selectfont{\begin{flushleft}
+	Supervisor
+	\end{flushleft}} & \fontsize{16}{10}\fontfamily{ptm}\selectfont{\begin{flushleft}
+	Prof. Liang Zhao
+	\end{flushleft}}&\\[0.1pt]
+	
 	\end{tabular}
 	\end{table}	
 	
-	
-	\vspace{3.5cm}
-	{\scshape\large Shenyang Aerospace University \par}
-	\vspace{1cm}
-	{\large \today\par}
-\end{titlepage}	
-\begin{titlepage}
-\begin{center}
-	%\centering
-	{\huge\bfseries{Declaration}}\\ 
-\end{center}
-\vspace{3.5cm}
-To the best of my knowledge and belief, I certify that this thesis does not:
-%\vspace{0.5cm}
-\subsubsection*{}
+	\newpage
+	{\fontsize{18}{5}\fontfamily{ptm}\selectfont \begin{center}
+	Shenyang Aerospace University
+	\end{center} \par}
+	\vspace{0.15cm}
+
+% Bottom of the page
+	{\fontsize{16}{5}\fontfamily{ptm}\selectfont \begin{center}
+	\today
+	\end{center}\par}
+	\vspace{0.15cm}
+	{\fontsize{16}{5}\fontfamily{ptm}\selectfont \begin{center}
+	Declaration
+	\end{center}\par}
+	\vspace{1cm} 
+
+\RaggedRight \fontsize{14}{10}\fontfamily{ptm}\selectfont To the best of my knowledge and belief, I certify that this thesis does not:\\
 \begin{itemize}
-	\item Incorporate any material previously submitted for a degree or diploma in any institution of higher education without acknowledgement.
-	\item Contain any material previously published or written by other person except where due reference is made in the text.
-	\item Contain any defamatory material.
+	\item[I.] Incorporate any material previously submitted for a degree or diploma in any institution of higher education without acknowledgement.
+	\item[II.] Contain any material previously published or written by other person except where due reference is made in the text.
+	\item[III.] Contain any defamatory material.
 \end{itemize}
 I also grant permission to Shenyang Aerospace University to make duplicate copies of my thesis as required.	\\
-\linebreak
-\linebreak
-\linebreak
-\linebreak
-\linebreak
+\vspace{1cm}
 
+
+\begin{flushleft}
 Signature\fillin[4cm]
-\linebreak
-\linebreak
-\linebreak
-
-Date\fillin[5cm]  
-
-\end{titlepage}
+\end{flushleft}
+Date\fillin[5cm] 
+	
+\end{titlepage}	
 
 	
-	\section*{ABSTRACT}
-	This report documents the process of designing, developing and testing a software system to be used in a
-restaurant; usually given the name restaurant management system. The restaurant management system
-is there to help communication between all teams within a restaurant by minimizing the probability
-of human errors.\\We propose to build a software project that can efficiently handle and manage various activities of a restaurant and all these activities will be happening under the supervision of the administrator. The businesses in restaurants are now growing constantly. At the same time, the need for managing its operations and tasks arises. The best way to optimize these activities is growing the business online as well. Today’s generation encourages high-tech services especially over the Internet. Hence the project is developed proficiently to help restaurant owners automate their business operations. This project serves the best way of maintaining customer’s information and caters their needs.\\
-
+	\begin{titlepage}
+		%\cfoot{\thepage}
+		\centering 
+		{ \bfseries Abstract}\\
+		\vspace{0.6cm}
+		\RaggedRight \tab The project {\bfseries Asian Restaurant Management Application is implemented} to reduce the
+manual work and enhances the accuracy of work in a restaurant. This software has been made
+in a user friendly interface. This project is also designed with full consideration to help the
+users in an easy manner without any unnecessary wastage of time. This application can be
+implemented in big restaurant where customers can order their food from their table using
+application. The application consists of various food varieties available in the restaurant.
+Through the ordering form, the customer can simply click and order the food even from
+home. This application entirely reduces the unnecessary time waste inside the hotel as well as
+it reduces unnecessary noise. This report documents the process of designing, developing and
+testing a software application to be used in a restaurant; usually given the name restaurant
+management application. The restaurant management application is there to help
+communication between all teams within a restaurant by minimizing the probability of human
+errors. This project serves the best way of maintaining customer’s information and caters
+their needs. The application is designed and implemented with client and server mode. This is
+an integrated application which contains both the user component (used by client to sign up,
+sign in, sign out the application, modifying personal information, browse the detail
+information of a food, query a specified cuisine according to the name or type, write user
+experience or comment on the dish and submit satisfaction score, user get reward points after
+sharing their experiences) and the admin component (used by the administrators for
+performing admin level functions such as sign up, sign in, sign out the application, modifying
+personal information, managing the order list, adding new cuisine items). This application is
+successfully running for the restaurant management. Asian Restaurant Management
+Application is a java application designed with Java technique and MySQL server as the
+database of the application.\\
+\vspace{0.8cm}
+{\bfseries Key Words: } Java technique, Wamp server, MySQL Database.
+	\newpage
+	\thispagestyle{empty}
+	\centering\zh{摘 要}\\
+	\vspace{0.5cm}
 	
+	\zh{“亚洲餐厅管理应用”项目旨在减少人工劳动，提高餐厅工作的准确性。这个软件是用户友好的界面制作
+的。这个系统由餐馆里各种各样的食物组成。通过订购表单，客户可以简单地点击和订购食品，甚至在
+家里。这份报告记录了设计、开发和测试一个在餐馆使用的软件系统的过程；通常给出餐馆管理系统的
+名称。餐厅管理系统通过最小化人为错误的概率来帮助餐厅内所有团队之间的沟通。这个项目是维护客
+户信息和满足客户需求的最佳方式。系统采用客户机和服务器模式设计和实现。这是一个集成的系统应
+用程序，它包含两个用户组件（由客户端用于注册、登录、签出应用程序、修改个人信息、浏览食物的
+细节信息、根据名称或类型查询指定菜肴、在菜肴上写用户体验或评论以及提交满意度评分），用户在
+分享他们的经验之后获得奖励积分）和管理组件（管理员用于执行管理级功能，例如注册、登录、签出
+应用程序、修改个人信息、管理订单列表、添加新的菜肴项目）。此应用程序已成功用于餐厅管理。亚
+洲餐厅管理应用程序是以Java技术和MySQL Server为系统的数据库设计的Java应用程序。\linebreak}\\
 
+\RaggedRight\zh{\bfseries{关键词：}}\zh{亚洲餐厅管理应用，Java技术，MySQL服务器，数据库}
+	\end{titlepage}
+	
 	\pagenumbering{roman} %numbering before main content starts
-	
+	\newpage
 	\tableofcontents
 	\newpage
 	\listoffigures
+	\newpage
 	\listoftables
 	
 	\newpage
 	\pagenumbering{arabic} %reset numbering to normal for the main content
 	
-	
-	\section{INTODUCTION}
-	The concept of restaurant table order management system, since it is java application, I will keep everything as simple as possible. The project consists in an java application that can be used by employees in a restaurant to handle the clients, their orders and can help them easily find free tables or place orders. This application, created mainly for proof of proper user-java interaction. The restaurant menu is organized by categories (appetizers, soups,fig salads, entrees, sides and drinks) of menu items. Each menu item has a chef, preparation instructions and associated ingredients. The ingredients are identified by their ingredient id and the quality of the ingredient needed to prepare a particular recipe, the unit of measure and a name.
-        \\
-        "Restaurant Management System(RMS)" is java application to restaurant management. This system wake to provide service facility to rastaurant and also to the customer. The services that are provided is food ordering and home delivery by the customer through the system, customer information management and waiter information management, menu information management and report. Main objective build the system, ordering, and home delivery management will become easier and systematic to replace traditional system.
+	\section{Introduction}
+	%{\bfseries \Large INTODUCTION}\\
+	\tab The concept of restaurant table order management system, since it is java application, I will keep everything as simple as possible. The project consists in an java application that can be used by employees in a restaurant to handle the clients, their orders and can help them easily find free tables or place orders. This application, created mainly for proof of proper user-java interaction. The restaurant menu is organized by categories (appetizers, soups,fig salads, entrees etc.) of menu items. Each menu item has a chef, preparation instructions and associated ingredients. The ingredients are identified by their ingredient id and the quality of the ingredient needed to prepare a particular recipe, the unit of measure and a name.
+\\
+\tab "Restaurant Management System(RMS)" is java application to restaurant management. This system wake to provide service facility to rastaurant and also to the customer. The services that are provided is food ordering and home delivery by the customer through the system, customer information management and waiter information management, menu information management and report. Main objective build the system, ordering, and home delivery management will become easier and systematic to replace traditional system.
 
 	
-	\subsection{EXISTING SYSTEM}
-	\begin{itemize}
-                \item Restaurant services such as making processing orders, and delivering meals generally require waiters to input customer information and then transmit the orders to kitchen for meal preparation. When the customer pays the bill, the amount due is calculated by the cashier. Although this procedure is simple, it may significantly increase the workload of waiters and even cause errors in meal ordering or in prioritizing customers, especially when the number of customers suddenly increases during busy hours, which can seriously degrade the overall service quality.
-                \item A very commonly implemented system, currently being used by numerous restaurants and chains all over the world, is the electronic point-sale terminal system.
-                \item Here the waiters generally take the order from the customer and head onto a terminal, where they can feed the order into a computer . The order can the be trasnmitted to to the kitchen automatically via the terminal through the a network, or it may event be delivered manually by the server to the kitchen.
-        \end{itemize}
-
-	\subsubsection{DISADVANTAGES OF EXISTING SYSTEM}
-	\begin{itemize}
-                \item Although a huge improvement over the pen and paper still prevalent over world, this does not have much value addition for the customer and mostly only benefits the establishment and the administration of the establishment.
-                \item It may significantly increase the workload of waiters and even cause errors in meal ordering or in prioritizing customers, especially when the number of customers suddenly increases during busy hours, which can seriously grade the overall service quality.
-        \end{itemize}
-	
-	
-	\subsection{PROPOSED SYSTEM}
-	\begin{itemize}
-		\item The system will consist of the following main components: The backend, which is made up of the web server and the database, and the frontends tha include both the patro frontend and the administaration or the kitchen frontend 
-		\item this system is based on the very popular model-View-Controller (MVC) architecture. MVC is most commonly used in websites, very popular and tried and tested. None of the frontends directly "talk" to the database. They instead rely on Restfull services that can be used to perform CRUD operations on the database.
-	\end{itemize}
-		
-		\subsubsection{ADVANTAGES OF PROPOSED SYSTEM}
+	\subsection{Project Objectves}
+	\tab We are stuck with technology when what we really want is just stuff that works. With
+the current paradigm shift in technological field, there is an urgent need to embrace and
+appreciate the power of technology.Restaurant sector remains vigilant to face the challenges
+of change by employing a new strategy that facilities easy management system that can
+simplify work for the restaurant managers so that all their work can be efficient and effective.
+The general objectives of the study is to develop a reliable, convenient and accurate Ordering System.\\
+The study has the following specific objectives:
 		\begin{itemize}
-			\item The most important components of this system are the database and the frontends
-			\item Providing value to both the business and its patron is an important objective, but we believe that one follows the other.
-		\item Following that belief, the customer is given a whole lot of importance.
+			\item To develop a system that will surely satisfied the customer service.
+			\item To design a system able to accommodate huge amount of orders at a time.
+			\item  To evaluate its performance and acceptability in terms of security, user-friendliness, accuracy and reliability.
+			\item  To improve the communication between the client and the server and minimize the time of ordering.
 		\end{itemize}
 		
-	\subsection{MODULES}
-		\begin{itemize}
-			\item Customer
-			\item Administrator
-			\item Customer Ordering and home delevery
-			\item Feedback Module
-			\item Menu Module
-			\item Generate Report Module
-		\end{itemize}
-		\subsubsection{MODULES DESCRIPTION}
-		\begin{itemize}
-			\item {\bfseries Customer} \\
-                        This project module consists in and java application they can be used by employees in a restaurant to handle the clients, their orders and can help them easily find free tables or place orders. This application, created mainly for proof of proper user interacton.
-                        \item {\bfseries Administrator} \\
-                        Administrator is the person who will manage the entire system. This type of user will also do maintenance and control the application ot this system. Administrator takes a responsibility to a new customer, new menu into database, and etc.
-                        \item {\bfseries Customer Ordering} \\
-                        Customer ordering and reservation module provides a from that needs to be full filling in term or ordering food.
-                        \item {\bfseries Menu Module } \\
-                        Menu module is food that restaurant prepared for customer. This module, customer can view the menu and make decision for order.
-                        \item {\bfseries Generate Report Module} \\
-                        System provides an option for generate a report. The contents of the report as following: \\
-                        1. The report of customer ordering. \\
-                        2. Customers information \\
-                        3. Comment or satisfaction score insert into feedback form.     
+\RaggedRight One of the main objectives of a restaurant to ensure customer satisfaction. Manual listing of orders by the waiters/waitresses may result to slow response in customer service. Hence, if the restaurant uses the proposed system, manipulation of orders to the customers be so easy and choosing the desired menu.
 
-		\end{itemize}
-		\subsection{Summary of Chapeters}
-		The rest of this report consists of the following chapters: \\
-		\begin{itemize}
-			\item Background: Background investigation into the problem.
-			\item Requirement Analysis: Requirements of the system including stakeholder identification, list of
-features and tabulated requirements.
-			\item Design: Project design process using several diagrammatic techniques.
-			\item Implementation: Discusses the implementation of the software with the help of diagrams and
-pseudocode.
-			\item Results: Illustrates the system using screenshots.
-			\item Testing: Documents how the system was tested.
-			\item Conclusion: Project conclusion with future development ideas.
-		\end{itemize}
-	\subsection{Closing Remarks}
-	This chapter has introduced the foundations of the project. The next chapter gives some background
-investigation into the problem.
+	\subsection{Project Requirements Analysis}
+	\tab Project requirements analysis are important stage in the system development. It
+determines the functions of the whole system integrity and stability. Software requirements
+analysis is an ongoing process of understanding and progressive refinement. Through
+requirements analysis, design functions of the management system as below.
+			\begin{itemize}
+				\item[a.]User management. User can register (Manager or customer), login and logout the website;
+				\item[b.]Adding a food. Manager can add new food information for showing to customer.
+				\item[c.]Foods information browsing. The Foods are grouped by categories. Customers may
+browse the detailed information of a food.
+				\item[d.]Foods query: Manager can query foods according to price, name.
+				\item[e.]Foods comments. Customers can write comments on the food and submit satisfaction
+score.
+			\end{itemize}
+		\subsubsection{Requirements Analysis}
+		\tab The in-front management application is the user visits food list and
+register user is customer. Only the manager can manage his/her searching potion about the
+specific food, comment and rate. So in this part, specific functions are described as
+below:\\
+			\begin{itemize}
+				\item {\bfseries Login and logout:} User can signin into system and also signout from the system.
+				\item {\bfseries Register:} If user have no account, user have to must create an account.
+				\item {\bfseries Modify personal informationl:} User can also modify his personal information.
+				\item {\bfseries Browse detailed information of a food:} User can browse detaile of food.
+				\item {\bfseries Comments:} User can post a comment for each food.
+				\item {\bfseries Rate a food:} User can post a score for each food.
+			\end{itemize}
+		\subsection{Project Deliverables}
+	\tab The main deliverables of this project is to build a simple and easy use of resaturant management system following the specific software requirements as well as the programming lagnuages.
+	
 
-%%Second chapter
 
 \newpage
-\section{Chapter Two}
-{\bfseries \Large Background} 
-	\subsection{Chapter Overview}
-	This chapter gives an insight to Point of Sale (POS) systems similar in nature to that of the one being
-developed in this project. It also gives a brief introduction to the importance of requirement gathering,
-a discussion on the development methodologies available as well as a justification on the platform and
-software used in this project.
-	\subsection{Point-of-Sale (POS) Systems}
-	According to A. Nutt [12], POS systems first dated back to the 1870s, when James Ritty became
-frustrated with dishonest employees stealing money from the customers in a saloon in Dayton, Ohio.
-With the inspiration from a counter on a ship’s propeller that counted the number of revolutions, he
-and his brother in 1879 developed the first cash register called ‘Ritty’s Incorruptible Cashier’.
-By the 1970s, the first computerised cash register was developed that was basically a mainframe
-but packaged as a store controller that had the ability to control the registers. Then in the 1980’s,
-cash registers began to be PC operated which meant that many of the basic PC functions were now
-available.
-Today, the POS systems are much faster, safer and reliable and with the introduction of credit cards
-and direct communication to the credit card company, transactions are almost instant.
-\subsection{Platform Choice}
-	Choosing a suitable platform normally goes down to the programmers experience and the type of
-software to be developed. The restaurant management system could be developed as a web application
-or a standalone application but must also be widely supported and platform-independent. Therefore
-as the developer has minimal or no experience in web programming, the decision was taken to develop
-a standalone application.
-The next decision was to decide on a programming language, with the developer having previous
-experience in C, C++ and Java. This decision was fairly easy and Java was the selected program-
-ming language as the developer has great knowledge in the Java Database Connectivity (JDBC) API 1
-that allows database-independent connectivity between the Java programming language and numerous
-databases.
-	\subsection{UML}
-	\label{Sec:uml}
-Diagrammatic techniques are used to visualise, construct and document software systems under de-
-velopment. The most general modelling language to describe both the structure and behaviour of a
-software system is Unified Modelling language (UML) created by the Object management group. The
-diagrams one can create using UML can be shown by a class diagram (Figure \ref{fig:uml}). Throughout this
-report, numerous models defined within the UML class diagram (Figure \ref{fig:uml}) will be used to graphically
-represent the system.
-	\begin{figure}
+\section{Technological Background}
+%{\bfseries \Large Technological Background} 
+	\subsection{Implementation Process}
+	\tab In the thesis project, Window 10 as an operating system,MySQL as a database and netbeans as a IDE.
+	The application is a collection of Apache server, MySQL server comprehensive programming and easy to use.
+	\subsection{Tools and Technologies}
+	\tab Use these three tools are MySQL\cite{Ref:5}, Java\cite{Ref:7} and Apache Server\cite{Ref:8}. 
+	\subsubsection{MySQL Database}
+	\tab MySQL\cite{Ref:5} is an open source relational database management system. It is based on the
+structure query language (SQL), which is used for adding, removing, and modifying
+information in the database. Standard SQL commands, such as ADD, DROP, INSERT,
+and UPDATE can be used with MySQL.\\
+
+\tab A database is a data structure that stores organized information. Most databases
+contain multiple tables, which may each include several different fields. For example, a
+company database may include tables for products, employees, and financial records. Each
+of these tables would have different fields that are relevant to the information stored in the
+table. Today’s relational databases allow users to access, update, and search information
+based on the relationship of data stored in different tables. Relational databases can also
+run queries that involve multiple databases. While early databases could only store text or
+such numeric data, modern databases also let users store other data types such as sound
+clips, pictures, and videos.\\
+
+\tab SQL (Structured Query Language) is a standardized programming language used for
+managing relational databases and performing various operations on the data in them.
+Initially created on 1970s, SQLs is regularly being used by database administrators, as well
+as by developers writing data integration scripts and data analysts looking to set up and run
+analytical queries. For example, books information, customer information, orders
+
+\subsection{JAVA}
+	\tab Java\cite{Ref:7} is a high-level programming language developed by Sun Microsystems. It was
+originally designed for developing programs for set-top boxes and handheld devices, but
+later became a popular choice for creating web applications.
+The Java syntax is similar to C++, but is strictly an object-oriented programming
+language. For example, most Java programs contain classes, which are used to define
+objects, and methods, which are assigned to individual classes. Java is also known for
+being more strict than C++, meaning variables and functions must be explicitly defined.
+This means Java source code may produce errors or  and quot;exceptions and quot; more easily than other
+languages, but it also limits other types of errors that may be caused by undefined variables
+or unassigned types.\\
+
+\tab Unlike Windows executables (.EXE files) or Macintosh applications (.APP files),
+Java programs are not run directly by the operating system. Instead, Java programs are
+interpreted by the Java Virtual Machine, or JVM, which runs on multiple platforms. This
+means all Java programs are multiplatform and can run on different platforms, including Macintosh, Windows, and Unix computers. However, the JVM must be installed for Java
+applications or applets to run at all. Fortunately, the JVM is included as part of the Java
+Runtime Environment (JRE), which is available as a free download. Oracle acquired Sun
+Microsystems in January, 2010. Therefore, Java is now maintained and distributed by
+Oracle.\\
+
+\tab Java is a general-purpose computer-programming language that is concurrent, class-based, object-oriented, and specifically designed to have as few implementation dependencies as possible. It is intended to let application developers "write once, run anywhere" (WORA), meaning that compiled Java code can run on all platforms that support Java without the need for recompilation.Java applications are typically compiled to bytecode that can run on any Java virtual machine (JVM) regardless of computer architecture. As of 2016, Java is one of the most popular programming languages in use,particularly for client-server web applications, with a reported 9 million developers.Java was originally developed by James Gosling at Sun Microsystems (which has since been acquired by Oracle Corporation) and released in 1995 as a core component of Sun Microsystems' Java platform. The language derives much of its syntax from C and C++, but it has fewer low-level facilities than either of them.\\
+
+\tab The original and reference implementation Java compilers, virtual machines, and class libraries were originally released by Sun under proprietary licenses. As of May 2007, in compliance with the specifications of the Java Community Process, Sun relicensed most of its Java technologies under the GNU General Public License. Others have also developed alternative implementations of these Sun technologies, such as the GNU Compiler for Java (bytecode compiler), GNU Classpath (standard libraries), and IcedTea-Web (browser plugin for applets).
+\\
+\tab The latest version is Java 11, released on September 25, 2018, which follows Java 10 after only six months, being in line with the new release schedule. Java 8 is still supported but there will be no more security updates for Java 9.Versions earlier than Java 8 are supported by companies on a commercial basis; e.g. by Oracle back to Java 6 as of October 2017 (while they still "highly recommend that you uninstall" pre-Java 8 from at least Windows computers).
+
+\subsection{Apache Server}
+	\tab Apache server\cite{Ref:8} is an open source Web server tool developed by the Apache Software
+Foundation (ASF). It is one of many Apache-related open source products used by IT
+professionals for various tasks and objectives. It allows the implementation of Java
+Servlets and JavaServer Pages (JSP) to promote an effective Java server environment.
+Users can also access resources for configuration and use extensible markup language
+(XML) to configure projects. Successive versions of Apache Tomcat have solved different
+problems by applying software patches and other solutions. Some experts characterize
+Apache Tomcat as a product offering a runtime shell for Java Servlets. Users can also set
+up Java virtual machines (JVM) to configure virtual hosting.\\
+
+\tab Apache is an open-source and free web server software that powers around 46 percent of websites around the world. The official name is Apache HTTP Server, and it’s maintained and developed by the Apache Software Foundation.\\
+
+\tab It allows website owners to serve content on the web — hence the name “web server”. It’s one of the oldest and most reliable web servers, with the first version released more than 20 years ago, in 1995.\\
+
+		\subsubsection{How does Apache Web server}
+		\tab Although we call Apache a web server, it is not a physical server, but rather a software that runs on a server. Its job is to establish a connection between a server and the browsers of website visitors (Firefox, Google Chrome, Safari, etc.) while delivering files back and forth between them (client-server structure). Apache is a cross-platform software, therefore it works on both Unix and Windows servers.\\
+
+\tab When a visitor wants to load a page on your website, for instance, the homepage or your “About Us” page, their browser sends a request to your server and Apache returns a response with all the requested files (text, images, etc.). The server and the client communicate through the HTTP protocol and Apache is responsible for the smooth and secure communication between the two machines.\\
+
+\tab Apache is highly customizable, as it has a module-based structure. Modules allow server administrators to turn additional functionalities on and off. Apache has modules for security, caching, URL rewriting, password authentication, and more. You can also set up your own server configurations through a file called .htaccess, which is an Apache configuration file supported with all Hostinger plans.\\
+		
+\newpage
+\section{System Design}
+%{\bfseries \Large System Design}\\
+\tab System design is the process of defining the elements of the system such as the
+architecture, modules and components, the different interfaces of those components and
+the data that goes through the system.\\
+\subsection{Architectural Design}
+	\tab In this part, system block diagram details are given. According to requirements
+gather, the asian restaurant management system will be designed as below:	
+	\begin{figure}[H]
 		\centering
-		\includegraphics[height=2.5in]{/home/basedul/Documents/Report-writing-using-latex/ResturentManagementSystemReport/uml_case.PNG}
-		\caption{UML diagram for Asian Restaurant Management system.}
-		\label{fig:uml} 
+		\includegraphics[height=3in]{/home/basedul/Documents/Report-writing-using-latex/ResturentManagementSystemReport/archtecturaldesign.png}
+		\caption{System block diagram.}
+		\label{fig:archi} 
+	\end{figure}
+		
+	\tab As show on figure\ref{fig:archi} is showing the \textbf{Asian Restaurant Management System} is divided into some modules and submodules.
+\subsection{Database Diagram}
+	\subsubsection{Entity Diagram}
+	\tab These diagrams below show how the attributes are defined in database table:\\
+	
+	\vspace{0.7cm}
+	\tab An admin who must entry his personal information like first name, last name, user name, email and password.
+	\begin{figure}[H]
+		\centering
+		\includegraphics[height=3in]{/home/basedul/Documents/Report-writing-using-latex/ResturentManagementSystemReport/adminent.png}
+		\caption{Admin Register entity diagram}
+		\label{fig:adminreg} 
+	\end{figure}
+	\tab Client who must entry his personal information like first name, last name, user name, email and password.
+	\begin{figure}[H]
+		\centering
+		\includegraphics[height=3in]{/home/basedul/Documents/Report-writing-using-latex/ResturentManagementSystemReport/cliententy.png}
+		\caption{Client Register entity diagram}
+		\label{fig:clientreg} 
 	\end{figure}
 	
-	\subsection{Software Choice}
-		In software development, the use of integrated development environments (IDE) can increase the effi-
-ciency of a programmer. An IDE is a software application that consists of a source code editor, compiler
-and debugging tools with its main aim to assist the programmer. Simple notepads are not strictly IDEs
-but can do the same job with the assistance of a compiler.
-The two most popular IDEs available for Java programming are Netbeans and Eclipse as they
-are free, support multiple platforms and offer many features including integrated version control and
-debugging tools. The two main problems with IDE’s are that due to the wealth of features available
-and plug-in support, there is an associated cost, as their performance is poor and in particular they
-require more memory and processing power than a standard text editor.
-For this project Netbeans was the chosen IDE, as the developer has more experience and knowledge
-of the Netbeans graphical user interface.
-\subsection{Requirement Gathering}
-	\label{sec:gather}
-	\begin{figure}
+	\tab When add food on food list, must include food name, food price and details of food.
+	\begin{figure}[H]
 		\centering
-		\includegraphics[height=5in]{/home/basedul/Documents/Report-writing-using-latex/ResturentManagementSystemReport/boehms.png}
-		\caption{Boehm's cost model \cite{RefWorks:1}}
-		\label{fig:req} 
+		\includegraphics[height=3in]{/home/basedul/Documents/Report-writing-using-latex/ResturentManagementSystemReport/fooddet.png}
+		\caption{Food add entity diagram}
+		\label{fig:foodadd} 
 	\end{figure}
-	Requirement gathering is a very important step in software engineering. According to an article written
-by Craig Murphy \cite{RefWorks:1}, Boehm’s cost model discusses how discovering errors at an early stage of software
-development can reduce overall costs. Figure \ref{fig:req} is an example of Boehm’s cost model and uses the
-waterfall technique to give a visual insight into how important gathering accurate requirements can be when the project has a strict deadline to work to. Roughly a £1 cost of change in the requirement
-gathering can cost up to £100 in the testing stage and £1000 in the deployment stage to fix.
-\newpage
-\subsection{Development Methodology}
-	\label{dev:agile}
-	A software development methodology is a framework used to plan the design of a software system
-controlling the process of development. According to Geoffrey Elliott \cite{Ref:2}, software development meth-
-odologies first emerged in the 1960’s with systems development life cycles (SDLC) being considered
-the first formalised methodology. Since then there have been numerous popular software development
-approaches including the waterfall model, prototyping, incremental, spiral and agile.
-The agile methodology refers to a collection of different agile methods.\\
-This project will be based
-on Extreme programming (XP) which is one of these agile methodologies using an iterative based
-framework. Each iteration has a development cycle very similar to the waterfall model consisting
-of planning, requirements analysis, design, development and testing. At each iteration, the business
-representative sometimes referred to as the ‘customer’ is given a demonstration to promote useful
-feedback. This type of methodology reduces risk and lets the project adapt to requested changes
-quickly with minimum cost.\\
-According to the Agile Manifesto \cite{Ref:3}, some of the main principles behind the agile methodology
-are:
-	\subsubsection{}
-		\begin{itemize}
-			\item Customer satisfaction by rapid, continuous delivery of useful software.
-			\item Working software that is delivered frequently.
-			\item A welcomed late change in requirements.
-			\item Simplicity.
-			\item Regular adaptation to changing circumstances.
-		\end{itemize}
-
-\subsection{Chapter Summary}
 	
-	This chapter has given examples of POS systems that are directly related to this project as well as
-general information about requirement gathering and development methodologies. The next chapter
-starts the process of the development methodology by generating the requirements of the system.
-\newpage
-\section{Chapter Three}
-{\bfseries \Large Requirement Analysis}\\
-\subsection{Chapter Overview}
-	This chapter will look at the stakeholders of the system and then discuss the required features using a
-use case diagram to illustrate.
-\subsection{Stakeholder Identification}
-	As defined in the Business Dictionary \cite{Ref:4},\\
-a stakeholder could be a person, group, organisation that has direct or indirect stake in an
-organization because it can affect or be affected by the organization’s actions, objectives
-and policies.\\
-Hence, stakeholders can be split into two groups; internal and external with each stakeholder contrib-
-uting directly or indirectly towards the business activities.\\
-As an example, any system were there exists customer communication, that customer will be a
-non-financial beneficiary stakeholder.\\
-According to an article written by Ian Alexander \cite{Ref:5}, the person,
-group, organisation, or system is a stakeholder if they can be defined by any one of the following four
-questions:\\
-
-Who needs to be consulted on the scope of this project?\\
-
-Who has an input to the budget of this project?\\
-
-Who can support or harm this project politically?\\
-
-Who can provide guidance on the usability, functionality, and required qualities (reliability,
-safety, lifetime, maintainability, . . . ) of the system under development?\\
-
-Therefore using these 4 questions as a guide, we can generate a list (\ref{tab:stake}) of the stakeholders
-in this project.
-\begin{table}[H]
-	\centering
-	\caption{A table showing the stakeholders of the project}
-	\label{tab:stake}
-	\begin{tabular}{l c r}
-		\bfseries{Stakeholder} & \bfseries{Role}\\ \hline
-		Carl Abernethy & Project developer.\\
-		Prof. Chris Taylor & Project supervisor.\\
-		Management & User of the management application.\\
-		Waiters & User of the restaurant application.\\
-		Kitchen Staff & User of the kitchen application.\\
-		Bar Staff & User of the restaurant application.\\
-		Customer & Indirect user of the system.\\
-		Cashier & External stakeholder; accepts payment.\\
+	\tab When a client post his comment, client must be give name of food and select the score number.
+	\begin{figure}[H]
+		\centering
+		\includegraphics[height=3in]{/home/basedul/Documents/Report-writing-using-latex/ResturentManagementSystemReport/commtent.png}
+		\caption{Comments/Score entity diagram}
+		\label{fig:commentsent} 
+	\end{figure}
+	
+	\subsubsection{E-R Diagram}
+		\begin{figure}[H]
+		\centering
+		\includegraphics[height=3in]{/home/basedul/Documents/Report-writing-using-latex/ResturentManagementSystemReport/erdiag.png}
+		\caption{Entity Relationship diagram}
+		\label{fig:erdig} 
+	\end{figure}
+	
+	\subsubsection{Database schema}
+			RegistrationForAdmin(uid, uf, ul, uu, um, ufp, usp, status)\\
+			Registration(uid, uf, ul, uu, um, ufp, usp, status)\\
+			APPTIZERS(appid, appname, appprice, appdetails)\\
+			BeefLamb(blid, blname, blprice, bldetails)\\
+			Chicken(ckid, ckname, ckprice, ckdetails)\\
+			Drink(did, dname, dprice, ddetails)\\
+			NoddlesRice(nrid, nrname, nrprice, nrdetails)\\
+			Pork(poid, poname, poprice, podetails)\\
+			Salad(said, saname, saprice, sadetails)\\
+			SeaFood(sfid, sfname, sfprice, sfdetails)\\
+			Soups(soid, soname, soprice, sodetails)\\
+			VegeTofu(vtid, vtname, vtprice, vtdetails)\\
+			ClientOrderList(colid, colname, colprice, colUser)\\
+			RankList(rlid, rlname, rlscore, rlcomments)
+	
+	
+	
+%	\begin{lstlisting}[
+%           language=SQL,
+%           showspaces=false,
+%           basicstyle=\ttfamily,
+%           %numbers=left,
+%           numberstyle=\tiny,
+%           commentstyle=\color{gray}
+%        ]
+%		1. Create database ResturentManagement;
+%		
+%		2. CREATE TABLE RegistrationForAdmin (
+%		u_id TINYINT UNSIGNED NOT NULL AUTO_INCREMENT,
+%		u_f_name varchar(80),
+%		u_l_name varchar(80),
+%		u_u_name varchar(80),
+%		U_mail varchar(50),
+%		u_f_pass varchar(20),
+%		u_r_pass varchar(20),
+%		status int(11)
+%		PRIMARY KEY (u_id)
+%		)ENGINE=InnoDB DEFAULT CHARSET=utf8;
+%		
+%		3. CREATE TABLE Salad (
+%		sl_id TINYINT UNSIGNED NOT NULL AUTO_INCREMENT,
+%		sl_name varchar(255),
+%		sl_price float(10, 2),
+%		sl_details varchar(255),
+%		PRIMARY KEY (sl_id)
+%		)ENGINE=InnoDB DEFAULT CHARSET=utf8;
+%
+% 		4. CREATE TABLE Soups (
+%		so_id TINYINT UNSIGNED NOT NULL AUTO_INCREMENT,
+%		so_name varchar(255),
+%		so_price float(10, 2),
+%		so_details varchar(255),
+%		PRIMARY KEY (so_id)
+%		)ENGINE=InnoDB DEFAULT CHARSET=utf8;
+%
+%  		5. CREATE TABLE Chicken (
+%		ck_id TINYINT UNSIGNED NOT NULL AUTO_INCREMENT,
+%		ck_name varchar(255),
+%		ck_price float(10, 2),
+%		ck_details varchar(255),
+%		PRIMARY KEY (ck_id)
+%		)ENGINE=InnoDB DEFAULT CHARSET=utf8;
+%
+%		6. CREATE TABLE Pork (
+%		po_id TINYINT UNSIGNED NOT NULL AUTO_INCREMENT,
+%		po_name varchar(255),
+%		po_price float(10, 2),
+%		po_details varchar(255),
+%		PRIMARY KEY (po_id)
+%		)ENGINE=InnoDB DEFAULT CHARSET=utf8;
+%
+%	 	7. CREATE TABLE BeefLamb (
+%		bl_id TINYINT UNSIGNED NOT NULL AUTO_INCREMENT,
+%		bl_name varchar(255),
+%		bl_price float(10, 2),
+%		bl_details varchar(255),
+%		PRIMARY KEY (bl_id)
+%		)ENGINE=InnoDB DEFAULT CHARSET=utf8;
+%
+%		8. CREATE TABLE SeaFood (
+%		sf_id TINYINT UNSIGNED NOT NULL AUTO_INCREMENT,
+%		sf_name varchar(255),
+%		sf_price float(10, 2),
+%		sf_details varchar(255),
+%		PRIMARY KEY (sf_id)
+%		)ENGINE=InnoDB DEFAULT CHARSET=utf8;
+%
+%	 	9. CREATE TABLE NoddlesRice (
+%		nr_id TINYINT UNSIGNED NOT NULL AUTO_INCREMENT,
+%		nr_name varchar(255),
+%		nr_price float(10, 2),
+%		nr_details varchar(255),
+%		PRIMARY KEY (nr_id)
+%		)ENGINE=InnoDB DEFAULT CHARSET=utf8;
+%
+%	 	10. CREATE TABLE VegeTofu (
+%		vt_id TINYINT UNSIGNED NOT NULL AUTO_INCREMENT,
+%		vt_name varchar(255),
+%		vt_price float(10, 2),
+%		vt_details varchar(255),
+%		PRIMARY KEY (vt_id)
+%		)ENGINE=InnoDB DEFAULT CHARSET=utf8;
+%
+%	 	11. CREATE TABLE ClientOrderList (
+%		col_id TINYINT UNSIGNED NOT NULL AUTO_INCREMENT,
+%		col_name varchar(255),
+%		col_price float(10, 2),
+%		UserName varchar(255),
+%		PRIMARY KEY (col_id)
+%		)ENGINE=InnoDB DEFAULT CHARSET=utf8;
+%
+%	 	12. ALTER TABLE `ClientOrderList` ADD `UserName` VARCHAR(255) NOT NULL AFTER `col_price`;
+%
+%	 	13. CREATE TABLE RankList (
+%		rl_id TINYINT UNSIGNED NOT NULL AUTO_INCREMENT,
+%		rl_name varchar(255),
+%		rl_score int,
+%		rl_comments varchar(255),
+%		PRIMARY KEY (rl_id)
+%		)ENGINE=InnoDB DEFAULT CHARSET=utf8;
+%		
+%	 	14. ALTER TABLE `Registration` ADD `reward_point` float(10, 2) NOT NULL AFTER `status`;
+%		
+%	\end{lstlisting}
+	
+	\subsubsection{Database tables structures}
+		\tab The table \ref{tab:adminregitable} is used for register a user as a admin of the system.
+		\begin{table}[H]
+		\center
+	\caption{Registration for admin}
+	\label{tab:adminregitable}
+	\begin{tabular}{|M{2.5cm}|M{3.5cm}|M{1cm}|N}
+	\hline
+	\fontsize{10}{5}\fontfamily{ptm}\selectfont {\bfseries{Name}} & \fontsize{10}{5}\fontfamily{ptm}\selectfont {\bfseries{Type}} & \fontsize{10}{5}\fontfamily{ptm}\selectfont {\bfseries{Null}} &\\[10pt]
+	\hline
+	\fontsize{10}{5}\fontfamily{ptm}\selectfont {u-id} & \fontsize{10}{5}\fontfamily{ptm}\selectfont {tinyint(3)} & \fontsize{10}{5}\fontfamily{ptm}\selectfont {NO} &\\[10pt]
+	\hline
+	\fontsize{10}{5}\fontfamily{ptm}\selectfont {u-f-name} & \fontsize{10}{5}\fontfamily{ptm}\selectfont {varchar(80)} & \fontsize{10}{5}\fontfamily{ptm}\selectfont {YES} &\\[10pt]
+	\hline
+	\fontsize{10}{5}\fontfamily{ptm}\selectfont {u-l-name} & \fontsize{10}{5}\fontfamily{ptm}\selectfont {varchar(80)} & \fontsize{10}{5}\fontfamily{ptm}\selectfont {YES} &\\[10pt]
+	\hline
+	\fontsize{10}{5}\fontfamily{ptm}\selectfont {u-u-name} & \fontsize{10}{5}\fontfamily{ptm}\selectfont {varchar(80)} & \fontsize{10}{5}\fontfamily{ptm}\selectfont {YES} &\\[10pt]
+	\hline
+	\fontsize{10}{5}\fontfamily{ptm}\selectfont {U-mail} & \fontsize{10}{5}\fontfamily{ptm}\selectfont {varchar(50)} & \fontsize{10}{5}\fontfamily{ptm}\selectfont {YES} &\\[10pt]
+	\hline
+	\fontsize{10}{5}\fontfamily{ptm}\selectfont {u-f-pass} & \fontsize{10}{5}\fontfamily{ptm}\selectfont {varchar(20)} & \fontsize{10}{5}\fontfamily{ptm}\selectfont {YES} &\\[10pt]
+	\hline
+	\fontsize{10}{5}\fontfamily{ptm}\selectfont {u-l-pass} & \fontsize{10}{5}\fontfamily{ptm}\selectfont {varchar(20)} & \fontsize{10}{5}\fontfamily{ptm}\selectfont {YES} &\\[10pt]
+	\hline
 	\end{tabular}
-\end{table}
-
-\subsection{Use Cases}
-	A use case diagram that is part of the Unified Modelling Language (UML) which was introduced in
-Section \ref{Sec:uml} gives a graphical overview of the functionality of a system. A use case diagram consists of
-actors that are normally the stakeholders of the system and their use cases commonly defined as goals.
-Figure \ref{fig:usecase} shows several use case scenarios of the system that convey how the stakeholders interact
-with the features to achieve a business requirement.
-\begin{figure}[H]
-		\centering
-		\includegraphics[height=7in]{/home/basedul/Documents/Report-writing-using-latex/ResturentManagementSystemReport/usecase.png}
-		\caption{Use case diagram showing some of the major fearures with in the asian restaurant management system}
-		\label{fig:usecase} 
-	\end{figure}
-
-The use case diagram is designed to be sequential so by following the use cases down the spine, one
-can follow the major steps of an order and several post features to query the data.
-
-\subsection{Features}
-	\label{sec:prioty}
-	An important part of requirements gathering is the production of a list of system features that cat-
-egorises on priority.
-
+	\end{table}
+	\tab The table \ref{tab:clientregitable} is used for register a user as a client of the system.
 	\begin{table}[H]
-	\centering
-	\caption{A table showing the proposed system features and allocated priorities.}
-	\label{tab:fea}
-	\begin{tabular}{l c r}
-		\bfseries{Feature} & \bfseries{Priority}\\ \hline
-		Communication of data between each application & 1\\
-		Meal ingredient & 1\\ \hline
-		Ability to define groups of ingredients that may be used in numerous meals & 2\\
-		Flexible meal grid design to fit any screen size & 2\\ \hline
-		User login functionality & 3\\
-		Interface for table management and selection & 3\\
+		\center
+	\caption{Registration for client}
+	\label{tab:clientregitable}
+	\begin{tabular}{|M{2.5cm}|M{3.5cm}|M{1cm}|N}
+	\hline
+	\fontsize{10}{5}\fontfamily{ptm}\selectfont {\bfseries{Name}} & \fontsize{10}{5}\fontfamily{ptm}\selectfont {\bfseries{Type}} & \fontsize{10}{5}\fontfamily{ptm}\selectfont {\bfseries{Null}} &\\[10pt]
+	\hline
+	\fontsize{10}{5}\fontfamily{ptm}\selectfont {u-id} & \fontsize{10}{5}\fontfamily{ptm}\selectfont {tinyint(3)} & \fontsize{10}{5}\fontfamily{ptm}\selectfont {NO} &\\[10pt]
+	\hline
+	\fontsize{10}{5}\fontfamily{ptm}\selectfont {u-f-name} & \fontsize{10}{5}\fontfamily{ptm}\selectfont {varchar(80)} & \fontsize{10}{5}\fontfamily{ptm}\selectfont {YES} &\\[10pt]
+	\hline
+	\fontsize{10}{5}\fontfamily{ptm}\selectfont {u-l-name} & \fontsize{10}{5}\fontfamily{ptm}\selectfont {varchar(80)} & \fontsize{10}{5}\fontfamily{ptm}\selectfont {YES} &\\[10pt]
+	\hline
+	\fontsize{10}{5}\fontfamily{ptm}\selectfont {u-u-name} & \fontsize{10}{5}\fontfamily{ptm}\selectfont {varchar(80)} & \fontsize{10}{5}\fontfamily{ptm}\selectfont {YES} &\\[10pt]
+	\hline
+	\fontsize{10}{5}\fontfamily{ptm}\selectfont {U-mail} & \fontsize{10}{5}\fontfamily{ptm}\selectfont {varchar(50)} & \fontsize{10}{5}\fontfamily{ptm}\selectfont {YES} &\\[10pt]
+	\hline
+	\fontsize{10}{5}\fontfamily{ptm}\selectfont {u-f-pass} & \fontsize{10}{5}\fontfamily{ptm}\selectfont {varchar(20)} & \fontsize{10}{5}\fontfamily{ptm}\selectfont {YES} &\\[10pt]
+	\hline
+	\fontsize{10}{5}\fontfamily{ptm}\selectfont {u-l-pass} & \fontsize{10}{5}\fontfamily{ptm}\selectfont {varchar(20)} & \fontsize{10}{5}\fontfamily{ptm}\selectfont {YES} &\\[10pt]
+	\hline
 	\end{tabular}
-\end{table}	
-\subsection{Measureable Goals and Requirements}
-	The measurable goals and requirements of the system are a list of manageable requirements and goals
-for each application that can be prioritised and ‘ticked off’. The software requirements specification (SRS) is a complete list of requirements to be designed and developed and can take the form of functional
-or non-functional requirements.
+	\end{table}
 	
-\subsection{Chapter Summary}
-	This chapter has discussed the requirements of the system and the development methodology that will
-be used throughout this project. The design of the system is documented in the next chapter.
+	\tab The table \ref{tab:clientorderlist} is used for hold the list of chooseing foods by client 
+	\begin{table}[H]
+		\center
+	\caption{Client order list}
+	\label{tab:clientorderlist}
+	\begin{tabular}{|M{2.5cm}|M{3.5cm}|M{1cm}|N}
+	\hline
+	\fontsize{10}{5}\fontfamily{ptm}\selectfont {\bfseries{Name}} & \fontsize{10}{5}\fontfamily{ptm}\selectfont {\bfseries{Type}} & \fontsize{10}{5}\fontfamily{ptm}\selectfont {\bfseries{Null}} &\\[10pt]
+	\hline
+	\fontsize{10}{5}\fontfamily{ptm}\selectfont {col-id} & \fontsize{10}{5}\fontfamily{ptm}\selectfont {tinyint(3)} & \fontsize{10}{5}\fontfamily{ptm}\selectfont {NO} &\\[10pt]
+	\hline
+	\fontsize{10}{5}\fontfamily{ptm}\selectfont {col-name} & \fontsize{10}{5}\fontfamily{ptm}\selectfont {varchar(255)} & \fontsize{10}{5}\fontfamily{ptm}\selectfont {YES} &\\[10pt]
+	\hline
+	\fontsize{10}{5}\fontfamily{ptm}\selectfont {col-price} & \fontsize{10}{5}\fontfamily{ptm}\selectfont {float(10, 2)} & \fontsize{10}{5}\fontfamily{ptm}\selectfont {YES} &\\[10pt]
+	\hline
+	\fontsize{10}{5}\fontfamily{ptm}\selectfont {UserName} & \fontsize{10}{5}\fontfamily{ptm}\selectfont {varchar(255)} & \fontsize{10}{5}\fontfamily{ptm}\selectfont {YES} &\\[10pt]
+	\hline
+	
+	\end{tabular}
+	\end{table}
+	
+	\tab This table \ref{tab:topfoods} is used for hold the list of top ranked food depend on score number and number of comments.
+	\begin{table}[H]
+		\center
+	\caption{Top foods}
+	\label{tab:topfoods}
+	\begin{tabular}{|M{2.5cm}|M{3.5cm}|M{1cm}|N}
+	\hline
+	\fontsize{10}{5}\fontfamily{ptm}\selectfont {\bfseries{Name}} & \fontsize{10}{5}\fontfamily{ptm}\selectfont {\bfseries{Type}} & \fontsize{10}{5}\fontfamily{ptm}\selectfont {\bfseries{Null}} &\\[10pt]
+	\hline
+	\fontsize{10}{5}\fontfamily{ptm}\selectfont {dl-id} & \fontsize{10}{5}\fontfamily{ptm}\selectfont {tinyint(3)} & \fontsize{10}{5}\fontfamily{ptm}\selectfont {NO} &\\[10pt]
+	\hline
+	\fontsize{10}{5}\fontfamily{ptm}\selectfont {rl-name} & \fontsize{10}{5}\fontfamily{ptm}\selectfont {varchar(255)} & \fontsize{10}{5}\fontfamily{ptm}\selectfont {YES} &\\[10pt]
+	\hline
+	\fontsize{10}{5}\fontfamily{ptm}\selectfont {rl-score} & \fontsize{10}{5}\fontfamily{ptm}\selectfont {int} & \fontsize{10}{5}\fontfamily{ptm}\selectfont {YES} &\\[10pt]
+	\hline
+	\fontsize{10}{5}\fontfamily{ptm}\selectfont {rl-comments} & \fontsize{10}{5}\fontfamily{ptm}\selectfont {varchar(255)} & \fontsize{10}{5}\fontfamily{ptm}\selectfont {YES} &\\[10pt]
+	\hline
+	\end{tabular}
+	\end{table}
+	
+	\tab This table \ref{tab:salad} is used for hold the list of salads.
+	\begin{table}[H]
+		\center
+	\caption{Salad table}
+	\label{tab:salad}
+	\begin{tabular}{|M{2.5cm}|M{3.5cm}|M{1cm}|N}
+	\hline
+	\fontsize{10}{5}\fontfamily{ptm}\selectfont {\bfseries{Name}} & \fontsize{10}{5}\fontfamily{ptm}\selectfont {\bfseries{Type}} & \fontsize{10}{5}\fontfamily{ptm}\selectfont {\bfseries{Null}} &\\[10pt]
+	\hline
+	\fontsize{10}{5}\fontfamily{ptm}\selectfont {sl-id} & \fontsize{10}{5}\fontfamily{ptm}\selectfont {tinyint(3)} & \fontsize{10}{5}\fontfamily{ptm}\selectfont {NO} &\\[10pt]
+	\hline
+	\fontsize{10}{5}\fontfamily{ptm}\selectfont {sl-name} & \fontsize{10}{5}\fontfamily{ptm}\selectfont {varchar(255)} & \fontsize{10}{5}\fontfamily{ptm}\selectfont {YES} &\\[10pt]
+	\hline
+	\fontsize{10}{5}\fontfamily{ptm}\selectfont {sl-price} & \fontsize{10}{5}\fontfamily{ptm}\selectfont {float(10, 2)} & \fontsize{10}{5}\fontfamily{ptm}\selectfont {YES} &\\[10pt]
+	\hline
+	\fontsize{10}{5}\fontfamily{ptm}\selectfont {sl-details} & \fontsize{10}{5}\fontfamily{ptm}\selectfont {varchar(255)} & \fontsize{10}{5}\fontfamily{ptm}\selectfont {YES} &\\[10pt]
+	\hline
+	\end{tabular}
+	\end{table}
+	
+	\tab This table \ref{tab:chicken} is used for hold the list of Chickens.
+	\begin{table}[H]
+		\center
+	\caption{Chicken table}
+	\label{tab:chicken}
+	\begin{tabular}{|M{2.5cm}|M{3.5cm}|M{1cm}|N}
+	\hline
+	\fontsize{10}{5}\fontfamily{ptm}\selectfont {\bfseries{Name}} & \fontsize{10}{5}\fontfamily{ptm}\selectfont {\bfseries{Type}} & \fontsize{10}{5}\fontfamily{ptm}\selectfont {\bfseries{Null}} &\\[10pt]
+	\hline
+	\fontsize{10}{5}\fontfamily{ptm}\selectfont {ck-id} & \fontsize{10}{5}\fontfamily{ptm}\selectfont {tinyint(3)} & \fontsize{10}{5}\fontfamily{ptm}\selectfont {NO} &\\[10pt]
+	\hline
+	\fontsize{10}{5}\fontfamily{ptm}\selectfont {ck-name} & \fontsize{10}{5}\fontfamily{ptm}\selectfont {varchar(255)} & \fontsize{10}{5}\fontfamily{ptm}\selectfont {YES} &\\[10pt]
+	\hline
+	\fontsize{10}{5}\fontfamily{ptm}\selectfont {ck-price} & \fontsize{10}{5}\fontfamily{ptm}\selectfont {float(10, 2)} & \fontsize{10}{5}\fontfamily{ptm}\selectfont {YES} &\\[10pt]
+	\hline
+	\fontsize{10}{5}\fontfamily{ptm}\selectfont {ck-details} & \fontsize{10}{5}\fontfamily{ptm}\selectfont {varchar(255)} & \fontsize{10}{5}\fontfamily{ptm}\selectfont {YES} &\\[10pt]
+	\hline
+	\end{tabular}
+	\end{table}
+	
+	\tab This table \ref{tab:vegetofu} is used for hold the list of Vegetables and Tofus.
+	\begin{table}[H]
+		\center
+	\caption{Vegetable and Tofu table}
+	\label{tab:vegetofu}
+	\begin{tabular}{|M{2.5cm}|M{3.5cm}|M{1cm}|N}
+	\hline
+	\fontsize{10}{5}\fontfamily{ptm}\selectfont {\bfseries{Name}} & \fontsize{10}{5}\fontfamily{ptm}\selectfont {\bfseries{Type}} & \fontsize{10}{5}\fontfamily{ptm}\selectfont {\bfseries{Null}} &\\[10pt]
+	\hline
+	\fontsize{10}{5}\fontfamily{ptm}\selectfont {vt-id} & \fontsize{10}{5}\fontfamily{ptm}\selectfont {tinyint(3)} & \fontsize{10}{5}\fontfamily{ptm}\selectfont {NO} &\\[10pt]
+	\hline
+	\fontsize{10}{5}\fontfamily{ptm}\selectfont {vt-name} & \fontsize{10}{5}\fontfamily{ptm}\selectfont {varchar(255)} & \fontsize{10}{5}\fontfamily{ptm}\selectfont {YES} &\\[10pt]
+	\hline
+	\fontsize{10}{5}\fontfamily{ptm}\selectfont {vt-price} & \fontsize{10}{5}\fontfamily{ptm}\selectfont {float(10, 2)} & \fontsize{10}{5}\fontfamily{ptm}\selectfont {YES} &\\[10pt]
+	\hline
+	\fontsize{10}{5}\fontfamily{ptm}\selectfont {vt-details} & \fontsize{10}{5}\fontfamily{ptm}\selectfont {varchar(255)} & \fontsize{10}{5}\fontfamily{ptm}\selectfont {YES} &\\[10pt]
+	\hline
+	\end{tabular}
+	\end{table}
+	
+	\tab This table \ref{tab:nodrice} is used for hold the list of Noodles and Rice.
+	\begin{table}[H]
+		\center
+	\caption{Noodles and Rice table}
+	\label{tab:nodrice}
+	\begin{tabular}{|M{2.5cm}|M{3.5cm}|M{1cm}|N}
+	\hline
+	\fontsize{10}{5}\fontfamily{ptm}\selectfont {\bfseries{Name}} & \fontsize{10}{5}\fontfamily{ptm}\selectfont {\bfseries{Type}} & \fontsize{10}{5}\fontfamily{ptm}\selectfont {\bfseries{Null}} &\\[10pt]
+	\hline
+	\fontsize{10}{5}\fontfamily{ptm}\selectfont {nr-id} & \fontsize{10}{5}\fontfamily{ptm}\selectfont {tinyint(3)} & \fontsize{10}{5}\fontfamily{ptm}\selectfont {NO} &\\[10pt]
+	\hline
+	\fontsize{10}{5}\fontfamily{ptm}\selectfont {nr-name} & \fontsize{10}{5}\fontfamily{ptm}\selectfont {varchar(255)} & \fontsize{10}{5}\fontfamily{ptm}\selectfont {YES} &\\[10pt]
+	\hline
+	\fontsize{10}{5}\fontfamily{ptm}\selectfont {nr-price} & \fontsize{10}{5}\fontfamily{ptm}\selectfont {float(10, 2)} & \fontsize{10}{5}\fontfamily{ptm}\selectfont {YES} &\\[10pt]
+	\hline
+	\fontsize{10}{5}\fontfamily{ptm}\selectfont {nr-details} & \fontsize{10}{5}\fontfamily{ptm}\selectfont {varchar(255)} & \fontsize{10}{5}\fontfamily{ptm}\selectfont {YES} &\\[10pt]
+	\hline
+	\end{tabular}
+	\end{table}
+	
+	
+	
 \newpage
-\section{Chapter Four}
-{\bfseries\Large Design}
+
+\section{Design}
+%{\bfseries\Large Design}
 	\subsection{Chapter Overview}
-	This chapter will focus on the design of the system using diagrams to illustrate graphically certain
+	\tab This chapter will focus on the design of the system using diagrams to illustrate graphically certain
 sections of the software system.
 
+	\subsection{Detailed Design}
+	\tab In this section, I designed the first flowchart of the Asian Restaurant Management System. The purpose
+of the flowchart is to show functions the Asian Restaurant Management System has.	
+	
+		\begin{figure}[H]
+		\centering
+		\includegraphics[height=3.2in]{/home/basedul/Documents/Report-writing-using-latex/ResturentManagementSystemReport/flowchart.png}
+		\caption{System flowchart}
+		\label{fig:flowchart} 
+	\end{figure}
+	\subsection{Manager and Customer function}
+	\subsubsection{Register or login function}
+	\tab Every time a registered user is must to login in order to client confirmed order or admin see the order list or new food add on table, the
+user has to input both of the correct user name and the password into the input-form. The
+application will get the input data and send to the system Server, and the server will
+communicate with the MySQL database and check if the user name and password are	matched. If the input is correct, the the order of clent will display the main window with the
+name of the user. Otherwise, the error-
+window will be instead.
+		\begin{figure}[H]
+		\centering
+		\includegraphics[height=6in]{/home/basedul/Documents/Report-writing-using-latex/ResturentManagementSystemReport/regispag.png}
+		\caption{Registration flowchart}
+		\label{fig:regiflow} 
+		\end{figure}
+	
+	\subsubsection{Order list}
+		\tab After successfully admin login, he/she see the list of order.
+		\begin{figure}[H]
+		\centering
+		\includegraphics[height=6in]{/home/basedul/Documents/Report-writing-using-latex/ResturentManagementSystemReport/seeclientorderlist.png}
+		\caption{Client order list flowchart}
+		\label{fig:seeclientorderlist} 
+		\end{figure}
+		
+	\subsubsection{Confirmed order after successfull signin}
+		\tab After successfully client login, he/she confirmed the order.
+		\begin{figure}[H]
+		\centering
+		\includegraphics[height=6in]{/home/basedul/Documents/Report-writing-using-latex/ResturentManagementSystemReport/confirmedOrder.png}
+		\caption{Confirmed order flowchart}
+		\label{fig:confirmedOrder} 
+		\end{figure}
+		
+
+		
+		
+		
+	\begin{comment}		
+		
+	\begin{comment}
 	\subsection{Introduction}
-	This project has been designed using numerous diagrammatic techniques. Recall from Section \ref{fig:uml}, that
+	\tab This project has been designed using numerous diagrammatic techniques. Recall from Section \ref{fig:uml}, that
 the most general modelling language to describe both the structure and behaviour of a software system
 is Unified Modelling language (UML).
 Use case diagrams have already been used in the requirements analysis as a way to graphically
 overview the order process within the system. Other diagrams from the UML family are used in the
 design stage to show the structure and behaviour of numerous sophisticated design feature.
 \subsection{Component Diagram}
-A component diagram is part of UML and its main purpose is to show the structural relationship
+\tab A component diagram is part of UML and its main purpose is to show the structural relationship
 between components in the system. A component diagram is useful for this system as it shows the
 higher architecture, as shown in figure \ref{fig:comdia}
 \begin{figure}[H]
@@ -541,6 +939,7 @@ the key must be determined only by the key.
 Finally for the database to be in the desired Boyce-Codd normal form, all tables must abide by the
 first, second and third normal forms and must not have any determinants that are not candidate keys
 for the table.
+\end{commment}
 \begin{comment}
 \subsubsection{Entity Relationship Diagram}
 	\label{sec:entity}
@@ -631,15 +1030,111 @@ flow of an order.
 \end{comment}
 
 \subsection{Chapter Summary}
-	This chapter has displayed many graphical representations of the design of the system. The implementation of the system is documented in the next chapter.
+	\tab This chapter has displayed many graphical representations of the design of the system. The implementation of the system is documented in the next chapter.
 \newpage
-\section{Chapter Five}
-{\bfseries \Large Implementation}
+\section{Implementation And Testing}
+%{\bfseries \Large Implementation and Testing}
 	\subsection{Chapter Overview}
-	This chapter discusses the theory behind the implementation of interesting and complex features using
-pseudocode and diagrams for clear explanations. The implementation stage of any project can be the
-most enjoyable part and with a well structured plan and appropriate development methodology can be
-a trouble free stage.
+	\tab Implementation is the process in the project in which the existing design is changed into working system and is giving assurance confidence on the new system for the users that it will work correctly. It involves careful planning, checkout of the current system and it compulsion or constraints of design, implementation of methods to achieve the changeover, an evaluation of the changeover methods. Apart from it planning major tasks of arranging the implementation are educating and training of users. The more complex the system is being implemented the more involved will be the system analysis and the design efforts requires just for the implementation. The implementation process begins at preparing a plan for the implementation of the system.
+	\subsection{Document List}
+	
+		\begin{table}[H]
+		\center
+	\caption{Document list}
+	\label{tab:vegetofu}
+	\begin{tabular}{|M{0.7cm}|M{6cm}|M{9cm}|N}
+	\hline
+	\fontsize{10}{5}\fontfamily{ptm}\selectfont {\bfseries{No}} & \fontsize{10}{5}\fontfamily{ptm}\selectfont {\bfseries{Package name}} & \fontsize{10}{5}\fontfamily{ptm}\selectfont {\bfseries{Purpose}} &\\[10pt]
+	\hline
+	\fontsize{10}{5}\fontfamily{ptm}\selectfont {1} & \fontsize{10}{5}\fontfamily{ptm}\selectfont {Database connection} & \fontsize{10}{5}\fontfamily{ptm}\selectfont {This package use for implementation of database connection with local host using jdbc driver} &\\[10pt]
+	\hline
+	\fontsize{10}{5}\fontfamily{ptm}\selectfont {2} & \fontsize{10}{5}\fontfamily{ptm}\selectfont {Food add on database} & \fontsize{10}{5}\fontfamily{ptm}\selectfont {This package use for add food name, price and details into specific table of food} &\\[10pt]
+	\hline
+	\fontsize{10}{5}\fontfamily{ptm}\selectfont {3} & \fontsize{10}{5}\fontfamily{ptm}\selectfont {Home activity} & \fontsize{10}{5}\fontfamily{ptm}\selectfont {Home activity package use for design and implementation of homepage} &\\[10pt]
+	\hline
+	\fontsize{10}{5}\fontfamily{ptm}\selectfont {4} & \fontsize{10}{5}\fontfamily{ptm}\selectfont {Order insert into orderlist table} & \fontsize{10}{5}\fontfamily{ptm}\selectfont {After confirmed order from customer, these order are insert into order list table using this package} &\\[10pt]
+	\hline
+	\fontsize{10}{5}\fontfamily{ptm}\selectfont {5} & \fontsize{10}{5}\fontfamily{ptm}\selectfont {Order insert into orderlist table} & \fontsize{10}{5}\fontfamily{ptm}\selectfont {After confirmed order from customer, these order are insert into order list table using this package} &\\[10pt]
+	\hline
+	\fontsize{10}{5}\fontfamily{ptm}\selectfont {6} & \fontsize{10}{5}\fontfamily{ptm}\selectfont {Personal info show} & \fontsize{10}{5}\fontfamily{ptm}\selectfont {This package use for personal information show on homepage} &\\[10pt]
+	\hline
+	\fontsize{10}{5}\fontfamily{ptm}\selectfont {7} & \fontsize{10}{5}\fontfamily{ptm}\selectfont {Read data from Database} & \fontsize{10}{5}\fontfamily{ptm}\selectfont {This package use for read data from database and set into table on home page} &\\[10pt]
+	\hline
+	\fontsize{10}{5}\fontfamily{ptm}\selectfont {8} & \fontsize{10}{5}\fontfamily{ptm}\selectfont {Registration} & \fontsize{10}{5}\fontfamily{ptm}\selectfont {This package use for registration purpose of admin and client} &\\[10pt]
+	\hline
+	\fontsize{10}{5}\fontfamily{ptm}\selectfont {9} & \fontsize{10}{5}\fontfamily{ptm}\selectfont {Search from database} & \fontsize{10}{5}\fontfamily{ptm}\selectfont {This package use for searching an item by name or price of food from database} &\\[10pt]
+	\hline
+	\end{tabular}
+	\end{table}
+	
+	\subsection{User module}
+		\subsubsection{Sign in}
+			\tab Already registered user will have to login in the system by inputting username and password in order to enter the system. The screen shot is shown in Fig \ref{fig:login} 
+			\begin{figure}[H]
+		\centering
+		\includegraphics[height=2in]{/home/basedul/Documents/Report-writing-using-latex/ResturentManagementSystemReport/signin.JPG}
+		\caption{Sign in window}
+		\label{fig:login} 
+		\end{figure}
+		
+		\subsubsection{Sign up}
+			\tab A new user will have to sign up in the system by providing essential details in order to be a client of the restaurant. The screen shot is shown in Fig \ref{fig:log out} 
+			\begin{figure}[H]
+		\centering
+		\includegraphics[height=3in]{/home/basedul/Documents/Report-writing-using-latex/ResturentManagementSystemReport/signup.JPG}
+		\caption{Sign up window}
+		\label{fig:log out} 
+		\end{figure}
+		
+		\subsubsection{HomePage}
+			\tab After a successful sign in, the client is redirected to the home activity of the application.  It includes the activities that happens in the restaurant and rewards  top foods also modifying about the personal information. The screen shot is shown in Fig \ref{fig:homepage} and Fig \ref{fig:topfood1}.
+			\begin{figure}[H]
+		\centering
+		\includegraphics[height=2.3in]{/home/basedul/Documents/Report-writing-using-latex/ResturentManagementSystemReport/mainactivity.JPG}
+		\caption{Homepage window}
+		\label{fig:homepage} 
+		
+		
+		\vspace{2cm}
+		
+		
+		\includegraphics[height=1.7in]{/home/basedul/Documents/Report-writing-using-latex/ResturentManagementSystemReport/order.JPG}
+		\caption{Order list window}
+		\label{fig:topfood1} 	
+		
+		
+		\end{figure}
+		
+		\subsubsection{Topfoods}
+			\tab Write user experience or comment on the dish and submit satisfaction score and user get reward points after sharing their experiences. The screen shot is shown in Fig \ref{fig:topfood}. 
+			\begin{figure}[H]
+		\centering
+		\includegraphics[height=2.3in]{/home/basedul/Documents/Report-writing-using-latex/ResturentManagementSystemReport/topfood.JPG}
+		\caption{Top food window}
+		\label{fig:topfood} 
+		\end{figure}
+		
+		
+		\subsubsection{Modify personal information}
+	\tab Users can modify their information lately if he/she wishes to. But to remind that, apart from the username, other information are changeable (as shown in Fig \ref{fig:madmin} and Fig \ref{fig:mclient}.
+	
+			\begin{figure}[H]
+		\centering
+		\includegraphics[height=2.5in]{/home/basedul/Documents/Report-writing-using-latex/ResturentManagementSystemReport/modifyc.JPG}
+		\caption{Modify admin information window}
+		\label{fig:madmin} 
+		
+		
+		\vspace{2cm}
+		
+		
+		\includegraphics[height=2.5in]{/home/basedul/Documents/Report-writing-using-latex/ResturentManagementSystemReport/modifya.JPG}
+		\caption{Modify client information window}
+		\label{fig:mclient} 
+		\end{figure}	
+						
+		
+
 	\begin{comment}
 	\subsection{Implementing Extreme Programming (XP)}
 	As discussed in section \ref{dev:agile}, this project used an agile methodology called Extreme Programming (XP).
@@ -6381,60 +6876,60 @@ public class Appetizers extends javax.swing.JFrame {
 	 	14. ALTER TABLE `Registration` ADD `reward_point` float(10, 2) NOT NULL AFTER `status`;
 		
 \end{lstlisting}
-	
+	\end{comment}
 	\subsection{Code Documentation}
-	Code documentation is an important part of any software engineering project. Throughout the im-
+	\tab Code documentation is an important part of any software engineering project. Throughout the im-
 plementation, a JavaDoc tool was used to generate HTML API documentation of the project. The
 JavaDoc could then be used to provide assistance to any future developer.
 
 	\subsection{Version Control}
-	Due to the type of development methodology used for this project, incremental backups of the system
+	\tab Due to the type of development methodology used for this project, incremental backups of the system
 were required. Version control systems (also known as Revision control) such as Mercurial manage
 the changes to documents storing each backup in its own revision with the ability to restore back to a
 particular version in the event of debugging.
 	
-	\end{comment}	
+		
 
 	\subsection{Chapter Summary}
-	This chapter has discussed the interesting aspects from the implementation stage. The next chapter
+	\tab This chapter has discussed the interesting aspects from the implementation stage. The next chapter
 documents the results by demonstrating the working system.
 	
 	\newpage	
-	\section{Chapter Sixth}
-	{\bfseries \Large Conclusion}
+	\section{Conclusion}
+	%{\bfseries \Large Conclusion}
 	\subsection{Chapter Overview}
-		This chapters draws the project report to a close and reflects on the design decisions made throughout.
+		\tab This chapters draws the project report to a close and reflects on the design decisions made throughout.
 It also discusses possible future development ideas.
-\begin{comment}
+
 	\subsection{Project Overview}
-	The system achieved all of its proposed priority 1 and priority 2 functional requirements and even some
+	\tab The system achieved all of its proposed priority 1 and priority 2 functional requirements and even some
 priority 3 outlined in Section \ref{sec:prioty}.
 However, the initial project plan and gannt chart had to be modified as the project became about
 a month behind due to underestimations on the time to implement some desired features. This meant
 that some of the lower priority requirements had to be scrapped.
 	\subsection{Further Development}
-	This project was developed under time constraints of 120 hours. Therefore the proposed features
+	\tab This project was developed under time constraints of 120 hours. Therefore the proposed features
 specified in the requirements were what the developer thought to be realistic targets.
 However, if more time became available the following could be implemented.
 	\subsubsection{Graphical User Interface (GUI)}
-	Currently the GUI was adequate to do the job but maybe the GUI could have had a more appealing
+	\tab Currently the GUI was adequate to do the job but maybe the GUI could have had a more appealing
 look and feel. This all beckons on whether or not Java was the best programming language to use to
 generate the best looking GUI. Maybe a web developed GUI could have been a better alternative but
 with the developer having little experience in web development this would not have been ideal.
 	\subsubsection{Table Management}
-	A feature that was thought of as a possibility but never documented past the design stage was the use
+	\tab A feature that was thought of as a possibility but never documented past the design stage was the use
 of a table management feature. This would give the system the ability to reserve and allocate tables.
 The table data could then be used to help predict how busy the restaurant may be and help prepare
 the staff rota.
 	\subsection{Reflection}
-	On reflection, even though the majority of the proposed features were completed and the project was
+	\tab On reflection, even though the majority of the proposed features were completed and the project was
 deemed a huge success, the author felt that he could have been more disciplined in keeping to the plan.
 He also felt that the proposed features were slightly unrealistic and some even unnecessary.
 For the general project, the author felt that important aspects of research were not undertaken
 including interviews with restaurant owners and user questionnaires. This would have provided good
 insight into existing solutions.
 	\subsection{Skills Attained}
-	This project has helped the author to attain new skills as well as develop existing skills. The skills
+	\tab This project has helped the author to attain new skills as well as develop existing skills. The skills
 attained have been both technical and individual with the main individual skill being project manage-
 ment which required good time keeping and management of the workload. \\
 Some technical skills that
@@ -6444,19 +6939,20 @@ have been developed include:
 		\item Relational database schema design and trigger coding.
 		\item Advanced coding using Java threads.
 	\end{itemize}
-\end{comment}
 \subsection{Chapter Summary}	
-This chapter has concluded the project report and provided an insight into possible future development.
+\tab This chapter has concluded the project report and provided an insight into possible future development.
 	
 
-\newpage
-\bibliographystyle{IEEEtran}
-\section*{ACKNOWLEDGEMENTS}
-	I would like to thank my project supervisor, Prof. Liang Zhao, for providing an awful amount of
-guidance and input throughout the writing of this report. In addition, I’d like to thank my family for
-the support throughout my final year at university, and for checking over my report.\\
+
 \newpage
 \bibliography{/home/basedul/Documents/Report-writing-using-latex/ResturentManagementSystemReport/req.bib}
+\bibliographystyle{IEEEtran}
+\newpage
 
+\section{Acknowledgement}
+	\tab Foremost, I would like to express my sincere gratitude to the almighty Allah for His blessings and protection throughout my undergraduate studies.\\ 
+\tab My sincere thanks to my supervisor,  \textbf{Liang Zhao} for the continuous support of my Bachelor's study, patience, motivation, enthusiasm, and immense knowledge. His guidance helped me in all the time of research and writing of this thesis. I could not have imagined having a better advisor and mentor.\\
+        \tab I also thank my fellow classmates, my friends and for all the fun we have had in the last four years.\\
+        \tab Last but not the least; I would like to thank my parents \textbf{Mr. Syed Amin Uddin and Mrs. Hajera Amin and my aunt Ms. Noorjahan Khanam} for their prayers, support, encouragement and their admonishment.\\
 
 \end{document}

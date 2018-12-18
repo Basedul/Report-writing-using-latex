@@ -1,10 +1,29 @@
-% UTF-8 encoding
-% bad-looking fonts (CJKfonts package)
-% latex+dvips, latex+dvipdfm(x) or pdflatex
 \documentclass{article}
-\usepackage{CJKutf8}
+
+
 \begin{document}
-\begin{CJK*}{UTF8}{gbsn}
-文章内容。
-\clearpage\end{CJK*}
+\begin{table}[ht]
+	\caption{A table showing the stakeholders of the project}
+	\label{tab:adminregitable}
+	\begin{tabular}{|M{2cm}|M{2cm}|M{2cm}|N}
+	\hline
+	\fontsize{12}{30}\fontfamily{ptm}\selectfont {u_id} & \fontsize{12}{30}\fontfamily{ptm}\selectfont {tinyint(3)} & \fontsize{12}{30}\fontfamily{ptm}\selectfont {NO} &\\[25pt]
+	\hline
+	\fontsize{12}{30}\fontfamily{ptm}\selectfont {u_f_name} & \fontsize{12}{30}\fontfamily{ptm}\selectfont {varchar(80)} & \fontsize{12}{30}\fontfamily{ptm}\selectfont {YES} &\\[25pt]
+	\hline
+	\fontsize{12}{30}\fontfamily{ptm}\selectfont {u_l_name} & \fontsize{12}{30}\fontfamily{ptm}\selectfont {varchar(80)} & \fontsize{12}{30}\fontfamily{ptm}\selectfont {YES} &\\[25pt]
+	\hline
+	\fontsize{12}{30}\fontfamily{ptm}\selectfont {u_u_name} & \fontsize{12}{30}\fontfamily{ptm}\selectfont {varchar(80)} & \fontsize{12}{30}\fontfamily{ptm}\selectfont {YES} &\\[25pt]
+	\hline
+	\fontsize{12}{30}\fontfamily{ptm}\selectfont {U_mail} & \fontsize{12}{30}\fontfamily{ptm}\selectfont {varchar(50)} & \fontsize{12}{30}\fontfamily{ptm}\selectfont {YES} &\\[25pt]
+	\hline
+	\fontsize{12}{30}\fontfamily{ptm}\selectfont {u_f_pass} & \fontsize{12}{30}\fontfamily{ptm}\selectfont {varchar(20)} & \fontsize{12}{30}\fontfamily{ptm}\selectfont {YES} &\\[25pt]
+	\hline
+	\fontsize{12}{30}\fontfamily{ptm}\selectfont {u_l_pass} & \fontsize{12}{30}\fontfamily{ptm}\selectfont {varchar(20)} & \fontsize{12}{30}\fontfamily{ptm}\selectfont {YES} &\\[25pt]
+	\hline
+	\end{tabular}
+	\end{table}	
+	
+
+
 \end{document}

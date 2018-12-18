@@ -11,53 +11,56 @@ Database file #1: /home/basedul/Documents/Report-writing-using-latex/ResturentMa
 -- IEEEtran.bst version 1.14 (2015/08/26) by Michael Shell.
 -- http://www.michaelshell.org/tex/ieeetran/bibtex/
 -- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
-Warning--empty journal in RefWorks:1
-Warning--empty journal in Ref:6
-Warning--empty journal in Ref:2
-Warning--empty journal in Ref:3
-Warning--empty journal in Ref:4
+Warning--empty title in Ref:5
 Warning--empty journal in Ref:5
+Warning--empty year in Ref:5
+Warning--empty author in Ref:7
+Warning--empty journal in Ref:7
+Warning--empty year in Ref:7
+Warning--empty author in Ref:8
+Warning--empty journal in Ref:8
+Warning--empty year in Ref:8
 
 Done.
-You've used 6 entries,
+You've used 3 entries,
             4087 wiz_defined-function locations,
-            855 strings with 8069 characters,
-and the built_in function-call counts, 2120 in all, are:
-= -- 161
-> -- 24
+            833 strings with 7658 characters,
+and the built_in function-call counts, 928 in all, are:
+= -- 48
+> -- 6
 < -- 0
-+ -- 12
-- -- 6
-* -- 105
-:= -- 445
-add.period$ -- 12
-call.type$ -- 6
-change.case$ -- 6
++ -- 4
+- -- 1
+* -- 70
+:= -- 179
+add.period$ -- 5
+call.type$ -- 3
+change.case$ -- 2
 chr.to.int$ -- 0
 cite$ -- 12
-duplicate$ -- 180
-empty$ -- 187
-format.name$ -- 6
-if$ -- 428
+duplicate$ -- 80
+empty$ -- 84
+format.name$ -- 1
+if$ -- 169
 int.to.chr$ -- 0
-int.to.str$ -- 6
-missing$ -- 30
-newline$ -- 49
-num.names$ -- 6
-pop$ -- 86
+int.to.str$ -- 3
+missing$ -- 13
+newline$ -- 38
+num.names$ -- 1
+pop$ -- 50
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 2
-skip$ -- 156
+skip$ -- 59
 stack$ -- 0
-substring$ -- 6
-swap$ -- 82
+substring$ -- 2
+swap$ -- 27
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 5
-type$ -- 6
-warning$ -- 6
-while$ -- 6
-width$ -- 7
-write$ -- 76
-(There were 6 warnings)
+type$ -- 3
+warning$ -- 9
+while$ -- 1
+width$ -- 4
+write$ -- 46
+(There were 9 warnings)

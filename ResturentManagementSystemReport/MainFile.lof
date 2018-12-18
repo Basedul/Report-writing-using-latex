@@ -1,5 +1,17 @@
-\contentsline {figure}{\numberline {1}{\ignorespaces UML diagram for Asian Restaurant Management system.}}{5}{figure.1}
-\contentsline {figure}{\numberline {2}{\ignorespaces Boehm's cost model \cite {RefWorks:1}}}{6}{figure.2}
-\contentsline {figure}{\numberline {3}{\ignorespaces Use case diagram showing some of the major fearures with in the asian restaurant management system}}{9}{figure.3}
-\contentsline {figure}{\numberline {4}{\ignorespaces Component diagram showing the higher level architecture of the system.}}{11}{figure.4}
-\contentsline {figure}{\numberline {5}{\ignorespaces Database comparison diagram \cite {Ref:6}}}{13}{figure.5}
+\contentsline {figure}{\numberline {1}{\ignorespaces System block diagram.}}{6}{figure.1}
+\contentsline {figure}{\numberline {2}{\ignorespaces Admin Register entity diagram}}{7}{figure.2}
+\contentsline {figure}{\numberline {3}{\ignorespaces Client Register entity diagram}}{7}{figure.3}
+\contentsline {figure}{\numberline {4}{\ignorespaces Food add entity diagram}}{8}{figure.4}
+\contentsline {figure}{\numberline {5}{\ignorespaces Comments/Score entity diagram}}{8}{figure.5}
+\contentsline {figure}{\numberline {6}{\ignorespaces Entity Relationship diagram}}{9}{figure.6}
+\contentsline {figure}{\numberline {7}{\ignorespaces System flowchart}}{13}{figure.7}
+\contentsline {figure}{\numberline {8}{\ignorespaces Registration flowchart}}{14}{figure.8}
+\contentsline {figure}{\numberline {9}{\ignorespaces Client order list flowchart}}{15}{figure.9}
+\contentsline {figure}{\numberline {10}{\ignorespaces Confirmed order flowchart}}{16}{figure.10}
+\contentsline {figure}{\numberline {11}{\ignorespaces Sign in window}}{18}{figure.11}
+\contentsline {figure}{\numberline {12}{\ignorespaces Sign up window}}{18}{figure.12}
+\contentsline {figure}{\numberline {13}{\ignorespaces Homepage window}}{19}{figure.13}
+\contentsline {figure}{\numberline {14}{\ignorespaces Order list window}}{19}{figure.14}
+\contentsline {figure}{\numberline {15}{\ignorespaces Top food window}}{20}{figure.15}
+\contentsline {figure}{\numberline {16}{\ignorespaces Modify admin information window}}{21}{figure.16}
+\contentsline {figure}{\numberline {17}{\ignorespaces Modify client information window}}{21}{figure.17}
