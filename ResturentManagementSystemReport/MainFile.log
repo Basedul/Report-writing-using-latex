@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.12.2)  20 DEC 2018 16:47
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.12.2)  21 DEC 2018 01:26
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1132,14 +1132,14 @@ les
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2015/06/04 1.6 listings language file
 )
-LaTeX Font Info:    Try loading font information for T1+ntxtlf on input line 80
+LaTeX Font Info:    Try loading font information for T1+ntxtlf on input line 81
 .
 
 (/usr/share/texlive/texmf-dist/tex/latex/newtx/t1ntxtlf.fd
 File: t1ntxtlf.fd 2015/01/17 v1.0 font definition file for T1/ntx/tlf
 )
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
-(Font)              scaled to size 12.0pt on input line 80.
+(Font)              scaled to size 12.0pt on input line 81.
  (./MainFile.aux
 
 LaTeX Warning: Label `tab:vegetofu' multiply defined.
@@ -1147,118 +1147,118 @@ LaTeX Warning: Label `tab:vegetofu' multiply defined.
 )
 \openout1 = `MainFile.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/ntxmi/m/it on input line 80.
-LaTeX Font Info:    Try loading font information for OML+ntxmi on input line 80
+LaTeX Font Info:    Checking defaults for OML/ntxmi/m/it on input line 81.
+LaTeX Font Info:    Try loading font information for OML+ntxmi on input line 81
 .
  (/usr/share/texlive/texmf-dist/tex/latex/newtx/omlntxmi.fd
 File: omlntxmi.fd 2015/08/25 Fontinst v1.933 font definitions for OML/ntxmi.
 )
-LaTeX Font Info:    ... okay on input line 80.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 80.
-LaTeX Font Info:    ... okay on input line 80.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 80.
-LaTeX Font Info:    ... okay on input line 80.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 80.
-LaTeX Font Info:    ... okay on input line 80.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 80.
-LaTeX Font Info:    ... okay on input line 80.
-LaTeX Font Info:    Checking defaults for U/ntxexa/m/n on input line 80.
-LaTeX Font Info:    Try loading font information for U+ntxexa on input line 80.
+LaTeX Font Info:    ... okay on input line 81.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 81.
+LaTeX Font Info:    ... okay on input line 81.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 81.
+LaTeX Font Info:    ... okay on input line 81.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 81.
+LaTeX Font Info:    ... okay on input line 81.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 81.
+LaTeX Font Info:    ... okay on input line 81.
+LaTeX Font Info:    Checking defaults for U/ntxexa/m/n on input line 81.
+LaTeX Font Info:    Try loading font information for U+ntxexa on input line 81.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/newtx/untxexa.fd
 File: untxexa.fd 2012/04/16 Fontinst v1.933 font definitions for U/ntxexa.
 )
-LaTeX Font Info:    ... okay on input line 80.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 80.
-LaTeX Font Info:    ... okay on input line 80.
-LaTeX Font Info:    Checking defaults for C00/song/m/n on input line 80.
-LaTeX Font Info:    ... okay on input line 80.
-LaTeX Font Info:    Checking defaults for C05/song/m/n on input line 80.
-LaTeX Font Info:    ... okay on input line 80.
-LaTeX Font Info:    Checking defaults for C09/song/m/n on input line 80.
-LaTeX Font Info:    ... okay on input line 80.
-LaTeX Font Info:    Checking defaults for C10/song/m/n on input line 80.
-LaTeX Font Info:    ... okay on input line 80.
-LaTeX Font Info:    Checking defaults for C20/song/m/n on input line 80.
-LaTeX Font Info:    ... okay on input line 80.
-LaTeX Font Info:    Checking defaults for C19/song/m/n on input line 80.
-LaTeX Font Info:    ... okay on input line 80.
-LaTeX Font Info:    Checking defaults for C40/song/m/n on input line 80.
-LaTeX Font Info:    ... okay on input line 80.
-LaTeX Font Info:    Checking defaults for C42/song/m/n on input line 80.
-LaTeX Font Info:    ... okay on input line 80.
-LaTeX Font Info:    Checking defaults for C43/song/m/n on input line 80.
-LaTeX Font Info:    ... okay on input line 80.
-LaTeX Font Info:    Checking defaults for C50/song/m/n on input line 80.
-LaTeX Font Info:    ... okay on input line 80.
-LaTeX Font Info:    Checking defaults for C52/song/m/n on input line 80.
-LaTeX Font Info:    ... okay on input line 80.
-LaTeX Font Info:    Checking defaults for C49/song/m/n on input line 80.
-LaTeX Font Info:    ... okay on input line 80.
-LaTeX Font Info:    Checking defaults for C60/mj/m/n on input line 80.
-LaTeX Font Info:    ... okay on input line 80.
-LaTeX Font Info:    Checking defaults for C61/mj/m/n on input line 80.
-LaTeX Font Info:    ... okay on input line 80.
-LaTeX Font Info:    Checking defaults for C63/mj/m/n on input line 80.
-LaTeX Font Info:    ... okay on input line 80.
-LaTeX Font Info:    Checking defaults for C64/mj/m/n on input line 80.
-LaTeX Font Info:    ... okay on input line 80.
-LaTeX Font Info:    Checking defaults for C65/mj/m/n on input line 80.
-LaTeX Font Info:    ... okay on input line 80.
-LaTeX Font Info:    Checking defaults for C70/song/m/n on input line 80.
-LaTeX Font Info:    ... okay on input line 80.
-LaTeX Font Info:    Checking defaults for C31/song/m/n on input line 80.
-LaTeX Font Info:    ... okay on input line 80.
-LaTeX Font Info:    Checking defaults for C32/song/m/n on input line 80.
-LaTeX Font Info:    ... okay on input line 80.
-LaTeX Font Info:    Checking defaults for C33/song/m/n on input line 80.
-LaTeX Font Info:    ... okay on input line 80.
-LaTeX Font Info:    Checking defaults for C34/song/m/n on input line 80.
-LaTeX Font Info:    ... okay on input line 80.
-LaTeX Font Info:    Checking defaults for C35/song/m/n on input line 80.
-LaTeX Font Info:    ... okay on input line 80.
-LaTeX Font Info:    Checking defaults for C36/song/m/n on input line 80.
-LaTeX Font Info:    ... okay on input line 80.
-LaTeX Font Info:    Checking defaults for C37/song/m/n on input line 80.
-LaTeX Font Info:    ... okay on input line 80.
-LaTeX Font Info:    Checking defaults for C80/song/m/n on input line 80.
-LaTeX Font Info:    ... okay on input line 80.
-LaTeX Font Info:    Checking defaults for C81/song/m/n on input line 80.
-LaTeX Font Info:    ... okay on input line 80.
-LaTeX Font Info:    Checking defaults for C01/song/m/n on input line 80.
-LaTeX Font Info:    ... okay on input line 80.
-LaTeX Font Info:    Checking defaults for C11/song/m/n on input line 80.
-LaTeX Font Info:    ... okay on input line 80.
-LaTeX Font Info:    Checking defaults for C21/song/m/n on input line 80.
-LaTeX Font Info:    ... okay on input line 80.
-LaTeX Font Info:    Checking defaults for C41/song/m/n on input line 80.
-LaTeX Font Info:    ... okay on input line 80.
-LaTeX Font Info:    Checking defaults for C62/song/m/n on input line 80.
-LaTeX Font Info:    ... okay on input line 80.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 80.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 80.
+LaTeX Font Info:    ... okay on input line 81.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 81.
+LaTeX Font Info:    ... okay on input line 81.
+LaTeX Font Info:    Checking defaults for C00/song/m/n on input line 81.
+LaTeX Font Info:    ... okay on input line 81.
+LaTeX Font Info:    Checking defaults for C05/song/m/n on input line 81.
+LaTeX Font Info:    ... okay on input line 81.
+LaTeX Font Info:    Checking defaults for C09/song/m/n on input line 81.
+LaTeX Font Info:    ... okay on input line 81.
+LaTeX Font Info:    Checking defaults for C10/song/m/n on input line 81.
+LaTeX Font Info:    ... okay on input line 81.
+LaTeX Font Info:    Checking defaults for C20/song/m/n on input line 81.
+LaTeX Font Info:    ... okay on input line 81.
+LaTeX Font Info:    Checking defaults for C19/song/m/n on input line 81.
+LaTeX Font Info:    ... okay on input line 81.
+LaTeX Font Info:    Checking defaults for C40/song/m/n on input line 81.
+LaTeX Font Info:    ... okay on input line 81.
+LaTeX Font Info:    Checking defaults for C42/song/m/n on input line 81.
+LaTeX Font Info:    ... okay on input line 81.
+LaTeX Font Info:    Checking defaults for C43/song/m/n on input line 81.
+LaTeX Font Info:    ... okay on input line 81.
+LaTeX Font Info:    Checking defaults for C50/song/m/n on input line 81.
+LaTeX Font Info:    ... okay on input line 81.
+LaTeX Font Info:    Checking defaults for C52/song/m/n on input line 81.
+LaTeX Font Info:    ... okay on input line 81.
+LaTeX Font Info:    Checking defaults for C49/song/m/n on input line 81.
+LaTeX Font Info:    ... okay on input line 81.
+LaTeX Font Info:    Checking defaults for C60/mj/m/n on input line 81.
+LaTeX Font Info:    ... okay on input line 81.
+LaTeX Font Info:    Checking defaults for C61/mj/m/n on input line 81.
+LaTeX Font Info:    ... okay on input line 81.
+LaTeX Font Info:    Checking defaults for C63/mj/m/n on input line 81.
+LaTeX Font Info:    ... okay on input line 81.
+LaTeX Font Info:    Checking defaults for C64/mj/m/n on input line 81.
+LaTeX Font Info:    ... okay on input line 81.
+LaTeX Font Info:    Checking defaults for C65/mj/m/n on input line 81.
+LaTeX Font Info:    ... okay on input line 81.
+LaTeX Font Info:    Checking defaults for C70/song/m/n on input line 81.
+LaTeX Font Info:    ... okay on input line 81.
+LaTeX Font Info:    Checking defaults for C31/song/m/n on input line 81.
+LaTeX Font Info:    ... okay on input line 81.
+LaTeX Font Info:    Checking defaults for C32/song/m/n on input line 81.
+LaTeX Font Info:    ... okay on input line 81.
+LaTeX Font Info:    Checking defaults for C33/song/m/n on input line 81.
+LaTeX Font Info:    ... okay on input line 81.
+LaTeX Font Info:    Checking defaults for C34/song/m/n on input line 81.
+LaTeX Font Info:    ... okay on input line 81.
+LaTeX Font Info:    Checking defaults for C35/song/m/n on input line 81.
+LaTeX Font Info:    ... okay on input line 81.
+LaTeX Font Info:    Checking defaults for C36/song/m/n on input line 81.
+LaTeX Font Info:    ... okay on input line 81.
+LaTeX Font Info:    Checking defaults for C37/song/m/n on input line 81.
+LaTeX Font Info:    ... okay on input line 81.
+LaTeX Font Info:    Checking defaults for C80/song/m/n on input line 81.
+LaTeX Font Info:    ... okay on input line 81.
+LaTeX Font Info:    Checking defaults for C81/song/m/n on input line 81.
+LaTeX Font Info:    ... okay on input line 81.
+LaTeX Font Info:    Checking defaults for C01/song/m/n on input line 81.
+LaTeX Font Info:    ... okay on input line 81.
+LaTeX Font Info:    Checking defaults for C11/song/m/n on input line 81.
+LaTeX Font Info:    ... okay on input line 81.
+LaTeX Font Info:    Checking defaults for C21/song/m/n on input line 81.
+LaTeX Font Info:    ... okay on input line 81.
+LaTeX Font Info:    Checking defaults for C41/song/m/n on input line 81.
+LaTeX Font Info:    ... okay on input line 81.
+LaTeX Font Info:    Checking defaults for C62/song/m/n on input line 81.
+LaTeX Font Info:    ... okay on input line 81.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 81.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 81.
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 80.
-LaTeX Font Info:    Checking defaults for LMS/ntxsy/m/n on input line 80.
-LaTeX Font Info:    Try loading font information for LMS+ntxsy on input line 80
+LaTeX Font Info:    ... okay on input line 81.
+LaTeX Font Info:    Checking defaults for LMS/ntxsy/m/n on input line 81.
+LaTeX Font Info:    Try loading font information for LMS+ntxsy on input line 81
 .
 
 (/usr/share/texlive/texmf-dist/tex/latex/newtx/lmsntxsy.fd
 File: lmsntxsy.fd 2016/07/02 Fontinst v1.933 font definitions for LMS/ntxsy.
 )
-LaTeX Font Info:    ... okay on input line 80.
-LaTeX Font Info:    Checking defaults for LMX/ntxexx/m/n on input line 80.
+LaTeX Font Info:    ... okay on input line 81.
+LaTeX Font Info:    Checking defaults for LMX/ntxexx/m/n on input line 81.
 LaTeX Font Info:    Try loading font information for LMX+ntxexx on input line 8
-0.
+1.
 
 (/usr/share/texlive/texmf-dist/tex/latex/newtx/lmxntxexx.fd
 File: lmxntxexx.fd 2016/07/03 Fontinst v1.933 font definitions for LMX/ntxexx.
 )
-LaTeX Font Info:    ... okay on input line 80.
+LaTeX Font Info:    ... okay on input line 81.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -1291,7 +1291,7 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 \AtBeginShipoutBox=\box34
-Package hyperref Info: Link coloring OFF on input line 80.
+Package hyperref Info: Link coloring OFF on input line 81.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
@@ -1301,9 +1301,9 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count151
 )
-LaTeX Info: Redefining \ref on input line 80.
-LaTeX Info: Redefining \pageref on input line 80.
-LaTeX Info: Redefining \nameref on input line 80.
+LaTeX Info: Redefining \ref on input line 81.
+LaTeX Info: Redefining \pageref on input line 81.
+LaTeX Info: Redefining \nameref on input line 81.
 
 (./MainFile.out) (./MainFile.out)
 \@outlinefile=\write3
@@ -1348,7 +1348,7 @@ Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: listings package is loaded.
 Package caption Info: End \AtBeginDocument code.
 ABD: EverySelectfont initializing macros
-LaTeX Info: Redefining \selectfont on input line 80.
+LaTeX Info: Redefining \selectfont on input line 81.
 \c@mv@tabular=\count152
 \c@mv@boldtabular=\count153
 \c@lstlisting=\count154
@@ -1359,57 +1359,57 @@ temReport/titlepic.png Graphic file (type png)
 <use /home/basedul/Documents/Report-writing-using-latex/ResturentManagementSyst
 emReport/titlepic.png>
 Package pdftex.def Info: /home/basedul/Documents/Report-writing-using-latex/Res
-turentManagementSystemReport/titlepic.png  used on input line 88.
+turentManagementSystemReport/titlepic.png  used on input line 89.
 (pdftex.def)             Requested size: 135.89174pt x 133.86314pt.
-LaTeX Font Info:    Try loading font information for OT1+ntxtlf on input line 8
-9.
+LaTeX Font Info:    Try loading font information for OT1+ntxtlf on input line 9
+0.
 
 (/usr/share/texlive/texmf-dist/tex/latex/newtx/ot1ntxtlf.fd
 File: ot1ntxtlf.fd 2015/01/17 v1.0 font definition file for OT1/ntx/tlf
 )
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
-(Font)              scaled to size 12.0pt on input line 89.
+(Font)              scaled to size 12.0pt on input line 90.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
-(Font)              scaled to size 8.8pt on input line 89.
+(Font)              scaled to size 8.8pt on input line 90.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
-(Font)              scaled to size 6.6pt on input line 89.
-LaTeX Font Info:    Try loading font information for U+msa on input line 89.
+(Font)              scaled to size 6.6pt on input line 90.
+LaTeX Font Info:    Try loading font information for U+msa on input line 90.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 89.
+LaTeX Font Info:    Try loading font information for U+msb on input line 90.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for U+ntxmia on input line 89.
+LaTeX Font Info:    Try loading font information for U+ntxmia on input line 90.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/newtx/untxmia.fd
 File: untxmia.fd 2016/01/31 Fontinst v1.933 font definitions for U/ntxmia.
 )
-LaTeX Font Info:    Try loading font information for U+ntxsym on input line 89.
+LaTeX Font Info:    Try loading font information for U+ntxsym on input line 90.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/newtx/untxsym.fd
 File: untxsym.fd 2015/03/20 Fontinst v1.933 font definitions for U/ntxsym.
 )
-LaTeX Font Info:    Try loading font information for U+ntxsyc on input line 89.
+LaTeX Font Info:    Try loading font information for U+ntxsyc on input line 90.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/newtx/untxsyc.fd
 File: untxsyc.fd 2012/04/12 Fontinst v1.933 font definitions for U/ntxsyc.
 )
-LaTeX Font Info:    Try loading font information for T1+ptm on input line 93.
+LaTeX Font Info:    Try loading font information for T1+ptm on input line 94.
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1ptm.fd
 File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
 )
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <24> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 93.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 94.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <22> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 100.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 101.
 
 (/usr/share/texmf/tex/latex/CJK/UTF8/UTF8.bdg
 File: UTF8.bdg 2015/04/18 4.8.4
@@ -1420,7 +1420,7 @@ File: UTF8.enc 2015/04/18 4.8.4
 (/usr/share/texmf/tex/latex/CJK/UTF8/UTF8.chr
 File: UTF8.chr 2015/04/18 4.8.4
 )
-LaTeX Font Info:    Try loading font information for C70+gbsn on input line 103
+LaTeX Font Info:    Try loading font information for C70+gbsn on input line 104
 .
 
 (/usr/share/texmf/tex/latex/CJK/UTF8/c70gbsn.fd
@@ -1453,18 +1453,18 @@ File: UTF8.chr 2015/04/18 4.8.4
  been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.211 	\newpage
+l.212 	\newpage
                 [1]
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <16> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 223.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 224.
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
-(Font)              scaled to size 14.0pt on input line 242.
+(Font)              scaled to size 14.0pt on input line 243.
  [2]
 LaTeX Font Info:    Font shape `T1/ntxtlf/bx/n' in size <12> not available
-(Font)              Font shape `T1/ntxtlf/b/n' tried instead on input line 248.
+(Font)              Font shape `T1/ntxtlf/b/n' tried instead on input line 275.
 
 LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
-(Font)              scaled to size 12.0pt on input line 248.
+(Font)              scaled to size 12.0pt on input line 275.
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
 been already used, duplicate ignored
 <to be read again> 
@@ -1571,14 +1571,8 @@ emReport/adminent.png>
 Package pdftex.def Info: /home/basedul/Documents/Report-writing-using-latex/Res
 turentManagementSystemReport/adminent.png  used on input line 466.
 (pdftex.def)             Requested size: 275.25783pt x 216.81pt.
-
-Overfull \hbox (1.66484pt too wide) in paragraph at lines 463--469
-[]| \T1/ntxtlf/m/n/12 An ad-min who must en-try his per-sonal in-for-ma-tion li
-ke first name, last name, user name, 
- []
-
-[6 </home/basedul/Documents/Report-writing-using-latex/ResturentManagementSyste
-mReport/archtecturaldesign.png>]
+ [6 </home/basedul/Documents/Report-writing-using-latex/ResturentManagementSyst
+emReport/archtecturaldesign.png>]
 </home/basedul/Documents/Report-writing-using-latex/ResturentManagementSystemRe
 port/cliententy.png, id=512, 456.70625pt x 392.46625pt>
 File: /home/basedul/Documents/Report-writing-using-latex/ResturentManagementSys
@@ -1588,6 +1582,12 @@ emReport/cliententy.png>
 Package pdftex.def Info: /home/basedul/Documents/Report-writing-using-latex/Res
 turentManagementSystemReport/cliententy.png  used on input line 473.
 (pdftex.def)             Requested size: 252.30421pt x 216.81pt.
+
+Overfull \hbox (0.54811pt too wide) in paragraph at lines 470--476
+\T1/ntxtlf/m/n/12 client wants to place an or-der by con-firm-ing, client must 
+need to sign up first with client name, 
+ []
+
 </home/basedul/Documents/Report-writing-using-latex/ResturentManagementSystemRe
 port/fooddet.png, id=513, 450.68375pt x 341.275pt>
 File: /home/basedul/Documents/Report-writing-using-latex/ResturentManagementSys
@@ -1597,9 +1597,9 @@ emReport/fooddet.png>
 Package pdftex.def Info: /home/basedul/Documents/Report-writing-using-latex/Res
 turentManagementSystemReport/fooddet.png  used on input line 481.
 (pdftex.def)             Requested size: 286.31853pt x 216.81pt.
- [7 </home/basedul/Documents/Report-writing-using-latex/ResturentManagementSyst
-emReport/adminent.png> </home/basedul/Documents/Report-writing-using-latex/Rest
-urentManagementSystemReport/cliententy.png>]
+[7 </home/basedul/Documents/Report-writing-using-latex/ResturentManagementSyste
+mReport/adminent.png> </home/basedul/Documents/Report-writing-using-latex/Restu
+rentManagementSystemReport/cliententy.png>]
 </home/basedul/Documents/Report-writing-using-latex/ResturentManagementSystemRe
 port/commtent.png, id=520, 432.61626pt x 402.50375pt>
 File: /home/basedul/Documents/Report-writing-using-latex/ResturentManagementSys
@@ -1609,35 +1609,41 @@ emReport/commtent.png>
 Package pdftex.def Info: /home/basedul/Documents/Report-writing-using-latex/Res
 turentManagementSystemReport/commtent.png  used on input line 489.
 (pdftex.def)             Requested size: 233.0284pt x 216.81pt.
+
+Overfull \hbox (0.54811pt too wide) in paragraph at lines 495--496
+\T1/ntxtlf/m/n/12 client wants to place an or-der by con-firm-ing, client must 
+need to sign up first with client name, 
+ []
+
+[8 </home/basedul/Documents/Report-writing-using-latex/ResturentManagementSyste
+mReport/fooddet.png> </home/basedul/Documents/Report-writing-using-latex/Restur
+entManagementSystemReport/commtent.png>]
 </home/basedul/Documents/Report-writing-using-latex/ResturentManagementSystemRe
-port/erdiag.png, id=521, 679.53876pt x 497.86pt>
+port/erdiag.png, id=527, 679.53876pt x 497.86pt>
 File: /home/basedul/Documents/Report-writing-using-latex/ResturentManagementSys
 temReport/erdiag.png Graphic file (type png)
 <use /home/basedul/Documents/Report-writing-using-latex/ResturentManagementSyst
 emReport/erdiag.png>
 Package pdftex.def Info: /home/basedul/Documents/Report-writing-using-latex/Res
-turentManagementSystemReport/erdiag.png  used on input line 497.
+turentManagementSystemReport/erdiag.png  used on input line 499.
 (pdftex.def)             Requested size: 295.92879pt x 216.81pt.
 
-[8 </home/basedul/Documents/Report-writing-using-latex/ResturentManagementSyste
-mReport/fooddet.png> </home/basedul/Documents/Report-writing-using-latex/Restur
-entManagementSystemReport/commtent.png>]
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2015/06/04 1.6 listings language file
 )
-LaTeX Font Info:    Try loading font information for T1+ntxtt on input line 527
+LaTeX Font Info:    Try loading font information for T1+ntxtt on input line 529
 .
 
 (/usr/share/texlive/texmf-dist/tex/latex/newtx/t1ntxtt.fd
 File: t1ntxtt.fd 2012/04/20 v3.1
 )
 LaTeX Font Info:    Font shape `T1/ntxtt/m/n' will be
-(Font)              scaled to size 12.0pt on input line 527.
+(Font)              scaled to size 12.0pt on input line 529.
  [9 </home/basedul/Documents/Report-writing-using-latex/ResturentManagementSyst
-emReport/erdiag.png>] [10]
+emReport/erdiag.png>] [10] [11]
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <10> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 636.
- [11] [12] [13] [14]
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 638.
+ [12] [13] [14]
 </home/basedul/Documents/Report-writing-using-latex/ResturentManagementSystemRe
 port/flowchart.png, id=662, 844.15375pt x 495.8525pt>
 File: /home/basedul/Documents/Report-writing-using-latex/ResturentManagementSys
@@ -1645,7 +1651,7 @@ temReport/flowchart.png Graphic file (type png)
 <use /home/basedul/Documents/Report-writing-using-latex/ResturentManagementSyst
 emReport/flowchart.png>
 Package pdftex.def Info: /home/basedul/Documents/Report-writing-using-latex/Res
-turentManagementSystemReport/flowchart.png  used on input line 817.
+turentManagementSystemReport/flowchart.png  used on input line 821.
 (pdftex.def)             Requested size: 393.71246pt x 231.26378pt.
 </home/basedul/Documents/Report-writing-using-latex/ResturentManagementSystemRe
 port/regispag.png, id=663, 265.99374pt x 494.84875pt>
@@ -1654,7 +1660,7 @@ temReport/regispag.png Graphic file (type png)
 <use /home/basedul/Documents/Report-writing-using-latex/ResturentManagementSyst
 emReport/regispag.png>
 Package pdftex.def Info: /home/basedul/Documents/Report-writing-using-latex/Res
-turentManagementSystemReport/regispag.png  used on input line 831.
+turentManagementSystemReport/regispag.png  used on input line 835.
 (pdftex.def)             Requested size: 233.08083pt x 433.62pt.
  [15 </home/basedul/Documents/Report-writing-using-latex/ResturentManagementSys
 temReport/flowchart.png>]
@@ -1665,7 +1671,7 @@ temReport/seeclientorderlist.png Graphic file (type png)
 <use /home/basedul/Documents/Report-writing-using-latex/ResturentManagementSyst
 emReport/seeclientorderlist.png>
 Package pdftex.def Info: /home/basedul/Documents/Report-writing-using-latex/Res
-turentManagementSystemReport/seeclientorderlist.png  used on input line 840.
+turentManagementSystemReport/seeclientorderlist.png  used on input line 844.
 (pdftex.def)             Requested size: 233.01926pt x 433.62pt.
  [16 </home/basedul/Documents/Report-writing-using-latex/ResturentManagementSys
 temReport/regispag.png>]
@@ -1676,13 +1682,13 @@ temReport/confirmedOrder.png Graphic file (type png)
 <use /home/basedul/Documents/Report-writing-using-latex/ResturentManagementSyst
 emReport/confirmedOrder.png>
 Package pdftex.def Info: /home/basedul/Documents/Report-writing-using-latex/Res
-turentManagementSystemReport/confirmedOrder.png  used on input line 849.
+turentManagementSystemReport/confirmedOrder.png  used on input line 853.
 (pdftex.def)             Requested size: 241.08908pt x 433.62pt.
 
 [17 </home/basedul/Documents/Report-writing-using-latex/ResturentManagementSyst
 emReport/seeclientorderlist.png>] [18 </home/basedul/Documents/Report-writing-u
 sing-latex/ResturentManagementSystemReport/confirmedOrder.png>]
-Overfull \hbox (31.34024pt too wide) in paragraph at lines 1046--1069
+Overfull \hbox (31.34024pt too wide) in paragraph at lines 1050--1073
  [] 
  []
 
@@ -1693,7 +1699,7 @@ temReport/signin.JPG Graphic file (type jpg)
 <use /home/basedul/Documents/Report-writing-using-latex/ResturentManagementSyst
 emReport/signin.JPG>
 Package pdftex.def Info: /home/basedul/Documents/Report-writing-using-latex/Res
-turentManagementSystemReport/signin.JPG  used on input line 1076.
+turentManagementSystemReport/signin.JPG  used on input line 1080.
 (pdftex.def)             Requested size: 165.43477pt x 144.54pt.
 [19]
 </home/basedul/Documents/Report-writing-using-latex/ResturentManagementSystemRe
@@ -1703,7 +1709,7 @@ temReport/signup.JPG Graphic file (type jpg)
 <use /home/basedul/Documents/Report-writing-using-latex/ResturentManagementSyst
 emReport/signup.JPG>
 Package pdftex.def Info: /home/basedul/Documents/Report-writing-using-latex/Res
-turentManagementSystemReport/signup.JPG  used on input line 1085.
+turentManagementSystemReport/signup.JPG  used on input line 1089.
 (pdftex.def)             Requested size: 155.99431pt x 216.81pt.
 </home/basedul/Documents/Report-writing-using-latex/ResturentManagementSystemRe
 port/mainactivity.JPG, id=698, 969.02025pt x 489.027pt>
@@ -1712,7 +1718,7 @@ temReport/mainactivity.JPG Graphic file (type jpg)
 <use /home/basedul/Documents/Report-writing-using-latex/ResturentManagementSyst
 emReport/mainactivity.JPG>
 Package pdftex.def Info: /home/basedul/Documents/Report-writing-using-latex/Res
-turentManagementSystemReport/mainactivity.JPG  used on input line 1094.
+turentManagementSystemReport/mainactivity.JPG  used on input line 1098.
 (pdftex.def)             Requested size: 329.37381pt x 166.2212pt.
 </home/basedul/Documents/Report-writing-using-latex/ResturentManagementSystemRe
 port/order.JPG, id=699, 964.8045pt x 272.217pt>
@@ -1721,7 +1727,7 @@ temReport/order.JPG Graphic file (type jpg)
 <use /home/basedul/Documents/Report-writing-using-latex/ResturentManagementSyst
 emReport/order.JPG>
 Package pdftex.def Info: /home/basedul/Documents/Report-writing-using-latex/Res
-turentManagementSystemReport/order.JPG  used on input line 1102.
+turentManagementSystemReport/order.JPG  used on input line 1106.
 (pdftex.def)             Requested size: 435.4388pt x 122.85876pt.
  [20 </home/basedul/Documents/Report-writing-using-latex/ResturentManagementSys
 temReport/signin.JPG> </home/basedul/Documents/Report-writing-using-latex/Restu
@@ -1733,7 +1739,7 @@ temReport/topfood.JPG Graphic file (type jpg)
 <use /home/basedul/Documents/Report-writing-using-latex/ResturentManagementSyst
 emReport/topfood.JPG>
 Package pdftex.def Info: /home/basedul/Documents/Report-writing-using-latex/Res
-turentManagementSystemReport/topfood.JPG  used on input line 1113.
+turentManagementSystemReport/topfood.JPG  used on input line 1117.
 (pdftex.def)             Requested size: 165.26901pt x 166.2212pt.
 </home/basedul/Documents/Report-writing-using-latex/ResturentManagementSystemRe
 port/modifyc.JPG, id=708, 334.851pt x 297.5115pt>
@@ -1742,7 +1748,7 @@ temReport/modifyc.JPG Graphic file (type jpg)
 <use /home/basedul/Documents/Report-writing-using-latex/ResturentManagementSyst
 emReport/modifyc.JPG>
 Package pdftex.def Info: /home/basedul/Documents/Report-writing-using-latex/Res
-turentManagementSystemReport/modifyc.JPG  used on input line 1124.
+turentManagementSystemReport/modifyc.JPG  used on input line 1128.
 (pdftex.def)             Requested size: 203.35443pt x 180.67499pt.
 </home/basedul/Documents/Report-writing-using-latex/ResturentManagementSystemRe
 port/modifya.JPG, id=709, 334.24875pt x 299.31825pt>
@@ -1751,44 +1757,48 @@ temReport/modifya.JPG Graphic file (type jpg)
 <use /home/basedul/Documents/Report-writing-using-latex/ResturentManagementSyst
 emReport/modifya.JPG>
 Package pdftex.def Info: /home/basedul/Documents/Report-writing-using-latex/Res
-turentManagementSystemReport/modifya.JPG  used on input line 1132.
+turentManagementSystemReport/modifya.JPG  used on input line 1136.
 (pdftex.def)             Requested size: 201.75954pt x 180.67499pt.
  [21 </home/basedul/Documents/Report-writing-using-latex/ResturentManagementSys
 temReport/mainactivity.JPG> </home/basedul/Documents/Report-writing-using-latex
 /ResturentManagementSystemReport/order.JPG> </home/basedul/Documents/Report-wri
 ting-using-latex/ResturentManagementSystemReport/topfood.JPG>]
-Overfull \hbox (15.50887pt too wide) in paragraph at lines 6897--6897
- []|\T1/ntxtlf/m/n/12 Registration| 
+Overfull \hbox (15.50887pt too wide) in paragraph at lines 6903--6903
+ \T1/ntxtlf/m/n/12 Registration 
  []
 
 
-Overfull \hbox (7.77061pt too wide) in paragraph at lines 6887--7075
+Overfull \vbox (22.50003pt too high) detected at line 6903
+ []
+
+
+Overfull \hbox (7.77061pt too wide) in paragraph at lines 6891--7081
 [][] 
  []
 
 [22 </home/basedul/Documents/Report-writing-using-latex/ResturentManagementSyst
 emReport/modifyc.JPG> </home/basedul/Documents/Report-writing-using-latex/Restu
 rentManagementSystemReport/modifya.JPG>]
-Overfull \hbox (4.66087pt too wide) in paragraph at lines 7243--7243
+Overfull \hbox (4.66087pt too wide) in paragraph at lines 7249--7249
  []|\T1/ntxtlf/m/n/12 Comment 
  []
 
 
-Overfull \hbox (7.77061pt too wide) in paragraph at lines 7081--7269
+Overfull \hbox (7.77061pt too wide) in paragraph at lines 7087--7275
 [][] 
  []
 
 [23] [24] [25]
 
-LaTeX Warning: Reference `sec:prioty' on page 26 undefined on input line 7296.
+LaTeX Warning: Reference `sec:prioty' on page 26 undefined on input line 7302.
 
 [26] [27] (./MainFile.bbl) [28]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 7348.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 7354.
  [29]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 7348.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 7354.
  (./MainFile.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 7348.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 7348.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 7354.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 7354.
 
 Package rerunfilecheck Info: File `MainFile.out' has not changed.
 (rerunfilecheck)             Checksum: 4ADB834D19FB4EB265BFA30B1B665F43;3381.
@@ -1799,16 +1809,16 @@ LaTeX Warning: There were undefined references.
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 7348.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 7354.
  ) 
 Here is how much of TeX's memory you used:
- 15327 strings out of 492982
- 219392 string characters out of 6134896
- 441417 words of memory out of 5000000
- 18176 multiletter control sequences out of 15000+600000
+ 15329 strings out of 492982
+ 219419 string characters out of 6134896
+ 442417 words of memory out of 5000000
+ 18178 multiletter control sequences out of 15000+600000
  84251 words of font info for 145 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 36i,12n,77p,1008b,2171s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 36i,13n,77p,1524b,2169s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/tex-gyre/q-ts1.enc}{/usr/share/texlive/texm
 f-dist/fonts/enc/dvips/newtx/ntx-ec-tlf.enc}{/usr/share/texlive/texmf-dist/font
 s/enc/dvips/base/8r.enc}</usr/share/texmf/fonts/type1/arphic/gbsnu/gbsnu30.pfb>
@@ -1857,7 +1867,7 @@ f.pfb></usr/share/texmf/fonts/type1/public/tex-gyre/qtmb.pfb></usr/share/texmf/
 fonts/type1/public/tex-gyre/qtmr.pfb></usr/share/texlive/texmf-dist/fonts/type1
 /public/txfonts/t1xtt.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/
 utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
-Output written on MainFile.pdf (38 pages, 1113790 bytes).
+Output written on MainFile.pdf (38 pages, 1116730 bytes).
 PDF statistics:
  1006 PDF objects out of 1200 (max. 8388607)
  803 compressed objects within 9 object streams

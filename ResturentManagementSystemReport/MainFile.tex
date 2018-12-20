@@ -17,6 +17,7 @@
 \usepackage{CJKutf8}
 \newcommand{\zh}[1]{\begin{CJK}{UTF8}{gbsn}#1\end{CJK}}
 
+
 %left allignment
 \usepackage{ragged2e}
 
@@ -90,7 +91,7 @@
 \hfill
 \begin{minipage}{0.6\textwidth}
 %\raggedleft
-{\fontsize{24}{10}\fontfamily{ptm}\selectfont \textbf{Graduation Thesis}
+{\fontsize{24}{10}\fontfamily{ptm}\selectfont \textbf{GRADUATION THESIS}
 }
 
 \end{minipage}
@@ -121,7 +122,7 @@
 	\end{flushleft}}&\\[0.1pt]
 	
 	{\fontsize{16}{10}\fontfamily{ptm}\selectfont \begin{flushleft}
-	Stuent No.
+	Student No.
 	\end{flushleft}} & {\fontsize{16}{10}\fontfamily{ptm}\selectfont \begin{flushleft}
 	14031274
 	\end{flushleft}}&\\[0.1pt]
@@ -135,7 +136,7 @@
 	\fontsize{16}{10}\fontfamily{ptm}\selectfont{\begin{flushleft}
 	Supervisor
 	\end{flushleft}} & \fontsize{16}{10}\fontfamily{ptm}\selectfont{\begin{flushleft}
-	Liang Zhao
+	LIANG Zhao
 	\end{flushleft}}&\\[0.1pt]
 	
 	\end{tabular}
@@ -158,7 +159,7 @@
 	\end{comment}
 
 % Bottom of the page
-	{\fontsize{16}{1}\fontfamily{ptm}\selectfont \today\par}
+	{\fontsize{16}{1}\fontfamily{ptm}\selectfont December 2018\par}
 \end{center}
 \end{titlepage}
 
@@ -188,7 +189,7 @@
 	\end{flushleft}}&\\[0.1pt]
 	
 	{\fontsize{16}{10}\fontfamily{ptm}\selectfont \begin{flushleft}
-	Stuent No.
+	Student No.
 	\end{flushleft}} & {\fontsize{16}{10}\fontfamily{ptm}\selectfont \begin{flushleft}
 	14031274
 	\end{flushleft}}&\\[0.1pt]
@@ -202,7 +203,7 @@
 	\fontsize{16}{10}\fontfamily{ptm}\selectfont{\begin{flushleft}
 	Supervisor
 	\end{flushleft}} & \fontsize{16}{10}\fontfamily{ptm}\selectfont{\begin{flushleft}
-	Liang Zhao
+	LIANG Zhao
 	\end{flushleft}}&\\[0.1pt]
 	
 	\end{tabular}
@@ -216,7 +217,7 @@
 
 % Bottom of the page
 	{\fontsize{16}{5}\fontfamily{ptm}\selectfont \begin{center}
-	\today
+	December, 2018
 	\end{center}\par}
 	\vspace{0.15cm}
 	{\fontsize{16}{5}\fontfamily{ptm}\selectfont \begin{center}
@@ -232,22 +233,21 @@
 \end{itemize}
 I also grant permission to Shenyang Aerospace University to make duplicate copies of my thesis as required.	\\
 \vspace{1cm}
-
+\thispagestyle{empty}
 
 \begin{flushleft}
 Signature\fillin[4cm]
 \end{flushleft}
-Date\fillin[5cm] 
+Date: December 28, 2018 
 	
 \end{titlepage}	
 
-	
 	\begin{titlepage}
 		%\cfoot{\thepage}
 		\centering 
-		{ \bfseries Abstract}\\
+		{\fontsize{16}{10}\fontfamily{ptm}\selectfont \textbf{Abstract}}\\
 		\vspace{0.6cm}
-		\RaggedRight \tab The project {\bfseries Asian Restaurant Management Application is implemented} to reduce the
+		\RaggedRight \tab The project Asian Restaurant Management Application is implemented to reduce the
 manual work and enhances the accuracy of work in a restaurant. This software has been made
 in a user friendly interface. This project is also designed with full consideration to help the
 users in an easy manner without any unnecessary wastage of time. This application can be
@@ -272,7 +272,7 @@ successfully running for the restaurant management. Asian Restaurant Management
 Application is a java application designed with Java technique and MySQL server as the
 database of the application.\\
 \vspace{0.8cm}
-{\bfseries Key Words: } Java technique, Wamp server, MySQL Database.
+{\bfseries Key Words: } Asian Restaurent Management Application, Java technique, Wamp server, MySQL, Database.
 	\newpage
 	\thispagestyle{empty}
 	\centering\zh{摘 要}\\
@@ -289,7 +289,7 @@ database of the application.\\
 应用程序、修改个人信息、管理订单列表、添加新的菜肴项目）。此应用程序已成功用于餐厅管理。亚
 洲餐厅管理应用程序是以Java技术和MySQL Server为系统的数据库设计的Java应用程序。\linebreak}\\
 
-\RaggedRight\zh{\bfseries{关键词：}}\zh{亚洲餐厅管理应用，Java技术，MySQL服务器，数据库}
+\RaggedRight\zh{\bfseries{关键词：}}\zh{亚洲餐饮管理应用，Java技术，WAMP服务器，MySQL，数据库}
 	\end{titlepage}
 	
 	\pagenumbering{roman} %numbering before main content starts
@@ -460,14 +460,14 @@ gather, the asian restaurant management system will be designed as below:
 	\tab These diagrams below show how the attributes are defined in database table:\\
 	
 	\vspace{0.7cm}
-	\tab An admin who must entry his personal information like first name, last name, user name, email and password.
+	\tab If admin wants to check the order list from an client and add new cuisine items to a foodstuff, admin must first register with name, user name, email and password. After registration, he will be able to check the order list after login, else he can not even see the order list and he will not be able to add cuisine to the food list . 
 	\begin{figure}[H]
 		\centering
 		\includegraphics[height=3in]{/home/basedul/Documents/Report-writing-using-latex/ResturentManagementSystemReport/adminent.png}
 		\caption{Admin Register entity diagram}
 		\label{fig:adminreg} 
 	\end{figure}
-	\tab Client who must entry his personal information like first name, last name, user name, email and password.
+	\tab Client can browse about cuisines name, price and food details from food list. But if client wants to place an order by confirming, client must need to sign up first with client name, username, e-mail and password. And then login with his username and password. After logging in, he can order the food from the cuisine catagory. After ordering, client can be able to log out.
 	\begin{figure}[H]
 		\centering
 		\includegraphics[height=3in]{/home/basedul/Documents/Report-writing-using-latex/ResturentManagementSystemReport/cliententy.png}
@@ -475,7 +475,7 @@ gather, the asian restaurant management system will be designed as below:
 		\label{fig:clientreg} 
 	\end{figure}
 	
-	\tab When add food on food list, must include food name, food price and details of food.
+	\tab If admin wants to add new cuisine items to a foodstuff/order menu, admin must first register with name, user name, email and password. After registration, he will be able to check the order list after login, else he can not even see the order list and he will not be able to add cuisine to the food list.
 	\begin{figure}[H]
 		\centering
 		\includegraphics[height=3in]{/home/basedul/Documents/Report-writing-using-latex/ResturentManagementSystemReport/fooddet.png}
@@ -483,7 +483,7 @@ gather, the asian restaurant management system will be designed as below:
 		\label{fig:foodadd} 
 	\end{figure}
 	
-	\tab When a client post his comment, client must be give name of food and select the score number.
+	\tab After a placing an order or requesting for home delivery, client can comment on each cuisine items. And also can give scores for a specific item of cuisine. If you want to comment or score, you must log in , write the name of the cuisine in box then write the comment and select the score and post it. 
 	\begin{figure}[H]
 		\centering
 		\includegraphics[height=3in]{/home/basedul/Documents/Report-writing-using-latex/ResturentManagementSystemReport/commtent.png}
@@ -492,6 +492,8 @@ gather, the asian restaurant management system will be designed as below:
 	\end{figure}
 	
 	\subsubsection{E-R Diagram}
+		\tab Client can browse about cuisines name, price and food details from food list. But if client wants to place an order by confirming, client must need to sign up first with client name, username, e-mail and password. And then login with his username and password. After logging in, he can order the food from the cuisine catagory. After confirming an order, client can be able to log out. When an admin wants to check the order list from an client and add new cuisine items to a foodstuff, admin must first register with name, user name, email and password. After registration, he will be able to check the order list after login, else he can not even see the order list and he will not be able to add cuisine to the food list. But if client wants to place an order by confirming, client must need to sign up first with client name, username, e-mail and password. And then login with his username and password. After logging in, he can order the food from the cuisine catagory. After ordering, client can be able to log out . After a placing an order or requesting for home delivery, client can comment on each cuisine items. And also can give scores for a specific item of cuisine. If you want to comment or score, you must log in , write the name of the cuisine in box then write the comment and select the score and post it. And the system will be showing top foods based on the client's score and comment. Client can also be albe to search specific cuisine item by it's item catagory, price and name.	
+	
 		\begin{figure}[H]
 		\centering
 		\includegraphics[height=3in]{/home/basedul/Documents/Report-writing-using-latex/ResturentManagementSystemReport/erdiag.png}
@@ -624,7 +626,7 @@ gather, the asian restaurant management system will be designed as below:
 	 	14. ALTER TABLE `Registration` ADD `reward_point` float(10, 2) NOT NULL AFTER `status`;
 		
 	\end{lstlisting}
-	
+	\newpage
 	\subsubsection{Database tables structures}
 		\tab The table \ref{tab:adminregitable} is used for register a user as a admin of the system.
 		\begin{table}[H]
@@ -737,6 +739,8 @@ gather, the asian restaurant management system will be designed as below:
 	\hline
 	\end{tabular}
 	\end{table}
+	
+	\newpage	
 	
 	\tab This table \ref{tab:chicken} is used for hold the list of Chickens.
 	\begin{table}[H]
@@ -6894,7 +6898,9 @@ public class Appetizers extends javax.swing.JFrame {
 \textbf{Pass or Fail} & \\ [25pt]
 \hline
 \hline%Start
-\multirow{3}{1.5cm}[-1.5em]{\centering Registration} &
+\multirow{3}{1.5cm}[-1.7em]{\begin{flushleft}
+\centering Registration
+\end{flushleft}} &
 
 \multicolumn{2}{M{3.5cm}|}{\begin{flushleft}
 Enter null in
@@ -7341,8 +7347,8 @@ have been developed include:
 \section*{Acknowledgement}
 \addcontentsline{toc}{section}{\textbf{Acknowledgement}}
 	\tab Foremost, I would like to express my sincere gratitude to the almighty Allah for His blessings and protection throughout my undergraduate studies.\\ 
-\tab My sincere thanks to my supervisor,  \textbf{Liang Zhao} for the continuous support of my Bachelor's study, patience, motivation, enthusiasm, and immense knowledge. His guidance helped me in all the time of research and writing of this thesis. I could not have imagined having a better advisor and mentor.\\
+\tab My sincere thanks to my supervisor,  \textbf{LIANG Zhao} of the institute of Computer Science at Shenyang Aerospace University for the continuous support of my Bachelor's study, patience, motivation, enthusiasm, and immense knowledge. His guidance helped me in all the time of research and writing of this thesis. I could not have imagined having a better advisor and mentor.\\
         \tab I also thank my fellow classmates, my friends and for all the fun we have had in the last four years.\\
-        \tab Last but not the least; I would like to thank my parents \textbf{Mr. Syed Amin Uddin} and \textbf{Mrs. Hajera Amin} and \textbf{Ms. Noorjahan Khanam} for their prayers, support, encouragement and their admonishment.\\
+        \tab Last but not the least; I would like to thank my parents \textbf{Mr. Syed Amin Uddin}, \textbf{Mrs. Hajera Amin} and \textbf{Ms. Noorjahan Khanam} for their prayers, support, encouragement and their admonishment.\\
 
 \end{document}
