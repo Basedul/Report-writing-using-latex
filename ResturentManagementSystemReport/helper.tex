@@ -1,29 +1,212 @@
 \documentclass{article}
+\usepackage{multirow}
+\usepackage{array}
+\usepackage[showframe=false]{geometry}
+%\usepackage{changepage}
+\usepackage{graphicx}
+\usepackage{adjustbox}
+
+
+\newcolumntype{M}[1]{>{\centering\arraybackslash}m{#1}}
+\newcolumntype{N}{@{}m{0pt}@{}}
+\usepackage{booktabs}
+\usepackage{dcolumn}
+\usepackage{tabularx}
 
 
 \begin{document}
+%|M{4cm}|M{4cm}|N
 \begin{table}[ht]
-	\caption{A table showing the stakeholders of the project}
-	\label{tab:adminregitable}
-	\begin{tabular}{|M{2cm}|M{2cm}|M{2cm}|N}
-	\hline
-	\fontsize{12}{30}\fontfamily{ptm}\selectfont {u_id} & \fontsize{12}{30}\fontfamily{ptm}\selectfont {tinyint(3)} & \fontsize{12}{30}\fontfamily{ptm}\selectfont {NO} &\\[25pt]
-	\hline
-	\fontsize{12}{30}\fontfamily{ptm}\selectfont {u_f_name} & \fontsize{12}{30}\fontfamily{ptm}\selectfont {varchar(80)} & \fontsize{12}{30}\fontfamily{ptm}\selectfont {YES} &\\[25pt]
-	\hline
-	\fontsize{12}{30}\fontfamily{ptm}\selectfont {u_l_name} & \fontsize{12}{30}\fontfamily{ptm}\selectfont {varchar(80)} & \fontsize{12}{30}\fontfamily{ptm}\selectfont {YES} &\\[25pt]
-	\hline
-	\fontsize{12}{30}\fontfamily{ptm}\selectfont {u_u_name} & \fontsize{12}{30}\fontfamily{ptm}\selectfont {varchar(80)} & \fontsize{12}{30}\fontfamily{ptm}\selectfont {YES} &\\[25pt]
-	\hline
-	\fontsize{12}{30}\fontfamily{ptm}\selectfont {U_mail} & \fontsize{12}{30}\fontfamily{ptm}\selectfont {varchar(50)} & \fontsize{12}{30}\fontfamily{ptm}\selectfont {YES} &\\[25pt]
-	\hline
-	\fontsize{12}{30}\fontfamily{ptm}\selectfont {u_f_pass} & \fontsize{12}{30}\fontfamily{ptm}\selectfont {varchar(20)} & \fontsize{12}{30}\fontfamily{ptm}\selectfont {YES} &\\[25pt]
-	\hline
-	\fontsize{12}{30}\fontfamily{ptm}\selectfont {u_l_pass} & \fontsize{12}{30}\fontfamily{ptm}\selectfont {varchar(20)} & \fontsize{12}{30}\fontfamily{ptm}\selectfont {YES} &\\[25pt]
-	\hline
-	\end{tabular}
-	\end{table}	
-	
+\caption{Test Cases}
+\vspace{0.2cm}
+\begin{tabular}{|M{1.8cm}|M{4cm}|M{4cm}|M{4cm}|M{4cm}|M{4cm}|M{4cm}|M{1.5cm}|N}
+%Start
+\hline
+\textbf{Scenario} &
+\multicolumn{2}{M{3.5cm}|}{\textbf{Test Cases}} & 
+\multicolumn{2}{M{3.5cm}|}{\textbf{Expected Result}} & %
+\multicolumn{2}{M{3.5cm}|}{\textbf{Test Result}} &
+\textbf{Pass or Fail} & \\ [25pt]
+\hline
+\hline%Start
+\multirow{3}{1.5cm}[-1.5em]{\centering Registration} &
 
+\multicolumn{2}{M{3.5cm}|}{\begin{flushleft}
+Enter null in
+mandatory fields.
+\end{flushleft}} &
+\multicolumn{2}{M{3.5cm}|}{\begin{flushleft}
+It should not do the
+registration
+and show error.
+\end{flushleft}} & %
+\multicolumn{2}{M{3.5cm}|}{\begin{flushleft}
+It will show message
+that please fill out this
+field.
+\end{flushleft}} &
+Pass & \\[15pt]\cline{2-9} &
+\multicolumn{2}{M{3.5cm}|}{\begin{flushleft}
+Enter incorrect data
+\end{flushleft}} & 
+\multicolumn{2}{M{3.5cm}|}{\begin{flushleft}
+It should not do the
+registration and show error.
+\end{flushleft}} & 
+\multicolumn{2}{M{3.5cm}|}{\begin{flushleft}
+Email: Please enter an email.
+\linebreak
+Password: Password.\linebreak
+do not match\end{flushleft}} & Pass\\[25pt]\cline{2-9}& 
+\multicolumn{2}{M{3.5cm}|}{\begin{flushleft}
+Enter correct data of all 
+required field
+\end{flushleft}} & 
+\multicolumn{2}{M{3.5cm}|}{\begin{flushleft}
+It should lead to successfully registration
+\end{flushleft}} & 
+\multicolumn{2}{M{3.5cm}|}{\begin{flushleft}
+It will show the message of successfully registrattion
+\end{flushleft}} & Pass\\ [25pt]
+\hline
+%End
+\hline%Start
+\multirow{3}{1.5cm}[-1.5em]{\centering Login} &
+
+\multicolumn{2}{M{3.5cm}|}{\begin{flushleft}
+Enter null email or
+password.
+\end{flushleft}} &
+\multicolumn{2}{M{3.5cm}|}{\begin{flushleft}
+It should not do the
+login and show error.
+\end{flushleft}
+} & %
+\multicolumn{2}{M{3.5cm}|}{\begin{flushleft}
+It will show message that please fill out this field.
+\end{flushleft}} &
+Pass & \\[15pt]\cline{2-9} &
+\multicolumn{2}{M{3.5cm}|}{\begin{flushleft}
+Enter wrong data of
+email or password.
+\end{flushleft}} & 
+\multicolumn{2}{M{3.5cm}|}{\begin{flushleft}
+It should not do the login and show error.
+\end{flushleft}} & 
+\multicolumn{2}{M{3.5cm}|}{\begin{flushleft}
+It will show message that please enter an email or your email address or password are not correct.
+\end{flushleft}
+} & Pass\\[25pt]\cline{2-9}& 
+\multicolumn{2}{M{3.5cm}|}{\begin{flushleft}
+Enter correct data of
+email or password.
+\end{flushleft}} & 
+\multicolumn{2}{M{3.5cm}|}{\begin{flushleft}
+It should let do the login.
+\end{flushleft}
+} & 
+\multicolumn{2}{M{3.5cm}|}{\begin{flushleft}
+It will redirect to your all purchased products
+\end{flushleft}
+} & Pass\\ [25pt]
+\hline%End
+\hline%Start
+\multirow{3}{1.5cm}[-1.5em]{\centering Update password
+} &
+
+\multicolumn{2}{M{3.5cm}|}{\begin{flushleft}
+Enter null in
+mandatory fields.
+\end{flushleft}
+} &
+\multicolumn{2}{M{3.5cm}|}{\begin{flushleft}
+It should not do the update
+and show error.
+\end{flushleft}} & %
+\multicolumn{2}{M{3.5cm}|}{\begin{flushleft}
+It will show message that please fill out this field.
+\end{flushleft}} &
+Pass & \\[15pt]\cline{2-9} &
+\multicolumn{2}{M{3.5cm}|}{\begin{flushleft}
+Enter incorrect data
+\end{flushleft}} & 
+\multicolumn{2}{M{3.5cm}|}{\begin{flushleft}
+It should not do the update
+and show error.
+\end{flushleft}} & 
+\multicolumn{2}{M{3.5cm}|}{\begin{flushleft}
+It will show the message that the old password do not match.
+\end{flushleft}
+} & Pass\\[25pt]\cline{2-9}& 
+\multicolumn{2}{M{3.5cm}|}{\begin{flushleft}
+Enter correct data of all
+required field.
+\end{flushleft}} & 
+\multicolumn{2}{M{3.5cm}|}{\begin{flushleft}
+It should let do
+registration.
+\end{flushleft}} & 
+
+\multicolumn{2}{M{3.5cm}|}{\begin{flushleft}
+It will show the message that password successfully updated.
+\end{flushleft}
+} & Pass\\ [25pt]
+\hline%End
+\hline%Start
+\multirow{2}{1.5cm}[-1.5em]{\centering Search Food
+} &
+
+\multicolumn{2}{M{3.5cm}|}{\begin{flushleft}
+Enter null or incorrect data in search fields.
+\end{flushleft}
+} &
+\multicolumn{2}{M{3.5cm}|}{\begin{flushleft}
+It will not search food
+\end{flushleft}} & %
+\multicolumn{2}{M{3.5cm}|}{\begin{flushleft}
+It will show the message that there was no search results!
+\end{flushleft}} &
+Pass & \\[15pt]\cline{2-9} &
+\multicolumn{2}{M{3.5cm}|}{\begin{flushleft}
+Enter correct data in
+Search fields.
+\end{flushleft}} & 
+\multicolumn{2}{M{3.5cm}|}{\begin{flushleft}
+It should search foods depending the keywords.
+\end{flushleft}} & 
+\multicolumn{2}{M{3.5cm}|}{\begin{flushleft}
+It will display the foods regarding the keywords.
+\end{flushleft}
+} & Pass\\[25pt]
+\hline%End
+\hline%Start
+\multirow{2}{1.5cm}[-1.5em]{\centering Comment Food
+} &
+
+\multicolumn{2}{M{3.5cm}|}{\begin{flushleft}
+Enter non ASCII character.
+\end{flushleft}} &
+\multicolumn{2}{M{3.5cm}|}{\begin{flushleft}
+It will not let to comment
+\end{flushleft}
+} & %
+\multicolumn{2}{M{3.5cm}|}{\begin{flushleft}
+It will show error as unsupported character.
+\end{flushleft}} &
+Pass & \\[15pt]\cline{2-9} &
+\multicolumn{2}{M{3.5cm}|}{\begin{flushleft}
+Enter ASCII character.
+\end{flushleft}} & 
+\multicolumn{2}{M{3.5cm}|}{\begin{flushleft}
+It will lead a successful comment.
+\end{flushleft}} & 
+\multicolumn{2}{M{3.5cm}|}{\begin{flushleft}
+It will view the succession of a comment.
+\end{flushleft}
+} & Pass\\[25pt]
+\hline%End
+
+\end{tabular}
+\end{table}
 
 \end{document}

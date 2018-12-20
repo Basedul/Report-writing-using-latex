@@ -5,14 +5,15 @@
 \usepackage{amsmath,amsthm,amssymb,amsfonts}
 \usepackage{lipsum}
 \usepackage[margin=1in,includefoot]{geometry}
+\usepackage{multirow}%test cases
 \usepackage{float}
 \usepackage{amssymb}
 \newcommand{\checkbox}{$\square$}
 \newcommand\fillin[1][3cm]{\makebox[#1]{\dotfill}}
 %for refferennce numbering
 \usepackage[nottoc,notlot,notlof]{tocbibind}
-
-
+%for cant show section number
+\usepackage{caption}%for caption number delete
 \usepackage{CJKutf8}
 \newcommand{\zh}[1]{\begin{CJK}{UTF8}{gbsn}#1\end{CJK}}
 
@@ -89,14 +90,14 @@
 \hfill
 \begin{minipage}{0.6\textwidth}
 %\raggedleft
-{\fontsize{24}{10}\fontfamily{ptm}\selectfont Graduation Thesis
+{\fontsize{24}{10}\fontfamily{ptm}\selectfont \textbf{Graduation Thesis}
 }
 
 \end{minipage}
 
 \par\vspace{0cm}
 	{\fontsize{22}{10}\fontfamily{ptm}\selectfont \begin{center}
-	\textbf{Asian Restaurant Management System}
+	\textbf{Asian Restaurant Management Application}
 	\end{center}}
 	{\fontsize{20}{10}\fontfamily{ptm}\selectfont \begin{center}
 	\zh{亚洲餐厅管理应用}
@@ -134,7 +135,7 @@
 	\fontsize{16}{10}\fontfamily{ptm}\selectfont{\begin{flushleft}
 	Supervisor
 	\end{flushleft}} & \fontsize{16}{10}\fontfamily{ptm}\selectfont{\begin{flushleft}
-	Prof. Liang Zhao
+	Liang Zhao
 	\end{flushleft}}&\\[0.1pt]
 	
 	\end{tabular}
@@ -142,7 +143,7 @@
 	
 	
 	\vspace{1cm}
-	{\fontsize{18}{10}\fontfamily{ptm}\selectfont Shenyang Aerospace University \par}
+	{\fontsize{18}{10}\fontfamily{ptm}\selectfont \MakeUppercase{Shenyang Aerospace University} \par}
 	\vspace{0.5cm}
 	\begin{comment}\vspace{1cm}
 	{\scshape\Large Final year project\par}
@@ -151,7 +152,7 @@
 	%{\Large\itshape Hossain Syed Abir\par}
 	\begin{comment}\vfill
 	Supervised by\par
-	Prof. \textsc{Liang Zhao}
+	\textsc{Liang Zhao}
 
 	\vfill
 	\end{comment}
@@ -163,7 +164,7 @@
 
 \begin{titlepage}
 	{\fontsize{22}{10}\fontfamily{ptm}\selectfont \begin{center}
-	\textbf{Asian Restaurant Management System}
+	\textbf{Asian Restaurant Management Application}
 	\end{center}}
 	{\fontsize{20}{10}\fontfamily{ptm}\selectfont \begin{center}
 	\zh{亚洲餐厅管理应用}
@@ -201,7 +202,7 @@
 	\fontsize{16}{10}\fontfamily{ptm}\selectfont{\begin{flushleft}
 	Supervisor
 	\end{flushleft}} & \fontsize{16}{10}\fontfamily{ptm}\selectfont{\begin{flushleft}
-	Prof. Liang Zhao
+	Liang Zhao
 	\end{flushleft}}&\\[0.1pt]
 	
 	\end{tabular}
@@ -209,7 +210,7 @@
 	
 	\newpage
 	{\fontsize{18}{5}\fontfamily{ptm}\selectfont \begin{center}
-	Shenyang Aerospace University
+	\MakeUppercase{Shenyang Aerospace University}
 	\end{center} \par}
 	\vspace{0.15cm}
 
@@ -219,7 +220,7 @@
 	\end{center}\par}
 	\vspace{0.15cm}
 	{\fontsize{16}{5}\fontfamily{ptm}\selectfont \begin{center}
-	Declaration
+	\textbf{Declaration}
 	\end{center}\par}
 	\vspace{1cm} 
 
@@ -388,7 +389,7 @@ Initially created on 1970s, SQLs is regularly being used by database administrat
 as by developers writing data integration scripts and data analysts looking to set up and run
 analytical queries. For example, books information, customer information, orders
 
-\subsection{JAVA}
+\subsubsection{JAVA}
 	\tab Java\cite{Ref:7} is a high-level programming language developed by Sun Microsystems. It was
 originally designed for developing programs for set-top boxes and handheld devices, but
 later became a popular choice for creating web applications.
@@ -415,7 +416,7 @@ Oracle.\\
 \\
 \tab The latest version is Java 11, released on September 25, 2018, which follows Java 10 after only six months, being in line with the new release schedule. Java 8 is still supported but there will be no more security updates for Java 9.Versions earlier than Java 8 are supported by companies on a commercial basis; e.g. by Oracle back to Java 6 as of October 2017 (while they still "highly recommend that you uninstall" pre-Java 8 from at least Windows computers).
 
-\subsection{Apache Server}
+\subsubsection{Apache Server}
 	\tab Apache server\cite{Ref:8} is an open source Web server tool developed by the Apache Software
 Foundation (ASF). It is one of many Apache-related open source products used by IT
 professionals for various tasks and objectives. It allows the implementation of Java
@@ -499,130 +500,130 @@ gather, the asian restaurant management system will be designed as below:
 	\end{figure}
 	
 	\subsubsection{Database schema}
-			RegistrationForAdmin(uid, uf, ul, uu, um, ufp, usp, status)\\
-			Registration(uid, uf, ul, uu, um, ufp, usp, status)\\
-			APPTIZERS(appid, appname, appprice, appdetails)\\
-			BeefLamb(blid, blname, blprice, bldetails)\\
-			Chicken(ckid, ckname, ckprice, ckdetails)\\
-			Drink(did, dname, dprice, ddetails)\\
-			NoddlesRice(nrid, nrname, nrprice, nrdetails)\\
-			Pork(poid, poname, poprice, podetails)\\
-			Salad(said, saname, saprice, sadetails)\\
-			SeaFood(sfid, sfname, sfprice, sfdetails)\\
-			Soups(soid, soname, soprice, sodetails)\\
-			VegeTofu(vtid, vtname, vtprice, vtdetails)\\
-			ClientOrderList(colid, colname, colprice, colUser)\\
-			RankList(rlid, rlname, rlscore, rlcomments)
+%			RegistrationForAdmin(uid, uf, ul, uu, um, ufp, usp, status)\\
+%			Registration(uid, uf, ul, uu, um, ufp, usp, status)\\
+%			APPTIZERS(appid, appname, appprice, appdetails)\\
+%			BeefLamb(blid, blname, blprice, bldetails)\\
+%			Chicken(ckid, ckname, ckprice, ckdetails)\\
+%			Drink(did, dname, dprice, ddetails)\\
+%			NoddlesRice(nrid, nrname, nrprice, nrdetails)\\
+%			Pork(poid, poname, poprice, podetails)\\
+%			Salad(said, saname, saprice, sadetails)\\
+%			SeaFood(sfid, sfname, sfprice, sfdetails)\\
+%			Soups(soid, soname, soprice, sodetails)\\
+%			VegeTofu(vtid, vtname, vtprice, vtdetails)\\
+%			ClientOrderList(colid, colname, colprice, colUser)\\
+%			RankList(rlid, rlname, rlscore, rlcomments)
 	
 	
 	
-%	\begin{lstlisting}[
-%           language=SQL,
-%           showspaces=false,
-%           basicstyle=\ttfamily,
-%           %numbers=left,
-%           numberstyle=\tiny,
-%           commentstyle=\color{gray}
-%        ]
-%		1. Create database ResturentManagement;
-%		
-%		2. CREATE TABLE RegistrationForAdmin (
-%		u_id TINYINT UNSIGNED NOT NULL AUTO_INCREMENT,
-%		u_f_name varchar(80),
-%		u_l_name varchar(80),
-%		u_u_name varchar(80),
-%		U_mail varchar(50),
-%		u_f_pass varchar(20),
-%		u_r_pass varchar(20),
-%		status int(11)
-%		PRIMARY KEY (u_id)
-%		)ENGINE=InnoDB DEFAULT CHARSET=utf8;
-%		
-%		3. CREATE TABLE Salad (
-%		sl_id TINYINT UNSIGNED NOT NULL AUTO_INCREMENT,
-%		sl_name varchar(255),
-%		sl_price float(10, 2),
-%		sl_details varchar(255),
-%		PRIMARY KEY (sl_id)
-%		)ENGINE=InnoDB DEFAULT CHARSET=utf8;
-%
-% 		4. CREATE TABLE Soups (
-%		so_id TINYINT UNSIGNED NOT NULL AUTO_INCREMENT,
-%		so_name varchar(255),
-%		so_price float(10, 2),
-%		so_details varchar(255),
-%		PRIMARY KEY (so_id)
-%		)ENGINE=InnoDB DEFAULT CHARSET=utf8;
-%
-%  		5. CREATE TABLE Chicken (
-%		ck_id TINYINT UNSIGNED NOT NULL AUTO_INCREMENT,
-%		ck_name varchar(255),
-%		ck_price float(10, 2),
-%		ck_details varchar(255),
-%		PRIMARY KEY (ck_id)
-%		)ENGINE=InnoDB DEFAULT CHARSET=utf8;
-%
-%		6. CREATE TABLE Pork (
-%		po_id TINYINT UNSIGNED NOT NULL AUTO_INCREMENT,
-%		po_name varchar(255),
-%		po_price float(10, 2),
-%		po_details varchar(255),
-%		PRIMARY KEY (po_id)
-%		)ENGINE=InnoDB DEFAULT CHARSET=utf8;
-%
-%	 	7. CREATE TABLE BeefLamb (
-%		bl_id TINYINT UNSIGNED NOT NULL AUTO_INCREMENT,
-%		bl_name varchar(255),
-%		bl_price float(10, 2),
-%		bl_details varchar(255),
-%		PRIMARY KEY (bl_id)
-%		)ENGINE=InnoDB DEFAULT CHARSET=utf8;
-%
-%		8. CREATE TABLE SeaFood (
-%		sf_id TINYINT UNSIGNED NOT NULL AUTO_INCREMENT,
-%		sf_name varchar(255),
-%		sf_price float(10, 2),
-%		sf_details varchar(255),
-%		PRIMARY KEY (sf_id)
-%		)ENGINE=InnoDB DEFAULT CHARSET=utf8;
-%
-%	 	9. CREATE TABLE NoddlesRice (
-%		nr_id TINYINT UNSIGNED NOT NULL AUTO_INCREMENT,
-%		nr_name varchar(255),
-%		nr_price float(10, 2),
-%		nr_details varchar(255),
-%		PRIMARY KEY (nr_id)
-%		)ENGINE=InnoDB DEFAULT CHARSET=utf8;
-%
-%	 	10. CREATE TABLE VegeTofu (
-%		vt_id TINYINT UNSIGNED NOT NULL AUTO_INCREMENT,
-%		vt_name varchar(255),
-%		vt_price float(10, 2),
-%		vt_details varchar(255),
-%		PRIMARY KEY (vt_id)
-%		)ENGINE=InnoDB DEFAULT CHARSET=utf8;
-%
-%	 	11. CREATE TABLE ClientOrderList (
-%		col_id TINYINT UNSIGNED NOT NULL AUTO_INCREMENT,
-%		col_name varchar(255),
-%		col_price float(10, 2),
-%		UserName varchar(255),
-%		PRIMARY KEY (col_id)
-%		)ENGINE=InnoDB DEFAULT CHARSET=utf8;
-%
-%	 	12. ALTER TABLE `ClientOrderList` ADD `UserName` VARCHAR(255) NOT NULL AFTER `col_price`;
-%
-%	 	13. CREATE TABLE RankList (
-%		rl_id TINYINT UNSIGNED NOT NULL AUTO_INCREMENT,
-%		rl_name varchar(255),
-%		rl_score int,
-%		rl_comments varchar(255),
-%		PRIMARY KEY (rl_id)
-%		)ENGINE=InnoDB DEFAULT CHARSET=utf8;
-%		
-%	 	14. ALTER TABLE `Registration` ADD `reward_point` float(10, 2) NOT NULL AFTER `status`;
-%		
-%	\end{lstlisting}
+	\begin{lstlisting}[
+           language=SQL,
+           showspaces=false,
+           basicstyle=\ttfamily,
+           %numbers=left,
+           numberstyle=\tiny,
+           commentstyle=\color{gray}
+        ]
+		1. Create database ResturentManagement;
+		
+		2. CREATE TABLE RegistrationForAdmin (
+		u_id TINYINT UNSIGNED NOT NULL AUTO_INCREMENT,
+		u_f_name varchar(80),
+		u_l_name varchar(80),
+		u_u_name varchar(80),
+		U_mail varchar(50),
+		u_f_pass varchar(20),
+		u_r_pass varchar(20),
+		status int(11)
+		PRIMARY KEY (u_id)
+		)ENGINE=InnoDB DEFAULT CHARSET=utf8;
+		
+		3. CREATE TABLE Salad (
+		sl_id TINYINT UNSIGNED NOT NULL AUTO_INCREMENT,
+		sl_name varchar(255),
+		sl_price float(10, 2),
+		sl_details varchar(255),
+		PRIMARY KEY (sl_id)
+		)ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+ 		4. CREATE TABLE Soups (
+		so_id TINYINT UNSIGNED NOT NULL AUTO_INCREMENT,
+		so_name varchar(255),
+		so_price float(10, 2),
+		so_details varchar(255),
+		PRIMARY KEY (so_id)
+		)ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+  		5. CREATE TABLE Chicken (
+		ck_id TINYINT UNSIGNED NOT NULL AUTO_INCREMENT,
+		ck_name varchar(255),
+		ck_price float(10, 2),
+		ck_details varchar(255),
+		PRIMARY KEY (ck_id)
+		)ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+		6. CREATE TABLE Pork (
+		po_id TINYINT UNSIGNED NOT NULL AUTO_INCREMENT,
+		po_name varchar(255),
+		po_price float(10, 2),
+		po_details varchar(255),
+		PRIMARY KEY (po_id)
+		)ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+	 	7. CREATE TABLE BeefLamb (
+		bl_id TINYINT UNSIGNED NOT NULL AUTO_INCREMENT,
+		bl_name varchar(255),
+		bl_price float(10, 2),
+		bl_details varchar(255),
+		PRIMARY KEY (bl_id)
+		)ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+		8. CREATE TABLE SeaFood (
+		sf_id TINYINT UNSIGNED NOT NULL AUTO_INCREMENT,
+		sf_name varchar(255),
+		sf_price float(10, 2),
+		sf_details varchar(255),
+		PRIMARY KEY (sf_id)
+		)ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+	 	9. CREATE TABLE NoddlesRice (
+		nr_id TINYINT UNSIGNED NOT NULL AUTO_INCREMENT,
+		nr_name varchar(255),
+		nr_price float(10, 2),
+		nr_details varchar(255),
+		PRIMARY KEY (nr_id)
+		)ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+	 	10. CREATE TABLE VegeTofu (
+		vt_id TINYINT UNSIGNED NOT NULL AUTO_INCREMENT,
+		vt_name varchar(255),
+		vt_price float(10, 2),
+		vt_details varchar(255),
+		PRIMARY KEY (vt_id)
+		)ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+	 	11. CREATE TABLE ClientOrderList (
+		col_id TINYINT UNSIGNED NOT NULL AUTO_INCREMENT,
+		col_name varchar(255),
+		col_price float(10, 2),
+		UserName varchar(255),
+		PRIMARY KEY (col_id)
+		)ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+	 	12. ALTER TABLE `ClientOrderList` ADD `UserName` VARCHAR(255) NOT NULL AFTER `col_price`;
+
+	 	13. CREATE TABLE RankList (
+		rl_id TINYINT UNSIGNED NOT NULL AUTO_INCREMENT,
+		rl_name varchar(255),
+		rl_score int,
+		rl_comments varchar(255),
+		PRIMARY KEY (rl_id)
+		)ENGINE=InnoDB DEFAULT CHARSET=utf8;
+		
+	 	14. ALTER TABLE `Registration` ADD `reward_point` float(10, 2) NOT NULL AFTER `status`;
+		
+	\end{lstlisting}
 	
 	\subsubsection{Database tables structures}
 		\tab The table \ref{tab:adminregitable} is used for register a user as a admin of the system.
@@ -1116,7 +1117,7 @@ flow of an order.
 		
 		
 		\subsubsection{Modify personal information}
-	\tab Users can modify their information lately if he/she wishes to. But to remind that, apart from the username, other information are changeable (as shown in Fig \ref{fig:madmin} and Fig \ref{fig:mclient}.
+	\tab Users can modify their information lately if he/she wishes to. But to remind that, apart from the username, other information are changeable (as shown in Fig \ref{fig:madmin} and Fig \ref{fig:mclient}).
 	
 			\begin{figure}[H]
 		\centering
@@ -6877,6 +6878,395 @@ public class Appetizers extends javax.swing.JFrame {
 		
 \end{lstlisting}
 	\end{comment}
+	
+	\subsection{Test Case}
+		\begin{table}[H]
+		\label{tab:Test}
+\caption{Test Cases}
+\vspace{0.2cm}
+\begin{tabular}{|M{2.5cm}|M{4cm}|M{4cm}|M{4cm}|M{4cm}|M{4cm}|M{4cm}|M{1cm}|N}
+%Start
+\hline
+\textbf{Scenario} &
+\multicolumn{2}{M{3.5cm}|}{\textbf{Test Cases}} & 
+\multicolumn{2}{M{3.5cm}|}{\textbf{Expected Result}} & %
+\multicolumn{2}{M{3.5cm}|}{\textbf{Test Result}} &
+\textbf{Pass or Fail} & \\ [25pt]
+\hline
+\hline%Start
+\multirow{3}{1.5cm}[-1.5em]{\centering Registration} &
+
+\multicolumn{2}{M{3.5cm}|}{\begin{flushleft}
+Enter null in
+mandatory fields.
+\end{flushleft}} &
+\multicolumn{2}{M{3.5cm}|}{\begin{flushleft}
+It should not do the
+registration
+and show error.
+\end{flushleft}} & %
+\multicolumn{2}{M{3.5cm}|}{\begin{flushleft}
+It will show message
+that please fill out this
+field.
+\end{flushleft}} &
+Pass & \\[15pt]\cline{2-9} &
+\multicolumn{2}{M{3.5cm}|}{\begin{flushleft}
+Enter incorrect data
+\end{flushleft}} & 
+\multicolumn{2}{M{3.5cm}|}{\begin{flushleft}
+It should not do the
+registration and show error.
+\end{flushleft}} & 
+\multicolumn{2}{M{3.5cm}|}{\begin{flushleft}
+Email: Please enter an email.
+\linebreak
+Password: Password.\linebreak
+do not match\end{flushleft}} & Pass\\[25pt]\cline{2-9}& 
+\multicolumn{2}{M{3.5cm}|}{\begin{flushleft}
+Enter correct data of all 
+required field
+\end{flushleft}} & 
+\multicolumn{2}{M{3.5cm}|}{\begin{flushleft}
+It should lead to successfully registration
+\end{flushleft}} & 
+\multicolumn{2}{M{3.5cm}|}{\begin{flushleft}
+It will show the message of successfully registrattion
+\end{flushleft}} & Pass\\ [25pt]
+\hline
+%End
+\hline%Start
+\multirow{3}{1.5cm}[-1.5em]{\centering Login} &
+
+\multicolumn{2}{M{3.5cm}|}{\begin{flushleft}
+Enter null email or
+password.
+\end{flushleft}} &
+\multicolumn{2}{M{3.5cm}|}{\begin{flushleft}
+It should not do the
+login and show error.
+\end{flushleft}
+} & %
+\multicolumn{2}{M{3.5cm}|}{\begin{flushleft}
+It will show message that please fill out this field.
+\end{flushleft}} &
+Pass & \\[15pt]\cline{2-9} &
+\multicolumn{2}{M{3.5cm}|}{\begin{flushleft}
+Enter wrong data of
+email or password.
+\end{flushleft}} & 
+\multicolumn{2}{M{3.5cm}|}{\begin{flushleft}
+It should not do the login and show error.
+\end{flushleft}} & 
+\multicolumn{2}{M{3.5cm}|}{\begin{flushleft}
+It will show message that please enter an email or your email address or password are not correct.
+\end{flushleft}
+} & Pass\\[25pt]\cline{2-9}& 
+\multicolumn{2}{M{3.5cm}|}{\begin{flushleft}
+Enter correct data of
+email or password.
+\end{flushleft}} & 
+\multicolumn{2}{M{3.5cm}|}{\begin{flushleft}
+It should let do the login.
+\end{flushleft}
+} & 
+\multicolumn{2}{M{3.5cm}|}{\begin{flushleft}
+It will redirect to your all purchased products
+\end{flushleft}
+} & Pass\\ [25pt]
+\hline%End
+%\hline%Start
+%\multirow{3}{1.5cm}[-1.5em]{\centering Update password
+%} &
+%
+%\multicolumn{2}{M{3.5cm}|}{\begin{flushleft}
+%Enter null in
+%mandatory fields.
+%\end{flushleft}
+%} &
+%\multicolumn{2}{M{3.5cm}|}{\begin{flushleft}
+%It should not do the update
+%and show error.
+%\end{flushleft}} & %
+%\multicolumn{2}{M{3.5cm}|}{\begin{flushleft}
+%It will show message that please fill out this field.
+%\end{flushleft}} &
+%Pass & \\[15pt]\cline{2-9} &
+%\multicolumn{2}{M{3.5cm}|}{\begin{flushleft}
+%Enter incorrect data
+%\end{flushleft}} & 
+%\multicolumn{2}{M{3.5cm}|}{\begin{flushleft}
+%It should not do the update
+%and show error.
+%\end{flushleft}} & 
+%\multicolumn{2}{M{3.5cm}|}{\begin{flushleft}
+%It will show the message that the old password do not match.
+%\end{flushleft}
+%} & Pass\\[25pt]\cline{2-9}& 
+%\multicolumn{2}{M{3.5cm}|}{\begin{flushleft}
+%Enter correct data of all
+%required field.
+%\end{flushleft}} & 
+%\multicolumn{2}{M{3.5cm}|}{\begin{flushleft}
+%It should let do
+%registration.
+%\end{flushleft}} & 
+%
+%\multicolumn{2}{M{3.5cm}|}{\begin{flushleft}
+%It will show the message that password successfully updated.
+%\end{flushleft}
+%} & Pass\\ [25pt]
+%\hline%End
+%\hline%Start
+%\multirow{2}{1.5cm}[-1.5em]{\centering Search Food
+%} &
+%
+%\multicolumn{2}{M{3.5cm}|}{\begin{flushleft}
+%Enter null or incorrect data in search fields.
+%\end{flushleft}
+%} &
+%\multicolumn{2}{M{3.5cm}|}{\begin{flushleft}
+%It will not search food
+%\end{flushleft}} & %
+%\multicolumn{2}{M{3.5cm}|}{\begin{flushleft}
+%It will show the message that there was no search results!
+%\end{flushleft}} &
+%Pass & \\[15pt]\cline{2-9} &
+%\multicolumn{2}{M{3.5cm}|}{\begin{flushleft}
+%Enter correct data in
+%Search fields.
+%\end{flushleft}} & 
+%\multicolumn{2}{M{3.5cm}|}{\begin{flushleft}
+%It should search foods depending the keywords.
+%\end{flushleft}} & 
+%\multicolumn{2}{M{3.5cm}|}{\begin{flushleft}
+%It will display the foods regarding the keywords.
+%\end{flushleft}
+%} & Pass\\[25pt]
+%\hline%End
+%\hline%Start
+%\multirow{2}{1.5cm}[-1.5em]{\centering Comment Food
+%} &
+%
+%\multicolumn{2}{M{3.5cm}|}{\begin{flushleft}
+%Enter non ASCII character.
+%\end{flushleft}} &
+%\multicolumn{2}{M{3.5cm}|}{\begin{flushleft}
+%It will not let to comment
+%\end{flushleft}
+%} & %
+%\multicolumn{2}{M{3.5cm}|}{\begin{flushleft}
+%It will show error as unsupported character.
+%\end{flushleft}} &
+%Pass & \\[15pt]\cline{2-9} &
+%\multicolumn{2}{M{3.5cm}|}{\begin{flushleft}
+%Enter ASCII character.
+%\end{flushleft}} & 
+%\multicolumn{2}{M{3.5cm}|}{\begin{flushleft}
+%It will lead a successful comment.
+%\end{flushleft}} & 
+%\multicolumn{2}{M{3.5cm}|}{\begin{flushleft}
+%It will view the succession of a comment.
+%\end{flushleft}
+%} & Pass\\[25pt]
+%\hline%End
+
+\end{tabular}
+\end{table}
+
+\begin{table}[H]
+\captionsetup{labelformat=empty}
+\caption[]{ }
+\vspace{0.2cm}
+\begin{tabular}{|M{2.5cm}|M{4cm}|M{4cm}|M{4cm}|M{4cm}|M{4cm}|M{4cm}|M{1cm}|N}
+%Start
+\hline
+\textbf{Scenario} &
+\multicolumn{2}{M{3.5cm}|}{\textbf{Test Cases}} & 
+\multicolumn{2}{M{3.5cm}|}{\textbf{Expected Result}} & %
+\multicolumn{2}{M{3.5cm}|}{\textbf{Test Result}} &
+\textbf{Pass or Fail} & \\ [25pt]
+\hline
+%\hline%Start
+%\multirow{3}{1.5cm}[-1.5em]{\centering Registration} &
+%
+%\multicolumn{2}{M{3.5cm}|}{\begin{flushleft}
+%Enter null in
+%mandatory fields.
+%\end{flushleft}} &
+%\multicolumn{2}{M{3.5cm}|}{\begin{flushleft}
+%It should not do the
+%registration
+%and show error.
+%\end{flushleft}} & %
+%\multicolumn{2}{M{3.5cm}|}{\begin{flushleft}
+%It will show message
+%that please fill out this
+%field.
+%\end{flushleft}} &
+%Pass & \\[15pt]\cline{2-9} &
+%\multicolumn{2}{M{3.5cm}|}{\begin{flushleft}
+%Enter incorrect data
+%\end{flushleft}} & 
+%\multicolumn{2}{M{3.5cm}|}{\begin{flushleft}
+%It should not do the
+%registration and show error.
+%\end{flushleft}} & 
+%\multicolumn{2}{M{3.5cm}|}{\begin{flushleft}
+%Email: Please enter an email.
+%\linebreak
+%Password: Password.\linebreak
+%do not match\end{flushleft}} & Pass\\[25pt]\cline{2-9}& 
+%\multicolumn{2}{M{3.5cm}|}{\begin{flushleft}
+%Enter correct data of all 
+%required field
+%\end{flushleft}} & 
+%\multicolumn{2}{M{3.5cm}|}{\begin{flushleft}
+%It should lead to successfully registration
+%\end{flushleft}} & 
+%\multicolumn{2}{M{3.5cm}|}{\begin{flushleft}
+%It will show the message of successfully registrattion
+%\end{flushleft}} & Pass\\ [25pt]
+%\hline
+%%End
+%\hline%Start
+%\multirow{3}{1.5cm}[-1.5em]{\centering Login} &
+%
+%\multicolumn{2}{M{3.5cm}|}{\begin{flushleft}
+%Enter null email or
+%password.
+%\end{flushleft}} &
+%\multicolumn{2}{M{3.5cm}|}{\begin{flushleft}
+%It should not do the
+%login and show error.
+%\end{flushleft}
+%} & %
+%\multicolumn{2}{M{3.5cm}|}{\begin{flushleft}
+%It will show message that please fill out this field.
+%\end{flushleft}} &
+%Pass & \\[15pt]\cline{2-9} &
+%\multicolumn{2}{M{3.5cm}|}{\begin{flushleft}
+%Enter wrong data of
+%email or password.
+%\end{flushleft}} & 
+%\multicolumn{2}{M{3.5cm}|}{\begin{flushleft}
+%It should not do the login and show error.
+%\end{flushleft}} & 
+%\multicolumn{2}{M{3.5cm}|}{\begin{flushleft}
+%It will show message that please enter an email or your email address or password are not correct.
+%\end{flushleft}
+%} & Pass\\[25pt]\cline{2-9}& 
+%\multicolumn{2}{M{3.5cm}|}{\begin{flushleft}
+%Enter correct data of
+%email or password.
+%\end{flushleft}} & 
+%\multicolumn{2}{M{3.5cm}|}{\begin{flushleft}
+%It should let do the login.
+%\end{flushleft}
+%} & 
+%\multicolumn{2}{M{3.5cm}|}{\begin{flushleft}
+%It will redirect to your all purchased products
+%\end{flushleft}
+%} & Pass\\ [25pt]
+%\hline%End
+\hline%Start
+\multirow{3}{2cm}[-1.5em]{\centering Update password
+} &
+
+\multicolumn{2}{M{3.5cm}|}{\begin{flushleft}
+Enter null in
+mandatory fields.
+\end{flushleft}
+} &
+\multicolumn{2}{M{3.5cm}|}{\begin{flushleft}
+It should not do the update
+and show error.
+\end{flushleft}} & %
+\multicolumn{2}{M{3.5cm}|}{\begin{flushleft}
+It will show message that please fill out this field.
+\end{flushleft}} &
+Pass & \\[15pt]\cline{2-9} &
+\multicolumn{2}{M{3.5cm}|}{\begin{flushleft}
+Enter incorrect data
+\end{flushleft}} & 
+\multicolumn{2}{M{3.5cm}|}{\begin{flushleft}
+It should not do the update
+and show error.
+\end{flushleft}} & 
+\multicolumn{2}{M{3.5cm}|}{\begin{flushleft}
+It will show the message that the old password do not match.
+\end{flushleft}
+} & Pass\\[25pt]\cline{2-9}& 
+\multicolumn{2}{M{3.5cm}|}{\begin{flushleft}
+Enter correct data of all
+required field.
+\end{flushleft}} & 
+\multicolumn{2}{M{3.5cm}|}{\begin{flushleft}
+It should let do
+registration.
+\end{flushleft}} & 
+
+\multicolumn{2}{M{3.5cm}|}{\begin{flushleft}
+It will show the message that password successfully updated.
+\end{flushleft}
+} & Pass\\ [25pt]
+\hline%End
+\hline%Start
+\multirow{2}{1.5cm}[-1.5em]{\centering Search Food
+} &
+
+\multicolumn{2}{M{3.5cm}|}{\begin{flushleft}
+Enter null or incorrect data in search fields.
+\end{flushleft}
+} &
+\multicolumn{2}{M{3.5cm}|}{\begin{flushleft}
+It will not search food
+\end{flushleft}} & %
+\multicolumn{2}{M{3.5cm}|}{\begin{flushleft}
+It will show the message that there was no search results!
+\end{flushleft}} &
+Pass & \\[15pt]\cline{2-9} &
+\multicolumn{2}{M{3.5cm}|}{\begin{flushleft}
+Enter correct data in
+Search fields.
+\end{flushleft}} & 
+\multicolumn{2}{M{3.5cm}|}{\begin{flushleft}
+It should search foods depending the keywords.
+\end{flushleft}} & 
+\multicolumn{2}{M{3.5cm}|}{\begin{flushleft}
+It will display the foods regarding the keywords.
+\end{flushleft}
+} & Pass\\[25pt]
+\hline%End
+\hline%Start
+\multirow{2}{1.5cm}[-1.5em]{\centering Comment Food
+} &
+
+\multicolumn{2}{M{3.5cm}|}{\begin{flushleft}
+Enter non ASCII character.
+\end{flushleft}} &
+\multicolumn{2}{M{3.5cm}|}{\begin{flushleft}
+It will not let to comment
+\end{flushleft}
+} & %
+\multicolumn{2}{M{3.5cm}|}{\begin{flushleft}
+It will show error as unsupported character.
+\end{flushleft}} &
+Pass & \\[15pt]\cline{2-9} &
+\multicolumn{2}{M{3.5cm}|}{\begin{flushleft}
+Enter ASCII character.
+\end{flushleft}} & 
+\multicolumn{2}{M{3.5cm}|}{\begin{flushleft}
+It will lead a successful comment.
+\end{flushleft}} & 
+\multicolumn{2}{M{3.5cm}|}{\begin{flushleft}
+It will view the succession of a comment.
+\end{flushleft}
+} & Pass\\[25pt]
+\hline%End
+
+\end{tabular}
+\end{table}
 	\subsection{Code Documentation}
 	\tab Code documentation is an important part of any software engineering project. Throughout the im-
 plementation, a JavaDoc tool was used to generate HTML API documentation of the project. The
@@ -6911,11 +7301,11 @@ that some of the lower priority requirements had to be scrapped.
 	\tab This project was developed under time constraints of 120 hours. Therefore the proposed features
 specified in the requirements were what the developer thought to be realistic targets.
 However, if more time became available the following could be implemented.
-	\subsubsection{Graphical User Interface (GUI)}
-	\tab Currently the GUI was adequate to do the job but maybe the GUI could have had a more appealing
-look and feel. This all beckons on whether or not Java was the best programming language to use to
-generate the best looking GUI. Maybe a web developed GUI could have been a better alternative but
-with the developer having little experience in web development this would not have been ideal.
+%	\subsubsection{Graphical User Interface (GUI)}
+%	\tab Currently the GUI was adequate to do the job but maybe the GUI could have had a more appealing
+%look and feel. This all beckons on whether or not Java was the best programming language to use to
+%generate the best looking GUI. Maybe a web developed GUI could have been a better alternative but
+%with the developer having little experience in web development this would not have been ideal.
 	\subsubsection{Table Management}
 	\tab A feature that was thought of as a possibility but never documented past the design stage was the use
 of a table management feature. This would give the system the ability to reserve and allocate tables.
@@ -6948,11 +7338,11 @@ have been developed include:
 \bibliography{/home/basedul/Documents/Report-writing-using-latex/ResturentManagementSystemReport/req.bib}
 \bibliographystyle{IEEEtran}
 \newpage
-
-\section{Acknowledgement}
+\section*{Acknowledgement}
+\addcontentsline{toc}{section}{\textbf{Acknowledgement}}
 	\tab Foremost, I would like to express my sincere gratitude to the almighty Allah for His blessings and protection throughout my undergraduate studies.\\ 
 \tab My sincere thanks to my supervisor,  \textbf{Liang Zhao} for the continuous support of my Bachelor's study, patience, motivation, enthusiasm, and immense knowledge. His guidance helped me in all the time of research and writing of this thesis. I could not have imagined having a better advisor and mentor.\\
         \tab I also thank my fellow classmates, my friends and for all the fun we have had in the last four years.\\
-        \tab Last but not the least; I would like to thank my parents \textbf{Mr. Syed Amin Uddin and Mrs. Hajera Amin and my aunt Ms. Noorjahan Khanam} for their prayers, support, encouragement and their admonishment.\\
+        \tab Last but not the least; I would like to thank my parents \textbf{Mr. Syed Amin Uddin} and \textbf{Mrs. Hajera Amin} and \textbf{Ms. Noorjahan Khanam} for their prayers, support, encouragement and their admonishment.\\
 
 \end{document}
