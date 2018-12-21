@@ -16,8 +16,17 @@
 \usepackage{caption}%for caption number delete
 \usepackage{CJKutf8}
 \newcommand{\zh}[1]{\begin{CJK}{UTF8}{gbsn}#1\end{CJK}}
+%for dot line
+\usepackage{tocloft}
+%\renewcommand{\cftpartleader}{\cftdotfill{\cftdotsep}} % for parts
+\renewcommand{\cftsecleader}{\cftdotfill{\cftdotsep}}
 
+%table gap
 
+%figure numbering depend on section number
+\usepackage{chngcntr}
+\counterwithin{figure}{section}
+\counterwithin{table}{section}
 %left allignment
 \usepackage{ragged2e}
 
@@ -136,7 +145,7 @@
 	\fontsize{16}{10}\fontfamily{ptm}\selectfont{\begin{flushleft}
 	Supervisor
 	\end{flushleft}} & \fontsize{16}{10}\fontfamily{ptm}\selectfont{\begin{flushleft}
-	LIANG Zhao
+	Dr. LIANG Zhao
 	\end{flushleft}}&\\[0.1pt]
 	
 	\end{tabular}
@@ -203,7 +212,7 @@
 	\fontsize{16}{10}\fontfamily{ptm}\selectfont{\begin{flushleft}
 	Supervisor
 	\end{flushleft}} & \fontsize{16}{10}\fontfamily{ptm}\selectfont{\begin{flushleft}
-	LIANG Zhao
+	Dr. LIANG Zhao
 	\end{flushleft}}&\\[0.1pt]
 	
 	\end{tabular}
@@ -252,8 +261,7 @@ manual work and enhances the accuracy of work in a restaurant. This software has
 in a user friendly interface. This project is also designed with full consideration to help the
 users in an easy manner without any unnecessary wastage of time. This application can be
 implemented in big restaurant where customers can order their food from their table using
-application. The application consists of various food varieties available in the restaurant.
-Through the ordering form, the customer can simply click and order the food even from
+application. The application consists of various food varieties available in the restaurant.Through the ordering form, the customer can simply click and order the food even from
 home. This application entirely reduces the unnecessary time waste inside the hotel as well as
 it reduces unnecessary noise. This report documents the process of designing, developing and
 testing a software application to be used in a restaurant; usually given the name restaurant
@@ -272,24 +280,24 @@ successfully running for the restaurant management. Asian Restaurant Management
 Application is a java application designed with Java technique and MySQL server as the
 database of the application.\\
 \vspace{0.8cm}
-{\bfseries Key Words: } Asian Restaurent Management Application, Java technique, Wamp server, MySQL, Database.
-	\newpage
-	\thispagestyle{empty}
-	\centering\zh{摘 要}\\
-	\vspace{0.5cm}
-	
-	\zh{“亚洲餐厅管理应用”项目旨在减少人工劳动，提高餐厅工作的准确性。这个软件是用户友好的界面制作
-的。这个系统由餐馆里各种各样的食物组成。通过订购表单，客户可以简单地点击和订购食品，甚至在
-家里。这份报告记录了设计、开发和测试一个在餐馆使用的软件系统的过程；通常给出餐馆管理系统的
-名称。餐厅管理系统通过最小化人为错误的概率来帮助餐厅内所有团队之间的沟通。这个项目是维护客
-户信息和满足客户需求的最佳方式。系统采用客户机和服务器模式设计和实现。这是一个集成的系统应
-用程序，它包含两个用户组件（由客户端用于注册、登录、签出应用程序、修改个人信息、浏览食物的
-细节信息、根据名称或类型查询指定菜肴、在菜肴上写用户体验或评论以及提交满意度评分），用户在
-分享他们的经验之后获得奖励积分）和管理组件（管理员用于执行管理级功能，例如注册、登录、签出
-应用程序、修改个人信息、管理订单列表、添加新的菜肴项目）。此应用程序已成功用于餐厅管理。亚
-洲餐厅管理应用程序是以Java技术和MySQL Server为系统的数据库设计的Java应用程序。\linebreak}\\
-
-\RaggedRight\zh{\bfseries{关键词：}}\zh{亚洲餐饮管理应用，Java技术，WAMP服务器，MySQL，数据库}
+{\bfseries Key Words: } Asian Restaurant Management Application, Java technique, Wamp server, MySQL, Database.
+%	\newpage
+%	\thispagestyle{empty}
+%	\centering\zh{摘 要}\\
+%	\vspace{0.5cm}
+%	
+%	\zh{“亚洲餐厅管理应用”项目旨在减少人工劳动，提高餐厅工作的准确性。这个软件是用户友好的界面制作
+%的。这个系统由餐馆里各种各样的食物组成。通过订购表单，客户可以简单地点击和订购食品，甚至在
+%家里。这份报告记录了设计、开发和测试一个在餐馆使用的软件系统的过程；通常给出餐馆管理系统的
+%名称。餐厅管理系统通过最小化人为错误的概率来帮助餐厅内所有团队之间的沟通。这个项目是维护客
+%户信息和满足客户需求的最佳方式。系统采用客户机和服务器模式设计和实现。这是一个集成的系统应
+%用程序，它包含两个用户组件（由客户端用于注册、登录、签出应用程序、修改个人信息、浏览食物的
+%细节信息、根据名称或类型查询指定菜肴、在菜肴上写用户体验或评论以及提交满意度评分），用户在
+%分享他们的经验之后获得奖励积分）和管理组件（管理员用于执行管理级功能，例如注册、登录、签出
+%应用程序、修改个人信息、管理订单列表、添加新的菜肴项目）。此应用程序已成功用于餐厅管理。亚
+%洲餐厅管理应用程序是以Java技术和MySQL Server为系统的数据库设计的Java应用程序。\linebreak}\\
+%
+%\RaggedRight\zh{\bfseries{关键词：}}\zh{亚洲餐饮管理应用，Java技术，WAMP服务器，MySQL，数据库}
 	\end{titlepage}
 	
 	\pagenumbering{roman} %numbering before main content starts
@@ -305,75 +313,72 @@ database of the application.\\
 	
 	\section{Introduction}
 	%{\bfseries \Large INTODUCTION}\\
-	\tab The concept of restaurant table order management system, since it is java application, I will keep everything as simple as possible. The project consists in an java application that can be used by employees in a restaurant to handle the clients, their orders and can help them easily find free tables or place orders. This application, created mainly for proof of proper user-java interaction. The restaurant menu is organized by categories (appetizers, soups,fig salads, entrees etc.) of menu items. Each menu item has a chef, preparation instructions and associated ingredients. The ingredients are identified by their ingredient id and the quality of the ingredient needed to prepare a particular recipe, the unit of measure and a name.
+	\tab{The concept of restaurant table order management system, since it is java application, I will keep everything as simple as possible. The project consists in an java application that can be used by employees in a restaurant to handle the clients, their orders and can help them easily find free tables or place orders. This application, created mainly for proof of proper user-java interaction. The restaurant menu is organized by categories (appetizers, soups,fig salads, entrees etc.) of menu items. Each menu item has a chef, preparation instructions and associated ingredients. The ingredients are identified by their ingredient id and the quality of the ingredient needed to prepare a particular recipe, the unit of measure and a name.}
 \\
-\tab "Restaurant Management System(RMS)" is java application to restaurant management. This system wake to provide service facility to rastaurant and also to the customer. The services that are provided is food ordering and home delivery by the customer through the system, customer information management and waiter information management, menu information management and report. Main objective build the system, ordering, and home delivery management will become easier and systematic to replace traditional system.
+\tab{"Restaurant Management System(RMS)" is java application to restaurant management. This system wake to provide service facility to rastaurent and also to the customer. The services that are provided is food ordering and home delivery by the customer through the system, customer information management and waiter information management, menu information management and report. Main objective build the system, ordering, and home delivery management will become easier and systematic to replace traditional system.}
 
 	
 	\subsection{Project Objectves}
-	\tab We are stuck with technology when what we really want is just stuff that works. With
+\tab{We are stuck with technology when what we really want is just stuff that works. With
 the current paradigm shift in technological field, there is an urgent need to embrace and
 appreciate the power of technology.Restaurant sector remains vigilant to face the challenges
 of change by employing a new strategy that facilities easy management system that can
 simplify work for the restaurant managers so that all their work can be efficient and effective.
 The general objectives of the study is to develop a reliable, convenient and accurate Ordering System.\\
-The study has the following specific objectives:
-		\begin{itemize}
-			\item To develop a system that will surely satisfied the customer service.
-			\item To design a system able to accommodate huge amount of orders at a time.
-			\item  To evaluate its performance and acceptability in terms of security, user-friendliness, accuracy and reliability.
-			\item  To improve the communication between the client and the server and minimize the time of ordering.
+The study has the following specific objectives:}
+		 \begin{itemize}
+			\item{To develop a system that will surely satisfied the customer service.}
+			\item{To design a system able to accommodate huge amount of orders at a time.}
+			\item{To evaluate its performance and acceptability in terms of security, user-friendliness, accuracy and reliability.}
+			\item{To improve the communication between the client and the server and minimize the time of ordering.}
 		\end{itemize}
 		
-\RaggedRight One of the main objectives of a restaurant to ensure customer satisfaction. Manual listing of orders by the waiters/waitresses may result to slow response in customer service. Hence, if the restaurant uses the proposed system, manipulation of orders to the customers be so easy and choosing the desired menu.
+One of the main objectives of a restaurant to ensure customer satisfaction. Manual listing of orders by the waiters/waitresses may result to slow response in customer service. Hence, if the restaurant uses the proposed system, manipulation of orders to the customers be so easy and choosing the desired menu.
 
 	\subsection{Project Requirements Analysis}
-	\tab Project requirements analysis are important stage in the system development. It
+	\tab{Project requirements analysis are important stage in the system development. It
 determines the functions of the whole system integrity and stability. Software requirements
 analysis is an ongoing process of understanding and progressive refinement. Through
-requirements analysis, design functions of the management system as below.
+requirements analysis, design functions of the management system as below.}
 			\begin{itemize}
-				\item[a.]User management. User can register (Manager or customer), login and logout the website;
-				\item[b.]Adding a food. Manager can add new food information for showing to customer.
-				\item[c.]Foods information browsing. The Foods are grouped by categories. Customers may
+				\item[a.]\textbf{User management:} User can register (Manager or customer), login and logout the application.
+				\item[b.]\textbf{Adding a food:} Manager can add new food information for showing to customer.
+				\item[c.]\textbf{Foods information browsing:} The Foods are grouped by categories. Customers may
 browse the detailed information of a food.
-				\item[d.]Foods query: Manager can query foods according to price, name.
-				\item[e.]Foods comments. Customers can write comments on the food and submit satisfaction
+				\item[d.]\textbf{Foods query:} Manager can query foods according to price, name.
+				\item[e.]\textbf{Foods comments:} Customers can write comments on the food and submit satisfaction
 score.
 			\end{itemize}
 		\subsubsection{Requirements Analysis}
-		\tab The in-front management application is the user visits food list and
+		\tab{The in-front management application is the user visits food list and
 register user is customer. Only the manager can manage his/her searching potion about the
 specific food, comment and rate. So in this part, specific functions are described as
-below:\\
+below:}\\
 			\begin{itemize}
-				\item {\bfseries Login and logout:} User can signin into system and also signout from the system.
+				\item {\bfseries Login and logout:} User can sign in into system and also sign out from the system.
 				\item {\bfseries Register:} If user have no account, user have to must create an account.
-				\item {\bfseries Modify personal informationl:} User can also modify his personal information.
-				\item {\bfseries Browse detailed information of a food:} User can browse detaile of food.
+				\item {\bfseries Modify personal information:} User can also modify his personal information.
+				\item {\bfseries Browse detailed information of a food:} User can browse details of food.
 				\item {\bfseries Comments:} User can post a comment for each food.
 				\item {\bfseries Rate a food:} User can post a score for each food.
 			\end{itemize}
 		\subsection{Project Deliverables}
-	\tab The main deliverables of this project is to build a simple and easy use of resaturant management system following the specific software requirements as well as the programming lagnuages.
-	
-
-
+	\tab{The main deliverable of this project is to build a simple and easy use of restaurant management system following the specific software requirements as well as the programming languages.}
 \newpage
 \section{Technological Background}
 %{\bfseries \Large Technological Background} 
 	\subsection{Implementation Process}
-	\tab In the thesis project, Window 10 as an operating system,MySQL as a database and netbeans as a IDE.
-	The application is a collection of Apache server, MySQL server comprehensive programming and easy to use.
+	\tab{In the thesis project, Window 10 as an operating system,MySQL as a database and netbeans as a IDE.
+	The application is a collection of Apache server, MySQL server comprehensive programming and easy to use.}
 	\subsection{Tools and Technologies}
-	\tab Use these three tools are MySQL\cite{Ref:5}, Java\cite{Ref:7} and Apache Server\cite{Ref:8}. 
+	\tab{Use these three tools are MySQL\cite{Ref:5}, Apache Server\cite{Ref:8} and Java\cite{Ref:7} is Object oriented programming language .}
 	\subsubsection{MySQL Database}
-	\tab MySQL\cite{Ref:5} is an open source relational database management system. It is based on the
+	\tab{MySQL\cite{Ref:5} is an open source relational database management system. It is based on the
 structure query language (SQL), which is used for adding, removing, and modifying
 information in the database. Standard SQL commands, such as ADD, DROP, INSERT,
-and UPDATE can be used with MySQL.\\
+and UPDATE can be used with MySQL.}\\
 
-\tab A database is a data structure that stores organized information. Most databases
+\tab{A database is a data structure that stores organized information. Most databases
 contain multiple tables, which may each include several different fields. For example, a
 company database may include tables for products, employees, and financial records. Each
 of these tables would have different fields that are relevant to the information stored in the
@@ -381,16 +386,16 @@ table. Today’s relational databases allow users to access, update, and search 
 based on the relationship of data stored in different tables. Relational databases can also
 run queries that involve multiple databases. While early databases could only store text or
 such numeric data, modern databases also let users store other data types such as sound
-clips, pictures, and videos.\\
+clips, pictures, and videos.}\\
 
-\tab SQL (Structured Query Language) is a standardized programming language used for
+\tab{SQL (Structured Query Language) is a standardized programming language used for
 managing relational databases and performing various operations on the data in them.
 Initially created on 1970s, SQLs is regularly being used by database administrators, as well
 as by developers writing data integration scripts and data analysts looking to set up and run
-analytical queries. For example, books information, customer information, orders
+analytical queries. For example, books information, customer information etc}.
 
 \subsubsection{JAVA}
-	\tab Java\cite{Ref:7} is a high-level programming language developed by Sun Microsystems. It was
+	\tab{Java\cite{Ref:7} is a high-level programming language developed by Sun Microsystems. It was
 originally designed for developing programs for set-top boxes and handheld devices, but
 later became a popular choice for creating web applications.
 The Java syntax is similar to C++, but is strictly an object-oriented programming
@@ -399,25 +404,21 @@ objects, and methods, which are assigned to individual classes. Java is also kno
 being more strict than C++, meaning variables and functions must be explicitly defined.
 This means Java source code may produce errors or  and quot;exceptions and quot; more easily than other
 languages, but it also limits other types of errors that may be caused by undefined variables
-or unassigned types.\\
-
-\tab Unlike Windows executables (.EXE files) or Macintosh applications (.APP files),
+or unassigned types.}\\
+\tab{Unlike Windows executables (.EXE files) or Macintosh applications (.APP files),
 Java programs are not run directly by the operating system. Instead, Java programs are
 interpreted by the Java Virtual Machine, or JVM, which runs on multiple platforms. This
 means all Java programs are multiplatform and can run on different platforms, including Macintosh, Windows, and Unix computers. However, the JVM must be installed for Java
 applications or applets to run at all. Fortunately, the JVM is included as part of the Java
 Runtime Environment (JRE), which is available as a free download. Oracle acquired Sun
 Microsystems in January, 2010. Therefore, Java is now maintained and distributed by
-Oracle.\\
-
-\tab Java is a general-purpose computer-programming language that is concurrent, class-based, object-oriented, and specifically designed to have as few implementation dependencies as possible. It is intended to let application developers "write once, run anywhere" (WORA), meaning that compiled Java code can run on all platforms that support Java without the need for recompilation.Java applications are typically compiled to bytecode that can run on any Java virtual machine (JVM) regardless of computer architecture. As of 2016, Java is one of the most popular programming languages in use,particularly for client-server web applications, with a reported 9 million developers.Java was originally developed by James Gosling at Sun Microsystems (which has since been acquired by Oracle Corporation) and released in 1995 as a core component of Sun Microsystems' Java platform. The language derives much of its syntax from C and C++, but it has fewer low-level facilities than either of them.\\
-
-\tab The original and reference implementation Java compilers, virtual machines, and class libraries were originally released by Sun under proprietary licenses. As of May 2007, in compliance with the specifications of the Java Community Process, Sun relicensed most of its Java technologies under the GNU General Public License. Others have also developed alternative implementations of these Sun technologies, such as the GNU Compiler for Java (bytecode compiler), GNU Classpath (standard libraries), and IcedTea-Web (browser plugin for applets).
-\\
-\tab The latest version is Java 11, released on September 25, 2018, which follows Java 10 after only six months, being in line with the new release schedule. Java 8 is still supported but there will be no more security updates for Java 9.Versions earlier than Java 8 are supported by companies on a commercial basis; e.g. by Oracle back to Java 6 as of October 2017 (while they still "highly recommend that you uninstall" pre-Java 8 from at least Windows computers).
+Oracle.}\\
+\tab{Java is a general-purpose computer-programming language that is concurrent, class-based, object-oriented, and specifically designed to have as few implementation dependencies as possible. It is intended to let application developers "write once, run anywhere" (WORA), meaning that compiled Java code can run on all platforms that support Java without the need for recompilation.Java applications are typically compiled to bytecode that can run on any Java virtual machine (JVM) regardless of computer architecture. As of 2016, Java is one of the most popular programming languages in use,particularly for client-server web applications, with a reported 9 million developers.Java was originally developed by James Gosling at Sun Microsystems (which has since been acquired by Oracle Corporation) and released in 1995 as a core component of Sun Microsystems' Java platform. The language derives much of its syntax from C and C++, but it has fewer low-level facilities than either of them}\\
+\tab{The original and reference implementation Java compilers, virtual machines, and class libraries were originally released by Sun under proprietary licenses. As of May 2007, in compliance with the specifications of the Java Community Process, Sun relicensed most of its Java technologies under the GNU General Public License. Others have also developed alternative implementations of these Sun technologies, such as the GNU Compiler for Java (bytecode compiler), GNU Classpath (standard libraries), and IcedTea-Web (browser plugin for applets).}\\
+\tab{The latest version is Java 11, released on September 25, 2018, which follows Java 10 after only six months, being in line with the new release schedule. Java 8 is still supported but there will be no more security updates for Java 9.Versions earlier than Java 8 are supported by companies on a commercial basis; e.g. by Oracle back to Java 6 as of October 2017 (while they still "highly recommend that you uninstall" pre-Java 8 from at least Windows computers).}
 
 \subsubsection{Apache Server}
-	\tab Apache server\cite{Ref:8} is an open source Web server tool developed by the Apache Software
+	\tab{Apache server\cite{Ref:8} is an open source World Wide Web server tool developed by the Apache Software
 Foundation (ASF). It is one of many Apache-related open source products used by IT
 professionals for various tasks and objectives. It allows the implementation of Java
 Servlets and JavaServer Pages (JSP) to promote an effective Java server environment.
@@ -425,28 +426,24 @@ Users can also access resources for configuration and use extensible markup lang
 (XML) to configure projects. Successive versions of Apache Tomcat have solved different
 problems by applying software patches and other solutions. Some experts characterize
 Apache Tomcat as a product offering a runtime shell for Java Servlets. Users can also set
-up Java virtual machines (JVM) to configure virtual hosting.\\
+up Java virtual machines (JVM) to configure virtual hosting.}\\
+\tab{Apache is an open-source and free web server software that powers around 46 percent of websites around the world. The official name is Apache HTTP Server, and it’s maintained and developed by the Apache Software Foundation.}\\
+\tab{It allows website owners to serve content on the web — hence the name “web server”. It’s one of the oldest and most reliable web servers, with the first version released more than 20 years ago, in 1995.}\\
 
-\tab Apache is an open-source and free web server software that powers around 46 percent of websites around the world. The official name is Apache HTTP Server, and it’s maintained and developed by the Apache Software Foundation.\\
-
-\tab It allows website owners to serve content on the web — hence the name “web server”. It’s one of the oldest and most reliable web servers, with the first version released more than 20 years ago, in 1995.\\
-
-		\subsubsection{How does Apache Web server}
-		\tab Although we call Apache a web server, it is not a physical server, but rather a software that runs on a server. Its job is to establish a connection between a server and the browsers of website visitors (Firefox, Google Chrome, Safari, etc.) while delivering files back and forth between them (client-server structure). Apache is a cross-platform software, therefore it works on both Unix and Windows servers.\\
-
-\tab When a visitor wants to load a page on your website, for instance, the homepage or your “About Us” page, their browser sends a request to your server and Apache returns a response with all the requested files (text, images, etc.). The server and the client communicate through the HTTP protocol and Apache is responsible for the smooth and secure communication between the two machines.\\
-
-\tab Apache is highly customizable, as it has a module-based structure. Modules allow server administrators to turn additional functionalities on and off. Apache has modules for security, caching, URL rewriting, password authentication, and more. You can also set up your own server configurations through a file called .htaccess, which is an Apache configuration file supported with all Hostinger plans.\\
+		\subsubsection{Apache Web Server}
+		\tab{Although we call Apache a web server, it is not a physical server, but rather a software that runs on a server. Its job is to establish a connection between a server and the browsers of website visitors (Firefox, Google Chrome, Safari, etc.) while delivering files back and forth between them (client-server structure). Apache is a cross-platform software, therefore it works on both Unix and Windows servers.}\\
+\tab{When a visitor wants to load a page on your website, for instance, the homepage or your “About Us” page, their browser sends a request to your server and Apache returns a response with all the requested files (text, images, etc.). The server and the client communicate through the HTTP protocol and Apache is responsible for the smooth and secure communication between the two machines.}\\
+\tab{Apache is highly customizable, as it has a module-based structure. Modules allow server administrators to turn additional functionalities on and off. Apache has modules for security, caching, URL rewriting, password authentication, and more. You can also set up your own server configurations through a file called .htaccess, which is an Apache configuration file supported with all Hostinger plans.}\\
 		
 \newpage
 \section{System Design}
 %{\bfseries \Large System Design}\\
-\tab System design is the process of defining the elements of the system such as the
+\tab{System design is the process of defining the elements of the system such as the
 architecture, modules and components, the different interfaces of those components and
-the data that goes through the system.\\
+the data that goes through the system.}\\
 \subsection{Architectural Design}
-	\tab In this part, system block diagram details are given. According to requirements
-gather, the asian restaurant management system will be designed as below:	
+	\tab{In this part, system block diagram details are given. According to requirements
+gather, the asian restaurant management system will be designed as below:}
 	\begin{figure}[H]
 		\centering
 		\includegraphics[height=3in]{/home/basedul/Documents/Report-writing-using-latex/ResturentManagementSystemReport/archtecturaldesign.png}
@@ -454,10 +451,11 @@ gather, the asian restaurant management system will be designed as below:
 		\label{fig:archi} 
 	\end{figure}
 		
-	\tab As show on figure\ref{fig:archi} is showing the \textbf{Asian Restaurant Management System} is divided into some modules and submodules.
+	\tab{As show on figure\ref{fig:archi} is showing the \textbf{Asian Restaurant Management System} is divided into some modules and submodules.}
+	\newpage
 \subsection{Database Diagram}
 	\subsubsection{Entity Diagram}
-	\tab These diagrams below show how the attributes are defined in database table:\\
+	\tab{These diagrams below show how the attributes are defined in database table:}\\
 	
 	\vspace{0.7cm}
 	\tab If admin wants to check the order list from an client and add new cuisine items to a foodstuff, admin must first register with name, user name, email and password. After registration, he will be able to check the order list after login, else he can not even see the order list and he will not be able to add cuisine to the food list . 
@@ -467,7 +465,7 @@ gather, the asian restaurant management system will be designed as below:
 		\caption{Admin Register entity diagram}
 		\label{fig:adminreg} 
 	\end{figure}
-	\tab Client can browse about cuisines name, price and food details from food list. But if client wants to place an order by confirming, client must need to sign up first with client name, username, e-mail and password. And then login with his username and password. After logging in, he can order the food from the cuisine catagory. After ordering, client can be able to log out.
+	\tab{Client can browse about cuisines name, price and food details from food list. But if client wants to place an order by confirming, client must need to sign up first with client name, username, e-mail and password. And then login with his username and password. After logging in, he can order the food from the cuisine catagory. After ordering, client can be able to log out.}
 	\begin{figure}[H]
 		\centering
 		\includegraphics[height=3in]{/home/basedul/Documents/Report-writing-using-latex/ResturentManagementSystemReport/cliententy.png}
@@ -475,7 +473,7 @@ gather, the asian restaurant management system will be designed as below:
 		\label{fig:clientreg} 
 	\end{figure}
 	
-	\tab If admin wants to add new cuisine items to a foodstuff/order menu, admin must first register with name, user name, email and password. After registration, he will be able to check the order list after login, else he can not even see the order list and he will not be able to add cuisine to the food list.
+	\tab{If admin wants to add new cuisine items to a foodstuff/order menu, admin must first register with name, user name, email and password. After registration, he will be able to check the order list after login, else he can not even see the order list and he will not be able to add cuisine to the food list.}
 	\begin{figure}[H]
 		\centering
 		\includegraphics[height=3in]{/home/basedul/Documents/Report-writing-using-latex/ResturentManagementSystemReport/fooddet.png}
@@ -483,7 +481,7 @@ gather, the asian restaurant management system will be designed as below:
 		\label{fig:foodadd} 
 	\end{figure}
 	
-	\tab After a placing an order or requesting for home delivery, client can comment on each cuisine items. And also can give scores for a specific item of cuisine. If you want to comment or score, you must log in , write the name of the cuisine in box then write the comment and select the score and post it. 
+	\tab{After a placing an order or requesting for home delivery, client can comment on each cuisine items. And also can give scores for a specific item of cuisine. If you want to comment or score, you must log in , write the name of the cuisine in box then write the comment and select the score and post it.} 
 	\begin{figure}[H]
 		\centering
 		\includegraphics[height=3in]{/home/basedul/Documents/Report-writing-using-latex/ResturentManagementSystemReport/commtent.png}
@@ -492,7 +490,7 @@ gather, the asian restaurant management system will be designed as below:
 	\end{figure}
 	
 	\subsubsection{E-R Diagram}
-		\tab Client can browse about cuisines name, price and food details from food list. But if client wants to place an order by confirming, client must need to sign up first with client name, username, e-mail and password. And then login with his username and password. After logging in, he can order the food from the cuisine catagory. After confirming an order, client can be able to log out. When an admin wants to check the order list from an client and add new cuisine items to a foodstuff, admin must first register with name, user name, email and password. After registration, he will be able to check the order list after login, else he can not even see the order list and he will not be able to add cuisine to the food list. But if client wants to place an order by confirming, client must need to sign up first with client name, username, e-mail and password. And then login with his username and password. After logging in, he can order the food from the cuisine catagory. After ordering, client can be able to log out . After a placing an order or requesting for home delivery, client can comment on each cuisine items. And also can give scores for a specific item of cuisine. If you want to comment or score, you must log in , write the name of the cuisine in box then write the comment and select the score and post it. And the system will be showing top foods based on the client's score and comment. Client can also be albe to search specific cuisine item by it's item catagory, price and name.	
+		\tab{Client can browse about cuisines name, price and food details from food list. But if client wants to place an order by confirming, client must need to sign up first with client name, username, e-mail and password. And then login with his username and password. After logging in, he can order the food from the cuisine catagory. After confirming an order, client can be able to log out. When an admin wants to check the order list from an client and add new cuisine items to a foodstuff, admin must first register with name, user name, email and password. After registration, he will be able to check the order list after login, else he can not even see the order list and he will not be able to add cuisine to the food list. But if client wants to place an order by confirming, client must need to sign up first with client name, username, e-mail and password. And then login with his username and password. After logging in, he can order the food from the cuisine catagory. After ordering, client can be able to log out . After a placing an order or requesting for home delivery, client can comment on each cuisine items. And also can give scores for a specific item of cuisine. If you want to comment or score, you must log in , write the name of the cuisine in box then write the comment and select the score and post it. And the system will be showing top foods based on the client's score and comment. Client can also be albe to search specific cuisine item by it's item catagory, price and name.}
 	
 		\begin{figure}[H]
 		\centering
@@ -516,116 +514,131 @@ gather, the asian restaurant management system will be designed as below:
 %			VegeTofu(vtid, vtname, vtprice, vtdetails)\\
 %			ClientOrderList(colid, colname, colprice, colUser)\\
 %			RankList(rlid, rlname, rlscore, rlcomments)
+		\begin{itemize}
+			\item RegistrationForAdmin(uid, uf, ul, uu, um, ufp, usp, status).
+			\item Registration(uid, uf, ul, uu, um, ufp, usp, status).
+			\item APPTIZERS(appid, appname, appprice, appdetails).
+			\item BeefLamb(blid, blname, blprice, bldetails).
+			\item Chicken(ckid, ckname, ckprice, ckdetails).
+			\item Drink(did, dname, dprice, ddetails).
+			\item NoddlesRice(nrid, nrname, nrprice, nrdetails).
+			\item Pork(poid, poname, poprice, podetails).
+			\item Salad(said, saname, saprice, sadetails).
+			\item SeaFood(sfid, sfname, sfprice, sfdetails).
+			\item Soups(soid, soname, soprice, sodetails).
+			\item VegeTofu(vtid, vtname, vtprice, vtdetails).
+			\item ClientOrderList(colid, colname, colprice, colUser).
+			\item RankList(rlid, rlname, rlscore, rlcomments).
+		\end{itemize}
 	
 	
-	
-	\begin{lstlisting}[
-           language=SQL,
-           showspaces=false,
-           basicstyle=\ttfamily,
-           %numbers=left,
-           numberstyle=\tiny,
-           commentstyle=\color{gray}
-        ]
-		1. Create database ResturentManagement;
-		
-		2. CREATE TABLE RegistrationForAdmin (
-		u_id TINYINT UNSIGNED NOT NULL AUTO_INCREMENT,
-		u_f_name varchar(80),
-		u_l_name varchar(80),
-		u_u_name varchar(80),
-		U_mail varchar(50),
-		u_f_pass varchar(20),
-		u_r_pass varchar(20),
-		status int(11)
-		PRIMARY KEY (u_id)
-		)ENGINE=InnoDB DEFAULT CHARSET=utf8;
-		
-		3. CREATE TABLE Salad (
-		sl_id TINYINT UNSIGNED NOT NULL AUTO_INCREMENT,
-		sl_name varchar(255),
-		sl_price float(10, 2),
-		sl_details varchar(255),
-		PRIMARY KEY (sl_id)
-		)ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
- 		4. CREATE TABLE Soups (
-		so_id TINYINT UNSIGNED NOT NULL AUTO_INCREMENT,
-		so_name varchar(255),
-		so_price float(10, 2),
-		so_details varchar(255),
-		PRIMARY KEY (so_id)
-		)ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
-  		5. CREATE TABLE Chicken (
-		ck_id TINYINT UNSIGNED NOT NULL AUTO_INCREMENT,
-		ck_name varchar(255),
-		ck_price float(10, 2),
-		ck_details varchar(255),
-		PRIMARY KEY (ck_id)
-		)ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
-		6. CREATE TABLE Pork (
-		po_id TINYINT UNSIGNED NOT NULL AUTO_INCREMENT,
-		po_name varchar(255),
-		po_price float(10, 2),
-		po_details varchar(255),
-		PRIMARY KEY (po_id)
-		)ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
-	 	7. CREATE TABLE BeefLamb (
-		bl_id TINYINT UNSIGNED NOT NULL AUTO_INCREMENT,
-		bl_name varchar(255),
-		bl_price float(10, 2),
-		bl_details varchar(255),
-		PRIMARY KEY (bl_id)
-		)ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
-		8. CREATE TABLE SeaFood (
-		sf_id TINYINT UNSIGNED NOT NULL AUTO_INCREMENT,
-		sf_name varchar(255),
-		sf_price float(10, 2),
-		sf_details varchar(255),
-		PRIMARY KEY (sf_id)
-		)ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
-	 	9. CREATE TABLE NoddlesRice (
-		nr_id TINYINT UNSIGNED NOT NULL AUTO_INCREMENT,
-		nr_name varchar(255),
-		nr_price float(10, 2),
-		nr_details varchar(255),
-		PRIMARY KEY (nr_id)
-		)ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
-	 	10. CREATE TABLE VegeTofu (
-		vt_id TINYINT UNSIGNED NOT NULL AUTO_INCREMENT,
-		vt_name varchar(255),
-		vt_price float(10, 2),
-		vt_details varchar(255),
-		PRIMARY KEY (vt_id)
-		)ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
-	 	11. CREATE TABLE ClientOrderList (
-		col_id TINYINT UNSIGNED NOT NULL AUTO_INCREMENT,
-		col_name varchar(255),
-		col_price float(10, 2),
-		UserName varchar(255),
-		PRIMARY KEY (col_id)
-		)ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
-	 	12. ALTER TABLE `ClientOrderList` ADD `UserName` VARCHAR(255) NOT NULL AFTER `col_price`;
-
-	 	13. CREATE TABLE RankList (
-		rl_id TINYINT UNSIGNED NOT NULL AUTO_INCREMENT,
-		rl_name varchar(255),
-		rl_score int,
-		rl_comments varchar(255),
-		PRIMARY KEY (rl_id)
-		)ENGINE=InnoDB DEFAULT CHARSET=utf8;
-		
-	 	14. ALTER TABLE `Registration` ADD `reward_point` float(10, 2) NOT NULL AFTER `status`;
-		
-	\end{lstlisting}
+%	\begin{lstlisting}[
+%           language=SQL,
+%           showspaces=false,
+%           basicstyle=\ttfamily,
+%           %numbers=left,
+%           numberstyle=\tiny,
+%           commentstyle=\color{gray}
+%        ]
+%		1. Create database ResturentManagement;
+%		
+%		2. CREATE TABLE RegistrationForAdmin (
+%		u_id TINYINT UNSIGNED NOT NULL AUTO_INCREMENT,
+%		u_f_name varchar(80),
+%		u_l_name varchar(80),
+%		u_u_name varchar(80),
+%		U_mail varchar(50),
+%		u_f_pass varchar(20),
+%		u_r_pass varchar(20),
+%		status int(11)
+%		PRIMARY KEY (u_id)
+%		)ENGINE=InnoDB DEFAULT CHARSET=utf8;
+%		
+%		3. CREATE TABLE Salad (
+%		sl_id TINYINT UNSIGNED NOT NULL AUTO_INCREMENT,
+%		sl_name varchar(255),
+%		sl_price float(10, 2),
+%		sl_details varchar(255),
+%		PRIMARY KEY (sl_id)
+%		)ENGINE=InnoDB DEFAULT CHARSET=utf8;
+%
+% 		4. CREATE TABLE Soups (
+%		so_id TINYINT UNSIGNED NOT NULL AUTO_INCREMENT,
+%		so_name varchar(255),
+%		so_price float(10, 2),
+%		so_details varchar(255),
+%		PRIMARY KEY (so_id)
+%		)ENGINE=InnoDB DEFAULT CHARSET=utf8;
+%
+%  		5. CREATE TABLE Chicken (
+%		ck_id TINYINT UNSIGNED NOT NULL AUTO_INCREMENT,
+%		ck_name varchar(255),
+%		ck_price float(10, 2),
+%		ck_details varchar(255),
+%		PRIMARY KEY (ck_id)
+%		)ENGINE=InnoDB DEFAULT CHARSET=utf8;
+%
+%		6. CREATE TABLE Pork (
+%		po_id TINYINT UNSIGNED NOT NULL AUTO_INCREMENT,
+%		po_name varchar(255),
+%		po_price float(10, 2),
+%		po_details varchar(255),
+%		PRIMARY KEY (po_id)
+%		)ENGINE=InnoDB DEFAULT CHARSET=utf8;
+%
+%	 	7. CREATE TABLE BeefLamb (
+%		bl_id TINYINT UNSIGNED NOT NULL AUTO_INCREMENT,
+%		bl_name varchar(255),
+%		bl_price float(10, 2),
+%		bl_details varchar(255),
+%		PRIMARY KEY (bl_id)
+%		)ENGINE=InnoDB DEFAULT CHARSET=utf8;
+%
+%		8. CREATE TABLE SeaFood (
+%		sf_id TINYINT UNSIGNED NOT NULL AUTO_INCREMENT,
+%		sf_name varchar(255),
+%		sf_price float(10, 2),
+%		sf_details varchar(255),
+%		PRIMARY KEY (sf_id)
+%		)ENGINE=InnoDB DEFAULT CHARSET=utf8;
+%
+%	 	9. CREATE TABLE NoddlesRice (
+%		nr_id TINYINT UNSIGNED NOT NULL AUTO_INCREMENT,
+%		nr_name varchar(255),
+%		nr_price float(10, 2),
+%		nr_details varchar(255),
+%		PRIMARY KEY (nr_id)
+%		)ENGINE=InnoDB DEFAULT CHARSET=utf8;
+%
+%	 	10. CREATE TABLE VegeTofu (
+%		vt_id TINYINT UNSIGNED NOT NULL AUTO_INCREMENT,
+%		vt_name varchar(255),
+%		vt_price float(10, 2),
+%		vt_details varchar(255),
+%		PRIMARY KEY (vt_id)
+%		)ENGINE=InnoDB DEFAULT CHARSET=utf8;
+%
+%	 	11. CREATE TABLE ClientOrderList (
+%		col_id TINYINT UNSIGNED NOT NULL AUTO_INCREMENT,
+%		col_name varchar(255),
+%		col_price float(10, 2),
+%		UserName varchar(255),
+%		PRIMARY KEY (col_id)
+%		)ENGINE=InnoDB DEFAULT CHARSET=utf8;
+%
+%	 	12. ALTER TABLE `ClientOrderList` ADD `UserName` VARCHAR(255) NOT NULL AFTER `col_price`;
+%
+%	 	13. CREATE TABLE RankList (
+%		rl_id TINYINT UNSIGNED NOT NULL AUTO_INCREMENT,
+%		rl_name varchar(255),
+%		rl_score int,
+%		rl_comments varchar(255),
+%		PRIMARY KEY (rl_id)
+%		)ENGINE=InnoDB DEFAULT CHARSET=utf8;
+%		
+%	 	14. ALTER TABLE `Registration` ADD `reward_point` float(10, 2) NOT NULL AFTER `status`;
+%		
+%	\end{lstlisting}
 	\newpage
 	\subsubsection{Database tables structures}
 		\tab The table \ref{tab:adminregitable} is used for register a user as a admin of the system.
@@ -762,11 +775,11 @@ gather, the asian restaurant management system will be designed as below:
 	\end{tabular}
 	\end{table}
 	
-	\tab This table \ref{tab:vegetofu} is used for hold the list of Vegetables and Tofus.
+	\tab This table \ref{tab:vegetofu1} is used for hold the list of Vegetables and Tofus.
 	\begin{table}[H]
 		\center
 	\caption{Vegetable and Tofu table}
-	\label{tab:vegetofu}
+	\label{tab:vegetofu1}
 	\begin{tabular}{|M{2.5cm}|M{3.5cm}|M{1cm}|N}
 	\hline
 	\fontsize{10}{5}\fontfamily{ptm}\selectfont {\bfseries{Name}} & \fontsize{10}{5}\fontfamily{ptm}\selectfont {\bfseries{Type}} & \fontsize{10}{5}\fontfamily{ptm}\selectfont {\bfseries{Null}} &\\[10pt]
@@ -818,7 +831,7 @@ of the flowchart is to show functions the Asian Restaurant Management System has
 	
 		\begin{figure}[H]
 		\centering
-		\includegraphics[height=3.2in]{/home/basedul/Documents/Report-writing-using-latex/ResturentManagementSystemReport/flowchart.png}
+		\includegraphics[height=4.5in]{/home/basedul/Documents/Report-writing-using-latex/ResturentManagementSystemReport/flowchart.png}
 		\caption{System flowchart}
 		\label{fig:flowchart} 
 	\end{figure}
@@ -1071,7 +1084,7 @@ flow of an order.
 	\hline
 	\end{tabular}
 	\end{table}
-	
+	\newpage
 	\subsection{User module}
 		\subsubsection{Sign in}
 			\tab Already registered user will have to login in the system by inputting username and password in order to enter the system. The screen shot is shown in Fig \ref{fig:login} 
@@ -1090,7 +1103,7 @@ flow of an order.
 		\caption{Sign up window}
 		\label{fig:log out} 
 		\end{figure}
-		
+		\newpage
 		\subsubsection{HomePage}
 			\tab After a successful sign in, the client is redirected to the home activity of the application.  It includes the activities that happens in the restaurant and rewards  top foods also modifying about the personal information. The screen shot is shown in Fig \ref{fig:homepage} and Fig \ref{fig:topfood1}.
 			\begin{figure}[H]
@@ -1109,7 +1122,7 @@ flow of an order.
 		
 		
 		\end{figure}
-		
+		\newpage
 		\subsubsection{Topfoods}
 			\tab Write user experience or comment on the dish and submit satisfaction score and user get reward points after sharing their experiences. The screen shot is shown in Fig \ref{fig:topfood}. 
 			\begin{figure}[H]
@@ -6882,7 +6895,6 @@ public class Appetizers extends javax.swing.JFrame {
 		
 \end{lstlisting}
 	\end{comment}
-	
 	\subsection{Test Case}
 		\begin{table}[H]
 		\label{tab:Test}
@@ -6916,7 +6928,7 @@ It will show message
 that please fill out this
 field.
 \end{flushleft}} &
-Pass & \\[15pt]\cline{2-9} &
+Pass & \\[0pt]\cline{2-9} &
 \multicolumn{2}{M{3.5cm}|}{\begin{flushleft}
 Enter incorrect data
 \end{flushleft}} & 
@@ -6956,7 +6968,7 @@ login and show error.
 \multicolumn{2}{M{3.5cm}|}{\begin{flushleft}
 It will show message that please fill out this field.
 \end{flushleft}} &
-Pass & \\[15pt]\cline{2-9} &
+Pass & \\[0pt]\cline{2-9} &
 \multicolumn{2}{M{3.5cm}|}{\begin{flushleft}
 Enter wrong data of
 email or password.
@@ -6997,7 +7009,7 @@ It will redirect to your all purchased products
 %\multicolumn{2}{M{3.5cm}|}{\begin{flushleft}
 %It will show message that please fill out this field.
 %\end{flushleft}} &
-%Pass & \\[15pt]\cline{2-9} &
+%Pass & \\[0pt]\cline{2-9} &
 %\multicolumn{2}{M{3.5cm}|}{\begin{flushleft}
 %Enter incorrect data
 %\end{flushleft}} & 
@@ -7037,7 +7049,7 @@ It will redirect to your all purchased products
 %\multicolumn{2}{M{3.5cm}|}{\begin{flushleft}
 %It will show the message that there was no search results!
 %\end{flushleft}} &
-%Pass & \\[15pt]\cline{2-9} &
+%Pass & \\[0pt]\cline{2-9} &
 %\multicolumn{2}{M{3.5cm}|}{\begin{flushleft}
 %Enter correct data in
 %Search fields.
@@ -7064,7 +7076,7 @@ It will redirect to your all purchased products
 %\multicolumn{2}{M{3.5cm}|}{\begin{flushleft}
 %It will show error as unsupported character.
 %\end{flushleft}} &
-%Pass & \\[15pt]\cline{2-9} &
+%Pass & \\[0pt]\cline{2-9} &
 %\multicolumn{2}{M{3.5cm}|}{\begin{flushleft}
 %Enter ASCII character.
 %\end{flushleft}} & 
@@ -7084,6 +7096,7 @@ It will redirect to your all purchased products
 \captionsetup{labelformat=empty}
 \caption[]{ }
 \vspace{0.2cm}
+
 \begin{tabular}{|M{2.5cm}|M{4cm}|M{4cm}|M{4cm}|M{4cm}|M{4cm}|M{4cm}|M{1cm}|N}
 %Start
 \hline
@@ -7110,7 +7123,7 @@ It will redirect to your all purchased products
 %that please fill out this
 %field.
 %\end{flushleft}} &
-%Pass & \\[15pt]\cline{2-9} &
+%Pass & \\[0pt]\cline{2-9} &
 %\multicolumn{2}{M{3.5cm}|}{\begin{flushleft}
 %Enter incorrect data
 %\end{flushleft}} & 
@@ -7150,7 +7163,7 @@ It will redirect to your all purchased products
 %\multicolumn{2}{M{3.5cm}|}{\begin{flushleft}
 %It will show message that please fill out this field.
 %\end{flushleft}} &
-%Pass & \\[15pt]\cline{2-9} &
+%Pass & \\[0pt]\cline{2-9} &
 %\multicolumn{2}{M{3.5cm}|}{\begin{flushleft}
 %Enter wrong data of
 %email or password.
@@ -7191,7 +7204,7 @@ and show error.
 \multicolumn{2}{M{3.5cm}|}{\begin{flushleft}
 It will show message that please fill out this field.
 \end{flushleft}} &
-Pass & \\[15pt]\cline{2-9} &
+Pass & \\[0pt]\cline{2-9} &
 \multicolumn{2}{M{3.5cm}|}{\begin{flushleft}
 Enter incorrect data
 \end{flushleft}} & 
@@ -7231,7 +7244,7 @@ It will not search food
 \multicolumn{2}{M{3.5cm}|}{\begin{flushleft}
 It will show the message that there was no search results!
 \end{flushleft}} &
-Pass & \\[15pt]\cline{2-9} &
+Pass & \\[0pt]\cline{2-9} &
 \multicolumn{2}{M{3.5cm}|}{\begin{flushleft}
 Enter correct data in
 Search fields.
@@ -7258,7 +7271,7 @@ It will not let to comment
 \multicolumn{2}{M{3.5cm}|}{\begin{flushleft}
 It will show error as unsupported character.
 \end{flushleft}} &
-Pass & \\[15pt]\cline{2-9} &
+Pass & \\[0pt]\cline{2-9} &
 \multicolumn{2}{M{3.5cm}|}{\begin{flushleft}
 Enter ASCII character.
 \end{flushleft}} & 
