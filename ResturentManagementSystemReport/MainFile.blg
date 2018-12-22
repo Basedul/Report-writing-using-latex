@@ -11,56 +11,76 @@ Database file #1: /home/basedul/Documents/Report-writing-using-latex/ResturentMa
 -- IEEEtran.bst version 1.14 (2015/08/26) by Michael Shell.
 -- http://www.michaelshell.org/tex/ieeetran/bibtex/
 -- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
+Warning--empty journal in Ref:10
+Warning--empty journal in Ref:11
+Warning--empty author in Ref:9
+Warning--empty journal in Ref:9
+Warning--empty year in Ref:9
 Warning--empty title in Ref:5
 Warning--empty journal in Ref:5
 Warning--empty year in Ref:5
-Warning--empty author in Ref:7
-Warning--empty journal in Ref:7
-Warning--empty year in Ref:7
 Warning--empty author in Ref:8
 Warning--empty journal in Ref:8
 Warning--empty year in Ref:8
+Warning--empty author in Ref:7
+Warning--empty journal in Ref:7
+Warning--empty year in Ref:7
+Warning--empty author in Ref:14
+Warning--empty journal in Ref:14
+Warning--empty year in Ref:14
+Warning--empty author in Ref:12
+Warning--empty journal in Ref:12
+Warning--empty year in Ref:12
+Warning--empty author in Ref:15
+Warning--empty journal in Ref:15
+Warning--empty year in Ref:15
+Warning--empty author in Ref:13
+Warning--empty journal in Ref:13
+Warning--empty year in Ref:13
+Warning--empty author in Ref:16
+Warning--empty journal in Ref:16
+Warning--empty year in Ref:16
 
 Done.
-You've used 3 entries,
+You've used 11 entries,
             4087 wiz_defined-function locations,
-            833 strings with 7658 characters,
-and the built_in function-call counts, 928 in all, are:
-= -- 48
-> -- 6
+            869 strings with 8635 characters,
+and the built_in function-call counts, 3248 in all, are:
+= -- 202
+> -- 20
 < -- 0
-+ -- 4
-- -- 1
-* -- 70
-:= -- 179
-add.period$ -- 5
-call.type$ -- 3
-change.case$ -- 2
++ -- 14
+- -- 3
+* -- 208
+:= -- 617
+add.period$ -- 21
+call.type$ -- 11
+change.case$ -- 10
 chr.to.int$ -- 0
-cite$ -- 12
-duplicate$ -- 80
-empty$ -- 84
-format.name$ -- 1
-if$ -- 169
+cite$ -- 40
+duplicate$ -- 302
+empty$ -- 314
+format.name$ -- 3
+if$ -- 645
 int.to.chr$ -- 0
-int.to.str$ -- 3
-missing$ -- 13
-newline$ -- 38
-num.names$ -- 1
-pop$ -- 50
+int.to.str$ -- 11
+missing$ -- 47
+newline$ -- 78
+num.names$ -- 3
+pop$ -- 174
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 2
-skip$ -- 59
+skip$ -- 228
 stack$ -- 0
-substring$ -- 2
-swap$ -- 27
+substring$ -- 10
+swap$ -- 109
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 5
-type$ -- 3
-warning$ -- 9
-while$ -- 1
-width$ -- 4
-write$ -- 46
-(There were 9 warnings)
+type$ -- 11
+warning$ -- 29
+while$ -- 3
+width$ -- 13
+write$ -- 114
+(There were 29 warnings)
