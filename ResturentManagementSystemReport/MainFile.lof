@@ -1,16 +1,16 @@
 \contentsline {figure}{\numberline {3.1}{\ignorespaces System block diagram.\relax }}{7}{figure.caption.3}
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Admin Register entity diagram\relax }}{9}{figure.caption.4}
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Client Register entity diagram\relax }}{9}{figure.caption.5}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Admin signup entity diagram\relax }}{9}{figure.caption.4}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Client signup entity diagram\relax }}{9}{figure.caption.5}
 \contentsline {figure}{\numberline {3.4}{\ignorespaces Food add entity diagram\relax }}{10}{figure.caption.6}
 \contentsline {figure}{\numberline {3.5}{\ignorespaces Comments/Score entity diagram\relax }}{10}{figure.caption.7}
 \contentsline {figure}{\numberline {3.6}{\ignorespaces Entity Relationship diagram\relax }}{11}{figure.caption.8}
-\contentsline {figure}{\numberline {4.1}{\ignorespaces System flowchart\relax }}{17}{figure.caption.17}
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Registration flowchart\relax }}{19}{figure.caption.18}
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Client order list flowchart\relax }}{20}{figure.caption.19}
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Confirmed order flowchart\relax }}{21}{figure.caption.20}
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Sign in window\relax }}{23}{figure.caption.22}
-\contentsline {figure}{\numberline {5.2}{\ignorespaces Sign up window\relax }}{23}{figure.caption.23}
-\contentsline {figure}{\numberline {5.3}{\ignorespaces Homepage window\relax }}{24}{figure.caption.24}
-\contentsline {figure}{\numberline {5.4}{\ignorespaces Order list window\relax }}{24}{figure.caption.24}
-\contentsline {figure}{\numberline {5.5}{\ignorespaces Top food window\relax }}{25}{figure.caption.25}
-\contentsline {figure}{\numberline {5.6}{\ignorespaces Modify information window\relax }}{25}{figure.caption.26}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces System flowchart\relax }}{18}{figure.caption.17}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Registration flowchart\relax }}{20}{figure.caption.18}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Client order list flowchart\relax }}{21}{figure.caption.19}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Confirmed order flowchart\relax }}{22}{figure.caption.20}
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Sign in window\relax }}{24}{figure.caption.22}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Sign up window\relax }}{24}{figure.caption.23}
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Homepage window\relax }}{25}{figure.caption.24}
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Order list window\relax }}{25}{figure.caption.24}
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Top food window\relax }}{26}{figure.caption.25}
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Modify information window\relax }}{26}{figure.caption.26}

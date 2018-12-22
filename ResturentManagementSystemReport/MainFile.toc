@@ -18,34 +18,34 @@
 \contentsline {subsubsection}{\numberline {3.2.2}E-R Diagram}{10}{subsubsection.3.2.2}
 \contentsline {subsubsection}{\numberline {3.2.3}Database schema}{11}{subsubsection.3.2.3}
 \contentsline {subsubsection}{\numberline {3.2.4}Database tables structures}{13}{subsubsection.3.2.4}
-\contentsline {section}{\numberline {4}Design}{17}{section.4}
-\contentsline {subsection}{\numberline {4.1}Chapter Overview}{17}{subsection.4.1}
-\contentsline {subsection}{\numberline {4.2}Detailed Design}{17}{subsection.4.2}
-\contentsline {subsection}{\numberline {4.3}Manager and Customer function}{18}{subsection.4.3}
-\contentsline {subsubsection}{\numberline {4.3.1}Register or login function}{18}{subsubsection.4.3.1}
-\contentsline {subsubsection}{\numberline {4.3.2}Order list}{20}{subsubsection.4.3.2}
-\contentsline {subsubsection}{\numberline {4.3.3}Confirmed order after successfull signin}{20}{subsubsection.4.3.3}
-\contentsline {subsection}{\numberline {4.4}Chapter Summary}{21}{subsection.4.4}
-\contentsline {section}{\numberline {5}Implementation And Testing}{22}{section.5}
-\contentsline {subsection}{\numberline {5.1}Chapter Overview}{22}{subsection.5.1}
-\contentsline {subsection}{\numberline {5.2}Document List}{22}{subsection.5.2}
-\contentsline {subsection}{\numberline {5.3}User module}{23}{subsection.5.3}
-\contentsline {subsubsection}{\numberline {5.3.1}Sign in}{23}{subsubsection.5.3.1}
-\contentsline {subsubsection}{\numberline {5.3.2}Sign up}{23}{subsubsection.5.3.2}
-\contentsline {subsubsection}{\numberline {5.3.3}HomePage}{24}{subsubsection.5.3.3}
-\contentsline {subsubsection}{\numberline {5.3.4}Topfoods}{25}{subsubsection.5.3.4}
-\contentsline {subsubsection}{\numberline {5.3.5}Modify personal information}{25}{subsubsection.5.3.5}
-\contentsline {subsection}{\numberline {5.4}Test Case}{26}{subsection.5.4}
-\contentsline {subsection}{\numberline {5.5}Code Documentation}{27}{subsection.5.5}
-\contentsline {subsection}{\numberline {5.6}Version Control}{28}{subsection.5.6}
-\contentsline {subsection}{\numberline {5.7}Chapter Summary}{28}{subsection.5.7}
-\contentsline {section}{\numberline {6}Conclusion}{29}{section.6}
-\contentsline {subsection}{\numberline {6.1}Chapter Overview}{29}{subsection.6.1}
-\contentsline {subsection}{\numberline {6.2}Project Overview}{29}{subsection.6.2}
-\contentsline {subsection}{\numberline {6.3}Further Development}{29}{subsection.6.3}
-\contentsline {subsubsection}{\numberline {6.3.1}Table Management}{29}{subsubsection.6.3.1}
-\contentsline {subsection}{\numberline {6.4}Reflection}{29}{subsection.6.4}
-\contentsline {subsection}{\numberline {6.5}Skills Attained}{29}{subsection.6.5}
-\contentsline {subsection}{\numberline {6.6}Chapter Summary}{30}{subsection.6.6}
-\contentsline {section}{References}{31}{section*.29}
-\contentsline {section}{\textbf {Acknowledgement}}{32}{section*.30}
+\contentsline {section}{\numberline {4}Design}{18}{section.4}
+\contentsline {subsection}{\numberline {4.1}Chapter Overview}{18}{subsection.4.1}
+\contentsline {subsection}{\numberline {4.2}Detailed Design}{18}{subsection.4.2}
+\contentsline {subsection}{\numberline {4.3}Admin and Client function}{19}{subsection.4.3}
+\contentsline {subsubsection}{\numberline {4.3.1}signup or signin function}{19}{subsubsection.4.3.1}
+\contentsline {subsubsection}{\numberline {4.3.2}Order list}{21}{subsubsection.4.3.2}
+\contentsline {subsubsection}{\numberline {4.3.3}Confirmed order after successfull signin}{21}{subsubsection.4.3.3}
+\contentsline {subsection}{\numberline {4.4}Chapter Summary}{22}{subsection.4.4}
+\contentsline {section}{\numberline {5}Implementation And Testing}{23}{section.5}
+\contentsline {subsection}{\numberline {5.1}Chapter Overview}{23}{subsection.5.1}
+\contentsline {subsection}{\numberline {5.2}Document List}{23}{subsection.5.2}
+\contentsline {subsection}{\numberline {5.3}User module}{24}{subsection.5.3}
+\contentsline {subsubsection}{\numberline {5.3.1}Sign in}{24}{subsubsection.5.3.1}
+\contentsline {subsubsection}{\numberline {5.3.2}Sign up}{24}{subsubsection.5.3.2}
+\contentsline {subsubsection}{\numberline {5.3.3}HomePage}{25}{subsubsection.5.3.3}
+\contentsline {subsubsection}{\numberline {5.3.4}Topfoods}{26}{subsubsection.5.3.4}
+\contentsline {subsubsection}{\numberline {5.3.5}Modify personal information}{26}{subsubsection.5.3.5}
+\contentsline {subsection}{\numberline {5.4}Test Case}{27}{subsection.5.4}
+\contentsline {subsection}{\numberline {5.5}Code Documentation}{28}{subsection.5.5}
+\contentsline {subsection}{\numberline {5.6}Version Control}{29}{subsection.5.6}
+\contentsline {subsection}{\numberline {5.7}Chapter Summary}{29}{subsection.5.7}
+\contentsline {section}{\numberline {6}Conclusion}{30}{section.6}
+\contentsline {subsection}{\numberline {6.1}Chapter Overview}{30}{subsection.6.1}
+\contentsline {subsection}{\numberline {6.2}Project Overview}{30}{subsection.6.2}
+\contentsline {subsection}{\numberline {6.3}Further Development}{30}{subsection.6.3}
+\contentsline {subsubsection}{\numberline {6.3.1}Table Management}{30}{subsubsection.6.3.1}
+\contentsline {subsection}{\numberline {6.4}Reflection}{30}{subsection.6.4}
+\contentsline {subsection}{\numberline {6.5}Skills Attained}{31}{subsection.6.5}
+\contentsline {subsection}{\numberline {6.6}Chapter Summary}{31}{subsection.6.6}
+\contentsline {section}{References}{32}{section*.29}
+\contentsline {section}{\textbf {Acknowledgement}}{33}{section*.30}
