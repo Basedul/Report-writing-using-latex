@@ -25,6 +25,9 @@ Warning--empty year in Ref:8
 Warning--empty author in Ref:7
 Warning--empty journal in Ref:7
 Warning--empty year in Ref:7
+Warning--empty author in Ref:18
+Warning--empty journal in Ref:18
+Warning--empty year in Ref:18
 Warning--empty author in Ref:14
 Warning--empty journal in Ref:14
 Warning--empty year in Ref:14
@@ -37,50 +40,62 @@ Warning--empty year in Ref:15
 Warning--empty author in Ref:13
 Warning--empty journal in Ref:13
 Warning--empty year in Ref:13
+Warning--empty author in Ref:20
+Warning--empty journal in Ref:20
+Warning--empty year in Ref:20
 Warning--empty author in Ref:16
 Warning--empty journal in Ref:16
 Warning--empty year in Ref:16
+Warning--empty author in Ref:21
+Warning--empty journal in Ref:21
+Warning--empty year in Ref:21
+Warning--empty author in Ref:17
+Warning--empty journal in Ref:17
+Warning--empty year in Ref:17
+Warning--empty author in Ref:19
+Warning--empty journal in Ref:19
+Warning--empty year in Ref:19
 
 Done.
-You've used 11 entries,
+You've used 16 entries,
             4087 wiz_defined-function locations,
-            869 strings with 8635 characters,
-and the built_in function-call counts, 3248 in all, are:
-= -- 202
-> -- 20
+            889 strings with 9133 characters,
+and the built_in function-call counts, 4598 in all, are:
+= -- 282
+> -- 25
 < -- 0
-+ -- 14
++ -- 19
 - -- 3
-* -- 208
-:= -- 617
-add.period$ -- 21
-call.type$ -- 11
-change.case$ -- 10
+* -- 298
+:= -- 857
+add.period$ -- 31
+call.type$ -- 16
+change.case$ -- 15
 chr.to.int$ -- 0
-cite$ -- 40
-duplicate$ -- 302
-empty$ -- 314
+cite$ -- 60
+duplicate$ -- 437
+empty$ -- 454
 format.name$ -- 3
-if$ -- 645
+if$ -- 920
 int.to.chr$ -- 0
-int.to.str$ -- 11
-missing$ -- 47
-newline$ -- 78
+int.to.str$ -- 16
+missing$ -- 67
+newline$ -- 103
 num.names$ -- 3
-pop$ -- 174
+pop$ -- 254
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 2
-skip$ -- 228
+skip$ -- 323
 stack$ -- 0
-substring$ -- 10
-swap$ -- 109
+substring$ -- 15
+swap$ -- 154
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 5
-type$ -- 11
-warning$ -- 29
+type$ -- 16
+warning$ -- 44
 while$ -- 3
-width$ -- 13
-write$ -- 114
-(There were 29 warnings)
+width$ -- 18
+write$ -- 154
+(There were 44 warnings)

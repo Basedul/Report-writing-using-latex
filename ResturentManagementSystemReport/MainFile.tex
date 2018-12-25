@@ -2,9 +2,17 @@
 \usepackage[pdftex]{graphicx} %for embedding images
 \usepackage{url} %for proper url entries
 \usepackage[bookmarks, colorlinks=false, pdfborder={0 0 0}, pdftitle={<pdf title here>}, pdfauthor={<author's name here>}, pdfsubject={<subject here>}, pdfkeywords={<keywords here>}]{hyperref} 
+\usepackage{ctable} % for \specialrule command
+
 \usepackage{amsmath,amsthm,amssymb,amsfonts}
 \usepackage{lipsum}
-\usepackage[margin=1in,includefoot]{geometry}
+
+
+\usepackage[paperheight=11.69in,paperwidth=8.27in,includefoot,top=3cm, bottom=3cm, left=3cm, right=3cm]{geometry}
+
+
+
+
 \usepackage{multirow}%test cases
 \usepackage{float}
 \usepackage{amssymb}
@@ -13,7 +21,8 @@
 %for refferennce numbering
 \usepackage[nottoc,notlot,notlof]{tocbibind}
 %for cant show section number
-\usepackage{caption}%for caption number delete
+\usepackage[figurename=Fig, tablename=Tab., labelsep=none, labelformat={default}]{caption}%for caption number delete
+%\captionsetup[table]{name=Tab}
 \usepackage{CJKutf8}
 \newcommand{\zh}[1]{\begin{CJK}{UTF8}{gbsn}#1\end{CJK}}
 %for dot line
@@ -21,7 +30,8 @@
 %\renewcommand{\cftpartleader}{\cftdotfill{\cftdotsep}} % for parts
 \renewcommand{\cftsecleader}{\cftdotfill{\cftdotsep}}
 
-%table gap
+%section font
+
 
 %figure numbering depend on section number
 \usepackage{chngcntr}
@@ -39,7 +49,7 @@
 \usepackage{verbatim}
 
 %tab
-\newcommand\tab[1][1cm]{\hspace*{#1}}
+\newcommand\tab[1][.7cm]{\hspace*{#1}}
 % Code segment
 \usepackage{listings}
 \usepackage{color}
@@ -47,12 +57,17 @@
 %Header footer
 \usepackage{geometry,fancyhdr}
 \pagestyle{fancy}
+
 \fancyhf{}% Clear header/footer
+
 \chead{%
-  Shenyang Aerospace University Graduation Design(Thesis)
+  \center Shenyang Aerospace University Graduation Design(Thesis)
 }
 \cfoot{\thepage}
-\setlength{\headheight}{24pt}
+\renewcommand{\headrulewidth}{0.4pt}% Default \headrulewidth is 0.4pt
+\renewcommand{\footrulewidth}{0.4pt}
+%\headheight 30pt
+%\footskip 70pt
 
 \definecolor{dkgreen}{rgb}{0,0.6,0}
 \definecolor{gray}{rgb}{0.5,0.5,0.5}
@@ -68,7 +83,46 @@
 \usepackage{sectsty}
 \sectionfont{\centering}
 
+\AtBeginDocument{
+  \addtocontents{toc}{\fontsize{12}{19}\fontfamily{ptm}\selectfont}
+  \addtocontents{lof}{\fontsize{12}{19}\fontfamily{ptm}\selectfont}
+  \addtocontents{lot}{\fontsize{12}{19}\fontfamily{ptm}\selectfont}
+}
+\usepackage{titlesec}
+\titleformat*{\section}{\centering\bfseries\fontsize{16}{10}\fontfamily{ptm}\selectfont}
+\titleformat*{\subsection}{\bfseries\fontsize{15}{10}\fontfamily{ptm}\selectfont}
+\titleformat*{\subsubsection}{\bfseries\fontsize{14}{10}\fontfamily{ptm}\selectfont}
+%\renewcommand\cftsecfont{\fontsize{32}{10}\fontfamily{ptm}\selectfont }
 
+
+%\makeatletter
+%\renewcommand*{\@seccntformat}[1]{\csname the#1\endcsname\hspace{.5em}}
+%\makeatother
+%space reduce between number and section in toc
+\makeatletter
+\renewcommand*\l@section{\@dottedtocline{1}{0.2em}{0.7em}}
+\renewcommand*\l@subsection{\@dottedtocline{2}{1em}{1.5em}}
+\renewcommand*\l@subsubsection{\@dottedtocline{3}{1.5em}{2.2em}}
+\renewcommand*\l@figure{\@dottedtocline{1}{1em}{1.5em}}
+\renewcommand*\l@table{\@dottedtocline{1}{1em}{1.5em}}
+\renewcommand*{\@dotsep}{1}
+\let\ps@plain\ps@fancy
+\renewcommand*{\@seccntformat}[1]{\csname the#1\endcsname\hspace{.2em}}% for reducing space in section of section title and number
+\def\fnum@figure{\figurename\thefigure}
+\def\fnum@table{\tablename\thetable}
+\makeatother
+
+
+%Size of header of of toc tof lof
+\usepackage{tocloft}
+\renewcommand{\cfttoctitlefont}{\hfill\fontsize{16}{10}\fontfamily{ptm}\selectfont\bfseries}
+\renewcommand{\cftaftertoctitle}{\hfill}
+\renewcommand{\cftlottitlefont}{\hfill\fontsize{16}{10}\fontfamily{ptm}\selectfont\bfseries}
+\renewcommand{\cftafterlottitle}{\hfill}
+\renewcommand{\cftloftitlefont}{\hfill\fontsize{16}{10}\fontfamily{ptm}\selectfont\bfseries}
+\renewcommand{\cftafterloftitle}{\hfill}
+
+%\renewcommand{\thetable}{\hspace{.1em}} %table number out
 
 \lstset{frame=tb,
   language=Java,
@@ -88,23 +142,26 @@
 }
 
 \begin{document}
+	%\captionsetup[figure]{labelformat={default},labelsep=none,name={Fig}}
+	
+	
 	%\renewcommand\bibname{References} 		%Renames "Bibliography" to 				"References"
 	%\input{./Title.tex}
 	%height=4in
 	\begin{titlepage}
 	\begin{center}
 	\centering
-	\noindent\begin{minipage}{0.3\textwidth}% adapt widths of minipages to your needs
+	\noindent\begin{minipage}{0.25\textwidth}% adapt widths of minipages to your needs
 \includegraphics[width=\linewidth]{/home/basedul/Documents/Report-writing-using-latex/ResturentManagementSystemReport/titlepic.png}
 \end{minipage}
 \hfill
-\begin{minipage}{0.6\textwidth}
+\begin{minipage}{0.7\textwidth}
 %\raggedleft
-{\fontsize{24}{10}\fontfamily{ptm}\selectfont \textbf{GRADUATION THESIS}
+{\fontsize{24}{5}\fontfamily{ptm}\selectfont \textbf{GRADUATION THESIS}
 }
 
 \end{minipage}
-
+	
 \par\vspace{0cm}
 	{\fontsize{22}{10}\fontfamily{ptm}\selectfont \begin{center}
 	\textbf{Asian Restaurant Management Application}
@@ -145,7 +202,7 @@
 	\fontsize{16}{10}\fontfamily{ptm}\selectfont{\begin{flushleft}
 	Supervisor
 	\end{flushleft}} & \fontsize{16}{10}\fontfamily{ptm}\selectfont{\begin{flushleft}
-	Dr. LIANG Zhao
+	LIANG Zhao
 	\end{flushleft}}&\\[0.1pt]
 	
 	\end{tabular}
@@ -173,13 +230,15 @@
 \end{titlepage}
 
 \begin{titlepage}
+	\vspace{.5in}
 	{\fontsize{22}{10}\fontfamily{ptm}\selectfont \begin{center}
+	
 	\textbf{Asian Restaurant Management Application}
 	\end{center}}
 	{\fontsize{20}{10}\fontfamily{ptm}\selectfont \begin{center}
 	\zh{亚洲餐厅管理应用}
 	\end{center}}
-	\vspace{6cm}
+	\vspace{3cm}
 	
 	\begin{table}[ht]
 	\center
@@ -212,21 +271,25 @@
 	\fontsize{16}{10}\fontfamily{ptm}\selectfont{\begin{flushleft}
 	Supervisor
 	\end{flushleft}} & \fontsize{16}{10}\fontfamily{ptm}\selectfont{\begin{flushleft}
-	Dr. LIANG Zhao
+	LIANG Zhao
 	\end{flushleft}}&\\[0.1pt]
 	
 	\end{tabular}
 	\end{table}	
 	
 	\newpage
+	\vspace{10cm}
+	\begin{center}
+	
 	{\fontsize{18}{5}\fontfamily{ptm}\selectfont \begin{center}
+	\vspace{10cm}
 	\MakeUppercase{Shenyang Aerospace University}
 	\end{center} \par}
-	\vspace{0.15cm}
+	\vspace{0.8cm}
 
 % Bottom of the page
 	{\fontsize{16}{5}\fontfamily{ptm}\selectfont \begin{center}
-	December, 2018
+	December 2018
 	\end{center}\par}
 	\vspace{0.15cm}
 	{\fontsize{16}{5}\fontfamily{ptm}\selectfont \begin{center}
@@ -245,18 +308,20 @@ I also grant permission to Shenyang Aerospace University to make duplicate copie
 \thispagestyle{empty}
 
 \begin{flushleft}
-Signature\fillin[4cm]
+Signature:\fillin[4.35cm]
 \end{flushleft}
-Date: December 28, 2018 
+Date:\fillin[5.3cm]
+	\end{center}
 	
 \end{titlepage}	
-
+	\pagenumbering{Roman}
 	\begin{titlepage}
-		%\cfoot{\thepage}
+		%\pagenumbering{roman} %numbering before main content starts
+		\thispagestyle{fancy}
 		\centering 
 		{\fontsize{16}{10}\fontfamily{ptm}\selectfont \textbf{Abstract}}\\
 		\vspace{0.6cm}
-		\RaggedRight \tab The project Asian Restaurant Management Application is implemented to reduce the
+		\justify \tab  The project Asian Restaurant Management Application is implemented to reduce the
 manual work and enhances the accuracy of work in a restaurant. This software has been made
 in a user friendly interface. This project is also designed with full consideration to help the
 users in an easy manner without any unnecessary wastage of time. This application can be
@@ -279,8 +344,9 @@ personal information, managing the order list, adding new cuisine items). This a
 successfully running for the restaurant management. Asian Restaurant Management
 Application is a java application designed with Java technique and MySQL server as the
 database of the application.\\
-\vspace{0.8cm}
-{\bfseries Key Words: } Asian Restaurant Management Application, Java technique, Wamp server, MySQL, Database.
+
+\RaggedRight{\bfseries Key Words: } Asian Restaurant Management Application, Java technique, Wamp server, MySQL, Database.
+
 %	\newpage
 %	\thispagestyle{empty}
 %	\centering\zh{摘 要}\\
@@ -299,28 +365,25 @@ database of the application.\\
 %
 %\RaggedRight\zh{\bfseries{关键词：}}\zh{亚洲餐饮管理应用，Java技术，WAMP服务器，MySQL，数据库}
 	\end{titlepage}
-	
-	\pagenumbering{roman} %numbering before main content starts
-	\newpage
-	\tableofcontents
-	\newpage
-	\listoffigures
-	\newpage
-	\listoftables
-	
-	\newpage
-	\pagenumbering{arabic} %reset numbering to normal for the main content
-	
+	\thispagestyle{fancy}
+	\setcounter{page}{2}
+	\tableofcontents\thispagestyle{fancy}
+%	\listoffigures\thispagestyle{fancy}
+%	\listoftables\thispagestyle{fancy}
+	%\pagenumbering{arabic} %reset numbering to normal for the main content
+	\newpage	
 	\section{Introduction}
+	\pagenumbering{arabic}
 	%{\bfseries \Large INTODUCTION}\\
-	\tab{The concept of restaurant table order management application, since it is java application, I will keep everything as simple as possible. The project consists in an java application that can be used by employees in a restaurant to handle the clients, their orders and can help them easily find free tables or place orders. This application, created mainly for proof of proper user-java interaction. The restaurant menu is organized by categories (appetizers, soups,fig salads, entrees etc.) of menu items. Each menu item has a chef, preparation instructions and associated ingredients. The ingredients are identified by their ingredient id and the quality of the ingredient needed to prepare a particular recipe, the unit of measure and a name.}
+	\tab{The concept of Asian restaurant management application, since it is java application, I will keep everything as simple as possible. The project consists in an java application that can be used by employees in a restaurant to handle the clients, their orders and can help them easily find free tables or place orders. This application, created mainly for proof of proper user-java interaction. The restaurant menu is organized by categories (appetizers, soups,fig salads, entrees etc.) of menu items. Each menu item has a chef, preparation instructions and associated ingredients. The ingredients are identified by their ingredient id and the quality of the ingredient needed to prepare a particular recipe, the unit of measure and a name.}
 \\
 \tab{"Asian Restaurant Management Application(ARMP)" is java application to restaurant management. This application wake to provide service facility to restaurant and also to the client. The services that are provided is food ordering and home delivery by the client through the application, client information management and waiter information management, menu information management and report. Main objective build the application, ordering, and home delivery management will become easier and systematic to replace traditional application.}
 
-	\subsection{Chapter Overview}
+	\subsection{Chapter overview}
 	\tab{This chapter gives an introduction to the project by defining the problems encountered by restaurants,
-the main objectives that the application expects to achieve and a brief introduction to existing solutions.}	
-	\subsection{The Problem}
+the main objectives that the application expects to achieve and a brief introduction to existing solutions.\\It is known globally that, in today's market, it is extremely difficult to start a new small-scale business and live-through the competition from the well-established and settled owners. In fast paced time of today, when everyone is squeezed for time, the majority of people are finicky when it comes to placing a food order. The customers of today are not only attracted because placing an order online is very convenient but also because they have visibility into the items offered, price and extremely simplified navigation for the order.\\Ordering system that I am proposing here, greatly simplifies the ordering process for both the clients and the restaurant. Application presents an interactive and up-to-date menu with all available options in an easy to use manner. Clients can choose one or more items to place an order. Clients can view all the order details before checking out. At the end, Clients gets order confirmation details. Once the order is placed it is entered in the database and retrieved in pretty much real time. This allows Restaurant Employees to quickly go through the orders as they are received and process all orders efficiently and effectively with minimal delays and confusion.
+}	
+	\subsection{The problem}
 	\tab According to a research article written by Horizons\cite{Ref:10}, in 2006 within the UK there was just over 26,000
 restaurants with 734 million meals served that year. As this restaurant sector was worth £7.61 billion,
 any restaurant generating a good business reputation could lead to the making of a very successful
@@ -336,8 +399,7 @@ return.\\
 \tab Therefore a solution to this problem would be to minimise mistakes within the order and bill, and
 help eradicate delays as well as encouraging team work and communication within the team.
 The next section will go into the objectives of the proposed solution.
-\newpage
-	\subsection{Project Objectves}
+	\subsection{Project objectves}
 \tab{We are stuck with technology when what we really want is just stuff that works. With
 the current paradigm shift in technological field, there is an urgent need to embrace and
 appreciate the power of technology.Restaurant sector remains vigilant to face the challenges
@@ -354,7 +416,7 @@ The study has the following specific objectives:}
 		
 One of the main objectives of a restaurant to ensure client satisfaction. Manual listing of orders by the waiters/waitresses may result to slow response in client service. Hence, if the restaurant uses the proposed application, manipulation of orders to the clients be so easy and choosing the desired menu.
 
-	\subsection{Project Requirements Analysis}
+	\subsection{Project requirements analysis}
 	\tab{Project requirements analysis are important stage in the application development. It
 determines the functions of the whole application integrity and stability. Software requirements
 analysis is an ongoing process of understanding and progressive refinement. Through
@@ -368,20 +430,19 @@ browse the detailed information of a food.
 				\item[e.]\textbf{Foods comments:} clients can write comments on the food and submit satisfaction
 score.
 			\end{itemize}
-			\newpage
-		\subsubsection{Requirements Analysis}
+		\subsubsection{Requirements analysis}
 		\tab{The in-front management application is the user visits food list and
 signup user is client. Only the admin can manage his/her searching potion about the
 specific food, comment and rate. So in this part, specific functions are described as
 below:}	\begin{itemize}
-				\item {\bfseries signin and signout:} User can sign in into application and also sign out from the application.
+				\item {\bfseries Signin and Signout:} User can sign in into application and also sign out from the application.
 				\item {\bfseries Register:} If user have no account, user have to must create an account.
 				\item {\bfseries Modify personal information:} User can also modify his personal information.
 				\item {\bfseries Browse detailed information of a food:} User can browse details of food.
 				\item {\bfseries Comments:} User can post a comment for each food.
 				\item {\bfseries Rate a food:} User can post a score for each food.
 			\end{itemize}
-		\subsection{Project Deliverables}
+		\subsection{Project deliverables}
 \tab{Deliverables\cite{Ref:9} are usually classified as internal deliverables and external deliverables.}\\
 Internal deliverables :  Internal deliverables are usually deliverables that make a project run, but they are not a part of the product that the end users would like to see. They are deliverables which the project generates internally. Project Management, Configuration Management, Training and Testing are some examples of internal deliverables.\\
 External Deliverables : External deliverables are usually those that the project delivers to the users or the client. An external deliverable could be an IT system and subsystems that make it up or the resulting organizational transition and benefits from a project to reduce the turnaround time of a process.\\
@@ -394,14 +455,14 @@ External Deliverables : External deliverables are usually those that the project
 		\item Dissertation report.
 	\end{itemize}
 \newpage
-\section{Technological Background}
+\section{Technological background}
 %{\bfseries \Large Technological Background} 
-	\subsection{Implementation Process}
+	\subsection{Implementation process}
 	\tab{In the thesis project, Window 10 as an operating system,MySQL as a database and netbeans as a IDE.
 	The application is a collection of Apache server, MySQL server comprehensive programming and easy to use.}
-	\subsection{Tools and Technologies}
-	\tab{This tools used to accomplish in this project are MySQL\cite{Ref:5}, Apache Server\cite{Ref:8} and Java\cite{Ref:7} is Object oriented programming language .}
-	\subsubsection{MySQL Database}
+	\subsection{Tools and technologies}
+	\tab{The tools used to accomplish in this project are MySQL\cite{Ref:5}, Apache Server\cite{Ref:8} and Java\cite{Ref:7} is Object oriented programming language .}
+	\subsubsection{MySQL database}
 	\tab{MySQL\cite{Ref:5} is an open source relational database management system. It is based on the
 structure query language (SQL), which is used for adding, removing, and modifying
 information in the database. Standard SQL commands, such as ADD, DROP, INSERT,
@@ -442,7 +503,7 @@ Oracle.}\\
 \tab{The original and reference implementation Java compilers, virtual machines, and class libraries were originally released by Sun under proprietary licenses. As of May 2007, in compliance with the specifications of the Java Community Process, Sun relicensed most of its Java technologies under the GNU General Public License. Others have also developed alternative implementations of these Sun technologies, such as the GNU Compiler for Java (bytecode compiler), GNU Classpath (standard libraries), and IcedTea-Web (browser plugin for applets).}\\
 \tab{The latest version is Java 11, released on September 25, 2018, which follows Java 10 after only six months, being in line with the new release schedule. Java 8 is still supported but there will be no more security updates for Java 9.Versions earlier than Java 8 are supported by companies on a commercial basis; e.g. by Oracle back to Java 6 as of October 2017 (while they still "highly recommend that you uninstall" pre-Java 8 from at least Windows computers).}
 
-\subsubsection{Apache Server}
+\subsubsection{Apache server}
 	\tab{Apache server\cite{Ref:8} is an open source www server tool developed by the Apache Software
 Foundation (ASF). It is one of many Apache-related open source products used by IT
 professionals for various tasks and objectives. It allows the implementation of Java
@@ -454,6 +515,9 @@ Apache Tomcat as a product offering a runtime shell for Java Servlets. Users can
 up Java virtual machines (JVM) to configure virtual hosting.}\\
 \tab{Apache is an open-source and free web server software that powers around 46 percent of websites around the world. The official name is Apache HTTP Server, and it’s maintained and developed by the Apache Software Foundation.}\\
 %\tab{It allows website owners to serve content on the web — hence the name “web server”. It’s one of the oldest and most reliable web servers, with the first version released more than 20 years ago, in 1995.}\\
+		\subsubsection{NetBeans}
+		\tab NetBeans \cite{Ref:18} IDE is the official IDE for Java 8. With its editors, code analyzers, and converters, you can quickly and smoothly upgrade your applications to use new Java 8 language constructs, such as lambdas, functional operations, and method references.\\Batch analyzers and converters are provided to search through multiple applications at the same time, matching patterns for conversion to new Java 8 language constructs.
+With its constantly improving Java Editor, many rich features and an extensive range of tools, templates and samples, NetBeans IDE sets the standard for developing with cutting edge technologies out of the box.\\An IDE is much more than a text editor. The NetBeans Editor indents lines, matches words and brackets, and highlights source code syntactically and semantically. It lets you easily refactor code, with a range of handy and powerful tools, while it also provides code templates, coding tips, and code generators.\\The editor supports many languages from Java, C/C++, XML and HTML, to PHP, Groovy, Javadoc, JavaScript and JSP. Because the editor is extensible, you can plug in support for many other languages.\\Keeping a clear overview of large applications, with thousands of folders and files, and millions of lines of code, is a daunting task. NetBeans IDE provides different views of your data, from multiple project windows to helpful tools for setting up your applications and managing them efficiently, letting you drill down into your data quickly and easily, while giving you versioning tools via Subversion, Mercurial, and Git integration out of the box.\\When new developers join your project, they can understand the structure of your application because your code is well-organized.\\Design GUIs for Java SE, HTML5, Java EE, PHP, C/C++, and Java ME applications quickly and smoothly by using editors and drag-and-drop tools in the IDE.\\For Java SE applications, the NetBeans GUI Builder automatically takes care of correct spacing and alignment, while supporting in-place editing, as well. The GUI builder is so easy to use and intuitive that it has been used to prototype GUIs live at customer presentations.\\The cost of buggy code increases the longer it remains unfixed. NetBeans provides static analysis tools, especially integration with the widely used FindBugs tool, for identifying and fixing common problems in Java code. In addition, the NetBeans Debugger lets you place breakpoints in your source code, add field watches, step through your code, run into methods, take snapshots and monitor execution as it occurs.\\The NetBeans Profiler provides expert assistance for optimizing your application's speed and memory usage, and makes it easier to build reliable and scalable Java SE, JavaFX and Java EE applications. NetBeans IDE includes a visual debugger for Java SE applications, letting you debug user interfaces without looking into source code. Take GUI snapshots of your applications and click on user interface elements to jump back into the related source code. 
 
 %		\subsubsection{Apache Web Server}
 %		\tab{Although we call Apache a web server, it is not a physical server, but rather a software that runs on a server. Its job is to establish a connection between a server and the browsers of website visitors (Firefox, Google Chrome, Safari, etc.) while delivering files back and forth between them (client-server structure). Apache is a cross-platform software, therefore it works on both Unix and Windows servers.}\\
@@ -461,14 +525,14 @@ up Java virtual machines (JVM) to configure virtual hosting.}\\
 %\tab{Apache is highly customizable, as it has a module-based structure. Modules allow server administrators to turn additional functionalities on and off. Apache has modules for security, caching, URL rewriting, password authentication, and more. You can also set up your own server configurations through a file called .htaccess, which is an Apache configuration file supported with all Hostinger plans.}\\
 		
 \newpage
-\section{System Design}
+\section{System design}
 %{\bfseries \Large System Design}\\
 \tab{System design \cite{Ref:14} is the process of defining the elements of the system such as the
 architecture, modules and components, the different interfaces of those components and
 the data that goes through the system.It is meant to satisfy specific needs and requirements of a business or organization through the engineering of a coherent and well-running system.Systems design implies a systematic approach to the design of a system. It may take a bottom-up or top-down approach, but either way the process is systematic wherein it takes into account all related variables of the system that needs to be created from the architecture, to the required hardware and software, right down to the data and how it travels and transforms throughout its travel through the system. Systems design then overlaps with systems analysis, systems engineering and systems architecture.
 The systems design approach first appeared right before World War II, when engineers were trying to solve complex control and communications problems. They needed to be able to standardize their work into a formal discipline with proper methods, especially for new fields like information theory, operations research and computer science in general.
 }
-\subsection{Architectural Design}
+\subsection{Architectural design}
 \tab A system architecture \cite{Ref:12} design is the conceptual model that defines the structure, behavior, and more views of a system. An architectural description is a formal description and representation of a system, organized in a way that supports reasoning about the structures and behaviors of the system.One can think of system architecture as a set of representations of an existing (or future) system. These representations initially describe a general, high-level functional organization, and are progressively refined to more detailed and concrete descriptions.System architecture conveys the informational content of the elements consisting of a system, the relationships among those elements, and the rules governing those relationships. The architectural components and set of relationships between these components that an architecture description may consist of hardware, software, documentation, facilities, manual procedures, or roles played by organizations or people.{In this part, system block diagram details are given.Various organizations can define systems architecture in different ways, including:\begin{itemize}
 	\item The fundamental organization of a system, embodied in its components, their relationships to each other and to the environment, and the principles governing its design and evolution.
 	\item An allocated arrangement of physical elements which provides the design solution for a consumer product or life-cycle process intended to satisfy the requirements of the functional architecture and the requirements baseline.
@@ -481,62 +545,58 @@ gather, the asian restaurant management system will be designed as below:}
 	\begin{figure}[H]
 		\centering
 		\includegraphics[height=3in]{/home/basedul/Documents/Report-writing-using-latex/ResturentManagementSystemReport/archtecturaldesign.png}
-		\caption{System block diagram.}
+		\caption{\hspace{0.35em}System block diagram.}
 		\label{fig:archi} 
 	\end{figure}
 		
-	\tab{As shown figure\ref{fig:archi} is showing the \textbf{Asian Restaurant Management System} is divided into some modules and submodules.}
+	\tab{As shown Fig\ref{fig:archi} is showing the \textbf{Asian Restaurant Management System} is divided into some modules and submodules.}
 	\newpage
-\subsection{Database Diagram}
+\subsection{Database diagram}
 	\tab Within a database diagram \cite{Ref:15}, each relationship can appear with three distinct features: endpoints, a line style, and related tables.\\
 \textbf{Endpoints} The endpoints of the line indicate whether the relationship is one-to-one or one-to-many. If a relationship has a key at one endpoint and a figure-eight at the other, it is a one-to-many relationship. If a relationship has a key at each endpoint, it is a one-to-one relationship.\\
 \textbf{Line Style} The line itself (not its endpoints) indicates whether the Database Management System (DBMS) enforces referential integrity for the relationship when new data is added to the foreign-key table. If the line appears solid, the DBMS enforces referential integrity for the relationship when rows are added or modified in the foreign-key table. If the line appears dotted, the DBMS does not enforce referential integrity for the relationship when rows are added or modified in the foreign-key table.\\
 \textbf{Related Tables} The relationship line indicates that a foreign-key relationship exists between one table and another. For a one-to-many relationship, the foreign-key table is the table near the line's figure-eight symbol. If both endpoints of the line attach to the same table, the relationship is a reflexive relationship.
 
-	\subsubsection{Entity Diagram}
+	\subsubsection{Entity diagram}
 	\tab An Entity Relationship (ER) Diagram \cite{Ref:13} is a type of flowchart that illustrates how “entities” such as people, objects or concepts relate to each other within a system. ER Diagrams are most often used to design or debug relational databases in the fields of software engineering, business information systems, education and research. Also known as ERDs or ER Models, they use a defined set of symbols such as rectangles, diamonds, ovals and connecting lines to depict the interconnectedness of entities, relationships and their attributes. They mirror grammatical structure, with entities as nouns and relationships as verbs.\vspace{.5cm}\\
 	\tab{These diagrams below show how the attributes are defined in database table:\vspace{.8cm}}\\
-	\tab If admin wants to check the order list from an client and add new cuisine items to a foodstuff, admin must first signup with name, user name, email and password. After registration, he will be able to check the order list after signin, else he can not even see the order list and he will not be able to add cuisine to the food list . 
+	\tab As shown in Fig\ref{fig:adminreg} if admin wants to check the order list from an client and add new cuisine items to a foodstuff, admin must first signup with name, user name, email and password. After registration, he will be able to check the order list after signin, else he can not even see the order list and he will not be able to add cuisine to the food list . 
 	\begin{figure}[H]
 		\centering
-		\includegraphics[height=3in]{/home/basedul/Documents/Report-writing-using-latex/ResturentManagementSystemReport/adminent.png}
-		\caption{Admin signup entity diagram}
+		\includegraphics[height=2.5in]{/home/basedul/Documents/Report-writing-using-latex/ResturentManagementSystemReport/adminent.png}
+		\caption{\hspace{0.35em}Admin entity diagram}
 		\label{fig:adminreg} 
-	\end{figure}
-	
-\tab{Client can browse about cuisines name, price and food details from food list. But if client wants to place an order by confirming, client must need to sign up first with client name, username, e-mail and password. And then signin with his username and password. After logging in, he can order the food from the cuisine catagory. After ordering, client can be able to signout.}
+	\end{figure}\tab{As shown in figure \ref{fig:clientreg} client can browse about cuisines name, price and food details from food list. But if client wants to place an order by confirming, client must need to sign up first with client name, username, e-mail and password. And then signin with his username and password. After logging in, he can order the food from the cuisine catagory. After ordering, client can be able to signout.}
 	\begin{figure}[H]
 		\centering
 		\includegraphics[height=3in]{/home/basedul/Documents/Report-writing-using-latex/ResturentManagementSystemReport/cliententy.png}
-		\caption{Client signup entity diagram}
+		\caption{\hspace{0.35em}Client entity diagram}
 		\label{fig:clientreg} 
-	\end{figure}
-	\tab{If admin wants to add new cuisine items to a foodstuff/order menu, admin must first signup with name, user name, email and password. After registration, he will be able to check the order list after signin, else he can not even see the order list and he will not be able to add cuisine to the food list.}
+	\end{figure}\newpage
+	\tab{As shown in Fig\ref{fig:foodadd} if admin wants to add new cuisine items to a foodstuff/order menu, admin must first signup with name, user name, email and password. After registration, he will be able to check the order list after signin, else he can not even see the order list and he will not be able to add cuisine to the food list.}
 	\begin{figure}[H]
 		\centering
-		\includegraphics[height=3in]{/home/basedul/Documents/Report-writing-using-latex/ResturentManagementSystemReport/fooddet.png}
-		\caption{Food add entity diagram}
+		\includegraphics[height=2.5in]{/home/basedul/Documents/Report-writing-using-latex/ResturentManagementSystemReport/fooddet.png}
+		\caption{\hspace{0.35em}Food add entity diagram}
 		\label{fig:foodadd} 
 	\end{figure}
 	
-	\tab{After a placing an order or requesting for home delivery, client can comment on each cuisine items. And also can give scores for a specific item of cuisine. If you want to comment or score, you must signin , write the name of the cuisine in box then write the comment and select the score and post it.} 
+	\tab{As shown in Fig\ref{fig:commentsent} after a placing an order or requesting for home delivery, client can comment on each cuisine items. And also can give scores for a specific item of cuisine. If you want to comment or score, you must signin , write the name of the cuisine in box then write the comment and select the score and post it.} 
 	\begin{figure}[H]
 		\centering
-		\includegraphics[height=3in]{/home/basedul/Documents/Report-writing-using-latex/ResturentManagementSystemReport/commtent.png}
-		\caption{Comments/Score entity diagram}
+		\includegraphics[height=2.5in]{/home/basedul/Documents/Report-writing-using-latex/ResturentManagementSystemReport/commtent.png}
+		\caption{\hspace{0.35em}Comments/Score entity diagram}
 		\label{fig:commentsent} 
 	\end{figure}
-	
-	\subsubsection{E-R Diagram}
-		\tab{Client can browse about cuisines name, price and food details from food list. But if client wants to place an order by confirming, client must need to sign up first with client name, username, e-mail and password. And then signin with his username and password. After logging in, he can order the food from the cuisine catagory. After confirming an order, client can be able to signout. When an admin wants to check the order list from an client and add new cuisine items to a foodstuff, admin must first signup with name, user name, email and password. After registration, he will be able to check the order list after signin, else he can not even see the order list and he will not be able to add cuisine to the food list. But if client wants to place an order by confirming, client must need to sign up first with client name, username, e-mail and password. And then signin with his username and password. After logging in, he can order the food from the cuisine catagory. After ordering, client can be able to signout . After a placing an order or requesting for home delivery, client can comment on each cuisine items. And also can give scores for a specific item of cuisine. If you want to comment or score, you must signin , write the name of the cuisine in box then write the comment and select the score and post it. And the system will be showing top foods based on the client's score and comment. Client can also be albe to search specific cuisine item by it's item catagory, price and name.}
+	\subsubsection{E-R diagram}
+		\tab An entity relationship diagram (ERD) \cite{Ref:20}, also known as an entity relationship model, is a graphical representation of an information system that depicts the relationships among people, objects, places, concepts or events within that system. An ERD is a data modeling technique that can help define business processes and be used as the foundation for a relational database.\\\tab Entity relationship diagrams provide a visual starting point for database design that can also be used to help determine information system requirements throughout an organization. After a relational database is rolled out, an ERD can still serve as a referral point, should any debugging or business process re-engineering be needed later.\\\tab However, while an ERD can be useful for organizing data that can be represented by a relational structure, it can't sufficiently represent semi-structured or unstructured. It's also unlikely to be helpful on its own in integrating data into a preexisting information system.
 	
 		\begin{figure}[H]
 		\centering
 		\includegraphics[height=3in]{/home/basedul/Documents/Report-writing-using-latex/ResturentManagementSystemReport/erdiag.png}
-		\caption{Entity Relationship diagram}
+		\caption{\hspace{0.35em}Entity relationship diagram}
 		\label{fig:erdig} 
 	\end{figure}
-	
 	\subsubsection{Database schema}
 %			RegistrationForAdmin(uid, uf, ul, uu, um, ufp, usp, status)\\
 %			Registration(uid, uf, ul, uu, um, ufp, usp, status)\\
@@ -554,7 +614,7 @@ gather, the asian restaurant management system will be designed as below:}
 %			RankList(rlid, rlname, rlscore, rlcomments)
 
 		\tab A Database schema \cite{Ref:16} represents the logical configuration of all or part of a relational database. It can exist both as a visual representation and as a set of formulas known as integrity constraints that govern a database. These formulas are expressed in a data definition language, such as SQL. As part of a data dictionary, a database schema indicates how the entities that make up the database relate to one another, including tables, views, stored procedures, and more.Typically, a database designer creates a database schema to help programmers whose software will interact with the database. The process of creating a database schema is called data modeling When following the three-schema approach to database design, this step would follow the creation of a conceptual schema. Conceptual schemas focus on an organization’s informational needs rather than the structure of a database.
-		\newpage
+
 		\begin{itemize}
 			\item \textbf{RegistrationForAdmin(uid, uf, ul, uu, um, ufp, usp, status):} RegistrationForAdmin is database table which have eight columns, first column is used for uniqe id, second column is used for admin's first name, third column use for admin's last name, fourth column is used for admin's user name, fifth column is used for admin's email,sixth and seventh columns is used for admin's password and last column is used for admin is active or not. 
 			\item \textbf{Registration(uid, uf, ul, uu, um, ufp, usp, status):} Registration is database table which have eight columns, first column is used for uniqe id, second column is used for client's first name, third column use for client's last name, fourth column is used for client's user name, fifth column is used for client's email,sixth and seventh columns is used for client's password and last column is used for client is active or not. 
@@ -683,201 +743,485 @@ gather, the asian restaurant management system will be designed as below:}
 
 	\subsubsection{Database tables structures}
 	\tab The database structure is the collection of record type and field type definitions that comprise your database. These define the type of entities or research objects you wish to capture (e.g. Person) Fields. These are the properties or attributes that describe your record types (e.g. Gender, Age, Height etc).\\
-		\tab The table \ref{tab:adminregitable} is used for signup a user as a admin by giving first name, last name, user name, email and password on the application. If admin already have an account then signin in the application then manipulate the order list or add food on food list by given food name, food price and details of food.In table \ref{tab:adminregitable} u-id means user uniqe id, which type is integer and default value is not null, u-f-name means user first name which type is varchar, size is 80 and default value is null, u-l-name means user last name which type is varchar, size is 80 and default value is null, u-u-name means user name which type is varchar, size is 80 and default value is null, u-mail means user email which type is varchar, size is 50 and default value is null, u-f-pass means first password which type is varchar, size is 20 and default value is null, u-l-pass means last password which type is varchar, size is 20 and default value is null, 
+		\tab The Tab.\ref{tab:adminregitable} is used for signup a user as a admin by giving first name, last name, user name, email and password on the application. If admin already have an account then signin in the application then manipulate the order list or add food on food list by given food name, food price and details of food.In Tab.\ref{tab:adminregitable} u-id means user uniqe id, which type is integer and default value is not null, u-f-name means user first name which type is varchar, size is 80 and default value is null, u-l-name means user last name which type is varchar, size is 80 and default value is null, u-u-name means user name which type is varchar, size is 80 and default value is null, u-mail means user email which type is varchar, size is 50 and default value is null, u-f-pass means first password which type is varchar, size is 20 and default value is null, u-l-pass means last password which type is varchar, size is 20 and default value is null, 
 		\begin{table}[H]
 		\center
-	\caption{Registration for admin}
+	\caption{\hspace{0.4em}Registration for admin}
 	\label{tab:adminregitable}
-	\begin{tabular}{|M{2.5cm}|M{3.5cm}|M{1cm}|N}
+	\begin{tabular}{M{0.6cm}|M{1.5cm}|M{2cm}|M{1cm}|M{1cm}|M{2.5cm}|M{3.2cm}N}
+	\specialrule{.15em}{.05em}{.05em} 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont {\bfseries{No}} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont {\bfseries{Field}} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont {\bfseries{Type}} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont {\bfseries{Null}} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont {\bfseries{Default}} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont {\bfseries{Extra}} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont {\bfseries{Description}} &\\[15pt]
 	\hline
-	\fontsize{10}{5}\fontfamily{ptm}\selectfont {\bfseries{Name}} & \fontsize{10}{5}\fontfamily{ptm}\selectfont {\bfseries{Type}} & \fontsize{10}{5}\fontfamily{ptm}\selectfont {\bfseries{Null}} &\\[10pt]
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont {{1}} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont {{u-id}} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont {{int(3)}} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont {{No}} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont {{None}} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont {{Auto-increment}} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont {{Stores the admin id}} &\\[15pt]
 	\hline
-	\fontsize{10}{5}\fontfamily{ptm}\selectfont {u-id} & \fontsize{10}{5}\fontfamily{ptm}\selectfont {tinyint(3)} & \fontsize{10}{5}\fontfamily{ptm}\selectfont {NO} &\\[10pt]
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont {{2}} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont {{u-f-name}} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont {{varchar(80)}} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont {{Yes}} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont {{None}} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont {{ }} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont {{Stores the admin first name}} &\\[15pt]
 	\hline
-	\fontsize{10}{5}\fontfamily{ptm}\selectfont {u-f-name} & \fontsize{10}{5}\fontfamily{ptm}\selectfont {varchar(80)} & \fontsize{10}{5}\fontfamily{ptm}\selectfont {YES} &\\[10pt]
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont {{3}} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont {{u-l-name}} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont {{varchar(80)}} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont {{Yes}} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont {{None}} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont {{ }} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont {{Stores the admin last name}} &\\[15pt]
 	\hline
-	\fontsize{10}{5}\fontfamily{ptm}\selectfont {u-l-name} & \fontsize{10}{5}\fontfamily{ptm}\selectfont {varchar(80)} & \fontsize{10}{5}\fontfamily{ptm}\selectfont {YES} &\\[10pt]
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont {{4}} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont {{u-u-name}} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont {{varchar(80)}} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont {{Yes}} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont {{None}} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont {{ }} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont {{Stores the admin user name}} &\\[15pt]
 	\hline
-	\fontsize{10}{5}\fontfamily{ptm}\selectfont {u-u-name} & \fontsize{10}{5}\fontfamily{ptm}\selectfont {varchar(80)} & \fontsize{10}{5}\fontfamily{ptm}\selectfont {YES} &\\[10pt]
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont { {5}} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont { {u-mail}} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont { {varchar(50)}} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont { {Yes}} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont { {None}} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont { { }} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont { {Stores the admin email}} &\\[15pt]
 	\hline
-	\fontsize{10}{5}\fontfamily{ptm}\selectfont {U-mail} & \fontsize{10}{5}\fontfamily{ptm}\selectfont {varchar(50)} & \fontsize{10}{5}\fontfamily{ptm}\selectfont {YES} &\\[10pt]
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont { {6}} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont { {u-f-p}} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont { {varchar(50)}} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont { {Yes}} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont { {None}} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont { { }} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont { {Stores the admin first password}} &\\[15pt]
 	\hline
-	\fontsize{10}{5}\fontfamily{ptm}\selectfont {u-f-pass} & \fontsize{10}{5}\fontfamily{ptm}\selectfont {varchar(20)} & \fontsize{10}{5}\fontfamily{ptm}\selectfont {YES} &\\[10pt]
-	\hline
-	\fontsize{10}{5}\fontfamily{ptm}\selectfont {u-l-pass} & \fontsize{10}{5}\fontfamily{ptm}\selectfont {varchar(20)} & \fontsize{10}{5}\fontfamily{ptm}\selectfont {YES} &\\[10pt]
-	\hline
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont { {7}} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont { {u-l-p}} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont { {varchar(50)}} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont { {Yes}} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont { {None}} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont { { }} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont { {Stores the admin last password}} &\\[15pt]
+	\specialrule{.15em}{.05em}{.05em} 
+%	\fontsize {10}{8}\fontfamily{ptm}\selectfont {u-id} & \fontsize {10}{8}\fontfamily{ptm}\selectfont {tinyint(3)} & \fontsize {10}{8}\fontfamily{ptm}\selectfont {NO} &\\[10pt]
+%	\hline
+%	\fontsize {10}{8}\fontfamily{ptm}\selectfont {u-f-name} & \fontsize {10}{8}\fontfamily{ptm}\selectfont {varchar(80)} & \fontsize {10}{8}\fontfamily{ptm}\selectfont {YES} &\\[10pt]
+%	\hline
+%	\fontsize {10}{8}\fontfamily{ptm}\selectfont {u-l-name} & \fontsize {10}{8}\fontfamily{ptm}\selectfont {varchar(80)} & \fontsize {10}{8}\fontfamily{ptm}\selectfont {YES} &\\[10pt]
+%	\hline
+%	\fontsize {10}{8}\fontfamily{ptm}\selectfont {u-u-name} & \fontsize {10}{8}\fontfamily{ptm}\selectfont {varchar(80)} & \fontsize {10}{8}\fontfamily{ptm}\selectfont {YES} &\\[10pt]
+%	\hline
+%	\fontsize {10}{8}\fontfamily{ptm}\selectfont {U-mail} & \fontsize {10}{8}\fontfamily{ptm}\selectfont {varchar(50)} & \fontsize {10}{8}\fontfamily{ptm}\selectfont {YES} &\\[10pt]
+%	\hline
+%	\fontsize {10}{8}\fontfamily{ptm}\selectfont {u-f-pass} & \fontsize {10}{8}\fontfamily{ptm}\selectfont {varchar(20)} & \fontsize {10}{8}\fontfamily{ptm}\selectfont {YES} &\\[10pt]
+%	\hline
+%	\fontsize {10}{8}\fontfamily{ptm}\selectfont {u-l-pass} & \fontsize {10}{8}\fontfamily{ptm}\selectfont {varchar(20)} & \fontsize {10}{8}\fontfamily{ptm}\selectfont {YES} &\\[10pt]
+%	\hline
 	\end{tabular}
-	\end{table}\tab The table \ref{tab:clientregitable} is used for signup a user as a client by giving first name, last name, user name, email and password on the application. If client already have an account then signin in the application then select the food from food list and befor confrim order must signup by given personal information after signup client signin in the system by given client name and password.In table \ref{tab:clientregitable} u-id means user uniqe id, which type is integer and default value is not null, u-f-name means user first name which type is varchar, size is 80 and default value is null, u-l-name means user last name which type is varchar, size is 80 and default value is null, u-u-name means user name which type is varchar, size is 80 and default value is null, u-mail means user email which type is varchar, size is 50 and default value is null, u-f-pass means first password which type is varchar, size is 20 and default value is null, u-l-pass means last password which type is varchar, size is 20 and default value is null,
+	\end{table}\tab The Tab.\ref{tab:clientregitable} is used for signup a user as a client by giving first name, last name, user name, email and password on the application. If client already have an account then signin in the application then select the food from food list and befor confrim order must signup by given personal information after signup client signin in the system by given client name and password.In table \ref{tab:clientregitable} u-id means user uniqe id, which type is integer and default value is not null, u-f-name means user first name which type is varchar, size is 80 and default value is null, u-l-name means user last name which type is varchar, size is 80 and default value is null, u-u-name means user name which type is varchar, size is 80 and default value is null, u-mail means user email which type is varchar, size is 50 and default value is null, u-f-pass means first password which type is varchar, size is 20 and default value is null, u-l-pass means last password which type is varchar, size is 20 and default value is null,
 	\begin{table}[H]
 		\center
-	\caption{Registration for client}
+	\caption{\hspace{0.4em}Registration for client}
 	\label{tab:clientregitable}
-	\begin{tabular}{|M{2.5cm}|M{3.5cm}|M{1cm}|N}
+	
+	\begin{tabular}{M{0.6cm}|M{1.5cm}|M{2cm}|M{1cm}|M{1cm}|M{2.5cm}|M{3.3cm}N}
+	\specialrule{.15em}{.05em}{.05em}
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont {\bfseries {No}} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont {\bfseries{Field}} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont {\bfseries{Type}} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont {\bfseries{Null}} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont {\bfseries{Default}} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont {\bfseries{Extra}} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont {\bfseries{Description}} &\\[15pt]
 	\hline
-	\fontsize{10}{5}\fontfamily{ptm}\selectfont {\bfseries{Name}} & \fontsize{10}{5}\fontfamily{ptm}\selectfont {\bfseries{Type}} & \fontsize{10}{5}\fontfamily{ptm}\selectfont {\bfseries{Null}} &\\[10pt]
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont { {1}} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont { {u-id}} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont { {int(3)}} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont { {No}} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont { {None}} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont { {Auto-increment}} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont { {Stores the client id}} &\\[15pt]
 	\hline
-	\fontsize{10}{5}\fontfamily{ptm}\selectfont {u-id} & \fontsize{10}{5}\fontfamily{ptm}\selectfont {tinyint(3)} & \fontsize{10}{5}\fontfamily{ptm}\selectfont {NO} &\\[10pt]
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont { {2}} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont { {u-f-name}} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont { {varchar(80)}} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont { {Yes}} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont { {None}} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont { { }} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont { {Stores the client first name}} &\\[15pt]
 	\hline
-	\fontsize{10}{5}\fontfamily{ptm}\selectfont {u-f-name} & \fontsize{10}{5}\fontfamily{ptm}\selectfont {varchar(80)} & \fontsize{10}{5}\fontfamily{ptm}\selectfont {YES} &\\[10pt]
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont { {3}} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont { {u-l-name}} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont { {varchar(80)}} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont { {Yes}} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont { {None}} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont { { }} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont { {Stores the client last name}} &\\[15pt]
 	\hline
-	\fontsize{10}{5}\fontfamily{ptm}\selectfont {u-l-name} & \fontsize{10}{5}\fontfamily{ptm}\selectfont {varchar(80)} & \fontsize{10}{5}\fontfamily{ptm}\selectfont {YES} &\\[10pt]
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont { {4}} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont { {u-u-name}} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont { {varchar(80)}} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont { {Yes}} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont { {None}} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont { { }} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont { {Stores the client user name}} &\\[15pt]
 	\hline
-	\fontsize{10}{5}\fontfamily{ptm}\selectfont {u-u-name} & \fontsize{10}{5}\fontfamily{ptm}\selectfont {varchar(80)} & \fontsize{10}{5}\fontfamily{ptm}\selectfont {YES} &\\[10pt]
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont { {5}} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont { {u-mail}} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont { {varchar(50)}} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont { {Yes}} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont { {None}} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont { { }} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont { {Stores the client email}} &\\[15pt]
 	\hline
-	\fontsize{10}{5}\fontfamily{ptm}\selectfont {U-mail} & \fontsize{10}{5}\fontfamily{ptm}\selectfont {varchar(50)} & \fontsize{10}{5}\fontfamily{ptm}\selectfont {YES} &\\[10pt]
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont { {6}} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont { {u-f-p}} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont { {varchar(50)}} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont { {Yes}} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont { {None}} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont { { }} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont { {Stores the client first password}} &\\[15pt]
 	\hline
-	\fontsize{10}{5}\fontfamily{ptm}\selectfont {u-f-pass} & \fontsize{10}{5}\fontfamily{ptm}\selectfont {varchar(20)} & \fontsize{10}{5}\fontfamily{ptm}\selectfont {YES} &\\[10pt]
-	\hline
-	\fontsize{10}{5}\fontfamily{ptm}\selectfont {u-l-pass} & \fontsize{10}{5}\fontfamily{ptm}\selectfont {varchar(20)} & \fontsize{10}{5}\fontfamily{ptm}\selectfont {YES} &\\[10pt]
-	\hline
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont { {7}} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont { {u-l-p}} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont { {varchar(50)}} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont { {Yes}} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont { {None}} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont { { }} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont { {Stores the client last password}} &\\[15pt]
+	\specialrule{.15em}{.05em}{.05em} 
 	\end{tabular}
 	\end{table}
 	
-	\tab The table \ref{tab:clientorderlist} is used for hold the name of the list of foods and total price of foods choosing by client and name of client.Here col-id means list of food's uniqe id which type is integer and size is 3, col-name means name of list of foods, which type is varchar and size is 255 and default value is null, col-price means total price of list of foods which type is float and user name means which client order the food list and user name type is varchar, size is 255 and default value is null.
+	\tab The Tab.\ref{tab:clientorderlist} is used for hold the name of the list of foods and total price of foods choosing by client and name of client.Here col-id means list of food's uniqe id which type is integer and size is 3, col-name means name of list of foods, which type is varchar and size is 255 and default value is null, col-price means total price of list of foods which type is float and user name means which client order the food list and user name type is varchar, size is 255 and default value is null.
 	\begin{table}[H]
 		\center
-	\caption{Client order list}
+	\caption{\hspace{0.4em}Client order list}
 	\label{tab:clientorderlist}
-	\begin{tabular}{|M{2.5cm}|M{3.5cm}|M{1cm}|N}
+	\begin{tabular}{M{0.6cm}|M{1.5cm}|M{2cm}|M{1cm}|M{1cm}|M{2.5cm}|M{3.2cm}N}
+	\specialrule{.15em}{.05em}{.05em}
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont {\bfseries{No}} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont {\bfseries{Field}} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont {\bfseries{Type}} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont {\bfseries{Null}} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont {\bfseries{Default}} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont {\bfseries{Extra}} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont {\bfseries{Description}} &\\[15pt]
 	\hline
-	\fontsize{10}{5}\fontfamily{ptm}\selectfont {\bfseries{Name}} & \fontsize{10}{5}\fontfamily{ptm}\selectfont {\bfseries{Type}} & \fontsize{10}{5}\fontfamily{ptm}\selectfont {\bfseries{Null}} &\\[10pt]
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont { {1}} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont { {col-id}} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont { {int(3)}} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont { {No}} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont { {None}} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont { {Auto-increment}} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont { {Stores the order id}} &\\[15pt]
 	\hline
-	\fontsize{10}{5}\fontfamily{ptm}\selectfont {col-id} & \fontsize{10}{5}\fontfamily{ptm}\selectfont {tinyint(3)} & \fontsize{10}{5}\fontfamily{ptm}\selectfont {NO} &\\[10pt]
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont { {2}} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont { {col-name}} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont { {varchar(255)}} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont { {Yes}} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont { {None}} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont { { }} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont { {Stores the name of foods}} &\\[15pt]
 	\hline
-	\fontsize{10}{5}\fontfamily{ptm}\selectfont {col-name} & \fontsize{10}{5}\fontfamily{ptm}\selectfont {varchar(255)} & \fontsize{10}{5}\fontfamily{ptm}\selectfont {YES} &\\[10pt]
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont { {3}} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont { {col-price}} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont { {float(10, 2)}} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont { {Yes}} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont { {None}} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont { { }} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont { {Stores the total price}} &\\[15pt]
 	\hline
-	\fontsize{10}{5}\fontfamily{ptm}\selectfont {col-price} & \fontsize{10}{5}\fontfamily{ptm}\selectfont {float(10, 2)} & \fontsize{10}{5}\fontfamily{ptm}\selectfont {YES} &\\[10pt]
-	\hline
-	\fontsize{10}{5}\fontfamily{ptm}\selectfont {UserName} & \fontsize{10}{5}\fontfamily{ptm}\selectfont {varchar(255)} & \fontsize{10}{5}\fontfamily{ptm}\selectfont {YES} &\\[10pt]
-	\hline
-	
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont { {4}} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont { {username}} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont { {varchar(255)}} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont { {Yes}} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont { {None}} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont { { }} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont { {Stores the client name who is order foods}} &\\[15pt]
+	\specialrule{.15em}{.05em}{.05em}
 	\end{tabular}
 	\end{table}
-	\newpage
-	\tab The table \ref{tab:topfoods} is used for hold the list of top ranked food depend on score number and number of comments. These score number and comments are given by client who are taken foods and then put satisfaction score and comments for the foods. 
+	\tab The Tab.\ref{tab:topfoods} is used for hold the list of top ranked food depend on score number and number of comments. These score number and comments are given by client who are taken foods and then put satisfaction score and comments for the foods. 
 	\begin{table}[H]
 		\center
-	\caption{Top foods}
+	\caption{\hspace{0.4em}Top foods}
 	\label{tab:topfoods}
-	\begin{tabular}{|M{2.5cm}|M{3.5cm}|M{1cm}|N}
+	\begin{tabular}{M{0.6cm}|M{1.5cm}|M{2cm}|M{1cm}|M{1cm}|M{2.5cm}|M{3.2cm}N}
+	\specialrule{.15em}{.05em}{.05em}
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont {\bfseries{No}} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont {\bfseries {Field}} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont {\bfseries {Type}} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont {\bfseries{Null}} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont {\bfseries{Default}} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont {\bfseries{Extra}} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont {\bfseries{Description}} &\\[15pt]
 	\hline
-	\fontsize{10}{5}\fontfamily{ptm}\selectfont {\bfseries{Name}} & \fontsize{10}{5}\fontfamily{ptm}\selectfont {\bfseries{Type}} & \fontsize{10}{5}\fontfamily{ptm}\selectfont {\bfseries{Null}} &\\[10pt]
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont {{1}} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont { {tf-id}} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont { {int(3)}} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont { {No}} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont { {None}} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont { {Auto-increment}} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont { {Stores the top foods id}} &\\[15pt]
 	\hline
-	\fontsize{10}{5}\fontfamily{ptm}\selectfont {dl-id} & \fontsize{10}{5}\fontfamily{ptm}\selectfont {tinyint(3)} & \fontsize{10}{5}\fontfamily{ptm}\selectfont {NO} &\\[10pt]
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont { {2}} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont { {tf-name}} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont { {varchar(255)}} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont { {Yes}} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont { {None}} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont { { }} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont { {Stores the name of top foods}} &\\[15pt]
 	\hline
-	\fontsize{10}{5}\fontfamily{ptm}\selectfont {rl-name} & \fontsize{10}{5}\fontfamily{ptm}\selectfont {varchar(255)} & \fontsize{10}{5}\fontfamily{ptm}\selectfont {YES} &\\[10pt]
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont { {3}} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont { {tf-score}} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont { {float(10, 2)}} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont { {Yes}} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont { {None}} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont { { }} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont { {Stores the score}} &\\[15pt]
 	\hline
-	\fontsize{10}{5}\fontfamily{ptm}\selectfont {rl-score} & \fontsize{10}{5}\fontfamily{ptm}\selectfont {int} & \fontsize{10}{5}\fontfamily{ptm}\selectfont {YES} &\\[10pt]
-	\hline
-	\fontsize{10}{5}\fontfamily{ptm}\selectfont {rl-comments} & \fontsize{10}{5}\fontfamily{ptm}\selectfont {varchar(255)} & \fontsize{10}{5}\fontfamily{ptm}\selectfont {YES} &\\[10pt]
-	\hline
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont { {4}} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont { {tf-comments}} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont { {varchar(255)}} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont { {Yes}} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont { {None}} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont { { }} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont { {Stores comments}} &\\[15pt]
+	\specialrule{.15em}{.05em}{.05em}
 	\end{tabular}
 	\end{table}
-	\tab The table \ref{tab:salad} is used for hold the list of salads by giving name, price and details. Here sl-id is uniqe id for the salad, which type is integer and default value is not null.Sl-name is name of salad which type is varchar, size is 255 and default value is null.Sl-price is price of salad, which type is float and default value null. Sl-details is details of salad which type is varchar, size is 255 and default value is null.
+	\tab The Tab.\ref{tab:salad} is used for hold the list of salads by giving name, price and details. Here sl-id is uniqe id for the salad, which type is integer and default value is not null.Sl-name is name of salad which type is varchar, size is 255 and default value is null.Sl-price is price of salad, which type is float and default value null. Sl-details is details of salad which type is varchar, size is 255 and default value is null.
 	\begin{table}[H]
 		\center
-	\caption{Salad table}
+	\caption{\hspace{0.4em}Salad table}
 	\label{tab:salad}
-	\begin{tabular}{|M{2.5cm}|M{3.5cm}|M{1cm}|N}
+	\begin{tabular}{M{0.6cm}|M{1.5cm}|M{2cm}|M{1cm}|M{1cm}|M{2.5cm}|M{3.2cm}N}
+	\specialrule{.15em}{.05em}{.05em}
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont {\bfseries {No}} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont {\bfseries{Field}} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont {\bfseries{Type}} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont {\bfseries{Null}} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont {\bfseries{Default}} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont {\bfseries{Extra}} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont {\bfseries{Description}} &\\[15pt]
 	\hline
-	\fontsize{10}{5}\fontfamily{ptm}\selectfont {\bfseries{Name}} & \fontsize{10}{5}\fontfamily{ptm}\selectfont {\bfseries{Type}} & \fontsize{10}{5}\fontfamily{ptm}\selectfont {\bfseries{Null}} &\\[10pt]
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont {{1}} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont {{sl-id}} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont {{int(3)}} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont {{No}} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont { {None}} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont { {Auto-increment}} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont { {Stores salads id}} &\\[15pt]
 	\hline
-	\fontsize{10}{5}\fontfamily{ptm}\selectfont {sl-id} & \fontsize{10}{5}\fontfamily{ptm}\selectfont {tinyint(3)} & \fontsize{10}{5}\fontfamily{ptm}\selectfont {NO} &\\[10pt]
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont { {2}} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont { {sl-name}} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont { {varchar(255)}} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont { {Yes}} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont { {None}} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont { { }} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont { {Stores salad name}} &\\[15pt]
 	\hline
-	\fontsize{10}{5}\fontfamily{ptm}\selectfont {sl-name} & \fontsize{10}{5}\fontfamily{ptm}\selectfont {varchar(255)} & \fontsize{10}{5}\fontfamily{ptm}\selectfont {YES} &\\[10pt]
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont { {3}} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont { {sl-price}} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont { {float(10, 2)}} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont { {Yes}} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont { {None}} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont { { }} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont { {Stores price of salads}} &\\[15pt]
 	\hline
-	\fontsize{10}{5}\fontfamily{ptm}\selectfont {sl-price} & \fontsize{10}{5}\fontfamily{ptm}\selectfont {float(10, 2)} & \fontsize{10}{5}\fontfamily{ptm}\selectfont {YES} &\\[10pt]
-	\hline
-	\fontsize{10}{5}\fontfamily{ptm}\selectfont {sl-details} & \fontsize{10}{5}\fontfamily{ptm}\selectfont {varchar(255)} & \fontsize{10}{5}\fontfamily{ptm}\selectfont {YES} &\\[10pt]
-	\hline
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont { {4}} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont { {sl-details}} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont { {varchar(255)}} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont { {Yes}} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont { {None}} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont { { }} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont { {Stores salads details}} &\\[15pt]
+	\specialrule{.15em}{.05em}{.05em}
 	\end{tabular}
 	\end{table}
-	\newpage
-	\tab This table \ref{tab:chicken} is used for hold the list of Chickens by giving name, price and details.Here ck-id is uniqe id for the chicken, which type is integer and default value is not null.Ck-name is name of chicken which type is varchar, size is 255 and default value is null.Ck-price is price of chicken, which type is float and default value null. Ck-details is details of chicken which type is varchar, size is 255 and default value is null.
+	\tab This Tab.\ref{tab:chicken} is used for hold the list of Chickens by giving name, price and details.Here ck-id is uniqe id for the chicken, which type is integer and default value is not null.Ck-name is name of chicken which type is varchar, size is 255 and default value is null.Ck-price is price of chicken, which type is float and default value null. Ck-details is details of chicken which type is varchar, size is 255 and default value is null.
 	\begin{table}[H]
 		\center
-	\caption{Chicken table}
+	\caption{\hspace{0.4em}Chicken table}
 	\label{tab:chicken}
-	\begin{tabular}{|M{2.5cm}|M{3.5cm}|M{1cm}|N}
+	\begin{tabular}{M{0.6cm}|M{1.5cm}|M{2cm}|M{1cm}|M{1cm}|M{2.5cm}|M{3.2cm}N}
+	\specialrule{.15em}{.05em}{.05em} 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont {\bfseries {No}} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont {\bfseries{Field}} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont {\bfseries{Type}} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont {\bfseries{Null}} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont {\bfseries{Default}} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont {\bfseries{Extra}} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont {\bfseries{Description}} &\\[15pt]
 	\hline
-	\fontsize{10}{5}\fontfamily{ptm}\selectfont {\bfseries{Name}} & \fontsize{10}{5}\fontfamily{ptm}\selectfont {\bfseries{Type}} & \fontsize{10}{5}\fontfamily{ptm}\selectfont {\bfseries{Null}} &\\[10pt]
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont { {1}} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont { {ck-id}} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont { {int(3)}} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont { {No}} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont { {None}} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont { {Auto-increment}} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont { {Stores chickens id}} &\\[15pt]
 	\hline
-	\fontsize{10}{5}\fontfamily{ptm}\selectfont {ck-id} & \fontsize{10}{5}\fontfamily{ptm}\selectfont {tinyint(3)} & \fontsize{10}{5}\fontfamily{ptm}\selectfont {NO} &\\[10pt]
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont { {2}} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont { {ck-name}} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont { {varchar(255)}} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont { {Yes}} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont { {None}} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont { { }} & 
+	\fontsize{10}{8}\fontfamily{ptm}\selectfont { {Stores chickens name}} &\\[15pt]
 	\hline
-	\fontsize{10}{5}\fontfamily{ptm}\selectfont {ck-name} & \fontsize{10}{5}\fontfamily{ptm}\selectfont {varchar(255)} & \fontsize{10}{5}\fontfamily{ptm}\selectfont {YES} &\\[10pt]
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont { {3}} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont { {ck-price}} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont { {float(10, 2)}} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont { {Yes}} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont { {None}} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont { { }} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont { {Stores price of chickens}} &\\[15pt]
 	\hline
-	\fontsize{10}{5}\fontfamily{ptm}\selectfont {ck-price} & \fontsize{10}{5}\fontfamily{ptm}\selectfont {float(10, 2)} & \fontsize{10}{5}\fontfamily{ptm}\selectfont {YES} &\\[10pt]
-	\hline
-	\fontsize{10}{5}\fontfamily{ptm}\selectfont {ck-details} & \fontsize{10}{5}\fontfamily{ptm}\selectfont {varchar(255)} & \fontsize{10}{5}\fontfamily{ptm}\selectfont {YES} &\\[10pt]
-	\hline
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont { {4}} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont { {ck-details}} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont { {varchar(255)}} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont { {Yes}} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont { {None}} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont { { }} & 
+	\fontsize{10}{8}\fontfamily{ptm}\selectfont { {Stores chickens details}} &\\[15pt]
+	\specialrule{.15em}{.05em}{.05em}
 	\end{tabular}
 	\end{table}
 	
-	\tab This table \ref{tab:vegetofu1} is used for hold the list of Vegetables and Tofus by giving name, price and details.Here vt-id is uniqe id for the Vegetable and Tofu, which type is integer and default value is not null.Vt-name is name of Vegetable and Tofu which type is varchar, size is 255 and default value is null.Vt-price is price of Vegetable and Tofu, which type is float and default value null. Vt-details is details of Vegetable and Tofu which type is varchar, size is 255 and default value is null.
+	\tab This Tab.\ref{tab:vegetofu1} is used for hold the list of Vegetables and Tofus by giving name, price and details.Here vt-id is uniqe id for the Vegetable and Tofu, which type is integer and default value is not null.Vt-name is name of Vegetable and Tofu which type is varchar, size is 255 and default value is null.Vt-price is price of Vegetable and Tofu, which type is float and default value null. Vt-details is details of Vegetable and Tofu which type is varchar, size is 255 and default value is null.
 	\begin{table}[H]
 		\center
-	\caption{Vegetable and Tofu table}
+	\caption{\hspace{0.4em}Vegetable and Tofu table}
 	\label{tab:vegetofu1}
-	\begin{tabular}{|M{2.5cm}|M{3.5cm}|M{1cm}|N}
+	\begin{tabular}{M{0.6cm}|M{1.5cm}|M{2cm}|M{1cm}|M{1cm}|M{2.5cm}|M{3.2cm}N}
+	\specialrule{.15em}{.05em}{.05em}
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont {\bfseries{No}} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont {\bfseries{Field}} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont {\bfseries{Type}} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont {\bfseries{Null}} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont {\bfseries{Default}} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont {\bfseries{Extra}} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont {\bfseries{Description}} &\\[15pt]
 	\hline
-	\fontsize{10}{5}\fontfamily{ptm}\selectfont {\bfseries{Name}} & \fontsize{10}{5}\fontfamily{ptm}\selectfont {\bfseries{Type}} & \fontsize{10}{5}\fontfamily{ptm}\selectfont {\bfseries{Null}} &\\[10pt]
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont { {1}} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont { {vt-id}} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont { {int(3)}} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont { {No}} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont { {None}} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont { {Auto-increment}} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont { {Stores vegetables and tofu's id}} &\\[15pt]
 	\hline
-	\fontsize{10}{5}\fontfamily{ptm}\selectfont {vt-id} & \fontsize{10}{5}\fontfamily{ptm}\selectfont {tinyint(3)} & \fontsize{10}{5}\fontfamily{ptm}\selectfont {NO} &\\[10pt]
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont { {2}} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont { {vt-name}} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont { {varchar(255)}} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont { {Yes}} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont { {None}} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont { { }} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont { {Stores vegetables and tofu's name}} &\\[15pt]
 	\hline
-	\fontsize{10}{5}\fontfamily{ptm}\selectfont {vt-name} & \fontsize{10}{5}\fontfamily{ptm}\selectfont {varchar(255)} & \fontsize{10}{5}\fontfamily{ptm}\selectfont {YES} &\\[10pt]
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont { {3}} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont { {vt-price}} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont { {float(10, 2)}} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont { {Yes}} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont { {None}} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont { { }} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont { {Stores vegetables and tofu's chickens}} &\\[15pt]
 	\hline
-	\fontsize{10}{5}\fontfamily{ptm}\selectfont {vt-price} & \fontsize{10}{5}\fontfamily{ptm}\selectfont {float(10, 2)} & \fontsize{10}{5}\fontfamily{ptm}\selectfont {YES} &\\[10pt]
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont { {4}} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont { {vt-details}} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont { {varchar(255)}} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont { {Yes}} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont { {None}} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont { { }} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont { {Stores vegetables and tofu's details}} &\\[15pt]
+	\specialrule{.15em}{.05em}{.05em}
+	\end{tabular}
+	\end{table}
+	\tab This Tab.\ref{tab:nodrice} is used for hold the list of Noodles and Rice by giving name, price and details.Here nr-id is uniqe id for the Noodles and Rice, which type is integer and default value is not null.Nr-name is name of Noodles and Rice which type is varchar, size is 255 and default value is null.Nr-price is price of Noodles and Rice, which type is float and default value null. Nr-details is details of Noodles and Rice which type is varchar, size is 255 and default value is null.
+	\begin{table}[H]
+		\center
+	\caption{\hspace{0.4em}Noodles and Rice table}
+	\label{tab:nodrice}
+	\begin{tabular}{M{0.6cm}|M{1.5cm}|M{2cm}|M{1cm}|M{1cm}|M{2.5cm}|M{3.2cm}N}
+	\specialrule{.15em}{.05em}{.05em}
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont {\bfseries{No}} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont {\bfseries{Field}} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont {\bfseries{Type}} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont {\bfseries{Null}} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont {\bfseries{Default}} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont {\bfseries{Extra}} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont {\bfseries{Description}} &\\[15pt]
 	\hline
-	\fontsize{10}{5}\fontfamily{ptm}\selectfont {vt-details} & \fontsize{10}{5}\fontfamily{ptm}\selectfont {varchar(255)} & \fontsize{10}{5}\fontfamily{ptm}\selectfont {YES} &\\[10pt]
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont {\bfseries{1}} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont { {nr-id}} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont { {int(3)}} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont { {No}} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont { {None}} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont { {Auto-increment}} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont { {Stores noddles and rice's id}} &\\[15pt]
 	\hline
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont { {2}} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont { {nr-name}} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont { {varchar(255)}} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont { {Yes}} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont { {None}} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont { { }} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont { {Stores noddles and rice's name}} &\\[15pt]
+	\hline
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont { {3}} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont { {nr-price}} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont { {float(10, 2)}} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont { {Yes}} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont { {None}} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont { { }} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont { {Stores noddles and rice's of chickens}} &\\[15pt]
+	\hline
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont { {4}} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont { {nr-details}} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont { {varchar(255)}} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont { {Yes}} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont { {None}} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont { { }} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont { {Stores noddles and rice's details}} &\\[15pt]
+	\specialrule{.15em}{.05em}{.05em}
 	\end{tabular}
 	\end{table}
 	\newpage
-	\tab This table \ref{tab:nodrice} is used for hold the list of Noodles and Rice by giving name, price and details.Here nr-id is uniqe id for the Noodles and Rice, which type is integer and default value is not null.Nr-name is name of Noodles and Rice which type is varchar, size is 255 and default value is null.Nr-price is price of Noodles and Rice, which type is float and default value null. Nr-details is details of Noodles and Rice which type is varchar, size is 255 and default value is null.
-	\begin{table}[H]
-		\center
-	\caption{Noodles and Rice table}
-	\label{tab:nodrice}
-	\begin{tabular}{|M{2.5cm}|M{3.5cm}|M{1cm}|N}
-	\hline
-	\fontsize{10}{5}\fontfamily{ptm}\selectfont {\bfseries{Name}} & \fontsize{10}{5}\fontfamily{ptm}\selectfont {\bfseries{Type}} & \fontsize{10}{5}\fontfamily{ptm}\selectfont {\bfseries{Null}} &\\[10pt]
-	\hline
-	\fontsize{10}{5}\fontfamily{ptm}\selectfont {nr-id} & \fontsize{10}{5}\fontfamily{ptm}\selectfont {tinyint(3)} & \fontsize{10}{5}\fontfamily{ptm}\selectfont {NO} &\\[10pt]
-	\hline
-	\fontsize{10}{5}\fontfamily{ptm}\selectfont {nr-name} & \fontsize{10}{5}\fontfamily{ptm}\selectfont {varchar(255)} & \fontsize{10}{5}\fontfamily{ptm}\selectfont {YES} &\\[10pt]
-	\hline
-	\fontsize{10}{5}\fontfamily{ptm}\selectfont {nr-price} & \fontsize{10}{5}\fontfamily{ptm}\selectfont {float(10, 2)} & \fontsize{10}{5}\fontfamily{ptm}\selectfont {YES} &\\[10pt]
-	\hline
-	\fontsize{10}{5}\fontfamily{ptm}\selectfont {nr-details} & \fontsize{10}{5}\fontfamily{ptm}\selectfont {varchar(255)} & \fontsize{10}{5}\fontfamily{ptm}\selectfont {YES} &\\[10pt]
-	\hline
-	\end{tabular}
-	\end{table}
-	
-	
-	
-\newpage
-
 \section{Design}
-%{\bfseries\Large Design}
-	\subsection{Chapter Overview}
+%{ \Large Design}
+	\subsection{Chapter overview}
 	\tab This chapter will focus on the design of the application using diagrams to illustrate graphically certain
 sections of the software system.
 
-	\subsection{Detailed Design}
+	\subsection{Detailed design}
 	\tab A Flowchart is a type of diagram that represents an algorithm,workflow or process. The flowchart shows the steps as boxes of various kinds, and their order by connecting the boxes with arrows. This diagrammatic representation illustrates a solution model to a given problem. Flowcharts are used in analyzing, designing, documenting or managing a process or program in various fields.\\
 	\tab In this section, I designed the first flowchart of the Asian Restaurant Management application. The purpose
-of the flowchart is to show functions the Asian Restaurant Management System has.	
+of the flowchart is to show functions the Asian Restaurant Management Application has.\\\tab{Client can browse about cuisines name, price and food details from food list. But if client wants to place an order by confirming, client must need to sign up first with client name, username, e-mail and password. And then signin with his username and password. After logging in, he can order the food from the cuisine catagory. After confirming an order, client can be able to signout. When an admin wants to check the order list from an client and add new cuisine items to a foodstuff, admin must first signup with name, user name, email and password. After registration, he will be able to check the order list after signin, else he can not even see the order list and he will not be able to add cuisine to the food list. But if client wants to place an order by confirming, client must need to sign up first with client name, username, e-mail and password. And then signin with his username and password. After logging in, he can order the food from the cuisine catagory. After ordering, client can be able to signout . After a placing an order or requesting for home delivery, client can comment on each cuisine items. And also can give scores for a specific item of cuisine. If you want to comment or score, you must signin , write the name of the cuisine in box then write the comment and select the score and post it. And the system will be showing top foods based on the client's score and comment. Client can also be albe to search specific cuisine item by it's item catagory, price and name.}	
 	
 		\begin{figure}[H]
 		\centering
 		\includegraphics[height=4.5in]{/home/basedul/Documents/Report-writing-using-latex/ResturentManagementSystemReport/flowchart.png}
-		\caption{System flowchart}
+		\caption{\hspace{0.35em}System flowchart}
 		\label{fig:flowchart} 
 	\end{figure}
-	\subsection{Admin and Client function}
+	\newpage
+	\subsection{Admin and client function}
 	\tab Admins have five basics functions. Those function are; planning, organizing, staffing, directing, and controlling. admins must plan, or narrow goals from their broadest to most intricate form. They must organize and create a structure for daily tasks and communication.\\
 We have seen that clients purchase benefits when they buy. For example, when we purchase a car it fulfils the functions of transport, prestige, convenience, etc. When we purchase a watch we purchase time measurement, status, etc. But similar products often serve different use functions (benefits) and hence different markets. Products and services with similar use functions are in similar markets, and hence they are in competition. In this context, let us consider computer software.
-	\subsubsection{signup or signin function}
+	\subsubsection{Signup or signin function}
 	\tab In Registration form, we will have a form to fill all the details which will contain name, username, password, address, contact number, etc. This form will help us to signup with the application. They take all our details and store it in a database or cache.
 \\Every time a signuped user is must to signin in order to client confirmed order or admin see the order list or new food add on table, the
 user has to input both of the correct user name and the password into the input-form. The
@@ -887,32 +1231,27 @@ name of the user. Otherwise, the error-
 window will be instead.
 		\begin{figure}[H]
 		\centering
-		\includegraphics[height=6in]{/home/basedul/Documents/Report-writing-using-latex/ResturentManagementSystemReport/regispag.png}
-		\caption{Registration flowchart}
+		\includegraphics[height=4.3in]{/home/basedul/Documents/Report-writing-using-latex/ResturentManagementSystemReport/regispag.png}
+		\caption{\hspace{0.35em}Registration flowchart}
 		\label{fig:regiflow} 
 		\end{figure}
-	\newpage
 	\subsubsection{Order list}
 		\tab Admin must have an account for this application. If admin have no any account, must create an account by giving first name, last name, user name, email, and password then signin into this application by given user name and password. After successfully signin admin can show the order list, total price and ordered by whom.
 		\begin{figure}[H]
 		\centering
-		\includegraphics[height=6in]{/home/basedul/Documents/Report-writing-using-latex/ResturentManagementSystemReport/seeclientorderlist.png}
-		\caption{Client order list flowchart}
+		\includegraphics[height=4.5in]{/home/basedul/Documents/Report-writing-using-latex/ResturentManagementSystemReport/seeclientorderlist.png}
+		\caption{\hspace{0.35em}Client order list flowchart}
 		\label{fig:seeclientorderlist} 
 		\end{figure}
-		
+	
 	\subsubsection{Confirmed order after successfull signin}
-		\tab After successfully client signin, he/she confirmed the order.
+		\tab After successfully client signin, he/she choose foods from the foodlist. If he want that bring foods into his home then he select home delivery then check the total price after that if he want that order is confirmed or not. If he want to confirmed order then click confirm button after that his order is confirmed and he get a reward points.By reward points he can get bouns or not on foods.
 		\begin{figure}[H]
 		\centering
-		\includegraphics[height=6in]{/home/basedul/Documents/Report-writing-using-latex/ResturentManagementSystemReport/confirmedOrder.png}
-		\caption{Confirmed order flowchart}
+		\includegraphics[height=4.5in]{/home/basedul/Documents/Report-writing-using-latex/ResturentManagementSystemReport/confirmedOrder.png}
+		\caption{\hspace{0.35em}Confirmed order flowchart}
 		\label{fig:confirmedOrder} 
 		\end{figure}
-		
-
-		
-		
 		
 	\begin{comment}		
 		
@@ -1089,69 +1428,167 @@ flow of an order.
 \end{figure}
 \end{comment}
 
-\subsection{Chapter Summary}
+\subsection{Chapter summary}
 	\tab This chapter has displayed many graphical representations of the design of the system. The implementation of the system is documented in the next chapter.
 \newpage
-\section{Implementation And Testing}
+\section{Implementation and testing}
 %{\bfseries \Large Implementation and Testing}
-	\subsection{Chapter Overview}
-	\tab Implementation is the process in the project in which the existing design is changed into working system and is giving assurance confidence on the new system for the users that it will work correctly. It involves careful planning, checkout of the current system and it compulsion or constraints of design, implementation of methods to achieve the changeover, an evaluation of the changeover methods. Apart from it planning major tasks of arranging the implementation are educating and training of users. The more complex the system is being implemented the more involved will be the system analysis and the design efforts requires just for the implementation. The implementation process begins at preparing a plan for the implementation of the system.
-	\subsection{Document List}
+	\subsection{Chapter overview}
+	\tab Implementation is the process in the project in which the existing design is changed into working system and is giving assurance confidence on the new system for the users that it will work correctly. It involves careful planning, checkout of the current system and it compulsion or constraints of design, implementation of methods to achieve the changeover, an evaluation of the changeover methods. Apart from it planning major tasks of arranging the implementation are educating and training of users. The more complex the system is being implemented the more involved will be the system analysis and the design efforts requires just for the implementation. The implementation process begins at preparing a plan for the implementation of the system.\\\tab The implementation\cite{Ref:21} process (putting the network design into practice) is probably the most critical stage of the project, as it requires a huge commitment in terms of manpower and financial resources, and can be quite disruptive of the day to day operation of the organisation. The main activities that you might reasonably expect to be undertaken during implementation are listed below.\\
+	\begin{itemize}
+		\item installation and testing of network cabling
+		\item installation of network equipment accomodation
+		\item installation, configuration and testing of network hardware
+		\item installation, configuration and testing of network servers, workstations and peripherals
+		\item installation of operating system software on servers and workstations
+		\item installation and testing of application software on application servers and workstations
+		\item creation of the network file system
+		\item creation of a suitable domain structure
+		\item configuration and testing of network services
+		\item transfer of data from existing to new system
+		\item user training
+		\item final system testing
+	\end{itemize}
+	\subsection{Document list}
 	
 		\begin{table}[H]
 		\center
-	\caption{Document list}
+	\caption{\hspace{0.4em}Document list}
 	\label{tab:vegetofu}
-	\begin{tabular}{|M{0.7cm}|M{6cm}|M{9cm}|N}
+	\begin{tabular}{M{0.5cm}|M{5cm}|M{7.8cm}N}
+	\specialrule{.15em}{.05em}{.05em} 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont {\bfseries{No}} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont {\bfseries{Document}} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont {\bfseries{Purpose}} &\\[10pt]
 	\hline
-	\fontsize{10}{5}\fontfamily{ptm}\selectfont {\bfseries{No}} & \fontsize{10}{5}\fontfamily{ptm}\selectfont {\bfseries{Package name}} & \fontsize{10}{5}\fontfamily{ptm}\selectfont {\bfseries{Purpose}} &\\[10pt]
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont {1} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont {DatabaseConnection.java} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont {This class use for implementation of database connection with local host using jdbc driver} &\\[10pt]
 	\hline
-	\fontsize{10}{5}\fontfamily{ptm}\selectfont {1} & \fontsize{10}{5}\fontfamily{ptm}\selectfont {Database connection} & \fontsize{10}{5}\fontfamily{ptm}\selectfont {This package use for implementation of database connection with local host using jdbc driver} &\\[10pt]
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont {2} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont {Appetizers.java} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont {This class use for add appetizers name, price and details into appetizers table of food} &\\[10pt]
 	\hline
-	\fontsize{10}{5}\fontfamily{ptm}\selectfont {2} & \fontsize{10}{5}\fontfamily{ptm}\selectfont {Food add on database} & \fontsize{10}{5}\fontfamily{ptm}\selectfont {This package use for add food name, price and details into specific table of food} &\\[10pt]
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont {3} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont {BeefLamb.java} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont {This class use for add beef or lamb name, price and details into specific table of food} &\\[10pt]
 	\hline
-	\fontsize{10}{5}\fontfamily{ptm}\selectfont {3} & \fontsize{10}{5}\fontfamily{ptm}\selectfont {Home activity} & \fontsize{10}{5}\fontfamily{ptm}\selectfont {Home activity package use for design and implementation of homepage} &\\[10pt]
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont {4} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont {Chicken.java} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont {This class use for add chicken name, price and details into specific table of food} &\\[10pt]
 	\hline
-	\fontsize{10}{5}\fontfamily{ptm}\selectfont {4} & \fontsize{10}{5}\fontfamily{ptm}\selectfont {Order insert into orderlist table} & \fontsize{10}{5}\fontfamily{ptm}\selectfont {After confirmed order from client, these order are insert into order list table using this package} &\\[10pt]
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont {5} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont {NoddlesRice.java} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont {This class use for add noddles and rice name, price and details into specific table of food} &\\[10pt]
 	\hline
-	\fontsize{10}{5}\fontfamily{ptm}\selectfont {5} & \fontsize{10}{5}\fontfamily{ptm}\selectfont {Order insert into orderlist table} & \fontsize{10}{5}\fontfamily{ptm}\selectfont {After confirmed order from client, these order are insert into order list table using this package} &\\[10pt]
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont {6} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont {Pork.java} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont {This class use for add pork name, price and details into specific table of food} &\\[10pt]
 	\hline
-	\fontsize{10}{5}\fontfamily{ptm}\selectfont {6} & \fontsize{10}{5}\fontfamily{ptm}\selectfont {Personal info show} & \fontsize{10}{5}\fontfamily{ptm}\selectfont {This package use for personal information show on homepage} &\\[10pt]
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont {7} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont {Salads.java} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont {This class use for add salads name, price and details into specific table of food} &\\[10pt]
 	\hline
-	\fontsize{10}{5}\fontfamily{ptm}\selectfont {7} & \fontsize{10}{5}\fontfamily{ptm}\selectfont {Read data from Database} & \fontsize{10}{5}\fontfamily{ptm}\selectfont {This package use for read data from database and set into table on home page} &\\[10pt]
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont {8} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont {SeaFood.java} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont {This class use for add seafood name, price and details into specific table of food} &\\[10pt]
 	\hline
-	\fontsize{10}{5}\fontfamily{ptm}\selectfont {8} & \fontsize{10}{5}\fontfamily{ptm}\selectfont {Registration} & \fontsize{10}{5}\fontfamily{ptm}\selectfont {This package use for registration purpose of admin and client} &\\[10pt]
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont {8} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont {Soups.java} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont {This class use for add Soups name, price and details into specific table of food} &\\[10pt]
 	\hline
-	\fontsize{10}{5}\fontfamily{ptm}\selectfont {9} & \fontsize{10}{5}\fontfamily{ptm}\selectfont {Search from database} & \fontsize{10}{5}\fontfamily{ptm}\selectfont {This package use for searching an item by name or price of food from database} &\\[10pt]
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont {8} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont {VegeTofu.java} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont {This class use for add vegetabls and tofu name, price and details into specific table of food} &\\[10pt]
 	\hline
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont {9} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont {MainActivity.java} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont {MainActivity class use for design and implementation of homepage} &\\[10pt]
+	\hline
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont {10} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont {OrderInsertIntoOrderList.java} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont {In this class OrderInsertIntoOrderList, order from clients are insert into order list table} &\\[10pt]
+	\hline
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont {11} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont {PersonalInfoFrame.java} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont {This class used for modify personal info of client} &\\[10pt]
+	\hline
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont {11} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont {PersonalInfoFrameAdmin.java} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont {This class used for modify personal info of admin} &\\[10pt]
+	\hline
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont {12} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont {ReadFromTable.java} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont {This class use for read data from database and set into homepage} &\\[10pt]
+	\hline
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont {13} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont {WrapTextInJTable.java} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont {This class used for wraping of data into jtable} &\\[10pt]
+	\hline
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont {14} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont {SignInClass.java} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont {This class use for sign in of client} &\\[10pt]
+	\hline
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont {15} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont {SignoutForClient.java} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont {This class use for signout to the client} &\\[10pt]
+	\hline
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont {16} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont {SignupClass.java} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont {This class use for signup of the client} &\\[10pt]
+	\hline
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont {17} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont {SignInClassForAdmin.java} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont {This class use for sign in of Admin} &\\[10pt]
+	\hline
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont {18} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont {SignoutForAdmin.java} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont {This class use for signout to the admin} &\\[10pt]
+	\hline
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont {19} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont {SignupClassForAdmin.java} & 
+	\fontsize {10}{8}\fontfamily{ptm}\selectfont {This class use for signup of the admin} &\\[10pt]
+	\specialrule{.15em}{.05em}{.05em}
 	\end{tabular}
 	\end{table}
 	\newpage
 	\subsection{User module}
+		\tab The user module \cite{Ref:17} allows users to register, sign in, and sign out. Users benefit from being able to sign on because this associates content they create with their account and allows various permissions to be set for their roles.\\
+The user module supports user roles, which can be set up with fine-grained permissions allowing each role to do only what the administrator permits. Each user is assigned one or more roles. By default there are three roles: anonymous (a user who has not logged in) and authenticated (a user who is registered), and administrator (a signed in user who will be assigned site administrator permissions).\\
+Users can use their own name or handle and can fine tune some personal configuration settings through their individual my account page. Registered users need to authenticate by supplying their username and password, or alternately an open id sign in.
+
 		\subsubsection{Sign in}
-			\tab Already signuped user will have to signin in the system by inputting username and password in order to enter the system. The screen shot is shown in Fig \ref{fig:signin} 
+			\tab Already signuped user will have to signin in the system by given user name and password in order to enter the system. If user name is not matched with the name and password which are hold on database by creating an account, then show an error that you are given wrong information. If user name matched but password not mathed then show an error message that enter correct information. The password field is encrypted by star character. The screen shot is shown in Fig\ref{fig:signin} 
 			\begin{figure}[H]
 		\centering
 		\includegraphics[height=2in]{/home/basedul/Documents/Report-writing-using-latex/ResturentManagementSystemReport/signin.JPG}
-		\caption{Sign in window}
+		\caption{\hspace{0.35em}Sign in window}
 		\label{fig:signin} 
 		\end{figure}
-		
 		\subsubsection{Sign up}
-			\tab A new user will have to sign up in the system by providing essential details in order to be a client of the restaurant. The screen shot is shown in Fig \ref{fig:signout} 
+			\tab A new user will have to sign up in the system by providing essential details in order to be a valid user of the restaurant. The essential details are user name, first name, last name, email, password. If user name already signup then show an dialog message that you hava already an account.If user name is not already exist then successfully create an account. The screen shot is shown in Fig\ref{fig:signout} 
 			\begin{figure}[H]
 		\centering
 		\includegraphics[height=3in]{/home/basedul/Documents/Report-writing-using-latex/ResturentManagementSystemReport/signup.JPG}
-		\caption{Sign up window}
+		\caption{\hspace{0.35em}Sign up window}
 		\label{fig:signout} 
 		\end{figure}
-		\newpage
-		\subsubsection{HomePage}
-			\tab After a successful sign in, the client is redirected to the home activity of the application.  It includes the activities that happens in the restaurant and rewards  top foods also modifying about the personal information. The screen shot is shown in Fig \ref{fig:homepage} and Fig \ref{fig:topfood1}.
+		
+\subsubsection{Top foods}
+			\tab Write user experience or comment on the dish and submit satisfaction score and user get reward points after sharing their experiences. After depend on the number of comments against foods and score te top ranked food shown in top foods window. The screen shot is shown in Fig\ref{fig:topfood}. 
+			\begin{figure}[H]
+		\centering
+		\includegraphics[height=2.3in]{/home/basedul/Documents/Report-writing-using-latex/ResturentManagementSystemReport/topfood.JPG}
+		\caption{\hspace{0.35em}Top food window}
+		\label{fig:topfood} 
+		\end{figure}		
+		
+		\subsubsection{Home page}
+			\tab After a successful sign in, the client is redirected to the home activity of the application. In home activity user as client show the list of foods and search food from the list by name or price by keyword. If the keyword is found, show the details of food like name or price. If keyword is not found then show an message that keyword is not found on the food list. If client want that they take food then first of all client must select the food and also if client want to home delivery then also mark the home delivery after that client can click on total button for shown total price. If client want to order then client must sign in then client can confirmed order. Getting food user can put score or commets against foods.After that user as admin sign in for shown the ordered list.After sign in admin, can add food on food list. The screen shot is shown in Fig\ref{fig:homepage} and Fig\ref{fig:topfood1}.
 			\begin{figure}[H]
 		\centering
 		\includegraphics[height=2.3in]{/home/basedul/Documents/Report-writing-using-latex/ResturentManagementSystemReport/mainactivity.JPG}
-		\caption{Homepage window}
+		\caption{\hspace{0.35em}Homepage window}
 		\label{fig:homepage} 
 		
 		
@@ -1159,29 +1596,21 @@ flow of an order.
 		
 		
 		\includegraphics[height=1.7in]{/home/basedul/Documents/Report-writing-using-latex/ResturentManagementSystemReport/order.JPG}
-		\caption{Order list window}
+		\caption{\hspace{0.35em}Order list window}
 		\label{fig:topfood1} 	
 		
 		
 		\end{figure}
-		\newpage
-		\subsubsection{Topfoods}
-			\tab Write user experience or comment on the dish and submit satisfaction score and user get reward points after sharing their experiences. The screen shot is shown in Fig \ref{fig:topfood}. 
-			\begin{figure}[H]
-		\centering
-		\includegraphics[height=2.3in]{/home/basedul/Documents/Report-writing-using-latex/ResturentManagementSystemReport/topfood.JPG}
-		\caption{Top food window}
-		\label{fig:topfood} 
-		\end{figure}
+		
 		
 		
 		\subsubsection{Modify personal information}
-	\tab Users can modify their information lately if he/she wishes to. But to remind that, apart from the username, other information are changeable (as shown in Fig \ref{fig:madmin}).
+	\tab Users (Admin or Client) can modify their information lately if he/she wishes to. Users can modify their personal information by clicking on update user name button after that name field is visible then user can input his/her name then press enter from keyboard automatically updated the user name, If modify his/her email, must click on update your email button after that email field is visible and editable for user and then input email and press enter from keyboard, automaically update email of current user.Follow the same way for modify password. Finally clicked on updated button finished this window and show home page. But to remind that, apart from the username, other information are changeable (as shown in Fig\ref{fig:madmin}).
 	
 			\begin{figure}[H]
 		\centering
 		\includegraphics[height=2.5in]{/home/basedul/Documents/Report-writing-using-latex/ResturentManagementSystemReport/modifyc.JPG}
-		\caption{Modify information window}
+		\caption{\hspace{0.35em}Modify information window}
 		\label{fig:madmin} 
 %		
 %		
@@ -6937,107 +7366,268 @@ public class Appetizers extends javax.swing.JFrame {
 		
 \end{lstlisting}
 	\end{comment}
-	\newpage
-	\subsection{Test Case}
-	\tab A Test cases a set of conditions or variables under which a tester will determine whether a system under test satisfies requirements or works correctly. The process of developing test cases can also help find problems in the requirements or design of an application.
+	
+	\subsection{Test case}
+	\tab A Test cases a set of conditions or variables under which a tester will determine whether a system under test satisfies requirements or works correctly. The process of developing test cases can also help find problems in the requirements or design of an application.\\Test cases were created to test adding, deleting, and editing both items and cuisines. Specifically these test cases make certain that cuisines and items are stored and retrieved from the database correctly. Test cases were also generated to perform boundary testing on how many entries could be successfully added or updated. In addition, test cases where created to verify the function of the compare class, which is used to validate input.
 		\begin{table}[H]
 \renewcommand\arraystretch{0}
 		\label{tab:Test}
-\caption{Test Cases}
+\caption{\hspace{0.4em}Test Cases}
 \vspace{0.2cm}
-\begin{tabular}{|M{2.5cm}|M{3.5cm}|M{3.5cm}|M{3.5cm}|M{3.5cm}|M{3.5cm}|M{3.5cm}|M{1cm}|N}
+\begin{tabular}{M{2cm}|M{3cm}|M{3cm}|M{3cm}|M{1.5cm}N}
 %Start
 \hline
 \textbf{Scenario} &
-\multicolumn{2}{M{1.5cm}|}{\textbf{Test Cases}} & 
-\multicolumn{2}{M{1.5cm}|}{\textbf{Expected Result}} & %
-\multicolumn{2}{M{1.5cm}|}{\textbf{Test Result}} &
-\textbf{Pass or Fail} & \\ [0pt]
+{\textbf{Test Cases}} & 
+{\textbf{Expected Result}} & %
+{\textbf{Test Result}} &
+\textbf{Pass or Fail} & \\ [10pt]
 \hline
-\hline%Start
-\multirow{3}{1.5cm}[-1.7em]{\begin{flushleft}
-\centering Registration
-\end{flushleft}} &
+\fontsize {10}{8}\fontfamily{ptm}\selectfont {} & 
+\fontsize {10}{8}\fontfamily{ptm}\selectfont {Enter null in
+mandatory fields.} & 
+\fontsize {10}{8}\fontfamily{ptm}\selectfont {It should not do the
+registration and
+show error.} & 
+\fontsize {10}{8}\fontfamily{ptm}\selectfont {It will show
+message that please
+fill out this field.} & 
+\fontsize {10}{8}\fontfamily{ptm}\selectfont {Pass} &\\[30pt]
+\cline{2-6}%next
 
-\multicolumn{2}{M{3.5cm}|}{\begin{flushleft}
-Enter null in
-mandatory fields.
-\end{flushleft}} &
-\multicolumn{2}{M{3.5cm}|}{\begin{flushleft}
-It should not do the
-registration
-and show error.
-\end{flushleft}} & %
-\multicolumn{2}{M{3.5cm}|}{\begin{flushleft}
-It will show message
-that please fill out this
-field.
-\end{flushleft}} &
-Pass & \\[0pt]\cline{2-9} &
-\multicolumn{2}{M{3.5cm}|}{\begin{flushleft}
-Enter incorrect data
-\end{flushleft}} & 
-\multicolumn{2}{M{3.5cm}|}{\begin{flushleft}
-It should not do the
-registration and show error.
-\end{flushleft}} & 
-\multicolumn{2}{M{3.5cm}|}{\begin{flushleft}
-Email: Please enter an email.
-\linebreak
-Password: Password.\linebreak
-do not match\end{flushleft}} & Pass\\[25pt]\cline{2-9}& 
-\multicolumn{2}{M{3.5cm}|}{\begin{flushleft}
-Enter correct data of all 
-required field
-\end{flushleft}} & 
-\multicolumn{2}{M{3.5cm}|}{\begin{flushleft}
-It should lead to successfully registration
-\end{flushleft}} & 
-\multicolumn{2}{M{3.5cm}|}{\begin{flushleft}
-It will show the message of successfully registrattion
-\end{flushleft}} & Pass\\ [25pt]
-\hline
-%End
-\hline%Start
-\multirow{3}{1.5cm}[-1.5em]{\centering Login} &
+\fontsize {10}{8}\fontfamily{ptm}\selectfont {Registration} & 
+\fontsize {10}{8}\fontfamily{ptm}\selectfont {Enter incorrect data} & 
+\fontsize {10}{8}\fontfamily{ptm}\selectfont {It should not do the
+registration and
+show error.} & 
+\fontsize {10}{8}\fontfamily{ptm}\selectfont {Email: Please enter
+an email.
+Password:
+Password.
+do not match} & 
+\fontsize {10}{8}\fontfamily{ptm}\selectfont {Pass} &\\[35pt]
+\cline{2-6}%next
 
-\multicolumn{2}{M{3.5cm}|}{\begin{flushleft}
-Enter null email or
-password.
-\end{flushleft}} &
-\multicolumn{2}{M{3.5cm}|}{\begin{flushleft}
-It should not do the
-login and show error.
-\end{flushleft}
-} & %
-\multicolumn{2}{M{3.5cm}|}{\begin{flushleft}
-It will show message that please fill out this field.
-\end{flushleft}} &
-Pass & \\[0pt]\cline{2-9} &
-\multicolumn{2}{M{3.5cm}|}{\begin{flushleft}
-Enter wrong data of
-email or password.
-\end{flushleft}} & 
-\multicolumn{2}{M{3.5cm}|}{\begin{flushleft}
-It should not do the login and show error.
-\end{flushleft}} & 
-\multicolumn{2}{M{3.5cm}|}{\begin{flushleft}
-It will show message that please enter an email or your email address or password are not correct.
-\end{flushleft}
-} & Pass\\[25pt]\cline{2-9}& 
-\multicolumn{2}{M{3.5cm}|}{\begin{flushleft}
-Enter correct data of
-email or password.
-\end{flushleft}} & 
-\multicolumn{2}{M{3.5cm}|}{\begin{flushleft}
-It should let do the login.
-\end{flushleft}
-} & 
-\multicolumn{2}{M{3.5cm}|}{\begin{flushleft}
-It will redirect to your all purchased products
-\end{flushleft}
-} & Pass\\ [25pt]
-\hline%End
+\fontsize {10}{8}\fontfamily{ptm}\selectfont {} & 
+\fontsize {10}{8}\fontfamily{ptm}\selectfont {Enter correct data of
+all required field} & 
+\fontsize {10}{8}\fontfamily{ptm}\selectfont {It should lead to
+successfully
+registration} & 
+\fontsize {10}{8}\fontfamily{ptm}\selectfont {It will show the
+message of
+successfully
+registrattion} & 
+\fontsize {10}{8}\fontfamily{ptm}\selectfont {Pass} &\\[40pt]
+\hline%next
+
+\fontsize {10}{8}\fontfamily{ptm}\selectfont {} & 
+\fontsize {10}{8}\fontfamily{ptm}\selectfont {Enter null email or
+password.} & 
+\fontsize {10}{8}\fontfamily{ptm}\selectfont {It should not do the
+login and show
+error.} & 
+\fontsize {10}{8}\fontfamily{ptm}\selectfont {It will show
+message that please
+fill out this field.} & 
+\fontsize {10}{8}\fontfamily{ptm}\selectfont {Pass} &\\[33pt]
+\cline{2-6}%next
+
+\fontsize {10}{8}\fontfamily{ptm}\selectfont {Login} & 
+\fontsize {10}{8}\fontfamily{ptm}\selectfont {Enter wrong data of
+email or password.} & 
+\fontsize {10}{8}\fontfamily{ptm}\selectfont {It should not do the
+login and show
+error.} & 
+\fontsize {10}{8}\fontfamily{ptm}\selectfont {It will show message
+that please enter an
+email or your email
+address or password
+are not correct..} & 
+\fontsize {10}{8}\fontfamily{ptm}\selectfont {Pass} &\\[55pt]
+\cline{2-6}%next
+
+\fontsize {10}{8}\fontfamily{ptm}\selectfont {} & 
+\fontsize {10}{8}\fontfamily{ptm}\selectfont {Enter correct data of
+email or password.} & 
+\fontsize {10}{8}\fontfamily{ptm}\selectfont {It should let do the
+login.} & 
+\fontsize {10}{8}\fontfamily{ptm}\selectfont {It will redirect to
+your all purchased
+products} & 
+\fontsize {10}{8}\fontfamily{ptm}\selectfont {Pass} &\\[33pt]
+\hline%next
+
+\fontsize {10}{8}\fontfamily{ptm}\selectfont {} & 
+\fontsize {10}{8}\fontfamily{ptm}\selectfont {Enter null in
+mandatory fields.} & 
+\fontsize {10}{8}\fontfamily{ptm}\selectfont {It should not do the
+update and show
+error.} & 
+\fontsize {10}{8}\fontfamily{ptm}\selectfont {It will show
+message that please
+fill out this field.} & 
+\fontsize {10}{8}\fontfamily{ptm}\selectfont {Pass} &\\[33pt]
+\cline{2-6}%next
+
+\fontsize {10}{8}\fontfamily{ptm}\selectfont {Update
+password} & 
+\fontsize {10}{8}\fontfamily{ptm}\selectfont {Enter incorrect data} & 
+\fontsize {10}{8}\fontfamily{ptm}\selectfont {It should not do the
+update and show
+error.} & 
+\fontsize {10}{8}\fontfamily{ptm}\selectfont {It will show the
+message that the old
+password do not
+match.} & 
+\fontsize {10}{8}\fontfamily{ptm}\selectfont {Pass} &\\[42pt]
+\cline{2-6}%next
+
+\fontsize {10}{8}\fontfamily{ptm}\selectfont {} & 
+\fontsize {10}{8}\fontfamily{ptm}\selectfont {Enter correct data of
+all required field.} & 
+\fontsize {10}{8}\fontfamily{ptm}\selectfont {It should let do
+registration.} & 
+\fontsize {10}{8}\fontfamily{ptm}\selectfont {It will show the
+message that
+password
+successfully
+updated.} & 
+\fontsize {10}{8}\fontfamily{ptm}\selectfont {Pass} &\\[40pt]
+\hline%next
+
+\fontsize {10}{8}\fontfamily{ptm}\selectfont {Search
+Food} & 
+\fontsize {10}{8}\fontfamily{ptm}\selectfont {Enter null or
+incorrect data in
+search fields.} & 
+\fontsize {10}{8}\fontfamily{ptm}\selectfont {It will not search
+food} & 
+\fontsize {10}{8}\fontfamily{ptm}\selectfont {It will show the
+message that there
+was no search
+results!} & 
+\fontsize {10}{8}\fontfamily{ptm}\selectfont {Pass} &\\[40pt]
+\cline{2-6}%next
+
+
+\fontsize {10}{8}\fontfamily{ptm}\selectfont {} & 
+\fontsize {10}{8}\fontfamily{ptm}\selectfont {Enter correct data in
+Search fields.} & 
+\fontsize {10}{8}\fontfamily{ptm}\selectfont {It should search
+foods depending the
+keywords.} & 
+\fontsize {10}{8}\fontfamily{ptm}\selectfont {It will display the
+foods regarding the
+keywords.} & 
+\fontsize {10}{8}\fontfamily{ptm}\selectfont {Pass} &\\[33pt]
+\hline%next
+
+
+\fontsize {10}{8}\fontfamily{ptm}\selectfont {Comment
+Food} & 
+\fontsize {10}{8}\fontfamily{ptm}\selectfont {Enter non ASCII
+character.} & 
+\fontsize {10}{8}\fontfamily{ptm}\selectfont {It will not let to
+comment} & 
+\fontsize {10}{8}\fontfamily{ptm}\selectfont {It will show error as
+unsupported
+character.} & 
+\fontsize {10}{8}\fontfamily{ptm}\selectfont {Pass} &\\[30pt]
+\cline{2-6}%next
+
+
+\fontsize {10}{8}\fontfamily{ptm}\selectfont {} & 
+\fontsize {10}{8}\fontfamily{ptm}\selectfont {Enter ASCII
+character.} & 
+\fontsize {10}{8}\fontfamily{ptm}\selectfont {It will lead a
+successful comment.} & 
+\fontsize {10}{8}\fontfamily{ptm}\selectfont {It will view the
+succession of a
+comment.} & 
+\fontsize {10}{8}\fontfamily{ptm}\selectfont {Pass} &\\[25pt]
+\hline%next
+%\multirow{3}{1.5cm}[-1.7em]{\begin{flushleft}
+%\centering Registration
+%\end{flushleft}} &
+%
+%\multicolumn{2}{M{3.5cm}|}{\begin{flushleft}
+%Enter null in
+%mandatory fields.
+%\end{flushleft}} &
+%\multicolumn{2}{M{3.5cm}|}{\begin{flushleft}
+%It should not do the
+%registration
+%and show error.
+%\end{flushleft}} & %
+%\multicolumn{2}{M{3.5cm}|}{\begin{flushleft}
+%It will show message
+%that please fill out this
+%field.
+%\end{flushleft}} &
+%Pass & \\[0pt]\cline{2-9} &
+%\multicolumn{2}{M{3.5cm}|}{\begin{flushleft}
+%Enter incorrect data
+%\end{flushleft}} & 
+%\multicolumn{2}{M{3.5cm}|}{\begin{flushleft}
+%It should not do the
+%registration and show error.
+%\end{flushleft}} & 
+%\multicolumn{2}{M{3.5cm}|}{\begin{flushleft}
+%Email: Please enter an email.
+%\linebreak
+%Password: Password.\linebreak
+%do not match\end{flushleft}} & Pass\\[25pt]\cline{2-9}& 
+%\multicolumn{2}{M{3.5cm}|}{\begin{flushleft}
+%Enter correct data of all 
+%required field
+%\end{flushleft}} & 
+%\multicolumn{2}{M{3.5cm}|}{\begin{flushleft}
+%It should lead to successfully registration
+%\end{flushleft}} & 
+%\multicolumn{2}{M{3.5cm}|}{\begin{flushleft}
+%It will show the message of successfully registrattion
+%\end{flushleft}} & Pass\\ [25pt]
+%\hline
+%\multirow{3}{1.5cm}[-1.5em]{\centering Login} &
+%
+%\multicolumn{2}{M{3.5cm}|}{\begin{flushleft}
+%Enter null email or
+%password.
+%\end{flushleft}} &
+%\multicolumn{2}{M{3.5cm}|}{\begin{flushleft}
+%It should not do the
+%login and show error.
+%\end{flushleft}
+%} & %
+%\multicolumn{2}{M{3.5cm}|}{\begin{flushleft}
+%It will show message that please fill out this field.
+%\end{flushleft}} &
+%Pass & \\[0pt]\cline{2-9} &
+%\multicolumn{2}{M{3.5cm}|}{\begin{flushleft}
+%Enter wrong data of
+%email or password.
+%\end{flushleft}} & 
+%\multicolumn{2}{M{3.5cm}|}{\begin{flushleft}
+%It should not do the login and show error.
+%\end{flushleft}} & 
+%\multicolumn{2}{M{3.5cm}|}{\begin{flushleft}
+%It will show message that please enter an email or your email address or password are not correct.
+%\end{flushleft}
+%} & Pass\\[25pt]\cline{2-9}& 
+%\multicolumn{2}{M{3.5cm}|}{\begin{flushleft}
+%Enter correct data of
+%email or password.
+%\end{flushleft}} & 
+%\multicolumn{2}{M{3.5cm}|}{\begin{flushleft}
+%It should let do the login.
+%\end{flushleft}
+%} & 
+%\multicolumn{2}{M{3.5cm}|}{\begin{flushleft}
+%It will redirect to your all purchased products
+%\end{flushleft}
+%} & Pass\\ [25pt]
+%\hline%End
 %\hline%Start
 %\multirow{3}{1.5cm}[-1.5em]{\centering Update password
 %} &
@@ -7136,22 +7726,22 @@ It will redirect to your all purchased products
 
 \end{tabular}
 \end{table}
+%
+%\begin{table}[H]
+%\renewcommand\arraystretch{0}
+%\captionsetup{labelformat=empty}
+%\caption[]{ }
+%\vspace{0.2cm}
+%
+%\begin{tabular}{M{2.5cm}|M{4cm}|M{4cm}|M{4cm}|M{4cm}|M{4cm}|M{4cm}|M{1cm}N}
+%%Start
+%\hline
+%\textbf{Scenario} &
+%\multicolumn{2}{M{3.5cm}|}{\textbf{Test Cases}} & 
+%\multicolumn{2}{M{3.5cm}|}{\textbf{Expected Result}} & %
+%\multicolumn{2}{M{3.5cm}|}{\textbf{Test Result}} &
+%\textbf{Pass or Fail} & \\ [25pt]
 
-\begin{table}[H]
-\renewcommand\arraystretch{0}
-\captionsetup{labelformat=empty}
-\caption[]{ }
-\vspace{0.2cm}
-
-\begin{tabular}{|M{2.5cm}|M{4cm}|M{4cm}|M{4cm}|M{4cm}|M{4cm}|M{4cm}|M{1cm}|N}
-%Start
-\hline
-\textbf{Scenario} &
-\multicolumn{2}{M{3.5cm}|}{\textbf{Test Cases}} & 
-\multicolumn{2}{M{3.5cm}|}{\textbf{Expected Result}} & %
-\multicolumn{2}{M{3.5cm}|}{\textbf{Test Result}} &
-\textbf{Pass or Fail} & \\ [25pt]
-\hline
 %\hline%Start
 %\multirow{3}{1.5cm}[-1.5em]{\centering Registration} &
 %
@@ -7234,158 +7824,137 @@ It will redirect to your all purchased products
 %\end{flushleft}
 %} & Pass\\ [25pt]
 %\hline%End
-\hline%Start
-\multirow{3}{2cm}[-1.5em]{\centering Update password
-} &
 
-\multicolumn{2}{M{3.5cm}|}{\begin{flushleft}
-Enter null in
-mandatory fields.
-\end{flushleft}
-} &
-\multicolumn{2}{M{3.5cm}|}{\begin{flushleft}
-It should not do the update
-and show error.
-\end{flushleft}} & %
-\multicolumn{2}{M{3.5cm}|}{\begin{flushleft}
-It will show message that please fill out this field.
-\end{flushleft}} &
-Pass & \\[0pt]\cline{2-9} &
-\multicolumn{2}{M{3.5cm}|}{\begin{flushleft}
-Enter incorrect data
-\end{flushleft}} & 
-\multicolumn{2}{M{3.5cm}|}{\begin{flushleft}
-It should not do the update
-and show error.
-\end{flushleft}} & 
-\multicolumn{2}{M{3.5cm}|}{\begin{flushleft}
-It will show the message that the old password do not match.
-\end{flushleft}
-} & Pass\\[25pt]\cline{2-9}& 
-\multicolumn{2}{M{3.5cm}|}{\begin{flushleft}
-Enter correct data of all
-required field.
-\end{flushleft}} & 
-\multicolumn{2}{M{3.5cm}|}{\begin{flushleft}
-It should let do
-registration.
-\end{flushleft}} & 
+%\multirow{3}{2cm}[-1.5em]{\centering Update password
+%} &
+%
+%\multicolumn{2}{M{3.5cm}|}{\begin{flushleft}
+%Enter null in
+%mandatory fields.
+%\end{flushleft}
+%} &
+%\multicolumn{2}{M{3.5cm}|}{\begin{flushleft}
+%It should not do the update
+%and show error.
+%\end{flushleft}} & %
+%\multicolumn{2}{M{3.5cm}|}{\begin{flushleft}
+%It will show message that please fill out this field.
+%\end{flushleft}} &
+%Pass & \\[0pt]\cline{2-9} &
+%\multicolumn{2}{M{3.5cm}|}{\begin{flushleft}
+%Enter incorrect data
+%\end{flushleft}} & 
+%\multicolumn{2}{M{3.5cm}|}{\begin{flushleft}
+%It should not do the update
+%and show error.
+%\end{flushleft}} & 
+%\multicolumn{2}{M{3.5cm}|}{\begin{flushleft}
+%It will show the message that the old password do not match.
+%\end{flushleft}
+%} & Pass\\[25pt]\cline{2-9}& 
+%\multicolumn{2}{M{3.5cm}|}{\begin{flushleft}
+%Enter correct data of all
+%required field.
+%\end{flushleft}} & 
+%\multicolumn{2}{M{3.5cm}|}{\begin{flushleft}
+%It should let do
+%registration.
+%\end{flushleft}} & 
+%
+%\multicolumn{2}{M{3.5cm}|}{\begin{flushleft}
+%It will show the message that password successfully updated.
+%\end{flushleft}
+%} & Pass\\ [25pt]
+%\hline%End
+%\multirow{2}{1.5cm}[-1.5em]{\centering Search Food
+%} &
+%
+%\multicolumn{2}{M{3.5cm}|}{\begin{flushleft}
+%Enter null or incorrect data in search fields.
+%\end{flushleft}
+%} &
+%\multicolumn{2}{M{3.5cm}|}{\begin{flushleft}
+%It will not search food
+%\end{flushleft}} & %
+%\multicolumn{2}{M{3.5cm}|}{\begin{flushleft}
+%It will show the message that there was no search results!
+%\end{flushleft}} &
+%Pass & \\[0pt]\cline{2-9} &
+%\multicolumn{2}{M{3.5cm}|}{\begin{flushleft}
+%Enter correct data in
+%Search fields.
+%\end{flushleft}} & 
+%\multicolumn{2}{M{3.5cm}|}{\begin{flushleft}
+%It should search foods depending the keywords.
+%\end{flushleft}} & 
+%\multicolumn{2}{M{3.5cm}|}{\begin{flushleft}
+%It will display the foods regarding the keywords.
+%\end{flushleft}
+%} & Pass\\[25pt]
+%\hline%End
+%\multirow{2}{1.5cm}[-1.5em]{\centering Comment Food
+%} &
+%
+%\multicolumn{2}{M{3.5cm}|}{\begin{flushleft}
+%Enter non ASCII character.
+%\end{flushleft}} &
+%\multicolumn{2}{M{3.5cm}|}{\begin{flushleft}
+%It will not let to comment
+%\end{flushleft}
+%} & %
+%\multicolumn{2}{M{3.5cm}|}{\begin{flushleft}
+%It will show error as unsupported character.
+%\end{flushleft}} &
+%Pass & \\[0pt]\cline{2-9} &
+%\multicolumn{2}{M{3.5cm}|}{\begin{flushleft}
+%Enter ASCII character.
+%\end{flushleft}} & 
+%\multicolumn{2}{M{3.5cm}|}{\begin{flushleft}
+%It will lead a successful comment.
+%\end{flushleft}} & 
+%\multicolumn{2}{M{3.5cm}|}{\begin{flushleft}
+%It will view the succession of a comment.
+%\end{flushleft}
+%} & Pass\\[25pt]
+%\hline%End
+%
+%\end{tabular}
+%\end{table}
+	
 
-\multicolumn{2}{M{3.5cm}|}{\begin{flushleft}
-It will show the message that password successfully updated.
-\end{flushleft}
-} & Pass\\ [25pt]
-\hline%End
-\hline%Start
-\multirow{2}{1.5cm}[-1.5em]{\centering Search Food
-} &
-
-\multicolumn{2}{M{3.5cm}|}{\begin{flushleft}
-Enter null or incorrect data in search fields.
-\end{flushleft}
-} &
-\multicolumn{2}{M{3.5cm}|}{\begin{flushleft}
-It will not search food
-\end{flushleft}} & %
-\multicolumn{2}{M{3.5cm}|}{\begin{flushleft}
-It will show the message that there was no search results!
-\end{flushleft}} &
-Pass & \\[0pt]\cline{2-9} &
-\multicolumn{2}{M{3.5cm}|}{\begin{flushleft}
-Enter correct data in
-Search fields.
-\end{flushleft}} & 
-\multicolumn{2}{M{3.5cm}|}{\begin{flushleft}
-It should search foods depending the keywords.
-\end{flushleft}} & 
-\multicolumn{2}{M{3.5cm}|}{\begin{flushleft}
-It will display the foods regarding the keywords.
-\end{flushleft}
-} & Pass\\[25pt]
-\hline%End
-\hline%Start
-\multirow{2}{1.5cm}[-1.5em]{\centering Comment Food
-} &
-
-\multicolumn{2}{M{3.5cm}|}{\begin{flushleft}
-Enter non ASCII character.
-\end{flushleft}} &
-\multicolumn{2}{M{3.5cm}|}{\begin{flushleft}
-It will not let to comment
-\end{flushleft}
-} & %
-\multicolumn{2}{M{3.5cm}|}{\begin{flushleft}
-It will show error as unsupported character.
-\end{flushleft}} &
-Pass & \\[0pt]\cline{2-9} &
-\multicolumn{2}{M{3.5cm}|}{\begin{flushleft}
-Enter ASCII character.
-\end{flushleft}} & 
-\multicolumn{2}{M{3.5cm}|}{\begin{flushleft}
-It will lead a successful comment.
-\end{flushleft}} & 
-\multicolumn{2}{M{3.5cm}|}{\begin{flushleft}
-It will view the succession of a comment.
-\end{flushleft}
-} & Pass\\[25pt]
-\hline%End
-
-\end{tabular}
-\end{table}
-	\subsection{Code Documentation}
-	\tab Code documentation is an important part of any software engineering project. Throughout the im-
-plementation, a JavaDoc tool was used to generate HTML API documentation of the project. The
-JavaDoc could then be used to provide assistance to any future developer.
-
-	\subsection{Version Control}
+	\subsection{Version control}
 	\tab Due to the type of development methodology used for this project, incremental backups of the system
 were required. Version control systems (also known as Revision control) such as Mercurial manage
 the changes to documents storing each backup in its own revision with the ability to restore back to a
 particular version in the event of debugging.
 	
-		
+		\subsection{Code documentation}
+	\tab Code documentation is an important part of any software engineering project. Throughout the im-
+plementation, a JavaDoc tool was used to generate HTML API documentation of the project.\\The
+JavaDoc \cite{Ref:19} could then be used to provide assistance to any future developer.\\There are two types of code documentation: private documentation, produced by and for the developers to enhance code readability and intelligibility, and public documentation, produced as a reference for users of the code. Why Document? Private documentation basically boils down to tags in the code, for example to explain how a command works and why it works the way it does, or to enhance readability.\\Private documentation basically boils down to tags in the code, for example to explain how a command works and why it works the way it does, or to enhance readability.\\Public documentation means that other developers and/or users won’t have to dissect our code just to ensure that they understand it properly, or that it meets our needs.
 
-	\subsection{Chapter Summary}
+	\subsection{Chapter summary}
 	\tab This chapter has discussed the interesting aspects from the implementation stage. The next chapter
 documents the results by demonstrating the working system.
 	
 	\newpage	
-	\section{Conclusion}
+	\section*{Conclusion}
+	\addcontentsline{toc}{section}{Conclusion}
 	%{\bfseries \Large Conclusion}
-	\subsection{Chapter Overview}
-		\tab This chapters draws the project report to a close and reflects on the design decisions made throughout.
-It also discusses possible future development ideas.
-
-	\subsection{Project Overview}
-	\tab The system achieved all of its proposed priority 1 and priority 2 functional requirements and even some
-priority 3 outlined in Section \ref{sec:prioty}.
+	\tab This chapters draws the project report to a close and reflects on the design decisions made throughout.It also discusses possible future development ideas.\\\tab The system achieved all of its proposed priority 1 and priority 2 functional requirements.
 However, the initial project plan and gannt chart had to be modified as the project became about
 a month behind due to underestimations on the time to implement some desired features. This meant
-that some of the lower priority requirements had to be scrapped.
-	\subsection{Further Development}
-	\tab This project was developed under time constraints of 120 hours. Therefore the proposed features
+that some of the lower priority requirements had to be scrapped.\\\tab This project was developed under time constraints of 120 hours. Therefore the proposed features
 specified in the requirements were what the developer thought to be realistic targets.
-However, if more time became available the following could be implemented.
-%	\subsubsection{Graphical User Interface (GUI)}
-%	\tab Currently the GUI was adequate to do the job but maybe the GUI could have had a more appealing
-%look and feel. This all beckons on whether or not Java was the best programming language to use to
-%generate the best looking GUI. Maybe a web developed GUI could have been a better alternative but
-%with the developer having little experience in web development this would not have been ideal.
-	\subsubsection{Table Management}
-	\tab A feature that was thought of as a possibility but never documented past the design stage was the use
+However, if more time became available the following could be implemented.\\\tab A feature that was thought of as a possibility but never documented past the design stage was the use
 of a table management feature. This would give the system the ability to reserve and allocate tables.
 The table data could then be used to help predict how busy the restaurant may be and help prepare
-the staff rota.
-	\subsection{Reflection}
-	\tab On reflection, even though the majority of the proposed features were completed and the project was
+the staff rota.\\\tab On reflection, even though the majority of the proposed features were completed and the project was
 deemed a huge success, the author felt that he could have been more disciplined in keeping to the plan.
 He also felt that the proposed features were slightly unrealistic and some even unnecessary.
 For the general project, the author felt that important aspects of research were not undertaken
 including interviews with restaurant owners and user questionnaires. This would have provided good
-insight into existing solutions.
-	\newpage
-	\subsection{Skills Attained}
-	\tab This project has helped the author to attain new skills as well as develop existing skills. The skills
+insight into existing solutions.\\\tab This project has helped the author to attain new skills as well as develop existing skills. The skills
 attained have been both technical and individual with the main individual skill being project manage-
 ment which required good time keeping and management of the workload. \\
 Some technical skills that
@@ -7394,9 +7963,28 @@ have been developed include:
 		\item Advanced coding using the Java Swing interface.
 		\item Relational database schema design and trigger coding.
 		\item Advanced coding using Java threads.
-	\end{itemize}
-\subsection{Chapter Summary}	
-\tab This chapter has concluded the project report and provided an insight into possible future development.
+	\end{itemize}\tab This chapter has concluded the project report and provided an insight into possible future development.
+%	\subsection{Chapter overview}
+%		
+%
+%	\subsection{Project overview}
+%	
+%	\subsection{Further development}
+%	
+%%	\subsubsection{Graphical User Interface (GUI)}
+%%	\tab Currently the GUI was adequate to do the job but maybe the GUI could have had a more appealing
+%%look and feel. This all beckons on whether or not Java was the best programming language to use to
+%%generate the best looking GUI. Maybe a web developed GUI could have been a better alternative but
+%%with the developer having little experience in web development this would not have been ideal.
+%	\subsubsection{Table management}
+%	
+%	\subsection{Reflection}
+%	
+%	\newpage
+%	\subsection{Skills attained}
+%	
+%\subsection{Chapter summary}	
+
 	
 
 
@@ -7405,9 +7993,9 @@ have been developed include:
 \bibliographystyle{IEEEtran}
 \newpage
 \section*{Acknowledgement}
-\addcontentsline{toc}{section}{\textbf{Acknowledgement}}
+\addcontentsline{toc}{section}{Acknowledgement}
 	\tab Foremost, I would like to express my sincere gratitude to the almighty Allah for His blessings and protection throughout my undergraduate studies.\\ 
-\tab My sincere thanks to my supervisor,  \textbf{Dr. LIANG Zhao} of the Institute of Computer Science at Shenyang Aerospace University for the continuous support of my Bachelor's study, patience, motivation, enthusiasm, and immense knowledge. His guidance helped me in all the time of research and writing of this thesis. I could not have imagined having a better advisor and mentor.\\
+\tab My sincere thanks to my supervisor,  \textbf{LIANG Zhao} of the Institute of Computer Science at Shenyang Aerospace University for the continuous support of my Bachelor's study, patience, motivation, enthusiasm, and immense knowledge. His guidance helped me in all the time of research and writing of this thesis. I could not have imagined having a better advisor and mentor.\\
         \tab I also thank my fellow classmates, my friends and for all the fun we have had in the last four years.\\
         \tab Last but not the least; I would like to thank my parents \textbf{Mr. Syed Amin Uddin}, \textbf{Mrs. Hajera Amin} and \textbf{Ms. Noorjahan Khanam} for their prayers, support, encouragement and their admonishment.\\
 

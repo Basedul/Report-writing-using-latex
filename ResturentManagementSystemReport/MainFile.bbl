@@ -60,6 +60,11 @@ MySQL. [Online]. Available:
   \url{https://en.wikipedia.org/wiki/Java_(programming_language)}
 \BIBentrySTDinterwordspacing
 
+\bibitem{Ref:18}
+\BIBentryALTinterwordspacing
+``Netbeans feature.'' [Online]. Available: \url{https://netbeans.org/features/}
+\BIBentrySTDinterwordspacing
+
 \bibitem{Ref:14}
 \BIBentryALTinterwordspacing
 ``What is an system design?'' [Online]. Available:
@@ -84,10 +89,34 @@ MySQL. [Online]. Available:
   \url{https://www.lucidchart.com/pages/er-diagrams?a=0}
 \BIBentrySTDinterwordspacing
 
+\bibitem{Ref:20}
+\BIBentryALTinterwordspacing
+``Entity relationship diagram.'' [Online]. Available:
+  \url{https://searchdatamanagement.techtarget.com/definition/entity-relationship-diagram-ERD}
+\BIBentrySTDinterwordspacing
+
 \bibitem{Ref:16}
 \BIBentryALTinterwordspacing
 ``Database schema.'' [Online]. Available:
   \url{https://www.lucidchart.com/pages/database-diagram/database-schema}
+\BIBentrySTDinterwordspacing
+
+\bibitem{Ref:21}
+\BIBentryALTinterwordspacing
+``Implementation and testing.'' [Online]. Available:
+  \url{http://www.technologyuk.net/telecommunications/networks/implementation-and-testing.shtml}
+\BIBentrySTDinterwordspacing
+
+\bibitem{Ref:17}
+\BIBentryALTinterwordspacing
+``User module.'' [Online]. Available:
+  \url{https://www.drupal.org/docs/8/core/modules/user/overview}
+\BIBentrySTDinterwordspacing
+
+\bibitem{Ref:19}
+\BIBentryALTinterwordspacing
+``Java documentation.'' [Online]. Available:
+  \url{https://www.spiria.com/en/blog/method-and-best-practices/how-document-java-code/}
 \BIBentrySTDinterwordspacing
 
 \end{thebibliography}

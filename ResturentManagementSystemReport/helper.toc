@@ -1,2 +1,3 @@
-\contentsline {section}{Title page}{i}
-\contentsline {section}{Signed declaration}{ii}
+\contentsline {chapter}{Contents}{1}
+\contentsline {chapter}{\chapternumberline {1}A chapter}{3}
+\contentsline {section}{\numberline {1.1000}A section}{3}

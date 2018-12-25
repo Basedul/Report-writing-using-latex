@@ -1,28 +1,42 @@
-\documentclass[11pt, twocolumn]{article}
-\usepackage{booktabs,multirow}
-\setlength{\belowcaptionskip}{5pt} 
+\documentclass{article}
+\usepackage{ctable} % for \specialrule command
 
 \begin{document}
+\centering
 
-
-\begin{table}[ht]
-\caption{String (\%)} 
-\centering 
-\begin{tabular}{cccccc} %  
-\toprule
-\multirow{2}{*}{
-\parbox[c]{.2\linewidth}{\centering Min width}}
-  & \multicolumn{2}{c}{$fp_{c}$} &&
-\multicolumn{2}{c}{$fp_{bf}$} \\ 
-\cmidrule{2-3} \cmidrule{5-6}
-
- & {\centering theory} & {exp.} && {theory} & {exp.}  \\
-\midrule
-1 & 0.23  & 0.21  && 0.04               & 0.065 \\
-2 & 0.085 & 0.087 && 0.0015             & 0.0020 \\
-3 & 0.032 & 0.026 && $5.5\times10^{-4}$ & 0 \\
-4 & 0.012 & 0.011 && $5.5\times10^{-4}$ & 0 \\
-\bottomrule
+Default \texttt{\textbackslash hline}: 
+\begin{tabular}{ccc}
+\hline
+1 & 2 & 3 \\ 
+\hline
 \end{tabular}
-\end{table}
+\bigskip
+
+Thicker \texttt{\textbackslash hline}: 
+\setlength{\arrayrulewidth}{.3em}
+\bigskip
+\begin{tabular}{ccc}
+\hline
+1 & 2 & 3 \\ 
+\hline
+\end{tabular}
+\bigskip
+
+Custom \texttt{special rule}s with  \texttt{ctable} package: 
+
+\begin{tabular}{ccc}
+\specialrule{.05em}{1em}{0em} 
+ 1 & 2 & 3 \\ 
+\specialrule{.1em}{.05em}{.05em} 
+1 & 2 & 3 \\ 
+\specialrule{.2em}{.1em}{.1em} 
+1 & 2 & 3 \\ 
+\specialrule{.3em}{.2em}{.2em}
+ 1 & 2 & 3 \\
+\specialrule{.4em}{.3em}{.3em}
+1 & 2 & 3 \\    
+\specialrule{.5em}{.4em}{.4em}
+1 & 2 & 3 \\
+\specialrule{.6em}{.5em}{0em}
+\end{tabular}
 \end{document}
