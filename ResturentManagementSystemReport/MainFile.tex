@@ -8,7 +8,7 @@
 \usepackage{lipsum}
 
 
-\usepackage[paperheight=11.69in,paperwidth=8.27in,includefoot,top=3cm, bottom=3cm, left=3cm, right=3cm]{geometry}
+\usepackage[paperheight=11.69in,paperwidth=8.27in,includefoot,top=3cm, bottom=2cm, left=3cm, right=3cm]{geometry}
 
 
 
@@ -63,7 +63,8 @@
 \chead{%
   \center Shenyang Aerospace University Graduation Design(Thesis)
 }
-\cfoot{\thepage}
+%\cfoot{\thepage}
+\cfoot{\vspace*{-1.5\baselineskip}\thepage}
 \renewcommand{\headrulewidth}{0.4pt}% Default \headrulewidth is 0.4pt
 \renewcommand{\footrulewidth}{0.4pt}
 %\headheight 30pt
@@ -84,7 +85,7 @@
 \sectionfont{\centering}
 
 \AtBeginDocument{
-  \addtocontents{toc}{\fontsize{12}{19}\fontfamily{ptm}\selectfont}
+  \addtocontents{toc}{\fontsize{12}{15}\fontfamily{ptm}\selectfont}
   \addtocontents{lof}{\fontsize{12}{19}\fontfamily{ptm}\selectfont}
   \addtocontents{lot}{\fontsize{12}{19}\fontfamily{ptm}\selectfont}
 }
@@ -123,6 +124,12 @@
 \renewcommand{\cftafterloftitle}{\hfill}
 
 %\renewcommand{\thetable}{\hspace{.1em}} %table number out
+
+\usepackage{setspace}
+%\onehalfspacing
+\renewcommand{\baselinestretch}{1.4}
+\setlength{\parskip}{0.25cm}
+\setlength{\parindent}{4em}
 
 \lstset{frame=tb,
   language=Java,
@@ -229,16 +236,15 @@
 \end{center}
 \end{titlepage}
 
-\begin{titlepage}
-	\vspace{.5in}
+\begin{titlepage}\centering
+	\vspace*{\fill}
 	{\fontsize{22}{10}\fontfamily{ptm}\selectfont \begin{center}
-	
 	\textbf{Asian Restaurant Management Application}
 	\end{center}}
 	{\fontsize{20}{10}\fontfamily{ptm}\selectfont \begin{center}
 	\zh{亚洲餐厅管理应用}
+	\vspace{2cm}
 	\end{center}}
-	\vspace{3cm}
 	
 	\begin{table}[ht]
 	\center
@@ -276,46 +282,45 @@
 	
 	\end{tabular}
 	\end{table}	
-	
+	\vspace*{\fill}
 	\newpage
-	\vspace{10cm}
 	\begin{center}
 	
 	{\fontsize{18}{5}\fontfamily{ptm}\selectfont \begin{center}
-	\vspace{10cm}
+	\vspace*{\fill}
 	\MakeUppercase{Shenyang Aerospace University}
 	\end{center} \par}
-	\vspace{0.8cm}
+	\vspace{0.5cm}
 
 % Bottom of the page
 	{\fontsize{16}{5}\fontfamily{ptm}\selectfont \begin{center}
 	December 2018
 	\end{center}\par}
-	\vspace{0.15cm}
+	\vspace{0.3cm}
 	{\fontsize{16}{5}\fontfamily{ptm}\selectfont \begin{center}
 	\textbf{Declaration}
 	\end{center}\par}
-	\vspace{1cm} 
-
-\RaggedRight \fontsize{14}{10}\fontfamily{ptm}\selectfont To the best of my knowledge and belief, I certify that this thesis does not:\\
+	\vspace{0.5cm} 
+	\renewcommand{\baselinestretch}{1.5}
+\RaggedRight \fontsize{14}{15}\fontfamily{ptm}\selectfont To the best of my knowledge and belief, I certify that this thesis does not:\\
 \begin{itemize}
 	\item[I.] Incorporate any material previously submitted for a degree or diploma in any institution of higher education without acknowledgement.
 	\item[II.] Contain any material previously published or written by other person except where due reference is made in the text.
 	\item[III.] Contain any defamatory material.
 \end{itemize}
 I also grant permission to Shenyang Aerospace University to make duplicate copies of my thesis as required.	\\
-\vspace{1cm}
 \thispagestyle{empty}
-
+\vspace*{3cm}	
 \begin{flushleft}
 Signature:\fillin[4.35cm]
 \end{flushleft}
 Date:\fillin[5.3cm]
 	\end{center}
-	
+\vspace*{\fill}	
 \end{titlepage}	
 	\pagenumbering{Roman}
 	\begin{titlepage}
+	\vspace*{.05cm}	
 		%\pagenumbering{roman} %numbering before main content starts
 		\thispagestyle{fancy}
 		\centering 
@@ -346,7 +351,6 @@ Application is a java application designed with Java technique and MySQL server 
 database of the application.\\
 
 \RaggedRight{\bfseries Key Words: } Asian Restaurant Management Application, Java technique, Wamp server, MySQL, Database.
-
 %	\newpage
 %	\thispagestyle{empty}
 %	\centering\zh{摘 要}\\
@@ -466,7 +470,7 @@ External Deliverables : External deliverables are usually those that the project
 	\tab{MySQL\cite{Ref:5} is an open source relational database management system. It is based on the
 structure query language (SQL), which is used for adding, removing, and modifying
 information in the database. Standard SQL commands, such as ADD, DROP, INSERT,
-and UPDATE can be used with MySQL.}\\{A database is a data structure that stores organized information. Most databases
+and UPDATE can be used with MySQL.}\\\tab{A database is a data structure that stores organized information. Most databases
 contain multiple tables, which may each include several different fields. For example, a
 company database may include tables for products, employees, and financial records. Each
 of these tables would have different fields that are relevant to the information stored in the
@@ -474,7 +478,7 @@ table. Today’s relational databases allow users to access, update, and search 
 based on the relationship of data stored in different tables. Relational databases can also
 run queries that involve multiple databases. While early databases could only store text or
 such numeric data, modern databases also let users store other data types such as sound
-clips, pictures, and videos.}\\{SQL (Structured Query Language) is a standardized programming language used for
+clips, pictures, and videos.}\\\tab{SQL (Structured Query Language) is a standardized programming language used for
 managing relational databases and performing various operations on the data in them.
 Initially created on 1970s, SQLs is regularly being used by database administrators, as well
 as by developers writing data integration scripts and data analysts looking to set up and run
@@ -1439,9 +1443,9 @@ flow of an order.
 		\item installation and testing of network cabling
 		\item installation of network equipment accomodation
 		\item installation, configuration and testing of network hardware
-		\item installation, configuration and testing of network servers, workstations and peripherals
-		\item installation of operating system software on servers and workstations
-		\item installation and testing of application software on application servers and workstations
+%		\item installation, configuration and testing of network servers, workstations and peripherals
+%		\item installation of operating system software on servers and workstations
+%		\item installation and testing of application software on application servers and workstations
 		\item creation of the network file system
 		\item creation of a suitable domain structure
 		\item configuration and testing of network services

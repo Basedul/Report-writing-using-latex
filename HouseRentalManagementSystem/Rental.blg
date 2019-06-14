@@ -1,0 +1,121 @@
+This is BibTeX, Version 0.99d (TeX Live 2017/Debian)
+Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
+The top-level auxiliary file: Rental.aux
+The style file: IEEEtran.bst
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Database file #1: /home/basedul/Documents/Report-writing-using-latex/HouseRentalManagementSystem/based.bib.bib
+-- IEEEtran.bst version 1.14 (2015/08/26) by Michael Shell.
+-- http://www.michaelshell.org/tex/ieeetran/bibtex/
+-- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
+Warning--empty journal in Ref:1
+Warning--empty author in Ref:2
+Warning--empty journal in Ref:2
+Warning--empty year in Ref:2
+Warning--empty author in Ref:4
+Warning--empty journal in Ref:4
+Warning--empty year in Ref:4
+Warning--empty author in Ref:3
+Warning--empty journal in Ref:3
+Warning--empty year in Ref:3
+Warning--empty author in Ref:7
+Warning--empty journal in Ref:7
+Warning--empty year in Ref:7
+Warning--empty author in Ref:5
+Warning--empty journal in Ref:5
+Warning--empty year in Ref:5
+Warning--empty author in Ref:8
+Warning--empty journal in Ref:8
+Warning--empty year in Ref:8
+Warning--empty author in Ref:9
+Warning--empty journal in Ref:9
+Warning--empty year in Ref:9
+Warning--empty author in Ref:6
+Warning--empty journal in Ref:6
+Warning--empty year in Ref:6
+Warning--empty author in Ref:10
+Warning--empty journal in Ref:10
+Warning--empty year in Ref:10
+Warning--empty author in Ref:11
+Warning--empty journal in Ref:11
+Warning--empty year in Ref:11
+Warning--empty author in Ref:12
+Warning--empty journal in Ref:12
+Warning--empty year in Ref:12
+Warning--empty author in Ref:13
+Warning--empty journal in Ref:13
+Warning--empty year in Ref:13
+Warning--empty author in Ref:14
+Warning--empty journal in Ref:14
+Warning--empty year in Ref:14
+Warning--empty author in Ref:21
+Warning--empty journal in Ref:21
+Warning--empty year in Ref:21
+Warning--empty author in Ref:22
+Warning--empty journal in Ref:22
+Warning--empty year in Ref:22
+Warning--empty author in Ref:15
+Warning--empty journal in Ref:15
+Warning--empty year in Ref:15
+Warning--empty author in Ref:16
+Warning--empty journal in Ref:16
+Warning--empty year in Ref:16
+Warning--empty author in Ref:18
+Warning--empty journal in Ref:18
+Warning--empty year in Ref:18
+Warning--empty author in Ref:19
+Warning--empty journal in Ref:19
+Warning--empty year in Ref:19
+Warning--empty author in Ref:20
+Warning--empty journal in Ref:20
+Warning--empty year in Ref:20
+Warning--empty author in Ref:17
+Warning--empty journal in Ref:17
+Warning--empty year in Ref:17
+
+Done.
+You've used 22 entries,
+            4087 wiz_defined-function locations,
+            911 strings with 9614 characters,
+and the built_in function-call counts, 6127 in all, are:
+= -- 365
+> -- 25
+< -- 0
++ -- 23
+- -- 1
+* -- 413
+:= -- 1113
+add.period$ -- 44
+call.type$ -- 22
+change.case$ -- 22
+chr.to.int$ -- 0
+cite$ -- 86
+duplicate$ -- 597
+empty$ -- 620
+format.name$ -- 1
+if$ -- 1231
+int.to.chr$ -- 0
+int.to.str$ -- 22
+missing$ -- 89
+newline$ -- 133
+num.names$ -- 1
+pop$ -- 350
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 2
+skip$ -- 425
+stack$ -- 0
+substring$ -- 22
+swap$ -- 203
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 5
+type$ -- 22
+warning$ -- 64
+while$ -- 1
+width$ -- 24
+write$ -- 200
+(There were 64 warnings)

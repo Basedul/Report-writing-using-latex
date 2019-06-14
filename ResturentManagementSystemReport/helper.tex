@@ -1,42 +1,20 @@
-\documentclass{article}
-\usepackage{ctable} % for \specialrule command
+\documentclass[10pt]{article}
+\usepackage{setspace}
+\usepackage[margin=1.250in]{geometry}
+\singlespacing
+\usepackage{fancyhdr}
+\usepackage{afterpage}
+\fancyhf{}
+\pagestyle{fancy}
+\rhead{\textcolor{gray}{Mock Draft}}
+\renewcommand{\headrulewidth}{0pt}
+\usepackage[table]{xcolor}% http://ctan.org/pkg/xcolor
 
 \begin{document}
-\centering
-
-Default \texttt{\textbackslash hline}: 
-\begin{tabular}{ccc}
-\hline
-1 & 2 & 3 \\ 
-\hline
-\end{tabular}
-\bigskip
-
-Thicker \texttt{\textbackslash hline}: 
-\setlength{\arrayrulewidth}{.3em}
-\bigskip
-\begin{tabular}{ccc}
-\hline
-1 & 2 & 3 \\ 
-\hline
-\end{tabular}
-\bigskip
-
-Custom \texttt{special rule}s with  \texttt{ctable} package: 
-
-\begin{tabular}{ccc}
-\specialrule{.05em}{1em}{0em} 
- 1 & 2 & 3 \\ 
-\specialrule{.1em}{.05em}{.05em} 
-1 & 2 & 3 \\ 
-\specialrule{.2em}{.1em}{.1em} 
-1 & 2 & 3 \\ 
-\specialrule{.3em}{.2em}{.2em}
- 1 & 2 & 3 \\
-\specialrule{.4em}{.3em}{.3em}
-1 & 2 & 3 \\    
-\specialrule{.5em}{.4em}{.4em}
-1 & 2 & 3 \\
-\specialrule{.6em}{.5em}{0em}
-\end{tabular}
+xxxxx
+\afterpage{\cfoot{\thepage}}
+\clearpage
+xxxx
+\clearpage
+xxxx
 \end{document}
