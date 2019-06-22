@@ -22,136 +22,109 @@
 \BIBdecl
 
 \bibitem{Ref:1}
-\BIBentryALTinterwordspacing
 S.~R. Manalu, ``Development and evaluation of mobile application for room
-  rental information with chat and push notification,'' 2006. [Online].
-  Available: \url{https://ieeexplore.ieee.org/document/7930293/authors}
-\BIBentrySTDinterwordspacing
+  rental information with chat and push notification,'' \emph{International
+  Conference on Information Management and Technology}, November 2016.
 
 \bibitem{Ref:2}
 \BIBentryALTinterwordspacing
-``Deliverables are usually classified as internal deliverables and external
-  deliverables.'' [Online]. Available:
-  \url{https://www.simplilearn.com/what-is-a-deliverable-article}
-\BIBentrySTDinterwordspacing
-
-\bibitem{Ref:4}
-\BIBentryALTinterwordspacing
-``Mysql.'' [Online]. Available:
-  \url{https://www.siteground.com/tutorials/php-mysql/mysql}
-\BIBentrySTDinterwordspacing
-
-\bibitem{Ref:3}
-\BIBentryALTinterwordspacing
-``What is apache? an in-depth overview of apache web server.'' [Online].
-  Available: \url{https://www.hostinger.com/tutorials/what-is-apache#gref}
-\BIBentrySTDinterwordspacing
-
-\bibitem{Ref:7}
-\BIBentryALTinterwordspacing
-``Html.'' [Online]. Available:
-  \url{https://www.theserverside.com/definition/HTML-Hypertext-Markup-Language}
-\BIBentrySTDinterwordspacing
-
-\bibitem{Ref:5}
-\BIBentryALTinterwordspacing
-``Php.'' [Online]. Available:
-  \url{https://www.ntchosting.com/encyclopedia/scripting-and-programming/php/}
-\BIBentrySTDinterwordspacing
-
-\bibitem{Ref:8}
-\BIBentryALTinterwordspacing
-``Css.'' [Online]. Available:
-  \url{https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS}
-\BIBentrySTDinterwordspacing
-
-\bibitem{Ref:9}
-\BIBentryALTinterwordspacing
-``Javascript.'' [Online]. Available:
-  \url{https://www.afterhoursprogramming.com/tutorial/javascript/javascript-overview/}
-\BIBentrySTDinterwordspacing
-
-\bibitem{Ref:6}
-\BIBentryALTinterwordspacing
-``Visual studio code.'' [Online]. Available:
-  \url{https://code.visualstudio.com/docs/editor/whyvscode}
+Available online at \url{https://www.simplilearn.com/what-is-a-deliverable-}
 \BIBentrySTDinterwordspacing
 
 \bibitem{Ref:10}
 \BIBentryALTinterwordspacing
-``What is an system design?'' [Online]. Available:
-  \url{https://www.techopedia.com/definition/29998/system-design}
+Available online at \url{https://www.techopedia.com/definition/29998/system-design}
 \BIBentrySTDinterwordspacing
 
 \bibitem{Ref:11}
 \BIBentryALTinterwordspacing
-``Systems architecture.'' [Online]. Available:
-  \url{https://en.wikipedia.org/wiki/Systems_architecture}
+Available online at \url{https://en.wikipedia.org/wiki/Systems_architecture}
 \BIBentrySTDinterwordspacing
 
 \bibitem{Ref:12}
 \BIBentryALTinterwordspacing
-``Database diagram.'' [Online]. Available:
-  \url{https://docs.microsoft.com/en-us/sql/ssms/visual-db-tools/design-database-diagrams-visual-database-tools?view=sql-server-2017}
+Available online at \url{https://docs.microsoft.com/en-us/sql/ssms/visual-db-tools/design-database-diagrams-visual-database-tools?view=sql-server-2017}
 \BIBentrySTDinterwordspacing
 
 \bibitem{Ref:13}
 \BIBentryALTinterwordspacing
-``What is an er diagram?'' [Online]. Available:
-  \url{https://www.lucidchart.com/pages/er-diagrams?a=0}
+Available online at \url{https://www.lucidchart.com/pages/er-diagrams?a=0}
 \BIBentrySTDinterwordspacing
 
 \bibitem{Ref:14}
 \BIBentryALTinterwordspacing
-``Entity relationship diagram.'' [Online]. Available:
-  \url{https://searchdatamanagement.techtarget.com/definition/entity-relationship-diagram-ERD}
+ Available online at \url{https://searchdatamanagement.techtarget.com/definition/entity-relationship-diagram-ERD}
 \BIBentrySTDinterwordspacing
 
 \bibitem{Ref:21}
 \BIBentryALTinterwordspacing
-``Incremental model.'' [Online]. Available:
-  \url{http://tryqa.com/what-is-incremental-model-advantages-disadvantages-and-when-to-use-it/}
+{Available online at \url{http://tryqa.com/what-is-incremental-model-advantages-disadvantages-and-when-to-use-it/}}
 \BIBentrySTDinterwordspacing
 
 \bibitem{Ref:22}
 \BIBentryALTinterwordspacing
-``Database schema.'' [Online]. Available:
-  \url{https://www.lucidchart.com/pages/ database-diagram/database-schema}
-\BIBentrySTDinterwordspacing
-
-\bibitem{Ref:15}
-\BIBentryALTinterwordspacing
-``Implementation and testing.'' [Online]. Available:
-  \url{http://www.technologyuk.net/
-  telecommunications/networks/implementation-and-testing.shtml}
+{Available online at \url{https://www.lucidchart.com/pages/
+  database-diagram/database-schema}}
 \BIBentrySTDinterwordspacing
 
 \bibitem{Ref:16}
 \BIBentryALTinterwordspacing
-``User module.'' [Online]. Available:
-  \url{https://www.drupal.org/docs/8/core/modules/ user/overview}
+{Available online at \url{https://www.drupal.org/docs/8/core/modules/
+  user/overview}}
 \BIBentrySTDinterwordspacing
 
 \bibitem{Ref:18}
 \BIBentryALTinterwordspacing
-``Search term.'' [Online]. Available: \url{https://yoast.com/search-term/}
+Available online at \url{https://yoast.com/search-term/}
 \BIBentrySTDinterwordspacing
 
 \bibitem{Ref:19}
 \BIBentryALTinterwordspacing
-``Goggle map.'' [Online]. Available:
-  \url{https://whatis.techtarget.com/definition/Google-Maps}
+Available online at \url{https://whatis.techtarget.com/definition/Google-Maps}
 \BIBentrySTDinterwordspacing
 
 \bibitem{Ref:20}
 \BIBentryALTinterwordspacing
-``Test case.'' [Online]. Available:
-  \url{http://documentation.microfocus.com/help/index.jsp?topic=%2Fcom.borland.silktest.classic.doc%2FSTCLASSIC-753381C7-ABOUT-TESTCASES.html}
-\BIBentrySTDinterwordspacing
+{Available online at \url{http://documentation.microfocus.com/help/index.jsp?topic=\%2Fcom.borland.silktest.classic.doc\%2FSTCLASSIC-753381C7-ABOUT-TESTCASES.html}}
 
 \bibitem{Ref:17}
 \BIBentryALTinterwordspacing
-``Php documentation.'' [Online]. Available: \url{https://www.phpdoc.org/}
+{Available online at \url{https://www.phpdoc.org/}}
+\BIBentrySTDinterwordspacing
+
+\bibitem{Ref:4}
+\BIBentryALTinterwordspacing
+Available online at \url{https://www.siteground.com/tutorials/php-mysql/mysql}
+\BIBentrySTDinterwordspacing
+
+\bibitem{Ref:3}
+\BIBentryALTinterwordspacing
+Available online at \url{https://www.hostinger.com/tutorials/what-is-apache#gref}
+\BIBentrySTDinterwordspacing
+
+\bibitem{Ref:7}
+\BIBentryALTinterwordspacing
+Available online at \url{https://www.theserverside.com/definition/HTML-Hypertext-Markup-Language}
+\BIBentrySTDinterwordspacing
+
+\bibitem{Ref:5}
+\BIBentryALTinterwordspacing
+Available online at \url{https://www.ntchosting.com/encyclopedia/scripting-and-programming/php/}
+\BIBentrySTDinterwordspacing
+
+\bibitem{Ref:8}
+\BIBentryALTinterwordspacing
+Available online at \url{https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS}
+\BIBentrySTDinterwordspacing
+
+\bibitem{Ref:9}
+\BIBentryALTinterwordspacing
+Available online at \url{https://www.afterhoursprogramming.com/tutorial/javascript/javascript-overview/}
+\BIBentrySTDinterwordspacing
+
+\bibitem{Ref:6}
+\BIBentryALTinterwordspacing
+Available online at \url{https://code.visualstudio.com/docs/editor/whyvscode}
 \BIBentrySTDinterwordspacing
 
 \end{thebibliography}

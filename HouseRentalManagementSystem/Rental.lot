@@ -1,5 +1,11 @@
-\fontsize {12}{15}\fontfamily {ptm}\selectfont 
-\contentsline {table}{\numberline {3.1}{\ignorespaces \hspace {0.4em}Admin registration\relax }}{19}{table.caption.10}
-\contentsline {table}{\numberline {3.2}{\ignorespaces \hspace {0.4em}Registration for client\relax }}{20}{table.caption.11}
-\contentsline {table}{\numberline {3.3}{\ignorespaces \hspace {0.4em}Client order list\relax }}{20}{table.caption.12}
-\contentsline {table}{\numberline {4.1}{\ignorespaces \hspace {0.4em}Test Cases\relax }}{26}{table.caption.16}
+\fontsize {12}{16}\fontfamily {ptm}\selectfont 
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {3.4.1}{\ignorespaces \hspace {0.4em}Admin registration\relax }}{19}{table.caption.11}
+\contentsline {table}{\numberline {3.4.2}{\ignorespaces \hspace {0.4em}Registration for client\relax }}{20}{table.caption.12}
+\contentsline {table}{\numberline {3.4.3}{\ignorespaces \hspace {0.4em}Client order list\relax }}{21}{table.caption.13}
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {4.4.1}{\ignorespaces \hspace {0.4em}Test Cases\relax }}{33}{table.caption.23}
+\addvspace {10\p@ }
+\addvspace {10\p@ }
